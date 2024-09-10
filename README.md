@@ -4,7 +4,7 @@ Tools>Options>Json>Schema
 Then click add new one in the upper left.
 Copy this link:
 ####
-    https://raw.githubusercontent.com/SirNoName2705/Vintellisense/master/Schemas/current/vs_schema_catalog.json
+    https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/Schemas/current/vs_schema_catalog.json
 and paste it in the settings.
 Save and restart the ide.
 
