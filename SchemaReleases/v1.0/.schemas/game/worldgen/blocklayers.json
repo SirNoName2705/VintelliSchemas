@@ -1,0 +1,243 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "BlockLayerConfig",
+  "type": "object",
+  "properties": {
+    "beachLayer": {
+      "$ref": "#/definitions/BeachLayerProperties"
+    },
+    "blocklayers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/BlockLayer"
+      }
+    },
+    "blockLayerTransitionSize": {
+      "type": "number",
+      "format": "float"
+    },
+    "lakeBedLayer": {
+      "$ref": "#/definitions/LakeBedLayerProperties"
+    },
+    "snowLayer": {
+      "$ref": "#/definitions/SnowLayerProperties"
+    },
+    "tallgrass": {
+      "$ref": "#/definitions/TallGrassProperties"
+    }
+  },
+  "definitions": {
+    "BeachLayerProperties": {
+      "type": "object",
+      "properties": {
+        "blockCode": {
+          "type": "string"
+        },
+        "strength": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "BlockLayer": {
+      "type": "object",
+      "properties": {
+        "blockCode": {
+          "type": "string"
+        },
+        "blockCodeByMin": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BlockLayerCodeByMin"
+          }
+        },
+        "id": {
+          "type": "string"
+        },
+        "maxFertility": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxY": {
+          "type": "number",
+          "format": "float"
+        },
+        "minFertility": {
+          "type": "number",
+          "format": "float"
+        },
+        "minRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "minTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minY": {
+          "type": "number",
+          "format": "float"
+        },
+        "name": {
+          "type": "string"
+        },
+        "noiseAmplitudes": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "noiseFrequencies": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "noiseThreshold": {
+          "type": "number",
+          "format": "double"
+        },
+        "thickness": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "BlockLayerCodeByMin": {
+      "type": "object",
+      "properties": {
+        "blockCode": {
+          "type": "string"
+        },
+        "maxFertility": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxY": {
+          "type": "number",
+          "format": "float"
+        },
+        "minFertility": {
+          "type": "number",
+          "format": "float"
+        },
+        "minRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "minTemp": {
+          "type": "number",
+          "format": "float"
+        },
+        "minY": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "LakeBedLayerProperties": {
+      "type": "object",
+      "properties": {
+        "blockCodeByMin": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LakeBedBlockCodeByMin"
+          }
+        }
+      }
+    },
+    "LakeBedBlockCodeByMin": {
+      "type": "object",
+      "properties": {
+        "blockCode": {
+          "type": "string"
+        },
+        "maxRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxY": {
+          "type": "number",
+          "format": "float"
+        },
+        "minRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "minTemp": {
+          "type": "number",
+          "format": "float"
+        },
+        "minY": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "SnowLayerProperties": {
+      "type": "object",
+      "properties": {
+        "blockCode": {
+          "type": "string"
+        },
+        "maxTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "transitionSize": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "TallGrassProperties": {
+      "type": "object",
+      "properties": {
+        "blockCodeByMin": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TallGrassBlockCodeByMin"
+          }
+        },
+        "perlinWeight": {
+          "type": "number",
+          "format": "float"
+        },
+        "rndWeight": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "TallGrassBlockCodeByMin": {
+      "type": "object",
+      "properties": {
+        "blockCode": {
+          "type": "string"
+        },
+        "maxForest": {
+          "type": "number",
+          "format": "float"
+        },
+        "minRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "minTemp": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    }
+  }
+}

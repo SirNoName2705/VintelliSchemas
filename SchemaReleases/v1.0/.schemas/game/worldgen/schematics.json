@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "BlockSchematic",
+  "type": "object",
+  "properties": {
+    "blockCodes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "blockEntities": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "blockIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "decorIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "decorIndices": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "entranceRotation": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "gameVersion": {
+      "type": "string"
+    },
+    "indices": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "itemCodes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "replaceMode": {
+      "$ref": "../../lib/definitions/EnumReplaceMode.json#"
+    },
+    "sizeX": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sizeY": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sizeZ": {
+      "type": "integer",
+      "format": "int32"
+    }
+  },
+  "definitions": {}
+}

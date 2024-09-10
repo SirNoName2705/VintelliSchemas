@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "description": "Elegant, yet somewhat inefficently designed (because wasteful with heap objects) wrapper class to abstract away the type-casting nightmare of JToken O.O",
+  "properties": {
+    "exists": {
+      "type": "boolean",
+      "description": "True if the token is not null"
+    },
+    "token": {}
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

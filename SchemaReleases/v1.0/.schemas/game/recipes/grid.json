@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GridRecipe",
+  "type": "object",
+  "description": "Represents a crafting recipe",
+  "properties": {
+    "attributes": {
+      "description": "Optional attribute data that you can attach any data to",
+      "oneOf": [
+        {
+          "$ref": "../../lib/definitions/JsonObject.json#"
+        }
+      ]
+    },
+    "averageDurability": {
+      "type": "boolean",
+      "description": "If true, the output item will have its durability averaged over the input items"
+    },
+    "copyAttributesFrom": {
+      "type": "string",
+      "description": "If set, it will copy over the itemstack attributes from given ingredient code"
+    },
+    "enabled": {
+      "type": "boolean",
+      "description": "Set by the recipe loader during json deserialization, if false the recipe will never be loaded.\nIf loaded however, you can use this field to disable recipes during runtime."
+    },
+    "height": {
+      "type": "integer",
+      "description": "Required grid height for crafting this recipe ",
+      "format": "int32"
+    },
+    "ingredientPattern": {
+      "type": "string",
+      "description": "The pattern of the ingredient. Order for a 3x3 recipe: \n1 2 3\n4 5 6\n7 8 9\nOrder for a 2x2 recipe:\n1 2\n3 4"
+    },
+    "ingredients": {
+      "type": "object",
+      "description": "The recipes ingredients in any order",
+      "additionalProperties": {
+        "$ref": "../../lib/definitions/CraftingRecipeIngredient.json#"
+      }
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the recipe, optional"
+    },
+    "output": {
+      "description": "The resulting Stack",
+      "oneOf": [
+        {
+          "$ref": "../../lib/definitions/CraftingRecipeIngredient.json#"
+        }
+      ]
+    },
+    "recipeGroup": {
+      "type": "integer",
+      "description": "Info used by the handbook. Allows you to split grid recipe previews into multiple.",
+      "format": "int32"
+    },
+    "requiresTrait": {
+      "type": "string",
+      "description": "If set only players with given trait can use this recipe"
+    },
+    "resolvedIngredients": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/GridRecipeIngredient"
+      }
+    },
+    "shapeless": {
+      "type": "boolean",
+      "description": "Whether the order of input items should be respected"
+    },
+    "showInCreatedBy": {
+      "type": "boolean",
+      "description": "Used by the handbook. If false, will not appear in the \"Created by\" section"
+    },
+    "width": {
+      "type": "integer",
+      "description": "Required grid width for crafting this recipe ",
+      "format": "int32"
+    }
+  },
+  "definitions": {
+    "GridRecipeIngredient": {
+      "allOf": [
+        {
+          "$ref": "../../lib/definitions/CraftingRecipeIngredient.json#"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "patternCode": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

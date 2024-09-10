@@ -1,0 +1,110 @@
+{
+  "type": "object",
+  "description": "Represents a three dimensional axis-aligned cuboid using two 3d coordinates. Used for collision and selection boxes.",
+  "properties": {
+    "empty": {
+      "type": "boolean",
+      "description": "True when all values are 0"
+    },
+    "end": {
+      "$ref": "./Vec3f.json#"
+    },
+    "endd": {
+      "$ref": "./Vec3d.json#"
+    },
+    "height": {
+      "type": "number",
+      "format": "float"
+    },
+    "length": {
+      "type": "number",
+      "format": "float"
+    },
+    "maxX": {
+      "type": "number",
+      "format": "float"
+    },
+    "maxY": {
+      "type": "number",
+      "format": "float"
+    },
+    "maxZ": {
+      "type": "number",
+      "format": "float"
+    },
+    "midX": {
+      "type": "number",
+      "format": "float"
+    },
+    "midY": {
+      "type": "number",
+      "format": "float"
+    },
+    "midZ": {
+      "type": "number",
+      "format": "float"
+    },
+    "minX": {
+      "type": "number",
+      "format": "float"
+    },
+    "minY": {
+      "type": "number",
+      "format": "float"
+    },
+    "minZ": {
+      "type": "number",
+      "format": "float"
+    },
+    "start": {
+      "$ref": "./Vec3f.json#"
+    },
+    "startd": {
+      "$ref": "./Vec3d.json#"
+    },
+    "width": {
+      "type": "number",
+      "format": "float"
+    },
+    "x1": {
+      "type": "number",
+      "format": "float"
+    },
+    "x2": {
+      "type": "number",
+      "format": "float"
+    },
+    "xSize": {
+      "type": "number",
+      "description": "This is equivalent to width so long as X2 > X1, but could in theory be a negative number if the box has its corners the wrong way around",
+      "format": "float"
+    },
+    "y1": {
+      "type": "number",
+      "format": "float"
+    },
+    "y2": {
+      "type": "number",
+      "format": "float"
+    },
+    "ySize": {
+      "type": "number",
+      "description": "This is equivalent to height so long as Y2 > Y1, but could in theory be a negative number if the box has its corners the wrong way around",
+      "format": "float"
+    },
+    "z1": {
+      "type": "number",
+      "format": "float"
+    },
+    "z2": {
+      "type": "number",
+      "format": "float"
+    },
+    "zSize": {
+      "type": "number",
+      "description": "This is equivalent to length so long as Z2 > Z1, but could in theory be a negative number if the box has its corners the wrong way around",
+      "format": "float"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

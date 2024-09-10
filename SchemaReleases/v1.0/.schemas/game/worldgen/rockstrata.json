@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RockStrataConfig",
+  "definitions": {
+    "WorldPropertyOfRockStratum": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RockStratum"
+          }
+        }
+      }
+    },
+    "RockStratum": {
+      "type": "object",
+      "properties": {
+        "amplitudes": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "blockCode": {
+          "type": "string"
+        },
+        "blockId": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "frequencies": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "genDir": {
+          "$ref": "#/definitions/EnumStratumGenDir"
+        },
+        "generator": {
+          "type": "string"
+        },
+        "isDeposit": {
+          "type": "boolean"
+        },
+        "rockGroup": {
+          "$ref": "#/definitions/EnumRockGroup"
+        },
+        "thresholds": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      }
+    },
+    "EnumStratumGenDir": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "BottomUp",
+        "TopDown"
+      ],
+      "enum": [
+        "bottomUp",
+        "topDown"
+      ]
+    },
+    "EnumRockGroup": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Sedimentary",
+        "Metamorphic",
+        "Igneous",
+        "Volcanic"
+      ],
+      "enum": [
+        "sedimentary",
+        "metamorphic",
+        "igneous",
+        "volcanic"
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/WorldPropertyOfRockStratum"
+    },
+    {
+      "type": "object"
+    }
+  ]
+}

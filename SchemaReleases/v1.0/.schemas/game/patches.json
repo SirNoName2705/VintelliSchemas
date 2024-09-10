@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "JsonPatch[]",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/JsonPatch"
+  },
+  "definitions": {
+    "JsonPatch": {
+      "type": "object",
+      "properties": {
+        "condition": {
+          "$ref": "#/definitions/PatchCondition"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PatchModDependence"
+          }
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "file": {
+          "type": "string"
+        },
+        "fromPath": {
+          "type": "string"
+        },
+        "op": {
+          "$ref": "#/definitions/EnumJsonPatchOp"
+        },
+        "path": {
+          "type": "string"
+        },
+        "side": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/definitions/EnumAppSide"
+            }
+          ]
+        },
+        "value": {
+          "$ref": "../lib/definitions/JsonObject.json#"
+        }
+      }
+    },
+    "PatchCondition": {
+      "type": "object",
+      "properties": {
+        "isValue": {
+          "type": "string"
+        },
+        "useValue": {
+          "type": "boolean"
+        },
+        "when": {
+          "type": "string"
+        }
+      }
+    },
+    "PatchModDependence": {
+      "type": "object",
+      "properties": {
+        "invert": {
+          "type": "boolean"
+        },
+        "modid": {
+          "type": "string"
+        }
+      }
+    },
+    "EnumJsonPatchOp": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Add",
+        "AddEach",
+        "Remove",
+        "Replace",
+        "Copy",
+        "Move",
+        "AddMerge"
+      ],
+      "enum": [
+        "add",
+        "addEach",
+        "remove",
+        "replace",
+        "copy",
+        "move",
+        "addMerge"
+      ]
+    },
+    "EnumAppSide": {
+      "type": "string",
+      "description": "",
+      "x-enumFlags": true,
+      "x-enumNames": [
+        "Server",
+        "Client",
+        "Universal"
+      ],
+      "enum": [
+        "server",
+        "client",
+        "universal"
+      ]
+    }
+  }
+}

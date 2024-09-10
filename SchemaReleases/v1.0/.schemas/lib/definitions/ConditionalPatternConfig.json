@@ -1,0 +1,49 @@
+{
+  "type": "object",
+  "properties": {
+    "maxRain": {
+      "type": [
+        "null",
+        "number"
+      ],
+      "format": "float"
+    },
+    "maxTemp": {
+      "type": [
+        "null",
+        "number"
+      ],
+      "format": "float"
+    },
+    "minRain": {
+      "type": [
+        "null",
+        "number"
+      ],
+      "format": "float"
+    },
+    "minTemp": {
+      "type": [
+        "null",
+        "number"
+      ],
+      "format": "float"
+    },
+    "rainRange": {
+      "type": "number",
+      "format": "float"
+    },
+    "tempRange": {
+      "type": "number",
+      "format": "float"
+    },
+    "weight": {
+      "type": "number",
+      "format": "float"
+    },
+    "weightFunction": {
+      "$ref": "./EnumChanceFunction.json#"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

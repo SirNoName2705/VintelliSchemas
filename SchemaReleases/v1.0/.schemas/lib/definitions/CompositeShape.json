@@ -1,0 +1,89 @@
+{
+  "type": "object",
+  "properties": {
+    "alternates": {
+      "type": "array",
+      "description": "The block shape may consists of any amount of alternatives, one of which will be randomly chosen when the block is placed in the world.",
+      "items": {
+        "$ref": "./CompositeShape.json#"
+      }
+    },
+    "bakedAlternates": {
+      "type": "array",
+      "description": "Includes the base shape",
+      "items": {
+        "$ref": "./CompositeShape.json#"
+      }
+    },
+    "base": {
+      "type": "string"
+    },
+    "format": {
+      "$ref": "./EnumShapeFormat.json#"
+    },
+    "insertBakedTextures": {
+      "type": "boolean",
+      "description": "Whether or not to insert baked in textures for mesh formats such as gltf into the texture atlas."
+    },
+    "offsetX": {
+      "type": "number",
+      "format": "float"
+    },
+    "offsetXYZCopy": {
+      "$ref": "./Vec3f.json#"
+    },
+    "offsetY": {
+      "type": "number",
+      "format": "float"
+    },
+    "offsetZ": {
+      "type": "number",
+      "format": "float"
+    },
+    "overlays": {
+      "type": "array",
+      "items": {
+        "$ref": "./CompositeShape.json#"
+      }
+    },
+    "quantityElements": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "If non zero will only tesselate the first n elements of the shape",
+      "format": "int32"
+    },
+    "rotateX": {
+      "type": "number",
+      "format": "float"
+    },
+    "rotateXYZCopy": {
+      "$ref": "./Vec3f.json#"
+    },
+    "rotateY": {
+      "type": "number",
+      "format": "float"
+    },
+    "rotateZ": {
+      "type": "number",
+      "format": "float"
+    },
+    "scale": {
+      "type": "number",
+      "format": "float"
+    },
+    "selectiveElements": {
+      "type": "array",
+      "description": "If set will only tesselate elements with given name",
+      "items": {
+        "type": "string"
+      }
+    },
+    "voxelizeTexture": {
+      "type": "boolean",
+      "description": "If true, the shape is created from a voxelized version of the first defined texture"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

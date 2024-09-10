@@ -1,0 +1,267 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "BlockType",
+  "definitions": {
+    "BlockCropPropertiesType": {
+      "type": "object",
+      "properties": {
+        "behaviors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CropBehaviorType"
+          }
+        },
+        "coldDamageBelow": {
+          "type": "number",
+          "format": "float"
+        },
+        "coldDamageRipeMul": {
+          "type": "number",
+          "format": "float"
+        },
+        "damageGrowthStuntMul": {
+          "type": "number",
+          "format": "float"
+        },
+        "growthStages": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "harvestGrowthStageLoss": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "heatDamageAbove": {
+          "type": "number",
+          "format": "float"
+        },
+        "multipleHarvests": {
+          "type": "boolean"
+        },
+        "nutrientConsumption": {
+          "type": "number",
+          "format": "float"
+        },
+        "requiredNutrient": {
+          "$ref": "../lib/definitions/EnumSoilNutrient.json#"
+        },
+        "totalGrowthDays": {
+          "type": "number",
+          "format": "float"
+        },
+        "totalGrowthMonths": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "CropBehaviorType": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "properties": {
+          "$ref": "../lib/definitions/JsonObject.json#"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "../lib/definitions/CollectibleType.json#"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "allowSpawnCreatureGroups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ambientocclusion": {
+          "type": "boolean"
+        },
+        "blockMaterial": {
+          "$ref": "../lib/definitions/EnumBlockMaterial.json#"
+        },
+        "climateColorMap": {
+          "type": "string"
+        },
+        "climbable": {
+          "type": "boolean"
+        },
+        "cropProps": {
+          "$ref": "#/definitions/BlockCropPropertiesType"
+        },
+        "doNotRenderAtLod2": {
+          "type": "boolean"
+        },
+        "dragMultiplier": {
+          "type": "number",
+          "format": "float"
+        },
+        "drawType": {
+          "$ref": "../lib/definitions/EnumDrawType.json#"
+        },
+        "drops": {
+          "type": "array",
+          "items": {
+            "$ref": "../lib/definitions/BlockDropItemStack.json#"
+          }
+        },
+        "emitSideAo": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "entityBehaviors": {
+          "type": "array",
+          "items": {
+            "$ref": "../lib/definitions/BlockEntityBehaviorType.json#"
+          }
+        },
+        "entityClass": {
+          "type": "string"
+        },
+        "faceCullMode": {
+          "$ref": "../lib/definitions/EnumFaceCullMode.json#"
+        },
+        "fertility": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "frostable": {
+          "type": "boolean"
+        },
+        "lightAbsorption": {
+          "type": "integer"
+        },
+        "lightTraversable": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "liquidCode": {
+          "type": "string"
+        },
+        "liquidLevel": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "lod0Shape": {
+          "$ref": "../lib/definitions/CompositeShape.json#"
+        },
+        "lod2Shape": {
+          "$ref": "../lib/definitions/CompositeShape.json#"
+        },
+        "rainPermeable": {
+          "type": "boolean"
+        },
+        "randomDrawOffset": {
+          "type": "boolean"
+        },
+        "randomizeAxes": {
+          "$ref": "../lib/definitions/EnumRandomizeAxes.json#"
+        },
+        "randomizeRotations": {
+          "type": "boolean"
+        },
+        "randomSizeAdjust": {
+          "type": "number",
+          "format": "float"
+        },
+        "renderPass": {
+          "$ref": "../lib/definitions/EnumChunkRenderPass.json#"
+        },
+        "replaceable": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "requiredMiningTier": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "resistance": {
+          "type": "number",
+          "format": "float"
+        },
+        "seasonColorMap": {
+          "type": "string"
+        },
+        "shapeInventory": {
+          "$ref": "../lib/definitions/CompositeShape.json#"
+        },
+        "sideAo": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "sideOpaque": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "sideSolid": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "sideSolidOpaqueAo": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "sounds": {
+          "$ref": "../lib/definitions/BlockSounds.json#"
+        },
+        "texturesInventory": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "../lib/definitions/CompositeTexture.json#"
+          }
+        },
+        "vertexFlags": {
+          "$ref": "../lib/definitions/VertexFlags.json#"
+        },
+        "walkspeedMultiplier": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    {
+      "$ref": "../lib/assets/blocktypes-code.json#"
+    },
+    {
+      "$ref": "../lib/assets/blocktypes-attributes.json#"
+    },
+    {
+      "$ref": "../lib/assets/blocktypes-class.json#"
+    },
+    {
+      "$ref": "../lib/assets/blocktypes-entityBehavoirs.json#"
+    },
+    {
+      "$ref": "../lib/assets/blocktypes-entityClass.json#"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "behaviors": {
+          "type": "array",
+          "items": {
+            "$ref": "../lib/assets/blocktypes-behaviors.json"
+          }
+        }
+      }
+    }
+  ]
+}

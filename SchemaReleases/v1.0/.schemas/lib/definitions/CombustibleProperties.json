@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "description": "Used for an items combustible value",
+  "properties": {
+    "burnDuration": {
+      "type": "number",
+      "description": "For how long it burns in real life seconds",
+      "format": "float"
+    },
+    "burnTemperature": {
+      "type": "integer",
+      "description": "The temperature at which it burns",
+      "format": "int32"
+    },
+    "heatResistance": {
+      "type": "integer",
+      "description": "How many degrees celsius it can resists before it ignites",
+      "format": "int32"
+    },
+    "maxTemperature": {
+      "type": "integer",
+      "description": "If there is a melting point, the max temperature it can reach. Set to 0 for no limit ",
+      "format": "int32"
+    },
+    "meltingDuration": {
+      "type": "number",
+      "description": "For how many seconds the temperature has to be above the melting point until the item is smelted",
+      "format": "float"
+    },
+    "meltingPoint": {
+      "type": "integer",
+      "description": "How many degrees celsius it takes to smelt/transform this into another. Only used when put in a stove and Melted is set ",
+      "format": "int32"
+    },
+    "requiresContainer": {
+      "type": "boolean",
+      "description": "If true (default) a container is required to smelt this item. "
+    },
+    "smeltedRatio": {
+      "type": "integer",
+      "description": "How many ores are required to produce one output stack",
+      "format": "int32"
+    },
+    "smeltedStack": {
+      "description": "If set, the block/item is smeltable in a furnace and this is the resulting itemstack once the MeltingPoint has been reached for the supplied duration.",
+      "oneOf": [
+        {
+          "$ref": "./JsonItemStack.json#"
+        }
+      ]
+    },
+    "smeltingType": {
+      "description": "Used for correct naming in the tool tip",
+      "oneOf": [
+        {
+          "$ref": "./EnumSmeltType.json#"
+        }
+      ]
+    },
+    "smokeLevel": {
+      "type": "number",
+      "description": "How much smoke this item produces when being used as fuel",
+      "format": "float"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "properties": {
+    "blockAtlasTextureSubId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "code": {
+      "type": "string"
+    },
+    "extraFlags": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "loadIntoBlockTextureAtlas": {
+      "type": "boolean"
+    },
+    "outerSize": {
+      "$ref": "./Size2i.json#"
+    },
+    "padding": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "pixels": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "rectIndex": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "texture": {
+      "$ref": "./CompositeTexture.json#"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

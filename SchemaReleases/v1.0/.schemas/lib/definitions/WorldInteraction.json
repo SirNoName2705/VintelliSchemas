@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "actionLangCode": {
+      "type": "string",
+      "description": "The text to show, will be used in the form of Lang.Get(ActionLangCode); "
+    },
+    "hotKeyCode": {
+      "type": "string",
+      "description": "Does it require a mouse modifier key to perform this action (e.g. \"shift\" or \"ctrl\")"
+    },
+    "hotKeyCodes": {
+      "type": "array",
+      "description": "Does it require pressing multiple keys to perform this action (if set then HotkeyCode is ignored)",
+      "items": {
+        "type": "string"
+      }
+    },
+    "itemStacks": {
+      "type": "array",
+      "description": "Does the player need to hold a certain items/blocks in hands? (e.g. a knife). You can define an array of item stacks here and the game will loop through them in a 1 second interval.\nThis property is loaded from the entitytypes and blocktype json files and then resolved.",
+      "items": {
+        "$ref": "./JsonItemStack.json#"
+      }
+    },
+    "mouseButton": {
+      "description": "Left or Right mouse button?",
+      "oneOf": [
+        {
+          "$ref": "./EnumMouseButton.json#"
+        }
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

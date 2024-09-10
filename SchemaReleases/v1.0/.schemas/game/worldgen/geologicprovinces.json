@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GeologicProvinces",
+  "definitions": {
+    "WorldPropertyOfGeologicProvinceVariant": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GeologicProvinceVariant"
+          }
+        }
+      }
+    },
+    "GeologicProvinceVariant": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "hexcolor": {
+          "type": "string"
+        },
+        "rockstrata": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/GeologicProvinceRockStrata"
+          }
+        },
+        "weight": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "GeologicProvinceRockStrata": {
+      "type": "object",
+      "properties": {
+        "currentq": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxThickness": {
+          "type": "number",
+          "format": "float"
+        },
+        "scaledMaxThickness": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/WorldPropertyOfGeologicProvinceVariant"
+    },
+    {
+      "type": "object"
+    }
+  ]
+}

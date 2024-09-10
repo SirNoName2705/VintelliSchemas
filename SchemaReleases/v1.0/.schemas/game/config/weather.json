@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WeatherSystemConfig",
+  "type": "object",
+  "properties": {
+    "rainOverlayPattern": {
+      "$ref": "../../lib/definitions/WeatherPatternConfig.json#"
+    },
+    "snowLayerBlockCodes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "definitions": {}
+}

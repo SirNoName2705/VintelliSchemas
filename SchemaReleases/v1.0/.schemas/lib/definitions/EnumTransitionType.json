@@ -1,0 +1,25 @@
+{
+  "type": "string",
+  "description": "",
+  "x-enumNames": [
+    "Perish",
+    "Dry",
+    "Burn",
+    "Cure",
+    "Convert",
+    "Ripen",
+    "Melt",
+    "Harden"
+  ],
+  "enum": [
+    "perish",
+    "dry",
+    "burn",
+    "cure",
+    "convert",
+    "ripen",
+    "melt",
+    "harden"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

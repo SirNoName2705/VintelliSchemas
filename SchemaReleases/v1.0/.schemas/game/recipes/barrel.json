@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "BarrelRecipe",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string"
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/BarrelRecipeIngredient"
+      }
+    },
+    "name": {
+      "type": "string"
+    },
+    "output": {
+      "$ref": "#/definitions/BarrelOutputStack"
+    },
+    "recipeId": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sealHours": {
+      "type": "number",
+      "format": "double"
+    }
+  },
+  "definitions": {
+    "BarrelRecipeIngredient": {
+      "allOf": [
+        {
+          "$ref": "../../lib/definitions/CraftingRecipeIngredient.json#"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "consumeLitres": {
+              "type": [
+                "null",
+                "number"
+              ],
+              "format": "float"
+            },
+            "consumeQuantity": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "format": "int32"
+            },
+            "litres": {
+              "type": "number",
+              "format": "float"
+            }
+          }
+        }
+      ]
+    },
+    "BarrelOutputStack": {
+      "allOf": [
+        {
+          "$ref": "../../lib/definitions/JsonItemStack.json#"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "litres": {
+              "type": "number",
+              "format": "float"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

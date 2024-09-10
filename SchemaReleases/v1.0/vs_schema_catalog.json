@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json.schemastore.org/schema-catalog.json",
+  "version": 1.0,
+  "schemas": [
+    {
+      "name": "blocktypes.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/blocktypes/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/blocktypes.json"
+    },
+    {
+      "name": "characterclasses.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/characterclasses.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/characterclasses.json"
+    },
+    {
+      "name": "colormaps.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/colormaps.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/colormaps.json"
+    },
+    {
+      "name": "general.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/general.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/general.json"
+    },
+    {
+      "name": "handbook.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/handbook/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/handbook.json"
+    },
+    {
+      "name": "lore.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/lore/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/lore.json"
+    },
+    {
+      "name": "remaps.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/remaps.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/remaps.json"
+    },
+    {
+      "name": "traderaccessories.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/traderaccessories.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/traderaccessories.json"
+    },
+    {
+      "name": "traits.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/traits.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/traits.json"
+    },
+    {
+      "name": "weather.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/weather.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/weather.json"
+    },
+    {
+      "name": "weatherevents.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/weatherevents/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/weatherevents.json"
+    },
+    {
+      "name": "weatherpatterns.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/weatherpatterns/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/weatherpatterns.json"
+    },
+    {
+      "name": "windpatterns.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/config/windpatterns/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/config/windpatterns.json"
+    },
+    {
+      "name": "dialog.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/dialog/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/dialog.json"
+    },
+    {
+      "name": "entities.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/entities/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/entities.json"
+    },
+    {
+      "name": "itemtypes.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/itemtypes/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/itemtypes.json"
+    },
+    {
+      "name": "lang.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/lang/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/lang.json"
+    },
+    {
+      "name": "patches.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/patches/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/patches.json"
+    },
+    {
+      "name": "alloy.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/recipes/alloy/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/recipes/alloy.json"
+    },
+    {
+      "name": "barrel.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/recipes/barrel/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/recipes/barrel.json"
+    },
+    {
+      "name": "clayforming.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/recipes/clayforming/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/recipes/clayforming.json"
+    },
+    {
+      "name": "grid.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/recipes/grid/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/recipes/grid.json"
+    },
+    {
+      "name": "knapping.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/recipes/knapping/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/recipes/knapping.json"
+    },
+    {
+      "name": "smithing.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/recipes/smithing/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/recipes/smithing.json"
+    },
+    {
+      "name": "blocklayers.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/blocklayers.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/blocklayers.json"
+    },
+    {
+      "name": "blockpatches.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/blockpatches.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/blockpatches.json"
+    },
+    {
+      "name": "deposits.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/deposits.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/deposits.json"
+    },
+    {
+      "name": "deposits.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/deposits/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/deposits.json"
+    },
+    {
+      "name": "geologicprovinces.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/geologicprovinces.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/geologicprovinces.json"
+    },
+    {
+      "name": "global.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/global.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/global.json"
+    },
+    {
+      "name": "landforms.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/landforms.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/landforms.json"
+    },
+    {
+      "name": "layers.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/layers.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/layers.json"
+    },
+    {
+      "name": "rockstrata.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/rockstrata.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/rockstrata.json"
+    },
+    {
+      "name": "schematics.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/schematics/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/schematics.json"
+    },
+    {
+      "name": "structures.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/structures.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/structures.json"
+    },
+    {
+      "name": "treegen.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/treegen/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/treegen.json"
+    },
+    {
+      "name": "treengenproperties.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/treengenproperties.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/treengenproperties.json"
+    },
+    {
+      "name": "villages.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/villages.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/villages.json"
+    },
+    {
+      "name": "worldproperties.json",
+      "description": "",
+      "fileMatch": [
+        "**/assets/**/worldgen/worldproperties/**"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/game/worldgen/worldproperties.json"
+    },
+    {
+      "name": "modinfo.json",
+      "description": "",
+      "fileMatch": [
+        "**/modinfo.json",
+        "**/assets/**/modinfo.json"
+      ],
+      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/v1/.schemas/modinfo.json"
+    }
+  ]
+}

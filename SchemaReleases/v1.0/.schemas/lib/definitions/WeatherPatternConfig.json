@@ -1,0 +1,34 @@
+{
+  "allOf": [
+    {
+      "$ref": "./ConditionalPatternConfig.json#"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "clouds": {
+          "$ref": "./WeatherCloudConfig.json#"
+        },
+        "code": {
+          "type": "string"
+        },
+        "durationHours": {
+          "$ref": "./NatFloat.json#"
+        },
+        "fog": {
+          "$ref": "./WeatherFogConfig.json#"
+        },
+        "name": {
+          "type": "string"
+        },
+        "precipitation": {
+          "$ref": "./WeatherPrecipitationConfig.json#"
+        },
+        "sceneBrightness": {
+          "$ref": "./NatFloat.json#"
+        }
+      }
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

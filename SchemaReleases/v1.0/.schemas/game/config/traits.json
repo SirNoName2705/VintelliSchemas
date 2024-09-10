@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Trait[]",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Trait"
+  },
+  "definitions": {
+    "Trait": {
+      "type": "object",
+      "properties": {
+        "attributes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "code": {
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/definitions/EnumTraitType"
+        }
+      }
+    },
+    "EnumTraitType": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Positive",
+        "Mixed",
+        "Negative"
+      ],
+      "enum": [
+        "positive",
+        "mixed",
+        "negative"
+      ]
+    }
+  }
+}

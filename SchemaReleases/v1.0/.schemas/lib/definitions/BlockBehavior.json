@@ -1,0 +1,22 @@
+{
+  "allOf": [
+    {
+      "$ref": "./CollectibleBehavior.json#"
+    },
+    {
+      "type": "object",
+      "description": "Allows for definitions of behaviors of a block that can be applied to any block",
+      "properties": {
+        "block": {
+          "description": "The block for this behavior instance.",
+          "oneOf": [
+            {
+              "$ref": "./Block.json#"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

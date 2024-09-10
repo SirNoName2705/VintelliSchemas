@@ -1,0 +1,23 @@
+{
+  "type": "string",
+  "description": "",
+  "x-enumNames": [
+    "Fruit",
+    "Vegetable",
+    "Protein",
+    "Grain",
+    "Dairy",
+    "Unknown",
+    "NoNutrition"
+  ],
+  "enum": [
+    "fruit",
+    "vegetable",
+    "protein",
+    "grain",
+    "dairy",
+    "unknown",
+    "noNutrition"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

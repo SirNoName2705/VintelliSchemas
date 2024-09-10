@@ -1,0 +1,25 @@
+{
+  "type": "string",
+  "description": "",
+  "x-enumNames": [
+    "Normal",
+    "Darken",
+    "Lighten",
+    "Multiply",
+    "Screen",
+    "ColorDodge",
+    "ColorBurn",
+    "Overlay"
+  ],
+  "enum": [
+    "normal",
+    "darken",
+    "lighten",
+    "multiply",
+    "screen",
+    "colorDodge",
+    "colorBurn",
+    "overlay"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

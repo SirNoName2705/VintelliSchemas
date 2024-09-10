@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "type": "array",
+      "description": "Attributes assigned to this particular itemstack which are saved and synchronized. ",
+      "items": {}
+    },
+    "block": {
+      "description": "If this is a stack of blocks, this is the type of block it's holding, otherwise null",
+      "oneOf": [
+        {
+          "$ref": "./Block.json#"
+        }
+      ]
+    },
+    "class": {
+      "description": "Wether its a block Block or Item",
+      "oneOf": [
+        {
+          "$ref": "./EnumItemClass.json#"
+        }
+      ]
+    },
+    "collectible": {
+      "description": "The item/block base class this stack is holding",
+      "oneOf": [
+        {
+          "$ref": "./CollectibleObject.json#"
+        }
+      ]
+    },
+    "id": {
+      "type": "integer",
+      "description": "The id of the block or item",
+      "format": "int32"
+    },
+    "item": {
+      "description": "If this is a stack of items, this is the type of items it's holding, otherwise null",
+      "oneOf": [
+        {
+          "$ref": "./Item.json#"
+        }
+      ]
+    },
+    "itemAttributes": {
+      "description": "The Attributes assigned to the underlying block/item. Should not be modified, as it applies to globally.",
+      "oneOf": [
+        {
+          "$ref": "./JsonObject.json#"
+        }
+      ]
+    },
+    "stackSize": {
+      "type": "integer",
+      "description": "The amount of items/blocks in this stack",
+      "format": "int32"
+    },
+    "tempAttributes": {
+      "type": "array",
+      "description": "Temporary Attributes assigned to this particular itemstack, not synchronized, not saved! Modifiable.",
+      "items": {}
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

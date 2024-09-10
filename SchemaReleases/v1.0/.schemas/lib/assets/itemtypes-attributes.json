@@ -1,0 +1,2947 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "$ref": "#/definitions/Attributes"
+    }
+  },
+  "definitions": {
+    "Attributes": {
+      "type": "object",
+      "properties": {
+        "handbook": {
+          "$ref": "#/definitions/Handbook"
+        },
+        "setGuardedEntityAttribute": {
+          "type": "boolean"
+        },
+        "onDisplayTransform": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "displaycaseable": {
+          "type": "boolean"
+        },
+        "shelvable": {
+          "type": "boolean"
+        },
+        "healthByType": {
+          "$ref": "#/definitions/HealthByType"
+        },
+        "groundStorageTransform": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "displaycase": {
+          "$ref": "#/definitions/Displaycase"
+        },
+        "damageByType": {
+          "$ref": "#/definitions/DamageByType"
+        },
+        "thrownEntityTypeCode": {
+          "type": "string"
+        },
+        "scrollrackable": {
+          "type": "boolean"
+        },
+        "onscrollrackTransform": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "isPlayableDisc": {
+          "type": "boolean"
+        },
+        "musicTrackByType": {
+          "$ref": "#/definitions/MusicTrackByType"
+        },
+        "randomizeInDisplayCase": {
+          "type": "boolean"
+        },
+        "setGuardedEntityAttributeByType": {
+          "$ref": "#/definitions/SetGuardedEntityAttributeByType"
+        },
+        "omokpiece": {
+          "type": "boolean"
+        },
+        "health": {
+          "type": "integer"
+        },
+        "displaycaseableByType": {
+          "$ref": "#/definitions/DisplaycaseableByType"
+        },
+        "wearableAttachment": {
+          "type": "boolean"
+        },
+        "clothescategory": {
+          "type": "string"
+        },
+        "disableElements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DisableElement"
+          }
+        },
+        "rackable": {
+          "type": "boolean"
+        },
+        "toolrackTransform": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "moldrackable": {
+          "type": "boolean"
+        },
+        "onmoldrackTransform": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "noConsumeOnCrafting": {
+          "type": "boolean"
+        },
+        "locatorPropsbyType": {
+          "$ref": "#/definitions/LocatorPropsbyType"
+        },
+        "attachShape": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "backpack": {
+          "$ref": "#/definitions/Backpack"
+        },
+        "unfoldShapeStep1": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "unfoldShapeStep2": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "unfoldedShape": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "waterTightContainerProps": {
+          "$ref": "#/definitions/WaterTightContainerProps"
+        },
+        "nutritionPropsWhenInMeal": {
+          "$ref": "#/definitions/NutritionPropsWhenInMeal"
+        },
+        "distillationProps": {
+          "$ref": "#/definitions/DistillationProps"
+        },
+        "repairgainByType": {
+          "$ref": "#/definitions/RepairgainByType"
+        },
+        "inContainerTexture": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "inBowlShape": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "distillationPropsbytype": {
+          "$ref": "#/definitions/DistillationPropsbytype"
+        },
+        "stacks": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Anonymous42"
+          }
+        },
+        "rolledShapeByType": {
+          "$ref": "#/definitions/RolledShapeByType"
+        },
+        "bookshelveableByType": {
+          "$ref": "#/definitions/BookshelveableByType"
+        },
+        "scrollrackableByType": {
+          "$ref": "#/definitions/BookshelveableByType"
+        },
+        "readable": {
+          "type": "boolean"
+        },
+        "editable": {
+          "type": "boolean"
+        },
+        "maxPageCount": {
+          "type": "integer"
+        },
+        "groundStorageTransformByType": {
+          "$ref": "#/definitions/GroundStorageTransformByType"
+        },
+        "bookshelveable": {
+          "type": "boolean"
+        },
+        "editableByType": {
+          "$ref": "#/definitions/EditableByType"
+        },
+        "rolledShape": {
+          "type": "string"
+        },
+        "canTranscribeOn": {
+          "type": "boolean"
+        },
+        "inContainerTextureByType": {
+          "$ref": "#/definitions/InContainerTextureByType"
+        },
+        "inFirePitProps": {
+          "$ref": "#/definitions/InFirePitProps"
+        },
+        "crockable": {
+          "type": "boolean"
+        },
+        "inPieProperties": {
+          "$ref": "#/definitions/InPieProperties"
+        },
+        "foodTags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FoodTag"
+          }
+        },
+        "inPiePropertiesByType": {
+          "$ref": "#/definitions/InPiePropertiesByType"
+        },
+        "onGround": {
+          "type": "boolean"
+        },
+        "bakingProperties": {
+          "$ref": "#/definitions/BakingProperties"
+        },
+        "juiceablePropertiesByType": {
+          "$ref": "#/definitions/JuiceablePropertiesByType"
+        },
+        "dissolveInWater": {
+          "type": "boolean"
+        },
+        "nutritionPropsWhenInMealByType": {
+          "$ref": "#/definitions/NutritionPropsWhenInMealByType"
+        },
+        "heldItemPitchFollow": {
+          "type": "number"
+        },
+        "toolrackTransformByType": {
+          "$ref": "#/definitions/ToolrackTransformByType"
+        },
+        "breakChanceOnImpactByType": {
+          "$ref": "#/definitions/DamageByType"
+        },
+        "writingTool": {
+          "type": "boolean"
+        },
+        "alwaysPlayHeldReady": {
+          "type": "boolean"
+        },
+        "hackingByType": {
+          "$ref": "#/definitions/DamageByType"
+        },
+        "__comment": {
+          "type": "string"
+        },
+        "spearEntityCode": {
+          "type": "string"
+        },
+        "aimAnimation": {
+          "type": "string"
+        },
+        "damage": {
+          "type": "number"
+        },
+        "slotRefillIdentifier": {
+          "type": "string"
+        },
+        "paddlingTool": {
+          "type": "boolean"
+        },
+        "igniteAnimation": {
+          "type": "string"
+        },
+        "heatResistant": {
+          "type": "boolean"
+        },
+        "aimAnimationByType": {
+          "$ref": "#/definitions/DamageByType"
+        },
+        "accuracyBonusByType": {
+          "$ref": "#/definitions/DamageByType"
+        },
+        "knifeHitBlockAnimation": {
+          "type": "string"
+        },
+        "knifeHitEntityAnimation": {
+          "type": "string"
+        },
+        "codePrefixes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CodePrefixe"
+          }
+        },
+        "disallowedSuffixes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DisallowedSuffixe"
+          }
+        },
+        "shield": {
+          "$ref": "#/definitions/Shield"
+        },
+        "onmoldrackTransformByType": {
+          "$ref": "#/definitions/GroundStorageTransformByType"
+        },
+        "variantGroups": {
+          "$ref": "#/definitions/VariantGroups"
+        },
+        "durabilityGains": {
+          "$ref": "#/definitions/VariantGroups"
+        },
+        "allowedVariants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AllowedVariant"
+          }
+        },
+        "displayInsideCrate": {
+          "type": "boolean"
+        },
+        "reinforcementStrengthByType": {
+          "$ref": "#/definitions/DamageByType"
+        },
+        "clothingRepairStrength": {
+          "type": "number"
+        },
+        "workableTemperatureByType": {
+          "$ref": "#/definitions/WorkableTemperatureByType"
+        },
+        "requiresAnvilTierByType": {
+          "$ref": "#/definitions/RequiresAnvilTierByType"
+        },
+        "carburizablePropsByType": {
+          "$ref": "#/definitions/CarburizablePropsByType"
+        },
+        "onshelfTransform": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "knappable": {
+          "type": "boolean"
+        },
+        "craftingResults": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CraftingResult"
+          }
+        },
+        "plantContainable": {
+          "$ref": "#/definitions/PlantContainable"
+        },
+        "blockfirstcodepart": {
+          "type": "string"
+        },
+        "forgable": {
+          "type": "boolean"
+        },
+        "workableTemperature": {
+          "type": "integer"
+        },
+        "mergeUnitsInBloomery": {
+          "type": "boolean"
+        },
+        "requiresAnvilTier": {
+          "type": "integer"
+        },
+        "placeSound": {
+          "type": "string"
+        },
+        "pigmentByType": {
+          "$ref": "#/definitions/PigmentByType"
+        },
+        "cokeConversionRateByType": {
+          "$ref": "#/definitions/CokeConversionRateByType"
+        },
+        "firepitConstructable": {
+          "type": "boolean"
+        },
+        "isClayOvenFuel": {
+          "type": "boolean"
+        },
+        "currency": {
+          "$ref": "#/definitions/Currency"
+        },
+        "riftwardFuel": {
+          "type": "boolean"
+        },
+        "corpseReturnFuel": {
+          "type": "boolean"
+        },
+        "nightVisionFuelHours": {
+          "type": "integer"
+        },
+        "pigment": {
+          "$ref": "#/definitions/*Bituminouscoal"
+        },
+        "reinforcementStrength": {
+          "type": "integer"
+        },
+        "crushedOutput": {
+          "$ref": "#/definitions/CrushedOutput"
+        },
+        "metalUnitsByType": {
+          "$ref": "#/definitions/MetalUnitsByType"
+        },
+        "antlerMountableByType": {
+          "$ref": "#/definitions/ExcludeByType"
+        },
+        "onAntlerMountTransformByType": {
+          "$ref": "#/definitions/OnAntlerMountTransformByType"
+        },
+        "fertilizerProps": {
+          "$ref": "#/definitions/FertilizerProps"
+        },
+        "fertilizerTextureCode": {
+          "type": "string"
+        },
+        "rotateWhenFalling": {
+          "type": "boolean"
+        },
+        "gravityFactor": {
+          "type": "number"
+        },
+        "airDragFactor": {
+          "type": "integer"
+        },
+        "warmthByType": {
+          "$ref": "#/definitions/WarmthByType"
+        },
+        "warmth": {
+          "type": "number"
+        },
+        "scale": {
+          "type": "number"
+        },
+        "disableElementsByType": {
+          "$ref": "#/definitions/DisableElementsByType"
+        },
+        "visibleDamageEffect": {
+          "type": "boolean"
+        },
+        "clothescategoryByType": {
+          "$ref": "#/definitions/ClothescategoryByType"
+        },
+        "defaultProtLoss": {
+          "$ref": "#/definitions/DefaultProtLoss"
+        },
+        "footStepSoundByType": {
+          "$ref": "#/definitions/FootStepSoundByType"
+        },
+        "protectionModifiersByType": {
+          "$ref": "#/definitions/ProtectionModifiersByType"
+        },
+        "statModifiersByType": {
+          "$ref": "#/definitions/StatModifiersByType"
+        },
+        "inCharacterCreationDialog": {
+          "type": "boolean"
+        },
+        "eyeprotective": {
+          "type": "boolean"
+        },
+        "barrelMoveToLiquidSlot": {
+          "type": "boolean"
+        }
+      }
+    },
+    "Handbook": {
+      "type": "object",
+      "properties": {
+        "exclude": {
+          "type": "boolean"
+        },
+        "groupBy": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GroupBy"
+          }
+        },
+        "ignoreCreativeInvStacks": {
+          "type": "boolean"
+        },
+        "excludeByType": {
+          "$ref": "#/definitions/ExcludeByType"
+        },
+        "extraSections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ExtraSection"
+          }
+        },
+        "include": {
+          "type": "boolean"
+        },
+        "groupedName": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/GroupedName"
+          }
+        },
+        "excludeFromList": {
+          "type": "boolean"
+        },
+        "searchWeightOffset": {
+          "type": "number"
+        },
+        "extraSectionsByType": {
+          "$ref": "#/definitions/ExtraSectionsByType"
+        }
+      }
+    },
+    "GroupBy": {
+      "type": "string"
+    },
+    "ExcludeByType": {
+      "type": "object",
+      "properties": {
+        "*-4slice": {
+          "type": "boolean"
+        },
+        "*": {
+          "type": "boolean"
+        },
+        "*-chromium": {
+          "type": "boolean"
+        },
+        "*-platinum": {
+          "type": "boolean"
+        },
+        "*-titanium": {
+          "type": "boolean"
+        },
+        "*-stainlessteel": {
+          "type": "boolean"
+        },
+        "*-uranium": {
+          "type": "boolean"
+        },
+        "*-chromite-*": {
+          "type": "boolean"
+        },
+        "*-platinum-*": {
+          "type": "boolean"
+        },
+        "*-ilmenite-*": {
+          "type": "boolean"
+        },
+        "*-rocksalt_sylvite-*": {
+          "type": "boolean"
+        },
+        "*-brown": {
+          "type": "boolean"
+        },
+        "*-red": {
+          "type": "boolean"
+        }
+      }
+    },
+    "ExtraSection": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "GroupedName": {
+      "type": "string"
+    },
+    "ExtraSectionsByType": {
+      "type": "object",
+      "properties": {
+        "*-hematite-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/*Hematite*"
+          }
+        }
+      }
+    },
+    "*Hematite*": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "OnDisplayTransform": {
+      "type": "object",
+      "properties": {
+        "origin": {
+          "$ref": "#/definitions/Origin"
+        },
+        "scale": {
+          "type": "number"
+        },
+        "rotation": {
+          "$ref": "#/definitions/Origin"
+        },
+        "translation": {
+          "$ref": "#/definitions/Origin"
+        }
+      }
+    },
+    "Origin": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        }
+      }
+    },
+    "HealthByType": {
+      "type": "object",
+      "properties": {
+        "*-clean": {
+          "type": "integer"
+        },
+        "*-alcoholed": {
+          "type": "integer"
+        }
+      }
+    },
+    "Displaycase": {
+      "type": "object",
+      "properties": {
+        "minHeight": {
+          "type": "number"
+        }
+      }
+    },
+    "DamageByType": {
+      "type": "object",
+      "properties": {
+        "*-snow": {
+          "type": "number"
+        },
+        "*-beenade": {
+          "type": "number"
+        },
+        "*": {
+          "type": "string"
+        },
+        "*-lead": {
+          "type": "number"
+        },
+        "*-crude": {
+          "type": "number"
+        },
+        "*-flint": {
+          "type": "number"
+        },
+        "*-copper": {
+          "type": "integer"
+        },
+        "*-tinbronze": {
+          "type": "integer"
+        },
+        "*-gold": {
+          "type": "integer"
+        },
+        "*-silver": {
+          "type": "integer"
+        },
+        "*-bismuthbronze": {
+          "type": "integer"
+        },
+        "*-blackbronze": {
+          "type": "integer"
+        },
+        "*-iron": {
+          "type": "integer"
+        },
+        "*-meteoriciron": {
+          "type": "integer"
+        },
+        "*-steel": {
+          "type": "integer"
+        },
+        "*-chert": {
+          "type": "integer"
+        },
+        "*-granite": {
+          "type": "integer"
+        },
+        "*-andesite": {
+          "type": "integer"
+        },
+        "*-peridotite": {
+          "type": "integer"
+        },
+        "*-basalt": {
+          "type": "integer"
+        },
+        "*-obsidian": {
+          "type": "number"
+        },
+        "*-scrap": {
+          "type": "number"
+        },
+        "*-ruined": {
+          "type": "integer"
+        },
+        "*-hacking": {
+          "type": "boolean"
+        },
+        "*-ornategold": {
+          "type": "number"
+        },
+        "*-ornatesilver": {
+          "type": "number"
+        },
+        "bow-crude": {
+          "type": "number"
+        },
+        "bow-simple": {
+          "type": "integer"
+        },
+        "bow-long": {
+          "type": "number"
+        },
+        "bow-recurve": {
+          "type": "number"
+        }
+      }
+    },
+    "MusicTrackByType": {
+      "type": "object",
+      "properties": {
+        "*-1": {
+          "type": "string"
+        },
+        "*-2": {
+          "type": "string"
+        },
+        "*-3": {
+          "type": "string"
+        },
+        "*-4": {
+          "type": "string"
+        },
+        "*-5": {
+          "type": "string"
+        },
+        "*-6": {
+          "type": "string"
+        },
+        "*-7": {
+          "type": "string"
+        },
+        "*-8": {
+          "type": "string"
+        },
+        "*-9": {
+          "type": "string"
+        }
+      }
+    },
+    "SetGuardedEntityAttributeByType": {
+      "type": "object",
+      "properties": {
+        "*-locust-bronze-hacked": {
+          "type": "boolean"
+        },
+        "*-locust-corrupt-hacked": {
+          "type": "boolean"
+        }
+      }
+    },
+    "DisplaycaseableByType": {
+      "type": "object",
+      "properties": {
+        "*-gearbox02": {
+          "type": "boolean"
+        },
+        "*": {
+          "type": "boolean"
+        }
+      }
+    },
+    "DisableElement": {
+      "type": "string"
+    },
+    "LocatorPropsbyType": {
+      "type": "object",
+      "properties": {
+        "*-treasures": {
+          "$ref": "#/definitions/*Treasures"
+        },
+        "*-resonancearchive": {
+          "$ref": "#/definitions/*Resonancearchive"
+        }
+      }
+    },
+    "*Treasures": {
+      "type": "object",
+      "properties": {
+        "schematiccode": {
+          "type": "string"
+        },
+        "waypointtext": {
+          "type": "string"
+        },
+        "waypointicon": {
+          "type": "string"
+        },
+        "waypointcolor": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "*Resonancearchive": {
+      "type": "object",
+      "properties": {
+        "schematiccode": {
+          "type": "string"
+        },
+        "waypointtext": {
+          "type": "string"
+        },
+        "waypointicon": {
+          "type": "string"
+        },
+        "waypointcolor": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          }
+        },
+        "offset": {
+          "$ref": "#/definitions/Origin"
+        },
+        "randomX": {
+          "type": "integer"
+        },
+        "randomZ": {
+          "type": "integer"
+        }
+      }
+    },
+    "AttachShape": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": "string"
+        }
+      }
+    },
+    "Backpack": {
+      "type": "object",
+      "properties": {
+        "quantitySlots": {
+          "type": "integer"
+        },
+        "storageFlags": {
+          "type": "integer"
+        },
+        "slotBgColor": {
+          "type": "string"
+        }
+      }
+    },
+    "WaterTightContainerProps": {
+      "type": "object",
+      "properties": {
+        "containable": {
+          "type": "boolean"
+        },
+        "itemsPerLitre": {
+          "type": "integer"
+        },
+        "texture": {
+          "$ref": "#/definitions/Texture"
+        },
+        "tintIndex": {
+          "type": "integer"
+        },
+        "whenSpilled": {
+          "$ref": "#/definitions/WhenSpilled"
+        },
+        "allowSpill": {
+          "type": "boolean"
+        },
+        "nutritionPropsPerLitre": {
+          "$ref": "#/definitions/NutritionPropsPerLitre"
+        },
+        "isopaque": {
+          "type": "boolean"
+        },
+        "isOpaqueByType": {
+          "$ref": "#/definitions/AlphaByType"
+        },
+        "texturebytype": {
+          "$ref": "#/definitions/Texturebytype"
+        },
+        "maxStackSize": {
+          "type": "integer"
+        }
+      }
+    },
+    "Texture": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": "string"
+        },
+        "alphaByType": {
+          "$ref": "#/definitions/AlphaByType"
+        },
+        "alpha": {
+          "type": "integer"
+        }
+      }
+    },
+    "AlphaByType": {
+      "type": "object",
+      "properties": {
+        "*-breadfruit": {
+          "type": "boolean"
+        },
+        "*-blueberry": {
+          "type": "boolean"
+        },
+        "*-saguaro": {
+          "type": "boolean"
+        },
+        "*": {
+          "type": "boolean"
+        }
+      }
+    },
+    "WhenSpilled": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string"
+        },
+        "stack": {
+          "$ref": "#/definitions/Stack"
+        },
+        "stackByFillLevel": {
+          "$ref": "#/definitions/StackByFillLevel"
+        }
+      }
+    },
+    "Stack": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "states": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/State"
+          }
+        }
+      }
+    },
+    "State": {
+      "type": "string"
+    },
+    "StackByFillLevel": {
+      "type": "object",
+      "properties": {
+        "1": {
+          "$ref": "#/definitions/Stack"
+        },
+        "2": {
+          "$ref": "#/definitions/Stack"
+        },
+        "3": {
+          "$ref": "#/definitions/Stack"
+        },
+        "4": {
+          "$ref": "#/definitions/Stack"
+        },
+        "6": {
+          "$ref": "#/definitions/Stack"
+        },
+        "7": {
+          "$ref": "#/definitions/Stack"
+        },
+        "8": {
+          "$ref": "#/definitions/Stack"
+        },
+        "9": {
+          "$ref": "#/definitions/Stack"
+        },
+        "10": {
+          "$ref": "#/definitions/Stack"
+        }
+      }
+    },
+    "NutritionPropsPerLitre": {
+      "type": "object",
+      "properties": {
+        "saturation": {
+          "type": "integer"
+        },
+        "foodcategory": {
+          "type": "string"
+        },
+        "satiety": {
+          "type": "integer"
+        },
+        "intoxication": {
+          "type": "number"
+        },
+        "foodcategorybytype": {
+          "$ref": "#/definitions/Foodcategorybytype"
+        }
+      }
+    },
+    "Foodcategorybytype": {
+      "type": "object",
+      "properties": {
+        "*-spelt": {
+          "type": "string"
+        },
+        "*-rice": {
+          "type": "string"
+        },
+        "*-rye": {
+          "type": "string"
+        },
+        "*-amaranth": {
+          "type": "string"
+        },
+        "*-cassava": {
+          "type": "string"
+        },
+        "*-breadfruit": {
+          "type": "string"
+        },
+        "*": {
+          "type": "string"
+        }
+      }
+    },
+    "Texturebytype": {
+      "type": "object",
+      "properties": {
+        "*-mead": {
+          "$ref": "#/definitions/Texture"
+        },
+        "*-spelt": {
+          "$ref": "#/definitions/Texture"
+        },
+        "*-rice": {
+          "$ref": "#/definitions/Texture"
+        },
+        "*-rye": {
+          "$ref": "#/definitions/Texture"
+        },
+        "*-amaranth": {
+          "$ref": "#/definitions/Texture"
+        },
+        "*-cassava": {
+          "$ref": "#/definitions/Texture"
+        },
+        "*-breadfruit": {
+          "$ref": "#/definitions/Texture"
+        },
+        "*": {
+          "$ref": "#/definitions/Texture"
+        }
+      }
+    },
+    "NutritionPropsWhenInMeal": {
+      "type": "object",
+      "properties": {
+        "satiety": {
+          "type": "integer"
+        },
+        "foodcategory": {
+          "type": "string"
+        },
+        "saturation": {
+          "type": "integer"
+        },
+        "satietyByType": {
+          "$ref": "#/definitions/SatietyByType"
+        }
+      }
+    },
+    "SatietyByType": {
+      "type": "object",
+      "properties": {
+        "*-saguaro": {
+          "type": "integer"
+        },
+        "*-cranberry": {
+          "type": "integer"
+        },
+        "*-cherry": {
+          "type": "integer"
+        },
+        "*-lychee": {
+          "type": "integer"
+        },
+        "*-breadfruit": {
+          "type": "integer"
+        },
+        "*": {
+          "type": "integer"
+        },
+        "*-soybean": {
+          "type": "integer"
+        },
+        "*-peanut": {
+          "type": "integer"
+        }
+      }
+    },
+    "DistillationProps": {
+      "type": "object",
+      "properties": {
+        "distilledStack": {
+          "$ref": "#/definitions/Stack"
+        },
+        "ratio": {
+          "type": "number"
+        }
+      }
+    },
+    "RepairgainByType": {
+      "type": "object",
+      "properties": {
+        "*-hot": {
+          "type": "number"
+        },
+        "*-cold": {
+          "type": "number"
+        }
+      }
+    },
+    "DistillationPropsbytype": {
+      "type": "object",
+      "properties": {
+        "ciderportion-mead": {
+          "$ref": "#/definitions/DistillationProps"
+        },
+        "ciderportion-spelt": {
+          "$ref": "#/definitions/DistillationProps"
+        },
+        "ciderportion-rice": {
+          "$ref": "#/definitions/DistillationProps"
+        },
+        "ciderportion-rye": {
+          "$ref": "#/definitions/DistillationProps"
+        },
+        "ciderportion-amaranth": {
+          "$ref": "#/definitions/DistillationProps"
+        },
+        "ciderportion-cassava": {
+          "$ref": "#/definitions/DistillationProps"
+        },
+        "*": {
+          "$ref": "#/definitions/DistillationProps"
+        }
+      }
+    },
+    "Anonymous38": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "collected": {
+          "type": "boolean"
+        }
+      }
+    },
+    "Quantity": {
+      "type": "object",
+      "properties": {
+        "avg": {
+          "type": "integer"
+        },
+        "var": {
+          "type": "integer"
+        }
+      }
+    },
+    "Anonymous40": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous41": {
+      "type": "object",
+      "properties": {
+        "material": {
+          "type": "string"
+        },
+        "lining": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous42": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "chance": {
+          "type": "integer"
+        },
+        "attributes": {
+          "$ref": "#/definitions/Anonymous38"
+        },
+        "quantity": {
+          "$ref": "#/definitions/Quantity"
+        }
+      }
+    },
+    "RolledShapeByType": {
+      "type": "object",
+      "properties": {
+        "lore-paper": {
+          "type": "string"
+        }
+      }
+    },
+    "BookshelveableByType": {
+      "type": "object",
+      "properties": {
+        "lore-scroll": {
+          "type": "boolean"
+        },
+        "lore-paper": {
+          "type": "boolean"
+        },
+        "*": {
+          "type": "boolean"
+        }
+      }
+    },
+    "GroundStorageTransformByType": {
+      "type": "object",
+      "properties": {
+        "lore-book-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "*-scrap": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "axe-bearded-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "axe-battle-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "axe-bardiche-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "axe-double-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-generic-wood": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-scrap-scrap": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-morningstar-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-spiked-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-warhammer-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-flanged-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "@hoe-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-generic-ornate*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-generic-hacking": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "@spear-generic-(copper|tinbronze|bismuthbronze|blackbronze)": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-scrap-scrap": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-boar-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-voulge-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-fork-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-ranseur-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "@shovel-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "blade-scrap-scrap": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "blade-forlorn-iron": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "blade-falx-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "blade-gladius-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "blade-arming-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "blade-claymore-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "bow-simple": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "bow-crude": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "bow-long": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "@knife-generic-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "knife-khanjar-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "knife-baselard-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "knife-stiletto-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "knife-dagger-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "shield-crude": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        }
+      }
+    },
+    "EditableByType": {
+      "type": "object",
+      "properties": {
+        "book-normal-*": {
+          "type": "boolean"
+        }
+      }
+    },
+    "InContainerTextureByType": {
+      "type": "object",
+      "properties": {
+        "*-raw": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "*-cooked": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "*-cured": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "*-soaked": {
+          "$ref": "#/definitions/AttachShape"
+        }
+      }
+    },
+    "InFirePitProps": {
+      "type": "object",
+      "properties": {
+        "transform": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "useFirepitModel": {
+          "type": "string"
+        }
+      }
+    },
+    "InPieProperties": {
+      "type": "object",
+      "properties": {
+        "texture": {
+          "type": "string"
+        },
+        "partType": {
+          "type": "string"
+        },
+        "allowMixing": {
+          "type": "boolean"
+        }
+      }
+    },
+    "FoodTag": {
+      "type": "string"
+    },
+    "InPiePropertiesByType": {
+      "type": "object",
+      "properties": {
+        "*-raw": {
+          "$ref": "#/definitions/InPieProperties"
+        },
+        "*-cheddar-1slice": {
+          "$ref": "#/definitions/InPieProperties"
+        },
+        "*-blue-1slice": {
+          "$ref": "#/definitions/InPieProperties"
+        },
+        "*-pinkapple": {
+          "$ref": "#/definitions/InPieProperties"
+        },
+        "*-redapple": {
+          "$ref": "#/definitions/InPieProperties"
+        },
+        "*-yellowapple": {
+          "$ref": "#/definitions/InPieProperties"
+        },
+        "*": {
+          "$ref": "#/definitions/InPieProperties"
+        }
+      }
+    },
+    "BakingProperties": {
+      "type": "object",
+      "properties": {
+        "temp": {
+          "type": "integer"
+        },
+        "levelFrom": {
+          "type": "number"
+        },
+        "levelTo": {
+          "type": "number"
+        },
+        "startScaleY": {
+          "type": "number"
+        },
+        "endScaleY": {
+          "type": "number"
+        },
+        "resultCode": {
+          "type": "string"
+        },
+        "initialCode": {
+          "type": "string"
+        }
+      }
+    },
+    "JuiceablePropertiesByType": {
+      "type": "object",
+      "properties": {
+        "@*-(pinkapple|redapple|yellowapple)": {
+          "$ref": "#/definitions/@*(pinkapple|redapple|yellowapple)"
+        },
+        "*-olive": {},
+        "*": {
+          "$ref": "#/definitions/@*(pinkapple|redapple|yellowapple)"
+        }
+      }
+    },
+    "@*(pinkapple|redapple|yellowapple)": {
+      "type": "object",
+      "properties": {
+        "litresPerItem": {
+          "type": "number"
+        },
+        "liquidStack": {
+          "$ref": "#/definitions/LiquidStack"
+        },
+        "pressedStack": {
+          "$ref": "#/definitions/LiquidStack"
+        }
+      }
+    },
+    "LiquidStack": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "stacksize": {
+          "type": "integer"
+        }
+      }
+    },
+    "NutritionPropsWhenInMealByType": {
+      "type": "object",
+      "properties": {
+        "*-flax": {
+          "$ref": "#/definitions/NutritionPropsPerLitre"
+        },
+        "*-rice": {
+          "$ref": "#/definitions/NutritionPropsPerLitre"
+        },
+        "*": {
+          "$ref": "#/definitions/NutritionPropsPerLitre"
+        }
+      }
+    },
+    "ToolrackTransformByType": {
+      "type": "object",
+      "properties": {
+        "*-scrap": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "axe-bardiche-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "axe-battle-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "axe-double-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "axe-bearded-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-generic-wood": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-flanged-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-morningstar-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-spiked-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "club-warhammer-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "@hoe-(copper|tinbronze|bismuthbronze|blackbronze|gold|silver|iron|meteoriciron|steel)": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-scrap-scrap": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "@spear-generic-(copper|tinbronze|bismuthbronze|blackbronze|ornategold|hacking|ornatesilver)": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-voulge-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-fork-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-ranseur-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "spear-boar-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "blade-scrap-scrap": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "blade-blackguard-iron": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "blade-forlorn-iron": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "blade-claymore-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "*-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "bow-long": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "knife-dagger-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "knife-stiletto-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "knife-khanjar-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "knife-baselard-ruined": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "shield-blackguard": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "shield-crude": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        }
+      }
+    },
+    "CodePrefixe": {
+      "type": "string"
+    },
+    "DisallowedSuffixe": {
+      "type": "string"
+    },
+    "Shield": {
+      "type": "object",
+      "properties": {
+        "blockSound": {
+          "type": "string"
+        },
+        "protectionChance": {
+          "$ref": "#/definitions/ProtectionChance"
+        },
+        "damageAbsorptionByType": {
+          "$ref": "#/definitions/DamageAbsorptionByType"
+        }
+      }
+    },
+    "ProtectionChance": {
+      "type": "object",
+      "properties": {
+        "passive": {
+          "type": "integer"
+        },
+        "active": {
+          "type": "integer"
+        }
+      }
+    },
+    "DamageAbsorptionByType": {
+      "type": "object",
+      "properties": {
+        "*-crude": {
+          "$ref": "#/definitions/ProtectionChance"
+        },
+        "*-woodmetal": {
+          "$ref": "#/definitions/ProtectionChance"
+        },
+        "*-woodmetalleather": {
+          "$ref": "#/definitions/ProtectionChance"
+        },
+        "*-metal": {
+          "$ref": "#/definitions/ProtectionChance"
+        },
+        "*-blackguard": {
+          "$ref": "#/definitions/ProtectionChance"
+        }
+      }
+    },
+    "VariantGroups": {
+      "type": "object",
+      "properties": {
+        "metal": {
+          "$ref": "#/definitions/Anonymous69"
+        },
+        "wood": {
+          "$ref": "#/definitions/Anonymous68"
+        },
+        "color": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Color"
+          }
+        },
+        "deco": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Deco"
+          }
+        }
+      }
+    },
+    "Metal": {
+      "type": "string"
+    },
+    "Wood": {
+      "type": "string"
+    },
+    "Color": {
+      "type": "string"
+    },
+    "Deco": {
+      "type": "string"
+    },
+    "Anonymous68": {
+      "type": "object",
+      "properties": {
+        "aged": {
+          "type": "integer"
+        },
+        "ebony": {
+          "type": "integer"
+        },
+        "purpleheart": {
+          "type": "integer"
+        },
+        "oak": {
+          "type": "integer"
+        }
+      }
+    },
+    "Anonymous69": {
+      "type": "object",
+      "properties": {
+        "bismuthbronze": {
+          "type": "integer"
+        },
+        "gold": {
+          "type": "integer"
+        },
+        "silver": {
+          "type": "integer"
+        },
+        "blackbronze": {
+          "type": "integer"
+        },
+        "iron": {
+          "type": "integer"
+        },
+        "meteoriciron": {
+          "type": "integer"
+        },
+        "steel": {
+          "type": "integer"
+        }
+      }
+    },
+    "AllowedVariant": {
+      "type": "object",
+      "properties": {
+        "construction": {
+          "type": "string"
+        },
+        "wood": {
+          "type": "string"
+        },
+        "metal": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        },
+        "deco": {
+          "type": "string"
+        }
+      }
+    },
+    "WorkableTemperatureByType": {
+      "type": "object",
+      "properties": {
+        "ingot-lead": {
+          "type": "integer"
+        },
+        "ingot-tin": {
+          "type": "integer"
+        },
+        "ingot-leadsolder": {
+          "type": "integer"
+        }
+      }
+    },
+    "RequiresAnvilTierByType": {
+      "type": "object",
+      "properties": {
+        "ingot-meteoriciron": {
+          "type": "integer"
+        },
+        "ingot-blistersteel": {
+          "type": "integer"
+        }
+      }
+    },
+    "CarburizablePropsByType": {
+      "type": "object",
+      "properties": {
+        "ingot-iron": {
+          "$ref": "#/definitions/IngotIron"
+        }
+      }
+    },
+    "IngotIron": {
+      "type": "object",
+      "properties": {
+        "carburizedOutput": {
+          "$ref": "#/definitions/Stack"
+        }
+      }
+    },
+    "CraftingResult": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer"
+        }
+      }
+    },
+    "PlantContainable": {
+      "type": "object",
+      "properties": {
+        "smallContainer": {
+          "$ref": "#/definitions/SmallContainer"
+        },
+        "largeContainer": {
+          "$ref": "#/definitions/SmallContainer"
+        }
+      }
+    },
+    "SmallContainer": {
+      "type": "object",
+      "properties": {
+        "shape": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "textures": {
+          "$ref": "#/definitions/Textures"
+        }
+      }
+    },
+    "Textures": {
+      "type": "object",
+      "properties": {
+        "north": {
+          "$ref": "#/definitions/AttachShape"
+        },
+        "south": {
+          "$ref": "#/definitions/AttachShape"
+        }
+      }
+    },
+    "PigmentByType": {
+      "type": "object",
+      "properties": {
+        "*-bituminouscoal": {
+          "$ref": "#/definitions/*Bituminouscoal"
+        },
+        "*-lapislazuli": {
+          "$ref": "#/definitions/*Bituminouscoal"
+        },
+        "ore-cinnabar": {
+          "$ref": "#/definitions/*Bituminouscoal"
+        },
+        "*-malachite": {
+          "$ref": "#/definitions/*Bituminouscoal"
+        }
+      }
+    },
+    "*Bituminouscoal": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "color": {
+          "$ref": "#/definitions/Anonymous81"
+        }
+      }
+    },
+    "Anonymous81": {
+      "type": "object",
+      "properties": {
+        "red": {
+          "type": "integer"
+        },
+        "green": {
+          "type": "integer"
+        },
+        "blue": {
+          "type": "integer"
+        }
+      }
+    },
+    "CokeConversionRateByType": {
+      "type": "object",
+      "properties": {
+        "*-bituminouscoal": {
+          "type": "number"
+        },
+        "*-lignite": {
+          "type": "number"
+        }
+      }
+    },
+    "Currency": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "integer"
+        }
+      }
+    },
+    "CrushedOutput": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "stacksize": {
+          "type": "integer"
+        },
+        "attributes": {
+          "$ref": "#/definitions/Anonymous85"
+        }
+      }
+    },
+    "Anonymous85": {
+      "type": "object",
+      "properties": {
+        "crushingtier": {
+          "type": "string"
+        }
+      }
+    },
+    "MetalUnitsByType": {
+      "type": "object",
+      "properties": {
+        "*-poor-cassiterite-*": {
+          "type": "integer"
+        },
+        "*-medium-cassiterite-*": {
+          "type": "integer"
+        },
+        "*-rich-cassiterite-*": {
+          "type": "integer"
+        },
+        "*-bountiful-cassiterite-*": {
+          "type": "integer"
+        },
+        "*-poor-hematite-*": {
+          "type": "integer"
+        },
+        "*-medium-hematite-*": {
+          "type": "integer"
+        },
+        "*-rich-hematite-*": {
+          "type": "integer"
+        },
+        "*-bountiful-hematite-*": {
+          "type": "integer"
+        },
+        "*-poor-quartz_nativesilver-*": {
+          "type": "integer"
+        },
+        "*-medium-quartz_nativesilver-*": {
+          "type": "integer"
+        },
+        "*-rich-quartz_nativesilver-*": {
+          "type": "integer"
+        },
+        "*-bountiful-quartz_nativesilver-*": {
+          "type": "integer"
+        },
+        "*-poor-quartz_nativegold-*": {
+          "type": "integer"
+        },
+        "*-medium-quartz_nativegold-*": {
+          "type": "integer"
+        },
+        "*-rich-quartz_nativegold-*": {
+          "type": "integer"
+        },
+        "*-bountiful-quartz_nativegold-*": {
+          "type": "integer"
+        },
+        "*-poor-*": {
+          "type": "integer"
+        },
+        "*-medium-*": {
+          "type": "integer"
+        },
+        "*-rich-*": {
+          "type": "integer"
+        },
+        "*-bountiful-*": {
+          "type": "integer"
+        },
+        "ore-poor-cassiterite-*": {
+          "type": "integer"
+        },
+        "ore-medium-cassiterite-*": {
+          "type": "integer"
+        },
+        "ore-rich-cassiterite-*": {
+          "type": "integer"
+        },
+        "ore-bountiful-cassiterite-*": {
+          "type": "integer"
+        },
+        "ore-poor-hematite-*": {
+          "type": "integer"
+        },
+        "ore-medium-hematite-*": {
+          "type": "integer"
+        },
+        "ore-rich-hematite-*": {
+          "type": "integer"
+        },
+        "ore-bountiful-hematite-*": {
+          "type": "integer"
+        },
+        "ore-poor-quartz_nativesilver-*": {
+          "type": "integer"
+        },
+        "ore-medium-quartz_nativesilver-*": {
+          "type": "integer"
+        },
+        "ore-rich-quartz_nativesilver-*": {
+          "type": "integer"
+        },
+        "ore-bountiful-quartz_nativesilver-*": {
+          "type": "integer"
+        },
+        "ore-poor-quartz_nativegold-*": {
+          "type": "integer"
+        },
+        "ore-medium-quartz_nativegold-*": {
+          "type": "integer"
+        },
+        "ore-rich-quartz_nativegold-*": {
+          "type": "integer"
+        },
+        "ore-bountiful-quartz_nativegold-*": {
+          "type": "integer"
+        },
+        "ore-poor-*": {
+          "type": "integer"
+        },
+        "ore-medium-*": {
+          "type": "integer"
+        },
+        "ore-rich-*": {
+          "type": "integer"
+        },
+        "ore-bountiful-*": {
+          "type": "integer"
+        }
+      }
+    },
+    "OnAntlerMountTransformByType": {
+      "type": "object",
+      "properties": {
+        "antler-whitetail-01": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-whitetail-02": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-whitetail-03": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-whitetail-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-redbrocket-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-marsh-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-caribou-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-pudu-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-elk-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-taruca-01": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-taruca-02": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-taruca-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-guemal-01": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-guemal-02": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-guemal-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-chital-01": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-chital-02": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-chital-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-pampas-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-fallow-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-moose-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-angora-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-ibexalp-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-ibexnub-04": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-ibexnub-05": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-ibexnub-06": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-ibexnub-07": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-ibexnub-08": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-ibexnub-09": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-ibexnub-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-markhor-01": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-markhor-02": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-markhor-03": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-markhor-04": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-markhor-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-mountain-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-muskox-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-nubian-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-sirohi-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-takingold-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-turdag-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "antler-valais-*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        },
+        "*": {
+          "$ref": "#/definitions/OnDisplayTransform"
+        }
+      }
+    },
+    "FertilizerProps": {
+      "type": "object",
+      "properties": {
+        "n": {
+          "type": "integer"
+        },
+        "p": {
+          "type": "integer"
+        },
+        "k": {
+          "type": "integer"
+        },
+        "permaboost": {
+          "$ref": "#/definitions/Permaboost"
+        }
+      }
+    },
+    "Permaboost": {
+      "type": "object",
+      "properties": {
+        "n": {
+          "type": "integer"
+        },
+        "p": {
+          "type": "integer"
+        },
+        "k": {
+          "type": "integer"
+        },
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "WarmthByType": {
+      "type": "object",
+      "properties": {
+        "*-peasent-slippers*": {
+          "type": "number"
+        },
+        "*-noble-shoes": {
+          "type": "number"
+        },
+        "*-merchant-shoes": {
+          "type": "number"
+        },
+        "*-aristocrat-shoes": {
+          "type": "number"
+        },
+        "*-shepherd-sandals*": {
+          "type": "number"
+        },
+        "*-clockmaker-shoes": {
+          "type": "number"
+        },
+        "*-commoner-boots": {
+          "type": "integer"
+        },
+        "*-fur-lined-reindeer-herder-shoes": {
+          "type": "integer"
+        },
+        "*-hunter-boots": {
+          "type": "number"
+        },
+        "*-worn-leather-boots": {
+          "type": "number"
+        },
+        "*-soldier-boots": {
+          "type": "number"
+        },
+        "*-wool-lined-knee-high-boots": {
+          "type": "number"
+        },
+        "*-knee-high-fur-boots": {
+          "type": "integer"
+        },
+        "*-malefactor-boots": {
+          "type": "integer"
+        },
+        "*": {
+          "type": "integer"
+        },
+        "*-fortune-teller-hip-scarf": {
+          "type": "number"
+        },
+        "*-noble-sash": {
+          "type": "number"
+        },
+        "*-malefactor-sash": {
+          "type": "number"
+        },
+        "*-aristocrat-belt": {
+          "type": "number"
+        },
+        "*-cerise-embroidered-reindeer-herder-waistband": {
+          "type": "number"
+        },
+        "*-reindeer-herder-waistband": {
+          "type": "number"
+        },
+        "*-tailor-belt": {
+          "type": "number"
+        },
+        "*-miner": {
+          "type": "number"
+        },
+        "*-heavy-belt": {
+          "type": "number"
+        },
+        "*-king": {
+          "type": "number"
+        },
+        "*-rottenking": {
+          "type": "number"
+        },
+        "*-marketeer": {
+          "type": "number"
+        },
+        "*-forlorn-belt": {
+          "type": "number"
+        },
+        "*-moss-embroidered-belt": {
+          "type": "number"
+        },
+        "*-messenger-belt": {
+          "type": "number"
+        },
+        "*-malefactor-cloak": {
+          "type": "number"
+        },
+        "*-blacksmith-apron": {
+          "type": "number"
+        },
+        "*-clockmaker-apron": {
+          "type": "number"
+        },
+        "*-noble-fur-collar": {
+          "type": "integer"
+        },
+        "*-hooded-cape": {
+          "type": "integer"
+        },
+        "*-scarf": {
+          "type": "integer"
+        },
+        "*-kaftan": {
+          "type": "integer"
+        },
+        "*-poncho": {
+          "type": "integer"
+        },
+        "*-mantle": {
+          "type": "integer"
+        },
+        "*-coat": {
+          "type": "integer"
+        },
+        "*-fur": {
+          "type": "integer"
+        },
+        "*-robe": {
+          "type": "integer"
+        },
+        "*-moonrobe": {
+          "type": "integer"
+        },
+        "*-tunic": {
+          "type": "integer"
+        },
+        "*-sash": {
+          "type": "number"
+        },
+        "*-rotwalker": {
+          "type": "integer"
+        }
+      }
+    },
+    "DisableElementsByType": {
+      "type": "object",
+      "properties": {
+        "*-malefactor-cloak": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/*MalefactorCloak"
+          }
+        },
+        "*-stained-leather-poncho": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/*StainedLeatherPoncho"
+          }
+        },
+        "*-miner": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/*Miner"
+          }
+        },
+        "*-survivor": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/*Survivor"
+          }
+        },
+        "*-marketeer": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/*Marketeer"
+          }
+        },
+        "*-scribe": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/*Scribe"
+          }
+        },
+        "armor-head-sewn-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadSewn*"
+          }
+        },
+        "armor-head-tailored-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadTailored*"
+          }
+        },
+        "armor-head-brigandine-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadBrigandine*"
+          }
+        },
+        "armor-head-chain-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadChain*"
+          }
+        },
+        "armor-head-scale-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadScale*"
+          }
+        },
+        "armor-head-plate-tinbronze": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadPlateTinbronze"
+          }
+        },
+        "armor-head-plate-blackbronze": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadPlateBlackbronze"
+          }
+        },
+        "armor-head-plate-bismuthbronze": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadPlateBismuthbronze"
+          }
+        },
+        "armor-head-plate-iron": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadPlateIron"
+          }
+        },
+        "armor-head-plate-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadPlate*"
+          }
+        },
+        "armor-head-antique-*-pristine": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadAntique*Pristine"
+          }
+        },
+        "armor-head-antique-forlorn-damaged": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadAntiqueForlornDamaged"
+          }
+        },
+        "armor-head-antique-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHeadAntique*"
+          }
+        },
+        "armor-head-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorHead*"
+          }
+        },
+        "armor-body-improvised-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorBodyImprovised*"
+          }
+        },
+        "armor-body-*": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ArmorBody*"
+          }
+        }
+      }
+    },
+    "*MalefactorCloak": {
+      "type": "string"
+    },
+    "*StainedLeatherPoncho": {
+      "type": "string"
+    },
+    "*Miner": {
+      "type": "string"
+    },
+    "*Survivor": {
+      "type": "string"
+    },
+    "*Marketeer": {
+      "type": "string"
+    },
+    "*Scribe": {
+      "type": "string"
+    },
+    "ArmorHeadSewn*": {
+      "type": "string"
+    },
+    "ArmorHeadTailored*": {
+      "type": "string"
+    },
+    "ArmorHeadBrigandine*": {
+      "type": "string"
+    },
+    "ArmorHeadChain*": {
+      "type": "string"
+    },
+    "ArmorHeadScale*": {
+      "type": "string"
+    },
+    "ArmorHeadPlateTinbronze": {
+      "type": "string"
+    },
+    "ArmorHeadPlateBlackbronze": {
+      "type": "string"
+    },
+    "ArmorHeadPlateBismuthbronze": {
+      "type": "string"
+    },
+    "ArmorHeadPlateIron": {
+      "type": "string"
+    },
+    "ArmorHeadPlate*": {
+      "type": "string"
+    },
+    "ArmorHeadAntique*Pristine": {
+      "type": "string"
+    },
+    "ArmorHeadAntiqueForlornDamaged": {
+      "type": "string"
+    },
+    "ArmorHeadAntique*": {
+      "type": "string"
+    },
+    "ArmorHead*": {
+      "type": "string"
+    },
+    "ArmorBodyImprovised*": {
+      "type": "string"
+    },
+    "ArmorBody*": {
+      "type": "string"
+    },
+    "ClothescategoryByType": {
+      "type": "object",
+      "properties": {
+        "armor-head-*": {
+          "type": "string"
+        },
+        "armor-body-*": {
+          "type": "string"
+        },
+        "armor-legs-*": {
+          "type": "string"
+        }
+      }
+    },
+    "DefaultProtLoss": {
+      "type": "object",
+      "properties": {
+        "perTierRelativeProtectionLoss": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PerTierRelativeProtectionLos"
+          }
+        },
+        "perTierFlatDamageReductionLoss": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PerTierFlatDamageReductionLos"
+          }
+        }
+      }
+    },
+    "PerTierRelativeProtectionLos": {
+      "type": "number"
+    },
+    "PerTierFlatDamageReductionLos": {
+      "type": "number"
+    },
+    "FootStepSoundByType": {
+      "type": "object",
+      "properties": {
+        "armor-body-jerkin-*": {
+          "type": "string"
+        },
+        "armor-body-sewn-*": {
+          "type": "string"
+        },
+        "armor-body-tailored-*-linen": {
+          "type": "string"
+        },
+        "armor-body-lamellar-wood": {
+          "type": "string"
+        },
+        "armor-body-lamellar-*": {
+          "type": "string"
+        },
+        "armor-body-brigandine-*": {
+          "type": "string"
+        },
+        "armor-body-chain-*": {
+          "type": "string"
+        },
+        "armor-body-scale-*": {
+          "type": "string"
+        },
+        "armor-body-plate-*": {
+          "type": "string"
+        },
+        "armor-body-antique-blackguard-*": {
+          "type": "string"
+        },
+        "armor-body-antique-forlorn-*": {
+          "type": "string"
+        }
+      }
+    },
+    "ProtectionModifiersByType": {
+      "type": "object",
+      "properties": {
+        "armor-*-improvised-wood": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-jerkin-leather": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-sewn-leather": {
+          "$ref": "#/definitions/Armor*SewnLeather"
+        },
+        "armor-*-sewn-linen": {
+          "$ref": "#/definitions/Armor*SewnLeather"
+        },
+        "armor-*-tailored-*-linen": {
+          "$ref": "#/definitions/Armor*SewnLeather"
+        },
+        "armor-*-lamellar-wood": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-lamellar-copper": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-lamellar-tinbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-lamellar-bismuthbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-lamellar-blackbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-lamellar-iron": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-lamellar-steel": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-brigandine-copper": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-brigandine-tinbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-brigandine-bismuthbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-brigandine-blackbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-brigandine-iron": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-brigandine-meteoriciron": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-brigandine-steel": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-chain-copper": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-chain-gold": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-chain-silver": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-chain-tinbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-chain-bismuthbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-chain-blackbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-chain-iron": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-chain-meteoriciron": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-chain-steel": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-scale-copper": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-scale-tinbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-scale-bismuthbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-scale-blackbronze": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-scale-iron": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-scale-meteoriciron": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-scale-steel": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-plate-copper": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-plate-gold": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-plate-silver": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-plate-tinbronze": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-plate-bismuthbronze": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-plate-blackbronze": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-plate-iron": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-plate-meteoriciron": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-plate-steel": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-antique-blackguard-pristine": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-antique-blackguard-broken": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-antique-blackguard-damaged": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        },
+        "armor-*-antique-forlorn-pristine": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-antique-forlorn-damaged": {
+          "$ref": "#/definitions/Armor*PlateCopper"
+        },
+        "armor-*-antique-forlorn-broken": {
+          "$ref": "#/definitions/Armor*ImprovisedWood"
+        }
+      }
+    },
+    "Armor*ImprovisedWood": {
+      "type": "object",
+      "properties": {
+        "relativeProtection": {
+          "type": "number"
+        },
+        "flatDamageReduction": {
+          "type": "number"
+        },
+        "protectionTier": {
+          "type": "integer"
+        }
+      }
+    },
+    "Armor*SewnLeather": {
+      "type": "object",
+      "properties": {
+        "relativeProtection": {
+          "type": "number"
+        },
+        "flatDamageReduction": {
+          "type": "number"
+        },
+        "protectionTier": {
+          "type": "integer"
+        },
+        "perTierRelativeProtectionLoss": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Anonymous126"
+          }
+        },
+        "perTierFlatDamageReductionLoss": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Anonymous127"
+          }
+        }
+      }
+    },
+    "Anonymous122": {
+      "type": "number"
+    },
+    "Anonymous123": {
+      "type": "number"
+    },
+    "Anonymous124": {
+      "type": "number"
+    },
+    "Anonymous125": {
+      "type": "number"
+    },
+    "Anonymous126": {
+      "type": "number"
+    },
+    "Anonymous127": {
+      "type": "number"
+    },
+    "Armor*PlateCopper": {
+      "type": "object",
+      "properties": {
+        "relativeProtection": {
+          "type": "number"
+        },
+        "flatDamageReduction": {
+          "type": "number"
+        },
+        "highDamageTierResistant": {
+          "type": "boolean"
+        },
+        "protectionTier": {
+          "type": "integer"
+        }
+      }
+    },
+    "StatModifiersByType": {
+      "type": "object",
+      "properties": {
+        "armor-*-lamellar-*": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-sewn-linen": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-tailored-*-linen": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-brigandine-*": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-chain-*": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-scale-*": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-plate-*": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-antique-blackguard-pristine": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-antique-blackguard-damaged": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-antique-blackguard-broken": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-antique-forlorn-pristine": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-antique-forlorn-damaged": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        },
+        "armor-*-antique-forlorn-broken": {
+          "$ref": "#/definitions/Armor*Lamellar*"
+        }
+      }
+    },
+    "Armor*Lamellar*": {
+      "type": "object",
+      "properties": {
+        "rangedWeaponsAcc": {
+          "type": "number"
+        },
+        "rangedWeaponsSpeed": {
+          "type": "number"
+        },
+        "walkSpeed": {
+          "type": "number"
+        },
+        "healingeffectivness": {
+          "type": "number"
+        },
+        "hungerrate": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

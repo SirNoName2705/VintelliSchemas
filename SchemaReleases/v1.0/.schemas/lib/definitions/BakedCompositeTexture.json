@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "description": "An expanded, atlas-friendly version of a CompositeTexture",
+  "properties": {
+    "bakedName": {
+      "type": "string",
+      "description": "The Base name and Overlay concatenated (if there was any defined)"
+    },
+    "bakedTiles": {
+      "type": "array",
+      "description": "If non-null also contains BakedName",
+      "items": {
+        "$ref": "./BakedCompositeTexture.json#"
+      }
+    },
+    "bakedVariants": {
+      "type": "array",
+      "description": "If non-null also contains BakedName",
+      "items": {
+        "$ref": "./BakedCompositeTexture.json#"
+      }
+    },
+    "textureFilenames": {
+      "type": "array",
+      "description": "The base name and overlays as array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "textureSubId": {
+      "type": "integer",
+      "description": "Unique identifier for this texture",
+      "format": "int32"
+    },
+    "tilesWidth": {
+      "type": "integer",
+      "format": "int32"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

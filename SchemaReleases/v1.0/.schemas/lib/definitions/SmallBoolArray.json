@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "description": "Suitable for up to 32 bool values, though normally used only for 6.  Offers most of the methods available for a bool[], so can be dropped in to existing code",
+  "properties": {
+    "all": {
+      "type": "boolean"
+    },
+    "any": {
+      "type": "boolean"
+    },
+    "horizontals": {
+      "type": "boolean"
+    },
+    "sidesAndBase": {
+      "type": "boolean"
+    },
+    "verticals": {
+      "type": "boolean"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "description": "Represents a vector of 3 doubles. Go bug Tyron of you need more utility methods in this class.",
+  "properties": {
+    "asVec3i": {
+      "$ref": "./Vec3i.json#"
+    },
+    "x": {
+      "type": "number",
+      "format": "double"
+    },
+    "y": {
+      "type": "number",
+      "format": "double"
+    },
+    "z": {
+      "type": "number",
+      "format": "double"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

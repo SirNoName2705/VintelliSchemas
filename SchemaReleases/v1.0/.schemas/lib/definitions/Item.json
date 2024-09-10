@@ -1,0 +1,55 @@
+{
+  "allOf": [
+    {
+      "$ref": "./CollectibleObject.json#"
+    },
+    {
+      "type": "object",
+      "description": "Represents an in game Item of Vintage Story",
+      "properties": {
+        "firstTexture": {
+          "description": "Returns the first texture in Textures",
+          "oneOf": [
+            {
+              "$ref": "./CompositeTexture.json#"
+            }
+          ]
+        },
+        "id": {
+          "type": "integer",
+          "description": "The unique number of the item, dynamically assigned by the game",
+          "format": "int32"
+        },
+        "itemClass": {
+          "description": "The type of the collectible object",
+          "oneOf": [
+            {
+              "$ref": "./EnumItemClass.json#"
+            }
+          ]
+        },
+        "itemId": {
+          "type": "integer",
+          "description": "The unique number of the item, dynamically assigned by the game",
+          "format": "int32"
+        },
+        "shape": {
+          "description": "The items shape. Null for automatic shape based on the texture.",
+          "oneOf": [
+            {
+              "$ref": "./CompositeShape.json#"
+            }
+          ]
+        },
+        "textures": {
+          "type": "object",
+          "description": "Default textures to be used for this block",
+          "additionalProperties": {
+            "$ref": "./CompositeTexture.json#"
+          }
+        }
+      }
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "description": "A registerable object with variants, i.e. an item, a block or an entity",
+  "properties": {
+    "class": {
+      "type": "string",
+      "description": "The class handeling the object"
+    },
+    "code": {
+      "type": "string",
+      "description": "A unique domain + code of the object. Must be globally unique for all items / all blocks / all entities."
+    },
+    "variant": {
+      "type": "array",
+      "description": "Variant values as resolved from blocktype/itemtype. Will not throw an null pointer exception when the key does not exist, but return null instead. NOT set for entities - use entity.Properties.Variant instead",
+      "items": {
+        "$ref": "./KeyValuePairOfStringAndString.json#"
+      }
+    },
+    "variantStrict": {
+      "type": "array",
+      "description": "Variant values as resolved from blocktype/itemtype.  NOT set for entities - use entity.Properties.VariantStrict instead.",
+      "items": {
+        "$ref": "./KeyValuePairOfStringAndString.json#"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

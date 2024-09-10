@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "clientSideOptional": {
+      "type": "boolean",
+      "description": "If true, this behavior is not required on the client. This is here because copygirl doesn't stop asking for it. Probably breaks things. If it breaks things, complain to copygirl please :p"
+    },
+    "collObj": {
+      "description": "The collectible object (item or block) for this behavior instance.",
+      "oneOf": [
+        {
+          "$ref": "./CollectibleObject.json#"
+        }
+      ]
+    },
+    "propertiesAtString": {
+      "type": "string",
+      "description": "The properties of this block behavior."
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

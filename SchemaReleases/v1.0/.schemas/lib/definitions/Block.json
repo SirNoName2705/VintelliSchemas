@@ -1,0 +1,448 @@
+{
+  "allOf": [
+    {
+      "$ref": "./CollectibleObject.json#"
+    },
+    {
+      "type": "object",
+      "description": "Basic class for a placeable block",
+      "properties": {
+        "allCreaturesAllowed": {
+          "type": "boolean"
+        },
+        "allowSpawnCreatureGroups": {
+          "type": "array",
+          "description": "Defines what creature groups may spawn on this block",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allowStepWhenStuck": {
+          "type": "boolean"
+        },
+        "allSidesOpaque": {
+          "type": "boolean",
+          "description": "Sets the whole SideOpaque array to true"
+        },
+        "alternatingVOffset": {
+          "type": "boolean",
+          "description": "If true, the block will render with a UV offset enabling it to use the \"other half\" of a 64 x 64 texture on each alternate block position  (e.g. Redwood trunk)"
+        },
+        "alternatingVOffsetFaces": {
+          "type": "integer",
+          "description": "Bit flags for the direction in which the alternatingVOffset is to be applied e.g. 0x30 to apply alternatingVOffset as the y position moves up and down",
+          "format": "int32"
+        },
+        "ambientocclusion": {
+          "type": "boolean",
+          "description": "Currently not used"
+        },
+        "blockBehaviors": {
+          "type": "array",
+          "description": "Modifiers that can alter the behavior of a block, particularly when being placed or removed",
+          "items": {
+            "$ref": "./BlockBehavior.json#"
+          }
+        },
+        "blockEntityBehaviors": {
+          "type": "array",
+          "description": "Modifiers that can alter the behavior of a block entity",
+          "items": {
+            "$ref": "./BlockEntityBehaviorType.json#"
+          }
+        },
+        "blockId": {
+          "type": "integer",
+          "description": "Unique number of the block. Same as Id. This number depends on the order in which the blocks are order. The numbering is however always ensured to remain the same on a per world basis.",
+          "format": "int32"
+        },
+        "blockMaterial": {
+          "description": "A way to categorize blocks. Used for getting the mining speed for each tool type, amongst other things. Use GetBlockMaterial() to query if not performance critical.",
+          "oneOf": [
+            {
+              "$ref": "./EnumBlockMaterial.json#"
+            }
+          ]
+        },
+        "canStep": {
+          "type": "boolean"
+        },
+        "climateColorMap": {
+          "type": "string",
+          "description": "The color map for climate color mapping. Leave null for no coloring by climate"
+        },
+        "climateColorMapForMap": {
+          "type": "string"
+        },
+        "climateColorMapResolved": {
+          "$ref": "./ColorMap.json#"
+        },
+        "climbable": {
+          "type": "boolean",
+          "description": "Used for ladders. If true, walking against this blocks collisionbox will make the player climb"
+        },
+        "collisionBoxes": {
+          "type": "array",
+          "description": "Defines the area with which the player character collides with.",
+          "items": {
+            "$ref": "./Cuboidf.json#"
+          }
+        },
+        "cropProps": {
+          "description": "Information about the blocks as a crop",
+          "oneOf": [
+            {
+              "$ref": "./BlockCropProperties.json#"
+            }
+          ]
+        },
+        "customBlockLayerHandler": {
+          "type": "boolean"
+        },
+        "decorBehaviorFlags": {
+          "type": "integer",
+          "description": "To allow Decor Behavior settings to be accessed through the Block API.  See DecorFlags class for interpretation.",
+          "format": "byte"
+        },
+        "decorThickness": {
+          "type": "number",
+          "description": "Used to adjust selection box of parent block",
+          "format": "float"
+        },
+        "doNotRenderAtLod2": {
+          "type": "boolean"
+        },
+        "dragMultiplier": {
+          "type": "number",
+          "description": "Drag multiplier applied to entities standing on it",
+          "format": "float"
+        },
+        "drawType": {
+          "description": "If not set to JSON it will use an efficient hardcoded model",
+          "oneOf": [
+            {
+              "$ref": "./EnumDrawType.json#"
+            }
+          ]
+        },
+        "drops": {
+          "type": "array",
+          "description": "The items that should drop from breaking this block",
+          "items": {
+            "$ref": "./BlockDropItemStack.json#"
+          }
+        },
+        "emitSideAo": {
+          "type": "integer",
+          "description": "Defines which of the 6 block neighbours should receive AO if this block is in front of them",
+          "format": "byte"
+        },
+        "entityClass": {
+          "type": "string",
+          "description": "If this block has a block entity attached to it, this will store it's code"
+        },
+        "extraColorBits": {
+          "type": "integer",
+          "description": "Three extra color / season bits which may have meaning for specific blocks, such as leaves",
+          "format": "int32"
+        },
+        "faceCullMode": {
+          "description": "Determines which sides of the blocks should be rendered",
+          "oneOf": [
+            {
+              "$ref": "./EnumFaceCullMode.json#"
+            }
+          ]
+        },
+        "fastTextureVariants": {
+          "type": "array",
+          "description": "Fast array of texture variants, for use by cube (or similar) tesselators if the block has alternate shapes\nThe outer array is indexed based on the 6 BlockFacing.Index numerals; the inner array is the variants",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "./BakedCompositeTexture.json#"
+            }
+          }
+        },
+        "fertility": {
+          "type": "integer",
+          "description": "0 = nothing can grow, 10 = some tallgrass and small trees can be grow on it, 100 = all grass and trees can grow on it",
+          "format": "int32"
+        },
+        "firstTextureInventory": {
+          "description": "Returns the first textures in the TexturesInventory dictionary",
+          "oneOf": [
+            {
+              "$ref": "./CompositeTexture.json#"
+            }
+          ]
+        },
+        "forFluidsLayer": {
+          "type": "boolean",
+          "description": "Return true if this block should be stored in the fluids layer in chunks instead of the solid blocks layer (e.g. water, flowing water, lake ice)"
+        },
+        "frostable": {
+          "type": "boolean",
+          "description": "A bit uploaded to the shader to add a frost overlay below freezing temperature"
+        },
+        "hasAlternates": {
+          "type": "boolean",
+          "description": "A flag set during texture block shape tesselation"
+        },
+        "hasTiles": {
+          "type": "boolean"
+        },
+        "id": {
+          "type": "integer",
+          "description": "Returns the block id",
+          "format": "int32"
+        },
+        "interactionHelpYOffset": {
+          "type": "number",
+          "format": "float"
+        },
+        "itemClass": {
+          "description": "Returns EnumItemClass.Block",
+          "oneOf": [
+            {
+              "$ref": "./EnumItemClass.json#"
+            }
+          ]
+        },
+        "lightAbsorption": {
+          "type": "integer",
+          "description": "For light blocking blocks. Any value above 32 will completely block all light.",
+          "format": "int32"
+        },
+        "lightTraversable": {
+          "type": "array",
+          "description": "0: West-East\n1: Up-Down\n2: North-South",
+          "items": {
+            "type": "boolean"
+          }
+        },
+        "liquidCode": {
+          "type": "string",
+          "description": "If this block is or contains a liquid, this should be the code (or \"identifier\") of the liquid"
+        },
+        "liquidLevel": {
+          "type": "integer",
+          "description": "Value between 0..7 for Liquids to determine the height of the liquid",
+          "format": "int32"
+        },
+        "loadColorMapAnyway": {
+          "type": "boolean"
+        },
+        "lod0Mesh": {
+          "$ref": "./MeshData.json#"
+        },
+        "lod0Shape": {
+          "$ref": "./CompositeShape.json#"
+        },
+        "lod2Mesh": {
+          "$ref": "./MeshData.json#"
+        },
+        "lod2Shape": {
+          "$ref": "./CompositeShape.json#"
+        },
+        "notSnowCovered": {
+          "$ref": "./Block.json#"
+        },
+        "partialSelection": {
+          "type": "boolean",
+          "description": "If true, players can target individual selection boxes of the block"
+        },
+        "particleCollisionBoxes": {
+          "type": "array",
+          "description": "Defines the area with which particles collide with (if null, will be the same as CollisionBoxes).",
+          "items": {
+            "$ref": "./Cuboidf.json#"
+          }
+        },
+        "placedPriorityInteract": {
+          "type": "boolean",
+          "description": "If true, when the player holds the sneak key and right clicks this block, calls the blocks OnBlockInteractStart first, the items OnHeldInteractStart second. Without it the order is reversed."
+        },
+        "pushVector": {
+          "description": "Entity pushing while an entity is inside this block. Read from attributes because i'm lazy.",
+          "oneOf": [
+            {
+              "$ref": "./Vec3d.json#"
+            }
+          ]
+        },
+        "rainPermeable": {
+          "type": "boolean",
+          "description": "Will be used for not rendering rain below this block"
+        },
+        "randomDrawOffset": {
+          "type": "integer",
+          "description": "If true then the block will be randomly offseted by 1/3 of a block when placed",
+          "format": "int32"
+        },
+        "randomizeAxes": {
+          "description": "Random texture selection - whether or not to use the Y axis during randomization (for multiblock plants)",
+          "oneOf": [
+            {
+              "$ref": "./EnumRandomizeAxes.json#"
+            }
+          ]
+        },
+        "randomizeRotations": {
+          "type": "boolean"
+        },
+        "randomSizeAdjust": {
+          "type": "number",
+          "format": "float"
+        },
+        "remapToLiquidsLayer": {
+          "type": "string",
+          "description": "Return non-null if this block should have water (or ice) placed in its position in the fluids layer when updating from 1.16 to 1.17"
+        },
+        "renderPass": {
+          "description": "During which render pass this block should be rendered",
+          "oneOf": [
+            {
+              "$ref": "./EnumChunkRenderPass.json#"
+            }
+          ]
+        },
+        "replaceable": {
+          "type": "integer",
+          "description": "A value usually between 0-9999 that indicates which blocks may be replaced with others.\n- Any block with replaceable value above 5000 will be washed away by water\n- Any block with replaceable value above 6000 will replaced when the player tries to place a block\nExamples:\n0 = Bedrock\n6000 = Tallgrass\n9000 = Lava\n9500 = Water\n9999 = Air",
+          "format": "int32"
+        },
+        "requiredMiningTier": {
+          "type": "integer",
+          "description": "The mining tier required to break this block",
+          "format": "int32"
+        },
+        "resistance": {
+          "type": "number",
+          "description": "How long it takes to break this block in seconds. Use GetResistance() to query if not performance critical.",
+          "format": "float"
+        },
+        "seasonColorMap": {
+          "type": "string",
+          "description": "The color map for season color mapping. Leave null for no coloring by season"
+        },
+        "seasonColorMapForMap": {
+          "type": "string"
+        },
+        "seasonColorMapResolved": {
+          "$ref": "./ColorMap.json#"
+        },
+        "selectionBoxes": {
+          "type": "array",
+          "description": "Defines the area which the players mouse pointer collides with for selection.",
+          "items": {
+            "$ref": "./Cuboidf.json#"
+          }
+        },
+        "shape": {
+          "description": "The default json block shape to be used when drawtype==JSON",
+          "oneOf": [
+            {
+              "$ref": "./CompositeShape.json#"
+            }
+          ]
+        },
+        "shapeInventory": {
+          "description": "The block shape to be used when displayed in the inventory gui, held in hand or dropped on the ground",
+          "oneOf": [
+            {
+              "$ref": "./CompositeShape.json#"
+            }
+          ]
+        },
+        "shapeUsesColormap": {
+          "type": "boolean",
+          "description": "Internal value that's set during if the block shape has any tint indexes for use in chunk tesselation and stuff O_O"
+        },
+        "sideAo": {
+          "type": "array",
+          "description": "Defines which of the 6 block side should be shaded with ambient occlusion",
+          "items": {
+            "type": "boolean"
+          }
+        },
+        "sideOpaque": {
+          "type": "array",
+          "description": "Defines which of the 6 block sides are completely opaque. Used to determine which block faces can be culled during tesselation.",
+          "items": {
+            "type": "boolean"
+          }
+        },
+        "sideSolid": {
+          "description": "Defines which of the 6 block side are solid. Used to determine if attachable blocks can be attached to this block. Also used to determine if snow can rest on top of this block.",
+          "oneOf": [
+            {
+              "$ref": "./SmallBoolArray.json#"
+            }
+          ]
+        },
+        "snowCovered1": {
+          "$ref": "./Block.json#"
+        },
+        "snowCovered2": {
+          "$ref": "./Block.json#"
+        },
+        "snowCovered3": {
+          "$ref": "./Block.json#"
+        },
+        "snowLevel": {
+          "type": "number",
+          "format": "float"
+        },
+        "sounds": {
+          "description": "The sounds played for this block during step, break, build and walk. Use GetSounds() to query if not performance critical.",
+          "oneOf": [
+            {
+              "$ref": "./BlockSounds.json#"
+            }
+          ]
+        },
+        "splitDropStacks": {
+          "type": "boolean",
+          "description": "If true, a blocks drops will be split into stacks of stacksize 1 for more game juice. This field is only used in OnBlockBroken() and OnBlockExploded()"
+        },
+        "textures": {
+          "type": "object",
+          "description": "Default textures to be used for this block\n(may be null, on servers prior to reading blockType, on clients prior to receipt of server assets)",
+          "additionalProperties": {
+            "$ref": "./CompositeTexture.json#"
+          }
+        },
+        "texturesInventory": {
+          "type": "object",
+          "description": "Textures to be used for this block in the inventory gui, held in hand or dropped on the ground\n(may be null, on servers prior to reading blockType, on clients prior to receipt of server assets)",
+          "additionalProperties": {
+            "$ref": "./CompositeTexture.json#"
+          }
+        },
+        "textureSubIdForBlockColor": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "traversalCost": {
+          "type": "number",
+          "format": "float"
+        },
+        "vertexFlags": {
+          "description": "Data thats passed on to the graphics card for every vertex of the blocks model",
+          "oneOf": [
+            {
+              "$ref": "./VertexFlags.json#"
+            }
+          ]
+        },
+        "walkSpeedMultiplier": {
+          "type": "number",
+          "description": "Walk speed when standing or inside this block",
+          "format": "float"
+        }
+      }
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

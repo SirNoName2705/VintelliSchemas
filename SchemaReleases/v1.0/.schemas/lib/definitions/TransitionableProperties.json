@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "properties": {
+    "freshHours": {
+      "description": "The amount of hours this item stays fresh / untransitioned",
+      "oneOf": [
+        {
+          "$ref": "./NatFloat.json#"
+        }
+      ]
+    },
+    "transitionedStack": {
+      "description": "The itemstack the item/block turns into upon transitioning",
+      "oneOf": [
+        {
+          "$ref": "./JsonItemStack.json#"
+        }
+      ]
+    },
+    "transitionHours": {
+      "description": "The amount of hours it takes for the item to transition",
+      "oneOf": [
+        {
+          "$ref": "./NatFloat.json#"
+        }
+      ]
+    },
+    "transitionRatio": {
+      "type": "number",
+      "description": "Conversion ratio of fresh stacksize to transitioned stack size",
+      "format": "float"
+    },
+    "type": {
+      "description": "What kind of transition can it make?",
+      "oneOf": [
+        {
+          "$ref": "./EnumTransitionType.json#"
+        }
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

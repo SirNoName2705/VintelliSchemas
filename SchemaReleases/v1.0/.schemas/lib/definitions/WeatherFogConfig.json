@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "density": {
+      "$ref": "./NatFloat.json#"
+    },
+    "fogBrightness": {
+      "$ref": "./NatFloat.json#"
+    },
+    "mistDensity": {
+      "$ref": "./NatFloat.json#"
+    },
+    "mistYPos": {
+      "$ref": "./NatFloat.json#"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ItemType",
+  "definitions": {},
+  "allOf": [
+    {
+      "$ref": "../lib/definitions/CollectibleType.json#"
+    },
+    {
+      "type": "object"
+    },
+    {
+      "$ref": "../lib/assets/itemtypes-behaviors.json#"
+    },
+    {
+      "$ref": "../lib/assets/itemtypes-code.json#"
+    },
+    {
+      "$ref": "../lib/assets/itemtypes-entityClass.json#"
+    },
+    {
+      "$ref": "../lib/assets/itemtypes-class.json#"
+    },
+    {
+      "$ref": "../lib/assets/itemtypes-attributes.json#"
+    }
+  ]
+}

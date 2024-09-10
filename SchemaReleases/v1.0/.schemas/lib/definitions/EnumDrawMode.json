@@ -1,0 +1,15 @@
+{
+  "type": "string",
+  "description": "",
+  "x-enumNames": [
+    "Triangles",
+    "Lines",
+    "LineStrip"
+  ],
+  "enum": [
+    "triangles",
+    "lines",
+    "lineStrip"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

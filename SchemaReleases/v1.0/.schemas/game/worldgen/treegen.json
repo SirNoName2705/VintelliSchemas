@@ -1,0 +1,201 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TreeGenConfig",
+  "type": "object",
+  "properties": {
+    "branches": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/TreeGenBranch"
+      }
+    },
+    "heightMultiplier": {
+      "type": "number",
+      "format": "float"
+    },
+    "sizeMultiplier": {
+      "type": "number",
+      "format": "float"
+    },
+    "sizeVar": {
+      "$ref": "../../lib/definitions/NatFloat.json#"
+    },
+    "treeBlocks": {
+      "$ref": "#/definitions/TreeGenBlocks"
+    },
+    "treetype": {
+      "$ref": "../../lib/definitions/EnumTreeType.json#"
+    },
+    "trunks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/TreeGenTrunk"
+      }
+    },
+    "yOffset": {
+      "type": "integer",
+      "format": "int32"
+    }
+  },
+  "definitions": {
+    "TreeGenBranch": {
+      "type": "object",
+      "properties": {
+        "angleHori": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "angleHoriEvolve": {
+          "$ref": "../../lib/definitions/EvolvingNatFloat.json#"
+        },
+        "angleVert": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "angleVertEvolve": {
+          "$ref": "../../lib/definitions/EvolvingNatFloat.json#"
+        },
+        "branchHorizontalAngle": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "branchQuantity": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "branchQuantityEvolve": {
+          "$ref": "../../lib/definitions/EvolvingNatFloat.json#"
+        },
+        "branchSpacing": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "branchStart": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "branchVerticalAngle": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "branchWidthLossMul": {
+          "type": "number",
+          "format": "float"
+        },
+        "branchWidthMultiplier": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "branchWidthMultiplierEvolve": {
+          "$ref": "../../lib/definitions/EvolvingNatFloat.json#"
+        },
+        "dieAt": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "gravityDrag": {
+          "type": "number",
+          "format": "float"
+        },
+        "inherit": {
+          "$ref": "#/definitions/Inheritance"
+        },
+        "noLogs": {
+          "type": "boolean"
+        },
+        "randomWidthLoss": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "widthloss": {
+          "type": "number",
+          "format": "float"
+        },
+        "widthlossCurve": {
+          "type": "number",
+          "format": "float"
+        },
+        "widthMultiplier": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "Inheritance": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "skip": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "TreeGenBlocks": {
+      "type": "object",
+      "properties": {
+        "leavesBlockCode": {
+          "type": "string"
+        },
+        "leavesBranchyBlockCode": {
+          "type": "string"
+        },
+        "leavesLevels": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "logBlockCode": {
+          "type": "string"
+        },
+        "mossDecorCode": {
+          "type": "string"
+        },
+        "otherLogBlockCode": {
+          "type": "string"
+        },
+        "otherLogChance": {
+          "type": "number",
+          "format": "double"
+        },
+        "trunkSegmentBase": {
+          "type": "string"
+        },
+        "trunkSegmentVariants": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "vinesBlockCode": {
+          "type": "string"
+        },
+        "vinesEndBlockCode": {
+          "type": "string"
+        }
+      }
+    },
+    "TreeGenTrunk": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/TreeGenBranch"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "dx": {
+              "type": "number",
+              "format": "float"
+            },
+            "dz": {
+              "type": "number",
+              "format": "float"
+            },
+            "probability": {
+              "type": "number",
+              "format": "float"
+            },
+            "segment": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
