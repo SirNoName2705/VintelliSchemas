@@ -1,0 +1,269 @@
+{
+  "allOf": [
+    {
+      "$ref": "./RegistryObject.json#"
+    },
+    {
+      "type": "object",
+      "description": "Contains all properties shared by Blocks and Items",
+      "properties": {
+        "attackPower": {
+          "type": "number",
+          "description": "How much damage this collectible deals when used as a weapon",
+          "format": "float"
+        },
+        "attackRange": {
+          "type": "number",
+          "description": "Until how for away can you attack entities using this collectibe",
+          "format": "float"
+        },
+        "attributes": {
+          "description": "Custom Attributes that's always assiociated with this item",
+          "oneOf": [
+            {
+              "$ref": "./JsonObject.json#"
+            }
+          ]
+        },
+        "collectibleBehaviors": {
+          "type": "array",
+          "description": "Modifiers that can alter the behavior of the item or block, mostly for held interaction",
+          "items": {
+            "$ref": "./CollectibleBehavior.json#"
+          }
+        },
+        "combustibleProps": {
+          "description": "Information about the burnable states",
+          "oneOf": [
+            {
+              "$ref": "./CombustibleProperties.json#"
+            }
+          ]
+        },
+        "creativeInventoryStacks": {
+          "type": "array",
+          "description": "If you want to add itemstacks with custom attributes to the creative inventory, add them to this list",
+          "items": {
+            "$ref": "./CreativeTabAndStackList.json#"
+          }
+        },
+        "creativeInventoryTabs": {
+          "type": "array",
+          "description": "List of creative tabs in which this collectible should appear in",
+          "items": {
+            "type": "string"
+          }
+        },
+        "crushingProps": {
+          "description": "If set, the collectible can be crushed into something else",
+          "oneOf": [
+            {
+              "$ref": "./CrushingProperties.json#"
+            }
+          ]
+        },
+        "damagedBy": {
+          "type": "array",
+          "description": "From which damage sources does the item takes durability damage",
+          "items": {
+            "$ref": "./EnumItemDamageSource.json#"
+          }
+        },
+        "dimensions": {
+          "description": "Physical size of this collectible, 0.5 x 0.5 x 0.5 meters by default",
+          "oneOf": [
+            {
+              "$ref": "./Size3f.json#"
+            }
+          ]
+        },
+        "durability": {
+          "type": "integer",
+          "description": "How many uses does this collectible has when being used. Item disappears at durability 0",
+          "format": "int32"
+        },
+        "fpHandTransform": {
+          "description": "Used for scaling, rotation or offseting the block when rendered in the first person mode hand",
+          "oneOf": [
+            {
+              "$ref": "./ModelTransform.json#"
+            }
+          ]
+        },
+        "grindingProps": {
+          "description": "If set, the collectible can be ground into something else",
+          "oneOf": [
+            {
+              "$ref": "./GrindingProperties.json#"
+            }
+          ]
+        },
+        "groundTransform": {
+          "description": "Used for scaling, rotation or offseting the rendered as a dropped item on the ground",
+          "oneOf": [
+            {
+              "$ref": "./ModelTransform.json#"
+            }
+          ]
+        },
+        "guiTransform": {
+          "description": "Used for scaling, rotation or offseting the block when rendered in guis",
+          "oneOf": [
+            {
+              "$ref": "./ModelTransform.json#"
+            }
+          ]
+        },
+        "heldLeftReadyAnimation": {
+          "type": "string",
+          "description": " "
+        },
+        "heldLeftTpIdleAnimation": {
+          "type": "string",
+          "description": "The animation to play in 3rd person mod when holding this collectible in the left hand"
+        },
+        "heldPriorityInteract": {
+          "type": "boolean",
+          "description": "If true, when the player holds the sneak key and right clicks with this item in hand, calls OnHeldInteractStart first. Without it, the order is reversed. Takes precedence over priority interact placed blocks."
+        },
+        "heldRightReadyAnimation": {
+          "type": "string",
+          "description": " "
+        },
+        "heldRightTpIdleAnimation": {
+          "type": "string",
+          "description": "The animation to play in 3rd person mod when holding this collectible in the right hand"
+        },
+        "heldSounds": {
+          "$ref": "./HeldSounds.json#"
+        },
+        "heldTpHitAnimation": {
+          "type": "string",
+          "description": "The animation to play in 3rd person mod when hitting with this collectible"
+        },
+        "heldTpUseAnimation": {
+          "type": "string",
+          "description": "The animation to play in 3rd person mod when using this collectible"
+        },
+        "isMissing": {
+          "type": "boolean",
+          "description": "This value is set the the BlockId or ItemId-Remapper if it encounters a block/item in the savegame,\nbut no longer exists as a loaded block/item"
+        },
+        "lightHsv": {
+          "type": "string",
+          "description": "For light emitting collectibles: hue, saturation and brightness value",
+          "format": "byte"
+        },
+        "liquidSelectable": {
+          "type": "boolean",
+          "description": "When true, liquids become selectable to the player when being held in hands"
+        },
+        "materialDensity": {
+          "type": "integer",
+          "description": "Determines on whether an object floats on liquids or not. Water has a density of 1000",
+          "format": "int32"
+        },
+        "matterState": {
+          "description": "Liquids are handled and rendered differently than solid blocks.",
+          "oneOf": [
+            {
+              "$ref": "./EnumMatterState.json#"
+            }
+          ]
+        },
+        "maxStackSize": {
+          "type": "integer",
+          "description": "Max amount of collectible that one default inventory slot can hold",
+          "format": "int32"
+        },
+        "miningSpeed": {
+          "type": "object",
+          "description": "Modifies how fast the player can break a block when holding this item",
+          "x-dictionaryKey": {
+            "$ref": "./EnumBlockMaterial.json#"
+          },
+          "additionalProperties": {
+            "type": "number",
+            "format": "float"
+          }
+        },
+        "nutritionProps": {
+          "description": "Information about the nutrition states",
+          "oneOf": [
+            {
+              "$ref": "./FoodNutritionProperties.json#"
+            }
+          ]
+        },
+        "particleProperties": {
+          "type": "array",
+          "description": "Particles that should spawn in regular intervals from this block or item when held in hands",
+          "items": {
+            "$ref": "./AdvancedParticleProperties.json#"
+          }
+        },
+        "renderAlphaTest": {
+          "type": "number",
+          "description": "Alpha test value for rendering in gui, fp hand, tp hand or on the ground",
+          "format": "float"
+        },
+        "storageFlags": {
+          "description": "Determines in which kind of bags the item can be stored in",
+          "oneOf": [
+            {
+              "$ref": "./EnumItemStorageFlags.json#"
+            }
+          ]
+        },
+        "tool": {
+          "description": "If set, this item will be classified as given tool",
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "./EnumTool.json#"
+            }
+          ]
+        },
+        "toolTier": {
+          "type": "integer",
+          "description": "What tier this block can mine when held in hands",
+          "format": "int32"
+        },
+        "topMiddlePos": {
+          "description": "The origin point from which particles are being spawned",
+          "oneOf": [
+            {
+              "$ref": "./Vec3f.json#"
+            }
+          ]
+        },
+        "tpHandTransform": {
+          "description": "Used for scaling, rotation or offseting the block when rendered in the third person mode hand",
+          "oneOf": [
+            {
+              "$ref": "./ModelTransform.json#"
+            }
+          ]
+        },
+        "tpOffHandTransform": {
+          "description": "Used for scaling, rotation or offseting the block when rendered in the third person mode offhand",
+          "oneOf": [
+            {
+              "$ref": "./ModelTransform.json#"
+            }
+          ]
+        },
+        "transitionableProps": {
+          "type": "array",
+          "description": "Information about the transitionable states",
+          "items": {
+            "$ref": "./TransitionableProperties.json#"
+          }
+        }
+      }
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

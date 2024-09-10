@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WorldProperty`1",
+  "type": "object",
+  "properties": {
+    "Code": {
+      "type": "string"
+    },
+    "Variants": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/T"
+      }
+    }
+  },
+  "definitions": {
+    "T": {
+      "type": "object"
+    }
+  }
+}

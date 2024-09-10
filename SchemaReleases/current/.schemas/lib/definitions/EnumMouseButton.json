@@ -1,0 +1,29 @@
+{
+  "type": "string",
+  "description": "",
+  "x-enumNames": [
+    "Left",
+    "Middle",
+    "Right",
+    "Button4",
+    "Button5",
+    "Button6",
+    "Button7",
+    "Button8",
+    "Wheel",
+    "None"
+  ],
+  "enum": [
+    "left",
+    "middle",
+    "right",
+    "button4",
+    "button5",
+    "button6",
+    "button7",
+    "button8",
+    "wheel",
+    "none"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

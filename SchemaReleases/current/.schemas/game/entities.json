@@ -1,0 +1,635 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "EntityType",
+  "definitions": {
+    "ClientEntityConfig": {
+      "type": "object",
+      "properties": {
+        "animations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AnimationMetaData"
+          }
+        },
+        "animationsByMetaCode": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/AnimationMetaData"
+          }
+        },
+        "behaviors": {
+          "type": "array",
+          "items": {
+            "$ref": "../lib/definitions/JsonObject.json#"
+          }
+        },
+        "firstTexture": {
+          "$ref": "../lib/definitions/CompositeTexture.json#"
+        },
+        "glowLevel": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "pitchStep": {
+          "type": "boolean"
+        },
+        "renderer": {
+          "type": "string"
+        },
+        "shape": {
+          "$ref": "../lib/definitions/CompositeShape.json#"
+        },
+        "size": {
+          "type": "number",
+          "format": "float"
+        },
+        "sizeGrowthFactor": {
+          "type": "number",
+          "format": "float"
+        },
+        "texture": {
+          "$ref": "../lib/definitions/CompositeTexture.json#"
+        },
+        "textures": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "../lib/definitions/CompositeTexture.json#"
+          }
+        }
+      }
+    },
+    "AnimationMetaData": {
+      "type": "object",
+      "properties": {
+        "animation": {
+          "type": "string",
+          "description": "The animations code identifier that we want to play"
+        },
+        "animationSpeed": {
+          "type": "number",
+          "format": "float"
+        },
+        "attributes": {
+          "$ref": "../lib/definitions/JsonObject.json#"
+        },
+        "blendMode": {
+          "$ref": "#/definitions/EnumAnimationBlendMode"
+        },
+        "clientSide": {
+          "type": "boolean",
+          "description": "If true, the server does not sync this animation"
+        },
+        "code": {
+          "type": "string",
+          "description": "Unique identifier to be able to reference this AnimationMetaData instance"
+        },
+        "codeCrc32": {
+          "type": "integer"
+        },
+        "easeInSpeed": {
+          "type": "number",
+          "description": "A multiplier applied to the weight value to \"ease in\" the animation. Choose a high value for looping animations or it will be glitchy",
+          "format": "float"
+        },
+        "easeOutSpeed": {
+          "type": "number",
+          "description": "A multiplier applied to the weight value to \"ease out\" the animation. Choose a high value for looping animations or it will be glitchy",
+          "format": "float"
+        },
+        "elementBlendMode": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/definitions/EnumAnimationBlendMode"
+          }
+        },
+        "elementWeight": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "number",
+            "format": "float"
+          }
+        },
+        "holdEyePosAfterEasein": {
+          "type": "number",
+          "format": "float"
+        },
+        "mulWithWalkSpeed": {
+          "type": "boolean"
+        },
+        "startFrameOnce": {
+          "type": "number",
+          "format": "float"
+        },
+        "supressDefaultAnimation": {
+          "type": "boolean"
+        },
+        "triggeredBy": {
+          "$ref": "#/definitions/AnimationTrigger"
+        },
+        "wasStartedFromTrigger": {
+          "type": "boolean"
+        },
+        "weight": {
+          "type": "number",
+          "format": "float"
+        },
+        "weightCapFactor": {
+          "type": "number",
+          "description": "This property can be used in cases where a animation with high weight is played alongside another animation with low element weight. In these cases, the easeIn become unaturally fast. Setting a value of 0.8f or similar here addresses this issue\n0f = uncapped weight\n0.5f = weight cannot exceed 2\n1f = weight cannot exceed 1",
+          "format": "float"
+        }
+      }
+    },
+    "EnumAnimationBlendMode": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Add",
+        "Average",
+        "AddAverage"
+      ],
+      "enum": [
+        "add",
+        "average",
+        "addAverage"
+      ]
+    },
+    "AnimationTrigger": {
+      "type": "object",
+      "properties": {
+        "defaultAnim": {
+          "type": "boolean"
+        },
+        "matchExact": {
+          "type": "boolean"
+        },
+        "onControls": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnumEntityActivity"
+          }
+        }
+      }
+    },
+    "EnumEntityActivity": {
+      "type": "string",
+      "description": "",
+      "x-enumFlags": true,
+      "x-enumNames": [
+        "None",
+        "Idle",
+        "Move",
+        "SprintMode",
+        "SneakMode",
+        "Fly",
+        "Swim",
+        "Jump",
+        "Fall",
+        "Climb",
+        "FloorSitting",
+        "Dead",
+        "Break",
+        "Place",
+        "Glide",
+        "Mounted"
+      ],
+      "enum": [
+        "none",
+        "idle",
+        "move",
+        "sprintMode",
+        "sneakMode",
+        "fly",
+        "swim",
+        "jump",
+        "fall",
+        "climb",
+        "floorSitting",
+        "dead",
+        "break",
+        "place",
+        "glide",
+        "mounted"
+      ]
+    },
+    "Vec2f": {
+      "type": "object",
+      "description": "Represents a vector of 2 floats. Go bug Tyron of you need more utility methods in this class.",
+      "properties": {
+        "x": {
+          "type": "number",
+          "format": "float"
+        },
+        "y": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "EnumHabitat": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Sea",
+        "Land",
+        "Air",
+        "Underwater"
+      ],
+      "enum": [
+        "sea",
+        "land",
+        "air",
+        "underwater"
+      ]
+    },
+    "ServerEntityConfig": {
+      "type": "object",
+      "properties": {
+        "attributes": {
+          "$ref": "../lib/definitions/JsonObject.json#"
+        },
+        "behaviors": {
+          "type": "array",
+          "items": {
+            "$ref": "../lib/definitions/JsonObject.json#"
+          }
+        },
+        "spawnConditions": {
+          "$ref": "#/definitions/SpawnConditions"
+        }
+      }
+    },
+    "SpawnConditions": {
+      "type": "object",
+      "description": "The spawn conditions assigned to various things.",
+      "properties": {
+        "climate": {
+          "description": "Override values for climate",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/ClimateSpawnCondition"
+            }
+          ]
+        },
+        "runtime": {
+          "description": "Runtime requirements for the object to spawn.",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/RuntimeSpawnConditions"
+            }
+          ]
+        },
+        "worldgen": {
+          "description": "Worldgen/region requirements for the object to spawn.",
+          "oneOf": [
+            {
+              "$ref": "#/definitions/WorldGenSpawnConditions"
+            }
+          ]
+        }
+      }
+    },
+    "ClimateSpawnCondition": {
+      "type": "object",
+      "properties": {
+        "maxForest": {
+          "type": "number",
+          "description": "The maximum amount of forest cover needed for the object to spawn.",
+          "format": "float"
+        },
+        "maxRain": {
+          "type": "number",
+          "description": "The maximum amount of rain for the object to spawn.",
+          "format": "float"
+        },
+        "maxShrubs": {
+          "type": "number",
+          "description": "The maximum amount of shrubbery needed for the object to spawn.",
+          "format": "float"
+        },
+        "maxTemp": {
+          "type": "number",
+          "description": "The maximum tempurature for the object to spawn.",
+          "format": "float"
+        },
+        "maxY": {
+          "type": "number",
+          "description": "Won't span above maxY. 0...1 is world bottom to sea level, 1...2 is sea level to world top",
+          "format": "float"
+        },
+        "minForest": {
+          "type": "number",
+          "description": "The minimum amount of forest cover needed for the object to spawn.",
+          "format": "float"
+        },
+        "minForestOrShrubs": {
+          "type": "number",
+          "description": "The minimum amount of forest or shrubs for the object to spawn.",
+          "format": "float"
+        },
+        "minRain": {
+          "type": "number",
+          "description": "The minimum amount of rain for the object to spawn.",
+          "format": "float"
+        },
+        "minShrubs": {
+          "type": "number",
+          "description": "The minimum amount of shrubbery needed for the object to spawn.",
+          "format": "float"
+        },
+        "minTemp": {
+          "type": "number",
+          "description": "The minimum tempurature for the object to spawn.",
+          "format": "float"
+        },
+        "minY": {
+          "type": "number",
+          "description": "Won't span below minY. 0...1 is world bottom to sea level, 1...2 is sea level to world top",
+          "format": "float"
+        }
+      }
+    },
+    "RuntimeSpawnConditions": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/BaseSpawnConditions"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "chance": {
+              "type": "number",
+              "description": "The chance for the object to spawn.",
+              "format": "double"
+            },
+            "maxQuantity": {
+              "type": "integer",
+              "description": "The max quantity of objects to spawn.",
+              "format": "int32"
+            },
+            "maxQuantityByGroup": {
+              "$ref": "#/definitions/QuantityByGroup"
+            },
+            "minDistanceToPlayer": {
+              "type": "integer",
+              "description": "The minimum distance from the player that an object will spawn.",
+              "format": "int32"
+            },
+            "spawnCapPlayerScaling": {
+              "type": "number",
+              "format": "float"
+            }
+          }
+        }
+      ]
+    },
+    "QuantityByGroup": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "maxQuantity": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "BaseSpawnConditions": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/ClimateSpawnCondition"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "climateValueMode": {
+              "description": "Whether the rain and temperature values are referring to the worldgen values (i.e. yearly averages) or the current values at the moment of spawning",
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/EnumGetClimateMode"
+                }
+              ]
+            },
+            "companions": {
+              "type": "array",
+              "description": "Additional companions for the spawn.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "group": {
+              "type": "string",
+              "description": "The group of the spawn conditions."
+            },
+            "herdSize": {
+              "description": "the group size for the spawn.",
+              "oneOf": [
+                {
+                  "$ref": "../lib/definitions/NatFloat.json#"
+                }
+              ]
+            },
+            "insideBlockCodes": {
+              "type": "array",
+              "description": "The blocks that the object will spawn in.  (default: air)",
+              "items": {
+                "type": "string"
+              }
+            },
+            "lightLevelType": {
+              "description": "The type of light counted for spawning purposes.",
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/EnumLightLevelType"
+                }
+              ]
+            },
+            "maxLightLevel": {
+              "type": "integer",
+              "description": "The maximum light level for an object to spawn.",
+              "format": "int32"
+            },
+            "minLightLevel": {
+              "type": "integer",
+              "description": "The minimum light level for an object to spawn.",
+              "format": "int32"
+            },
+            "requireSolidGround": {
+              "type": "boolean",
+              "description": "Checks to see if the object requires solid ground."
+            },
+            "tryOnlySurface": {
+              "type": "boolean",
+              "description": "checks to see if the object can only spawn in the surface."
+            }
+          }
+        }
+      ]
+    },
+    "EnumGetClimateMode": {
+      "type": "string",
+      "description": "The type of climate values you wish to receive",
+      "x-enumNames": [
+        "WorldGenValues",
+        "NowValues",
+        "ForSuppliedDateValues",
+        "ForSuppliedDate_TemperatureOnly",
+        "ForSuppliedDate_TemperatureRainfallOnly"
+      ],
+      "enum": [
+        "worldGenValues",
+        "nowValues",
+        "forSuppliedDateValues",
+        "forSuppliedDate_TemperatureOnly",
+        "forSuppliedDate_TemperatureRainfallOnly"
+      ]
+    },
+    "EnumLightLevelType": {
+      "type": "string",
+      "description": "Used in blockAccessor.GetLightLevel() to determine what kind of light level you want",
+      "x-enumNames": [
+        "OnlyBlockLight",
+        "OnlySunLight",
+        "MaxLight",
+        "MaxTimeOfDayLight",
+        "TimeOfDaySunLight"
+      ],
+      "enum": [
+        "onlyBlockLight",
+        "onlySunLight",
+        "maxLight",
+        "maxTimeOfDayLight",
+        "timeOfDaySunLight"
+      ]
+    },
+    "WorldGenSpawnConditions": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/BaseSpawnConditions"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "triesPerChunk": {
+              "description": "The amount of time the object will attempt to spawn per chunk.",
+              "oneOf": [
+                {
+                  "$ref": "../lib/definitions/NatFloat.json#"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "../lib/definitions/RegistryObjectType.json#"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "attributes": {
+          "$ref": "../lib/definitions/JsonObject.json#"
+        },
+        "canClimb": {
+          "type": "boolean"
+        },
+        "canClimbAnywhere": {
+          "type": "boolean"
+        },
+        "client": {
+          "$ref": "#/definitions/ClientEntityConfig"
+        },
+        "climbTouchDistance": {
+          "type": "number",
+          "format": "float"
+        },
+        "collisionBoxSize": {
+          "$ref": "#/definitions/Vec2f"
+        },
+        "deadCollisionBoxSize": {
+          "$ref": "#/definitions/Vec2f"
+        },
+        "deadHitBoxSize": {
+          "$ref": "#/definitions/Vec2f"
+        },
+        "deadSelectionBoxSize": {
+          "$ref": "#/definitions/Vec2f"
+        },
+        "drops": {
+          "type": "array",
+          "items": {
+            "$ref": "../lib/definitions/BlockDropItemStack.json#"
+          }
+        },
+        "eyeHeight": {
+          "type": "number",
+          "format": "double"
+        },
+        "fallDamageMultiplier": {
+          "type": "number",
+          "format": "float"
+        },
+        "habitat": {
+          "$ref": "#/definitions/EnumHabitat"
+        },
+        "hitBoxSize": {
+          "$ref": "#/definitions/Vec2f"
+        },
+        "idleSoundChance": {
+          "type": "number",
+          "format": "float"
+        },
+        "idleSoundRange": {
+          "type": "number",
+          "format": "float"
+        },
+        "knockbackResistance": {
+          "type": "number",
+          "format": "float"
+        },
+        "rotateModelOnClimb": {
+          "type": "boolean"
+        },
+        "selectionBoxSize": {
+          "$ref": "#/definitions/Vec2f"
+        },
+        "server": {
+          "$ref": "#/definitions/ServerEntityConfig"
+        },
+        "sounds": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "swimmingEyeHeight": {
+          "type": [
+            "null",
+            "number"
+          ],
+          "format": "double"
+        },
+        "weight": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    {
+      "$ref": "../lib/assets/entities-code.json#"
+    },
+    {
+      "$ref": "../lib/assets/entities-entityClass.json#"
+    },
+    {
+      "$ref": "../lib/assets/entities-attributes.json#"
+    },
+    {
+      "$ref": "../lib/assets/entities-class.json#"
+    }
+  ]
+}

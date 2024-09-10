@@ -1,0 +1,15 @@
+{
+  "type": "string",
+  "description": "",
+  "x-enumNames": [
+    "N",
+    "P",
+    "K"
+  ],
+  "enum": [
+    "n",
+    "p",
+    "k"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

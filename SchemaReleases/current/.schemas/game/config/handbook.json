@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GuiHandbookPage[]",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/GuiHandbookPage"
+  },
+  "definitions": {
+    "GuiHandbookPage": {
+      "type": "object",
+      "properties": {
+        "pageNumber": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "visible": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

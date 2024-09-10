@@ -1,0 +1,15 @@
+{
+  "type": "string",
+  "description": "",
+  "x-enumNames": [
+    "BlockBreaking",
+    "Attacking",
+    "Fire"
+  ],
+  "enum": [
+    "blockBreaking",
+    "attacking",
+    "fire"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

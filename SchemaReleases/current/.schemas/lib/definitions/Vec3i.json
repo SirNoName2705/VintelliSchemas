@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "description": "Represents a vector of 3 ints. Go bug Tyron if you need more utility methods in this class.",
+  "properties": {
+    "x": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "y": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "z": {
+      "type": "integer",
+      "format": "int32"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

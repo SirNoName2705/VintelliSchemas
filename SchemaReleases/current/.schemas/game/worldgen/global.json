@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "GlobalConfig",
+  "type": "object",
+  "properties": {
+    "basaltBlockCode": {
+      "type": "string"
+    },
+    "defaultRockCode": {
+      "type": "string"
+    },
+    "lakeIceBlockCode": {
+      "type": "string"
+    },
+    "lavaBlockCode": {
+      "type": "string"
+    },
+    "mantleBlockCode": {
+      "type": "string"
+    },
+    "neutralCreatureSpawnMultiplier": {
+      "type": "number",
+      "format": "float"
+    },
+    "saltWaterBlockCode": {
+      "type": "string"
+    },
+    "waterBlockCode": {
+      "type": "string"
+    }
+  }
+}

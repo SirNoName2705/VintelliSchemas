@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "description": "A single block texture",
+  "properties": {
+    "alpha": {
+      "type": "integer",
+      "description": "Can be used to modify the opacity of the texture",
+      "format": "int32"
+    },
+    "alternates": {
+      "type": "array",
+      "description": "The texture may consists of any amount of alternatives, one of which will be randomly chosen when the block is placed in the world.",
+      "items": {
+        "$ref": "./CompositeTexture.json#"
+      }
+    },
+    "anyWildCardNoFiles": {
+      "type": "string"
+    },
+    "baked": {
+      "description": "BakedCompositeTexture is an expanded, atlas friendly version of CompositeTexture. Required during texture atlas generation.",
+      "oneOf": [
+        {
+          "$ref": "./BakedCompositeTexture.json#"
+        }
+      ]
+    },
+    "base": {
+      "type": "string",
+      "description": "The basic texture for this composite texture"
+    },
+    "blendedOverlays": {
+      "type": "array",
+      "description": "The base texture may be overlayed with any quantity of textures. These are baked together during texture atlas creation",
+      "items": {
+        "$ref": "./BlendedOverlayTexture.json#"
+      }
+    },
+    "overlays": {
+      "type": "array",
+      "description": "(legacy setter, used BlendedOverlays instead) The base texture may be overlayed with any quantity of textures. These are baked together during texture atlas creation",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rotation": {
+      "type": "integer",
+      "description": "Rotation of the texture may only be a multiple of 90",
+      "format": "int32"
+    },
+    "tiles": {
+      "type": "array",
+      "items": {
+        "$ref": "./CompositeTexture.json#"
+      }
+    },
+    "tilesWidth": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "wildCardNoFiles": {
+      "type": "string"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

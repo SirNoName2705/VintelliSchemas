@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "SurvivalConfig",
+  "type": "object",
+  "properties": {
+    "baseMoveSpeed": {
+      "type": "number",
+      "format": "float"
+    },
+    "blockLightLevels": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "float"
+      }
+    },
+    "creatureDamageModifier": {
+      "type": "number",
+      "format": "float"
+    },
+    "hungerSpeedModifier": {
+      "type": "number",
+      "format": "float"
+    },
+    "perishSpeedModifier": {
+      "type": "number",
+      "format": "float"
+    },
+    "polarEquatorDistance": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "resolvedStartStacks": {
+      "type": "array",
+      "items": {
+        "$ref": "../../lib/definitions/ItemStack.json#"
+      }
+    },
+    "startStacks": {
+      "type": "array",
+      "items": {
+        "$ref": "../../lib/definitions/JsonItemStack.json#"
+      }
+    },
+    "sunBrightness": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sunLightLevels": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "format": "float"
+      }
+    },
+    "toolDurabilityModifier": {
+      "type": "number",
+      "format": "float"
+    },
+    "toolMiningSpeedModifier": {
+      "type": "number",
+      "format": "float"
+    }
+  },
+  "definitions": {}
+}

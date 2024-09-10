@@ -1,0 +1,13 @@
+{
+  "type": "string",
+  "description": "",
+  "x-enumNames": [
+    "XYZ",
+    "XZ"
+  ],
+  "enum": [
+    "xyz",
+    "xz"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

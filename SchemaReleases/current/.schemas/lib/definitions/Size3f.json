@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "description": "Represents a vector of 2 doubles. Go bug Tyron of you need more utility methods in this class.",
+  "properties": {
+    "height": {
+      "type": "number",
+      "format": "float"
+    },
+    "length": {
+      "type": "number",
+      "format": "float"
+    },
+    "width": {
+      "type": "number",
+      "format": "float"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

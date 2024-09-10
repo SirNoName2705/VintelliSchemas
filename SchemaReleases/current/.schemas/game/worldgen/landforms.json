@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "LandformsWorldProperty",
+  "definitions": {
+    "WorldPropertyOfLandformVariant": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LandformVariant"
+          }
+        }
+      }
+    },
+    "LandformVariant": {
+      "allOf": [
+        {
+          "$ref": "../../lib/definitions/WorldPropertyVariant.json#"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "chance": {
+              "type": "number",
+              "format": "float"
+            },
+            "hexColor": {
+              "type": "string"
+            },
+            "maxRain": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "maxTemp": {
+              "type": "number",
+              "format": "float"
+            },
+            "maxWindStrength": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "minRain": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "minTemp": {
+              "type": "number",
+              "format": "float"
+            },
+            "minWindStrength": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "mutations": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LandformVariant"
+              }
+            },
+            "terrainOctaves": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "format": "double"
+              }
+            },
+            "terrainOctaveThresholds": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "format": "double"
+              }
+            },
+            "terrainYKeyPositions": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "format": "float"
+              }
+            },
+            "terrainYKeyThresholds": {
+              "type": "array",
+              "items": {
+                "type": "number",
+                "format": "float"
+              }
+            },
+            "useClimateMap": {
+              "type": "boolean"
+            },
+            "useWindMap": {
+              "type": "boolean"
+            },
+            "weight": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/WorldPropertyOfLandformVariant"
+    },
+    {
+      "type": "object"
+    }
+  ]
+}

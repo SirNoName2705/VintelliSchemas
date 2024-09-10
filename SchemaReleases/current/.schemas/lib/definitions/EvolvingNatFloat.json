@@ -1,0 +1,5 @@
+{
+  "type": "object",
+  "description": "A number generator whose return value changes over time, parametrized by a transform function and some constants",
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

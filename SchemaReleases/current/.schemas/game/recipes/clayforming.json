@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "ClayFormingRecipe",
+  "definitions": {
+    "LayeredVoxelRecipeOfClayFormingRecipe": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/RecipeBaseOfClayFormingRecipe"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "pattern": {
+              "type": "array",
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "voxels": {
+              "type": "array",
+              "items": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "RecipeBaseOfClayFormingRecipe": {
+      "type": "object",
+      "description": "Creates a new base recipe type.  ",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "ingredient": {
+          "$ref": "../../lib/definitions/CraftingRecipeIngredient.json#"
+        },
+        "ingredients": {
+          "type": "array",
+          "description": "...or alternatively for recipes with multiple ingredients",
+          "items": {
+            "$ref": "../../lib/definitions/CraftingRecipeIngredient.json#"
+          }
+        },
+        "name": {
+          "type": "string"
+        },
+        "output": {
+          "$ref": "../../lib/definitions/JsonItemStack.json#"
+        },
+        "recipeId": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/LayeredVoxelRecipeOfClayFormingRecipe"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "quantityLayers": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "recipeCategoryCode": {
+          "type": "string"
+        }
+      }
+    }
+  ]
+}

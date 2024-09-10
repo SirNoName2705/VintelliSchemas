@@ -1,0 +1,33 @@
+{
+  "type": "string",
+  "description": "",
+  "x-enumNames": [
+    "NoWind",
+    "WeakWind",
+    "NormalWind",
+    "Leaves",
+    "Bend",
+    "TallBend",
+    "Water",
+    "ExtraWeakWind",
+    "Fruit",
+    "WeakWindNoBend",
+    "WeakWindInverseBend",
+    "WaterPlant"
+  ],
+  "enum": [
+    "noWind",
+    "weakWind",
+    "normalWind",
+    "leaves",
+    "bend",
+    "tallBend",
+    "water",
+    "extraWeakWind",
+    "fruit",
+    "weakWindNoBend",
+    "weakWindInverseBend",
+    "waterPlant"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

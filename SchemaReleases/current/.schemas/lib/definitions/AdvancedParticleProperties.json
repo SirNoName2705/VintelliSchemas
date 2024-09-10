@@ -1,0 +1,178 @@
+{
+  "type": "object",
+  "properties": {
+    "blueEvolve": {
+      "description": "A transforming Blue value.",
+      "oneOf": [
+        {
+          "$ref": "./EvolvingNatFloat.json#"
+        }
+      ]
+    },
+    "bounciness": {
+      "type": "number",
+      "format": "float"
+    },
+    "colorByBlock": {
+      "type": "boolean",
+      "description": "Whether or not to color the particle by the block it's on."
+    },
+    "deathParticles": {
+      "type": "array",
+      "description": "The death particles for the JsonObject.",
+      "items": {
+        "$ref": "./AdvancedParticleProperties.json#"
+      }
+    },
+    "dieInAir": {
+      "type": "boolean",
+      "description": "Whether or not the entity dies in air."
+    },
+    "dieInLiquid": {
+      "type": "boolean",
+      "description": "Whether or not the entity dies in water."
+    },
+    "dieOnRainHeightmap": {
+      "type": "boolean"
+    },
+    "gravityEffect": {
+      "description": "The gravity effect on the particle.",
+      "oneOf": [
+        {
+          "$ref": "./NatFloat.json#"
+        }
+      ]
+    },
+    "greenEvolve": {
+      "description": "A transforming Green value.",
+      "oneOf": [
+        {
+          "$ref": "./EvolvingNatFloat.json#"
+        }
+      ]
+    },
+    "hsvaColor": {
+      "type": "array",
+      "description": "The Hue/Saturation/Value/Alpha for the color of the particle.",
+      "items": {
+        "$ref": "./NatFloat.json#"
+      }
+    },
+    "lifeLength": {
+      "description": "The life length of the particle.",
+      "oneOf": [
+        {
+          "$ref": "./NatFloat.json#"
+        }
+      ]
+    },
+    "opacityEvolve": {
+      "description": "a transforming opacity value.",
+      "oneOf": [
+        {
+          "$ref": "./EvolvingNatFloat.json#"
+        }
+      ]
+    },
+    "particleModel": {
+      "description": "Sets the base model for the particle.",
+      "oneOf": [
+        {
+          "$ref": "./EnumParticleModel.json#"
+        }
+      ]
+    },
+    "posOffset": {
+      "type": "array",
+      "description": "Offset from the blocks hitboxes top middle position",
+      "items": {
+        "$ref": "./NatFloat.json#"
+      }
+    },
+    "quantity": {
+      "description": "The quantity of the particles given.",
+      "oneOf": [
+        {
+          "$ref": "./NatFloat.json#"
+        }
+      ]
+    },
+    "randomVelocityChange": {
+      "type": "boolean"
+    },
+    "redEvolve": {
+      "description": "A transforming Red value.",
+      "oneOf": [
+        {
+          "$ref": "./EvolvingNatFloat.json#"
+        }
+      ]
+    },
+    "secondaryParticles": {
+      "type": "array",
+      "description": "The Secondary particles for the JsonObject.",
+      "items": {
+        "$ref": "./AdvancedParticleProperties.json#"
+      }
+    },
+    "secondarySpawnInterval": {
+      "description": "The inverval that the secondary particles spawn.",
+      "oneOf": [
+        {
+          "$ref": "./NatFloat.json#"
+        }
+      ]
+    },
+    "selfPropelled": {
+      "type": "boolean",
+      "description": "Whether or not the particle is self propelled."
+    },
+    "size": {
+      "description": "The size of the particles given.",
+      "oneOf": [
+        {
+          "$ref": "./NatFloat.json#"
+        }
+      ]
+    },
+    "sizeEvolve": {
+      "description": "a transforming Size value.",
+      "oneOf": [
+        {
+          "$ref": "./EvolvingNatFloat.json#"
+        }
+      ]
+    },
+    "swimOnLiquid": {
+      "type": "boolean"
+    },
+    "terrainCollision": {
+      "type": "boolean",
+      "description": "Whether or not the particle collides with the terrain."
+    },
+    "velocity": {
+      "type": "array",
+      "description": "The velocity of the particles.",
+      "items": {
+        "$ref": "./NatFloat.json#"
+      }
+    },
+    "velocityEvolve": {
+      "type": "array",
+      "description": "A dynamic velocity value.",
+      "items": {
+        "$ref": "./EvolvingNatFloat.json#"
+      }
+    },
+    "vertexFlags": {
+      "type": "integer",
+      "description": "The level of glow in the particle.",
+      "format": "int32"
+    },
+    "windAffectednes": {
+      "type": "number",
+      "format": "float"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

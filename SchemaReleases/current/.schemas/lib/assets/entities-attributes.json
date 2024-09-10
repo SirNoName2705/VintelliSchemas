@@ -1,0 +1,721 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "attributes": {
+      "$ref": "#/definitions/Attributes"
+    }
+  },
+  "definitions": {
+    "Attributes": {
+      "type": "object",
+      "properties": {
+        "glitchAffected": {
+          "type": "boolean"
+        },
+        "droppedItemsOnDeathTimer": {
+          "type": "integer"
+        },
+        "emotes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Emote"
+          }
+        },
+        "randomIdleAnimations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RandomIdleAnimation"
+          }
+        },
+        "skinnableParts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SkinnablePart"
+          }
+        },
+        "physics": {
+          "$ref": "#/definitions/Physics"
+        },
+        "creatureDiet": {
+          "$ref": "#/definitions/CreatureDiet"
+        },
+        "basketCatchable": {
+          "type": "boolean"
+        },
+        "trapChance": {
+          "type": "number"
+        },
+        "trapDestroyChance": {
+          "type": "number"
+        },
+        "handbook": {
+          "$ref": "#/definitions/Handbook"
+        },
+        "skinBaseTextureKey": {
+          "type": "string"
+        },
+        "killedByInfoText": {
+          "type": "string"
+        },
+        "spawnDamageParticles": {
+          "type": "boolean"
+        },
+        "basketCatchableByType": {
+          "$ref": "#/definitions/BasketCatchableByType"
+        },
+        "onDeathStabilityRecovery": {
+          "type": "number"
+        },
+        "isMechanical": {
+          "type": "boolean"
+        },
+        "guiTransform": {
+          "$ref": "#/definitions/GuiTransform"
+        },
+        "tpHandTransform": {
+          "$ref": "#/definitions/TpHandTransform"
+        },
+        "fpHandTransform": {
+          "$ref": "#/definitions/GuiTransform"
+        },
+        "groundTransform": {
+          "$ref": "#/definitions/GuiTransform"
+        },
+        "hackedEntityByType": {
+          "$ref": "#/definitions/HackedEntityByType"
+        },
+        "glitchFlicker": {
+          "type": "boolean"
+        },
+        "reckless": {
+          "type": "boolean"
+        },
+        "extraSplashParticlesMul": {
+          "type": "integer"
+        },
+        "spawnCloserDuringLowStability": {
+          "type": "boolean"
+        },
+        "onDeathStabilityRecoveryByType": {
+          "$ref": "#/definitions/OnDeathStabilityRecoveryByType"
+        },
+        "tradeProps": {
+          "$ref": "#/definitions/TradeProps"
+        },
+        "inventory": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Inventory"
+          }
+        },
+        "netCaughtItemCode": {
+          "type": "string"
+        },
+        "trapChanceByType": {
+          "$ref": "#/definitions/TrapChanceByType"
+        },
+        "trapDestroyChanceByType": {
+          "$ref": "#/definitions/TrapChanceByType"
+        }
+      }
+    },
+    "Emote": {
+      "type": "string"
+    },
+    "RandomIdleAnimation": {
+      "type": "string"
+    },
+    "Variant": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "texture": {
+          "type": "string"
+        }
+      }
+    },
+    "TextureRenderTo": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "integer"
+        },
+        "y": {
+          "type": "integer"
+        }
+      }
+    },
+    "Anonymous6": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "texture": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous7": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "texture": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous8": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "sound": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous9": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "ShapeTemplate": {
+      "type": "object",
+      "properties": {
+        "base": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous11": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous12": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous13": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "shape": {
+          "$ref": "#/definitions/ShapeTemplate"
+        }
+      }
+    },
+    "Anonymous14": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous15": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous16": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous17": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "texture": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous18": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "texture": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous19": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "texture": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous20": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "sound": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous21": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous22": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous23": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous24": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "shape": {
+          "$ref": "#/definitions/ShapeTemplate"
+        }
+      }
+    },
+    "Anonymous25": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous26": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous27": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "SkinnablePart": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Variant"
+          }
+        },
+        "textureRenderTo": {
+          "$ref": "#/definitions/TextureRenderTo"
+        },
+        "useDropDown": {
+          "type": "boolean"
+        },
+        "colbreak": {
+          "type": "boolean"
+        },
+        "shapeTemplate": {
+          "$ref": "#/definitions/ShapeTemplate"
+        },
+        "textureTarget": {
+          "type": "string"
+        },
+        "textureTemplate": {
+          "type": "string"
+        }
+      }
+    },
+    "Physics": {
+      "type": "object",
+      "properties": {
+        "groundDragFactor": {
+          "type": "integer"
+        },
+        "airDragFactor": {
+          "type": "number"
+        }
+      }
+    },
+    "CreatureDiet": {
+      "type": "object",
+      "properties": {
+        "foodCategories": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FoodCategorie"
+          }
+        },
+        "foodTags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FoodTag"
+          }
+        },
+        "skipFoodTags": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SkipFoodTag"
+          }
+        }
+      }
+    },
+    "FoodCategorie": {
+      "type": "string"
+    },
+    "FoodTag": {
+      "type": "string"
+    },
+    "SkipFoodTag": {
+      "type": "string"
+    },
+    "Handbook": {
+      "type": "object",
+      "properties": {
+        "groupcode": {
+          "type": "string"
+        }
+      }
+    },
+    "BasketCatchableByType": {
+      "type": "object",
+      "properties": {
+        "*-pup": {
+          "type": "boolean"
+        },
+        "*-baby": {
+          "type": "boolean"
+        }
+      }
+    },
+    "GuiTransform": {
+      "type": "object",
+      "properties": {
+        "translation": {
+          "$ref": "#/definitions/Translation"
+        },
+        "rotation": {
+          "$ref": "#/definitions/Translation"
+        },
+        "origin": {
+          "$ref": "#/definitions/Translation"
+        }
+      }
+    },
+    "Translation": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "integer"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "integer"
+        }
+      }
+    },
+    "TpHandTransform": {
+      "type": "object",
+      "properties": {
+        "translation": {
+          "$ref": "#/definitions/Translation"
+        },
+        "rotation": {
+          "$ref": "#/definitions/Translation"
+        },
+        "scale": {
+          "type": "number"
+        }
+      }
+    },
+    "HackedEntityByType": {
+      "type": "object",
+      "properties": {
+        "*-bronze": {
+          "type": "string"
+        },
+        "*-corrupt": {
+          "type": "string"
+        }
+      }
+    },
+    "OnDeathStabilityRecoveryByType": {
+      "type": "object",
+      "properties": {
+        "drifter-normal": {
+          "type": "number"
+        },
+        "drifter-deep": {
+          "type": "number"
+        },
+        "drifter-tainted": {
+          "type": "number"
+        },
+        "drifter-corrupt": {
+          "type": "number"
+        },
+        "drifter-nightmare": {
+          "type": "number"
+        },
+        "drifter-double-headed": {
+          "type": "number"
+        }
+      }
+    },
+    "TradeProps": {
+      "type": "object",
+      "properties": {
+        "money": {
+          "$ref": "#/definitions/Money"
+        },
+        "selling": {
+          "$ref": "#/definitions/Selling"
+        },
+        "buying": {
+          "$ref": "#/definitions/Selling"
+        }
+      }
+    },
+    "Money": {
+      "type": "object",
+      "properties": {
+        "avg": {
+          "type": "integer"
+        },
+        "var": {
+          "type": "number"
+        }
+      }
+    },
+    "Selling": {
+      "type": "object",
+      "properties": {
+        "maxItems": {
+          "type": "integer"
+        },
+        "list": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Anonymous52"
+          }
+        }
+      }
+    },
+    "Anonymous44": {
+      "type": "object",
+      "properties": {
+        "material": {
+          "type": "string"
+        },
+        "lining": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous45": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous46": {
+      "type": "object",
+      "properties": {
+        "potential": {
+          "type": "string"
+        }
+      }
+    },
+    "Anonymous47": {
+      "type": "object",
+      "properties": {
+        "ucontents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Anonymous51"
+          }
+        }
+      }
+    },
+    "Ucontent": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "makefull": {
+          "type": "boolean"
+        }
+      }
+    },
+    "Anonymous49": {
+      "type": "object",
+      "properties": {
+        "wood": {
+          "type": "string"
+        },
+        "metal": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        },
+        "deco": {
+          "type": "string"
+        }
+      }
+    },
+    "List": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "stacksize": {
+          "type": "integer"
+        },
+        "stock": {
+          "$ref": "#/definitions/Money"
+        },
+        "price": {
+          "$ref": "#/definitions/Money"
+        },
+        "attributes": {
+          "$ref": "#/definitions/Anonymous44"
+        }
+      }
+    },
+    "Anonymous51": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        },
+        "makefull": {
+          "type": "boolean"
+        }
+      }
+    },
+    "Anonymous52": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "stacksize": {
+          "type": "integer"
+        },
+        "stock": {
+          "$ref": "#/definitions/Money"
+        },
+        "price": {
+          "$ref": "#/definitions/Money"
+        },
+        "attributes": {
+          "$ref": "#/definitions/SkinnablePart"
+        },
+        "attributesToIgnore": {
+          "type": "string"
+        }
+      }
+    },
+    "Inventory": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "code": {
+          "type": "string"
+        }
+      }
+    },
+    "TrapChanceByType": {
+      "type": "object",
+      "properties": {
+        "*-baby": {
+          "type": "number"
+        },
+        "*": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

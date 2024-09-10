@@ -1,0 +1,31 @@
+{
+  "type": "string",
+  "description": "The distribution of the random numbers ",
+  "x-enumNames": [
+    "UNIFORM",
+    "TRIANGLE",
+    "GAUSSIAN",
+    "NARROWGAUSSIAN",
+    "INVERSEGAUSSIAN",
+    "NARROWINVERSEGAUSSIAN",
+    "INVEXP",
+    "STRONGINVEXP",
+    "STRONGERINVEXP",
+    "DIRAC",
+    "VERYNARROWGAUSSIAN"
+  ],
+  "enum": [
+    "uniform",
+    "triangle",
+    "gaussian",
+    "narrowgaussian",
+    "inversegaussian",
+    "narrowinversegaussian",
+    "invexp",
+    "stronginvexp",
+    "strongerinvexp",
+    "dirac",
+    "verynarrowgaussian"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

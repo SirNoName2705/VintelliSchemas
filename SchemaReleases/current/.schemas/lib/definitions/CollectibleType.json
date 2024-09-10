@@ -1,0 +1,180 @@
+{
+  "allOf": [
+    {
+      "$ref": "./RegistryObjectType.json#"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "attackPower": {
+          "type": "number",
+          "format": "float"
+        },
+        "attackRange": {
+          "type": "number",
+          "format": "float"
+        },
+        "attributes": {
+          "$ref": "./JsonObject.json#"
+        },
+        "behaviors": {
+          "type": "array",
+          "items": {
+            "$ref": "./CollectibleBehaviorType.json#"
+          }
+        },
+        "combustibleProps": {
+          "$ref": "./CombustibleProperties.json#"
+        },
+        "creativeInventory": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "creativeInventoryStacks": {
+          "type": "array",
+          "items": {
+            "$ref": "./CreativeTabAndStackList.json#"
+          }
+        },
+        "crushingProps": {
+          "$ref": "./CrushingProperties.json#"
+        },
+        "damagedBy": {
+          "type": "array",
+          "items": {
+            "$ref": "./EnumItemDamageSource.json#"
+          }
+        },
+        "dimensions": {
+          "$ref": "./Size3f.json#"
+        },
+        "durability": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "fpHandTransform": {
+          "$ref": "./ModelTransform.json#"
+        },
+        "grindingProps": {
+          "$ref": "./GrindingProperties.json#"
+        },
+        "groundTransform": {
+          "$ref": "./ModelTransform.json#"
+        },
+        "guiTransform": {
+          "$ref": "./ModelTransform.json#"
+        },
+        "heldLeftReadyAnimation": {
+          "type": "string"
+        },
+        "heldLeftTpIdleAnimation": {
+          "type": "string"
+        },
+        "heldRightReadyAnimation": {
+          "type": "string"
+        },
+        "heldRightTpIdleAnimation": {
+          "type": "string"
+        },
+        "heldSounds": {
+          "$ref": "./HeldSounds.json#"
+        },
+        "heldTpHitAnimation": {
+          "type": "string"
+        },
+        "heldTpUseAnimation": {
+          "type": "string"
+        },
+        "lightHsv": {
+          "type": "string",
+          "format": "byte"
+        },
+        "liquidSelectable": {
+          "type": "boolean"
+        },
+        "materialDensity": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "matterState": {
+          "$ref": "./EnumMatterState.json#"
+        },
+        "maxStackSize": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "miningSpeed": {
+          "type": "object",
+          "x-dictionaryKey": {
+            "$ref": "./EnumBlockMaterial.json#"
+          },
+          "additionalProperties": {
+            "type": "number",
+            "format": "float"
+          }
+        },
+        "nutritionProps": {
+          "$ref": "./FoodNutritionProperties.json#"
+        },
+        "particleProperties": {
+          "type": "array",
+          "items": {
+            "$ref": "./AdvancedParticleProperties.json#"
+          }
+        },
+        "renderAlphaTest": {
+          "type": "number",
+          "format": "float"
+        },
+        "shape": {
+          "$ref": "./CompositeShape.json#"
+        },
+        "storageFlags": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "texture": {
+          "$ref": "./CompositeTexture.json#"
+        },
+        "textures": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "./CompositeTexture.json#"
+          }
+        },
+        "tool": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "./EnumTool.json#"
+            }
+          ]
+        },
+        "toolTier": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "tpHandTransform": {
+          "$ref": "./ModelTransform.json#"
+        },
+        "tpOffHandTransform": {
+          "$ref": "./ModelTransform.json#"
+        },
+        "transitionableProps": {
+          "type": "array",
+          "items": {
+            "$ref": "./TransitionableProperties.json#"
+          }
+        }
+      }
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

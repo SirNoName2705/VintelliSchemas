@@ -1,0 +1,152 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "BlockPatchConfig",
+  "type": "object",
+  "properties": {
+    "chanceMultiplier": {
+      "$ref": "../../lib/definitions/NatFloat.json#"
+    },
+    "patches": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/BlockPatch"
+      }
+    }
+  },
+  "definitions": {
+    "BlockPatch": {
+      "type": "object",
+      "properties": {
+        "blockCodeIndex": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "blockCodes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "chance": {
+          "type": "number",
+          "format": "float"
+        },
+        "mapCode": {
+          "type": "string"
+        },
+        "maxFertility": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxForest": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxHeightDifferential": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxShrub": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxY": {
+          "type": "number",
+          "format": "float"
+        },
+        "minFertility": {
+          "type": "number",
+          "format": "float"
+        },
+        "minForest": {
+          "type": "number",
+          "format": "float"
+        },
+        "minRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "minShrub": {
+          "type": "number",
+          "format": "float"
+        },
+        "minTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minWaterDepth": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minY": {
+          "type": "number",
+          "format": "float"
+        },
+        "offsetX": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "offsetZ": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "placement": {
+          "$ref": "#/definitions/EnumBlockPatchPlacement"
+        },
+        "postPass": {
+          "type": "boolean"
+        },
+        "prePass": {
+          "type": "boolean"
+        },
+        "quantity": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "randomMapCodePool": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "treeType": {
+          "$ref": "../../lib/definitions/EnumTreeType.json#"
+        }
+      }
+    },
+    "EnumBlockPatchPlacement": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "ReplaceSurface",
+        "OnSurface",
+        "NearWater",
+        "Anywhere",
+        "Underground",
+        "UnderWater",
+        "NearSeaWater",
+        "UnderSeaWater",
+        "UnderTrees",
+        "OnTrees",
+        "OnSurfacePlusUnderTrees"
+      ],
+      "enum": [
+        "replaceSurface",
+        "onSurface",
+        "nearWater",
+        "anywhere",
+        "underground",
+        "underWater",
+        "nearSeaWater",
+        "underSeaWater",
+        "underTrees",
+        "onTrees",
+        "onSurfacePlusUnderTrees"
+      ]
+    }
+  }
+}
