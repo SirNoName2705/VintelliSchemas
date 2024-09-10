@@ -5,6 +5,23 @@ For detailed version history, see the [Changelog](CHANGELOG.md)
 
 ## How to use
 
+## How to use
+
+To properly integrate the JSON Schemas, make sure to create the correct subfolders in your mod directory. Key folder structures include:
+
+- `**/assets/<modid>/blocktypes/**`
+- `**/assets/<modid>/entities/**`
+- `**/assets/<modid>/itemtypes/**`
+
+For example, if your mod ID is `mymod`, a correct path for blocktypes would look like:
+
+- `assets/mymod/blocktypes/my_block.json`
+
+For certain files, the name must match exactly, such as:
+
+- `assets/mymod/config/weather.json`
+
+For more detailed file matches and examples, refer to `SchemaReleases/current/vs_schema_catalog.json`.
 
 # Installation
 
@@ -21,6 +38,7 @@ and paste it in the settings. This version requires less manual intervention aft
 - Download the JsonSchemas.xml [here](https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/jsonSchemas.xml)
 - Click save as and keep file name
 - Then put it in the .idea/.idea.__ProjectName__.dir/.idea folder (that is the .idea folder of the project not the solution)
+- In this repo it would be [here](https://github.com/SirNoName2705/VintelliSchemas/tree/master/.idea/.idea.VintelliSchemas/.idea) you can even copy that file
 - If you use the local version you also need to put the .schemas folder in the main directory
 
 ## VsCode
@@ -32,7 +50,6 @@ and paste it in the settings. This version requires less manual intervention aft
 
 
 ### Todo
-- Add how to use section
 - Add example images
 - Add Roadmap
 - Add to Vintage Story mod template

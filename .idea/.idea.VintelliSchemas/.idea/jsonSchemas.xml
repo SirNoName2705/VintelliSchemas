@@ -1,0 +1,733 @@
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="blocktypes">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="blocktypes" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/blocktypes.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/blocktypes/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="characterclasses">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="characterclasses" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/characterclasses.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/characterclasses.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="colormaps">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="colormaps" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/colormaps.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/colormaps.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="general">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="general" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/general.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/general.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="handbook">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="handbook" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/handbook.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/handbook/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="lore">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="lore" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/lore.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/lore/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="remaps">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="remaps" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/remaps.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/remaps.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="traderaccessories">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="traderaccessories" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/traderaccessories.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/traderaccessories.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="traits">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="traits" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/traits.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/traits.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="weather">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="weather" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/weather.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/weather.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="weatherevents">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="weatherevents" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/weatherevents.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/weatherevents/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="weatherpatterns">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="weatherpatterns" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/weatherpatterns.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/weatherpatterns/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="windpatterns">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="windpatterns" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/config/windpatterns.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/config/windpatterns/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="dialog">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="dialog" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/dialog.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/dialog/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="entities">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="entities" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/entities.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/entities/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="itemtypes">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="itemtypes" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/itemtypes.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/itemtypes/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="lang">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="lang" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/lang.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/lang/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="patches">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="patches" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/patches.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/patches/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="alloy">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="alloy" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/recipes/alloy.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/recipes/alloy/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="barrel">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="barrel" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/recipes/barrel.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/recipes/barrel/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="clayforming">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="clayforming" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/recipes/clayforming.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/recipes/clayforming/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="grid">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="grid" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/recipes/grid.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/recipes/grid/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="knapping">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="knapping" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/recipes/knapping.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/recipes/knapping/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="smithing">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="smithing" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/recipes/smithing.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/recipes/smithing/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="blocklayers">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="blocklayers" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/blocklayers.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/blocklayers.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="blockpatches">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="blockpatches" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/blockpatches.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/blockpatches.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="deposits">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="deposits" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/deposits.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/deposits/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="deposits">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="deposits" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/deposits.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/deposits.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="geologicprovinces">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="geologicprovinces" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/geologicprovinces.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/geologicprovinces.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="global">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="global" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/global.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/global.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="landforms">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="landforms" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/landforms.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/landforms.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="layers">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="layers" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/layers.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/layers.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="rockstrata">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="rockstrata" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/rockstrata.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/rockstrata.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="schematics">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="schematics" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/schematics.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/schematics/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="structures">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="structures" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/structures.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/structures.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="treegen">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="treegen" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/treegen.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/treegen/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="treengenproperties">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="treengenproperties" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/treengenproperties.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/treengenproperties.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="villages">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="villages" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/villages.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/villages.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="worldproperties">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="worldproperties" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/worldproperties.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/worldgen/worldproperties/**" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="modinfo">
+          <value>
+            <SchemaInfo>
+              <option name="generatedName" value="New Schema" />
+              <option name="name" value="modinfo" />
+              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/modinfo.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/modinfo.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                  <Item>
+                    <option name="pattern" value="true" />
+                    <option name="path" value="**/assets/**/modinfo.json" />
+                    <option name="mappingKind" value="Pattern" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>
