@@ -41,7 +41,6 @@ and paste it in the settings. This version requires less manual intervention aft
 ### Extension
 You can use the extension it also automatically updates your schemas.
 If you ever have no internet connection it also saves them locally.
-## Vscatalog Plugin
 [Install Vscatalog from JetBrains Marketplace](https://plugins.jetbrains.com/plugin/25365-vscatalog)
 
 ### Manual
@@ -53,7 +52,8 @@ If you ever have no internet connection it also saves them locally.
 
 ## VsCode
 ### Extension
-Just search for vintage story in your extension tab. The name is vscatalog and the provider name ist neurosoft.
+Hit `Ctrl + P` and paste `ext install Neurosoft.vscatalog` <br>
+Or just search for vintage story in vs code extensions you will find the vscatalog extension quickly.
 ### Manual
 - Download the settings.json [here](https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/settings.json)
 - Click save as and keep file name
