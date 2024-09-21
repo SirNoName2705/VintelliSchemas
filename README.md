@@ -1,6 +1,7 @@
 
 # Features
 ![Show Case via gif](media/vscode.gif)
+![Show Case via gif](media/vscode-attributes.gif)
 For detailed version history, see the [Changelog](CHANGELOG.md)
 - 38 JSON Schemas covering key asset types: `entities`, `blocks`, `items`.
 - Full support for complex elements like attributes, behaviors, classes, codes, and entity behaviors.
@@ -26,15 +27,16 @@ For more detailed file matches and examples, refer to `SchemaReleases/current/vs
 # Installation
 
 ## Visual Studio 2022:
-As of right now it does not seem to be possible to make an Extension for VS2022. If you have experience in developing such extensions just write me in discord. All help is much appreciated.
 ### Manual
-There should be an Option somewhere in the ide to add a custom json catalog.
 `Tools>Options>TextEditor>Json>Schema`
-Then click add new one in the upper left.
+Then click add new one in the upper right.
 Copy this link:
 ####
     https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/vs_schema_catalog.json
-and paste it in the settings. This version requires less manual intervention after installation
+and paste it in the settings.
+
+### Extension
+As of right now it does not seem to be possible to make an Extension for VS2022. If you have experience in developing such extensions just write me in discord. All help is much appreciated.
 
 
 ## Rider
