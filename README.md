@@ -1,4 +1,6 @@
+
 # Features
+![Show Case via gif](media/vscode.gif)
 For detailed version history, see the [Changelog](CHANGELOG.md)
 - 38 JSON Schemas covering key asset types: `entities`, `blocks`, `items`.
 - Full support for complex elements like attributes, behaviors, classes, codes, and entity behaviors.
