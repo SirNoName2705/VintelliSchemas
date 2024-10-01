@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.1] - 2024.10.01
+### Added
+- Enum Values are now Case Insensitive
+- JsonPatches have autocomplete for mod id and filepath for vanilla game files
+- Json Patches has a check to ensure right usage of Move operation
+- All Major Schemas now have a Title. (A Major schema is a schemas that has its own file)
+- Recipes schemas with array notation
+- Replaced many int types with number types
+
+
 ## [v1.0] - 2024.09.10
 ### Added
 - 38 JSON Schemas covering key asset types: `entities`, `blocks`, `items`.
@@ -13,4 +23,4 @@
 - There may be bugs related to asset types that are not `entities`, `blocks`, or `items`.
 
 ### Upcoming
-- Version v1.1 will focus on crafting recipes with autocomplete support for item and block codes.
+- Version v1.2 will focus on crafting recipes with autocomplete support for item and block codes.
