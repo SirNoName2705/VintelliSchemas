@@ -28,6 +28,7 @@
   },
   "definitions": {
     "BeachLayerProperties": {
+      "title": "BeachLayerProperties",
       "type": "object",
       "properties": {
         "blockCode": {
@@ -40,6 +41,7 @@
       }
     },
     "BlockLayer": {
+      "title": "BlockLayer",
       "type": "object",
       "properties": {
         "blockCode": {
@@ -114,6 +116,7 @@
       }
     },
     "BlockLayerCodeByMin": {
+      "title": "BlockLayerCodeByMin",
       "type": "object",
       "properties": {
         "blockCode": {
@@ -146,6 +149,7 @@
       }
     },
     "LakeBedLayerProperties": {
+      "title": "LakeBedLayerProperties",
       "type": "object",
       "properties": {
         "blockCodeByMin": {
@@ -157,6 +161,7 @@
       }
     },
     "LakeBedBlockCodeByMin": {
+      "title": "LakeBedBlockCodeByMin",
       "type": "object",
       "properties": {
         "blockCode": {
@@ -185,6 +190,7 @@
       }
     },
     "SnowLayerProperties": {
+      "title": "SnowLayerProperties",
       "type": "object",
       "properties": {
         "blockCode": {
@@ -201,6 +207,7 @@
       }
     },
     "TallGrassProperties": {
+      "title": "TallGrassProperties",
       "type": "object",
       "properties": {
         "blockCodeByMin": {
@@ -220,6 +227,7 @@
       }
     },
     "TallGrassBlockCodeByMin": {
+      "title": "TallGrassBlockCodeByMin",
       "type": "object",
       "properties": {
         "blockCode": {

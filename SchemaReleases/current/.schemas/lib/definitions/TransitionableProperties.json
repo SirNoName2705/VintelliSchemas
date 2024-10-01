@@ -1,4 +1,5 @@
 {
+  "title": "TransitionableProperties",
   "type": "object",
   "properties": {
     "freshHours": {

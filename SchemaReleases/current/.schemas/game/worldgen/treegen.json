@@ -39,6 +39,7 @@
   },
   "definitions": {
     "TreeGenBranch": {
+      "title": "TreeGenBranch",
       "type": "object",
       "properties": {
         "angleHori": {
@@ -112,6 +113,7 @@
       }
     },
     "Inheritance": {
+      "title": "Inheritance",
       "type": "object",
       "properties": {
         "from": {
@@ -127,6 +129,7 @@
       }
     },
     "TreeGenBlocks": {
+      "title": "TreeGenBlocks",
       "type": "object",
       "properties": {
         "leavesBlockCode": {
@@ -170,6 +173,7 @@
       }
     },
     "TreeGenTrunk": {
+      "title": "TreeGenTrunk",
       "allOf": [
         {
           "$ref": "#/definitions/TreeGenBranch"

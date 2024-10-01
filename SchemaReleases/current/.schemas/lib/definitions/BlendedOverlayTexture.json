@@ -1,4 +1,5 @@
 {
+  "title": "BlendedOverlayTexture",
   "type": "object",
   "properties": {
     "base": {

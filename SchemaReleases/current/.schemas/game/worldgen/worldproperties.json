@@ -15,6 +15,7 @@
   },
   "definitions": {
     "T": {
+      "title": "T",
       "type": "object"
     }
   }

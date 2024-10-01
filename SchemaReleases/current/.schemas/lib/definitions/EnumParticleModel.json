@@ -1,13 +1,18 @@
 {
+  "title": "EnumParticleModel",
   "type": "string",
   "description": "",
-  "x-enumNames": [
-    "Quad",
-    "Cube"
-  ],
-  "enum": [
-    "quad",
-    "cube"
+  "anyOf": [
+    {
+      "title": "Quad",
+      "default": "Quad",
+      "pattern": "[Qq][Uu][Aa][Dd]"
+    },
+    {
+      "title": "Cube",
+      "default": "Cube",
+      "pattern": "[Cc][Uu][Bb][Ee]"
+    }
   ],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

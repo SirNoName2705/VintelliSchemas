@@ -1,4 +1,5 @@
 {
+  "title": "Vec3f",
   "type": "object",
   "description": "Represents a vector of 3 floats. Go bug Tyron of you need more utility methods in this class.",
   "properties": {

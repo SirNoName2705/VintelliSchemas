@@ -1,52 +1,114 @@
 {
+  "title": "EnumItemStorageFlags",
   "type": "string",
   "description": "Determines the kinds of storage types the item can be put into",
   "x-enumFlags": true,
-  "x-enumNames": [
-    "General",
-    "Backpack",
-    "Metallurgy",
-    "Jewellery",
-    "Alchemy",
-    "Agriculture",
-    "Currency",
-    "Outfit",
-    "Offhand",
-    "Arrow",
-    "Reserved2",
-    "Custom1",
-    "Custom2",
-    "Custom3",
-    "Custom4",
-    "Custom5",
-    "Custom6",
-    "Custom7",
-    "Custom8",
-    "Custom9",
-    "Custom10"
-  ],
-  "enum": [
-    "general",
-    "backpack",
-    "metallurgy",
-    "jewellery",
-    "alchemy",
-    "agriculture",
-    "currency",
-    "outfit",
-    "offhand",
-    "arrow",
-    "reserved2",
-    "custom1",
-    "custom2",
-    "custom3",
-    "custom4",
-    "custom5",
-    "custom6",
-    "custom7",
-    "custom8",
-    "custom9",
-    "custom10"
+  "anyOf": [
+    {
+      "title": "General",
+      "default": "General",
+      "pattern": "[Gg][Ee][Nn][Ee][Rr][Aa][Ll]"
+    },
+    {
+      "title": "Backpack",
+      "default": "Backpack",
+      "pattern": "[Bb][Aa][Cc][Kk][Pp][Aa][Cc][Kk]"
+    },
+    {
+      "title": "Metallurgy",
+      "default": "Metallurgy",
+      "pattern": "[Mm][Ee][Tt][Aa][Ll][Ll][Uu][Rr][Gg][Yy]"
+    },
+    {
+      "title": "Jewellery",
+      "default": "Jewellery",
+      "pattern": "[Jj][Ee][Ww][Ee][Ll][Ll][Ee][Rr][Yy]"
+    },
+    {
+      "title": "Alchemy",
+      "default": "Alchemy",
+      "pattern": "[Aa][Ll][Cc][Hh][Ee][Mm][Yy]"
+    },
+    {
+      "title": "Agriculture",
+      "default": "Agriculture",
+      "pattern": "[Aa][Gg][Rr][Ii][Cc][Uu][Ll][Tt][Uu][Rr][Ee]"
+    },
+    {
+      "title": "Currency",
+      "default": "Currency",
+      "pattern": "[Cc][Uu][Rr][Rr][Ee][Nn][Cc][Yy]"
+    },
+    {
+      "title": "Outfit",
+      "default": "Outfit",
+      "pattern": "[Oo][Uu][Tt][Ff][Ii][Tt]"
+    },
+    {
+      "title": "Offhand",
+      "default": "Offhand",
+      "pattern": "[Oo][Ff][Ff][Hh][Aa][Nn][Dd]"
+    },
+    {
+      "title": "Arrow",
+      "default": "Arrow",
+      "pattern": "[Aa][Rr][Rr][Oo][Ww]"
+    },
+    {
+      "title": "Reserved2",
+      "default": "Reserved2",
+      "pattern": "[Rr][Ee][Ss][Ee][Rr][Vv][Ee][Dd][2]"
+    },
+    {
+      "title": "Custom1",
+      "default": "Custom1",
+      "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm][1]"
+    },
+    {
+      "title": "Custom2",
+      "default": "Custom2",
+      "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm][2]"
+    },
+    {
+      "title": "Custom3",
+      "default": "Custom3",
+      "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm][3]"
+    },
+    {
+      "title": "Custom4",
+      "default": "Custom4",
+      "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm][4]"
+    },
+    {
+      "title": "Custom5",
+      "default": "Custom5",
+      "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm][5]"
+    },
+    {
+      "title": "Custom6",
+      "default": "Custom6",
+      "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm][6]"
+    },
+    {
+      "title": "Custom7",
+      "default": "Custom7",
+      "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm][7]"
+    },
+    {
+      "title": "Custom8",
+      "default": "Custom8",
+      "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm][8]"
+    },
+    {
+      "title": "Custom9",
+      "default": "Custom9",
+      "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm][9]"
+    },
+    {
+      "title": "Custom10",
+      "default": "Custom10",
+      "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm][1][0]"
+    }
   ],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

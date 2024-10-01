@@ -53,48 +53,99 @@
   },
   "definitions": {
     "EnumDialogArea": {
+      "title": "EnumDialogArea",
       "type": "string",
       "description": "First word = X Alignment (left, center, right or fixed)\nSecond word = Y Alignment (top, middle, bottom or fixed)",
-      "x-enumNames": [
-        "None",
-        "LeftTop",
-        "LeftMiddle",
-        "LeftBottom",
-        "LeftFixed",
-        "CenterTop",
-        "CenterMiddle",
-        "CenterBottom",
-        "CenterFixed",
-        "RightTop",
-        "RightMiddle",
-        "RightBottom",
-        "RightFixed",
-        "FixedTop",
-        "FixedMiddle",
-        "FixedBottom",
-        "TextBaselineOffset"
-      ],
-      "enum": [
-        "none",
-        "leftTop",
-        "leftMiddle",
-        "leftBottom",
-        "leftFixed",
-        "centerTop",
-        "centerMiddle",
-        "centerBottom",
-        "centerFixed",
-        "rightTop",
-        "rightMiddle",
-        "rightBottom",
-        "rightFixed",
-        "fixedTop",
-        "fixedMiddle",
-        "fixedBottom",
-        "textBaselineOffset"
+      "anyOf": [
+        {
+          "title": "None",
+          "default": "None",
+          "pattern": "[Nn][Oo][Nn][Ee]"
+        },
+        {
+          "title": "LeftTop",
+          "default": "LeftTop",
+          "pattern": "[Ll][Ee][Ff][Tt][Tt][Oo][Pp]"
+        },
+        {
+          "title": "LeftMiddle",
+          "default": "LeftMiddle",
+          "pattern": "[Ll][Ee][Ff][Tt][Mm][Ii][Dd][Dd][Ll][Ee]"
+        },
+        {
+          "title": "LeftBottom",
+          "default": "LeftBottom",
+          "pattern": "[Ll][Ee][Ff][Tt][Bb][Oo][Tt][Tt][Oo][Mm]"
+        },
+        {
+          "title": "LeftFixed",
+          "default": "LeftFixed",
+          "pattern": "[Ll][Ee][Ff][Tt][Ff][Ii][Xx][Ee][Dd]"
+        },
+        {
+          "title": "CenterTop",
+          "default": "CenterTop",
+          "pattern": "[Cc][Ee][Nn][Tt][Ee][Rr][Tt][Oo][Pp]"
+        },
+        {
+          "title": "CenterMiddle",
+          "default": "CenterMiddle",
+          "pattern": "[Cc][Ee][Nn][Tt][Ee][Rr][Mm][Ii][Dd][Dd][Ll][Ee]"
+        },
+        {
+          "title": "CenterBottom",
+          "default": "CenterBottom",
+          "pattern": "[Cc][Ee][Nn][Tt][Ee][Rr][Bb][Oo][Tt][Tt][Oo][Mm]"
+        },
+        {
+          "title": "CenterFixed",
+          "default": "CenterFixed",
+          "pattern": "[Cc][Ee][Nn][Tt][Ee][Rr][Ff][Ii][Xx][Ee][Dd]"
+        },
+        {
+          "title": "RightTop",
+          "default": "RightTop",
+          "pattern": "[Rr][Ii][Gg][Hh][Tt][Tt][Oo][Pp]"
+        },
+        {
+          "title": "RightMiddle",
+          "default": "RightMiddle",
+          "pattern": "[Rr][Ii][Gg][Hh][Tt][Mm][Ii][Dd][Dd][Ll][Ee]"
+        },
+        {
+          "title": "RightBottom",
+          "default": "RightBottom",
+          "pattern": "[Rr][Ii][Gg][Hh][Tt][Bb][Oo][Tt][Tt][Oo][Mm]"
+        },
+        {
+          "title": "RightFixed",
+          "default": "RightFixed",
+          "pattern": "[Rr][Ii][Gg][Hh][Tt][Ff][Ii][Xx][Ee][Dd]"
+        },
+        {
+          "title": "FixedTop",
+          "default": "FixedTop",
+          "pattern": "[Ff][Ii][Xx][Ee][Dd][Tt][Oo][Pp]"
+        },
+        {
+          "title": "FixedMiddle",
+          "default": "FixedMiddle",
+          "pattern": "[Ff][Ii][Xx][Ee][Dd][Mm][Ii][Dd][Dd][Ll][Ee]"
+        },
+        {
+          "title": "FixedBottom",
+          "default": "FixedBottom",
+          "pattern": "[Ff][Ii][Xx][Ee][Dd][Bb][Oo][Tt][Tt][Oo][Mm]"
+        },
+        {
+          "title": "TextBaselineOffset",
+          "default": "TextBaselineOffset",
+          "pattern": "[Tt][Ee][Xx][Tt][Bb][Aa][Ss][Ee][Ll][Ii][Nn][Ee][Oo][Ff][Ff][Ss][Ee][Tt]"
+        }
       ]
     },
     "OnValueGetDelegate": {
+      "title": "OnValueGetDelegate",
       "allOf": [
         {
           "$ref": "#/definitions/MulticastDelegate"
@@ -105,6 +156,7 @@
       ]
     },
     "MulticastDelegate": {
+      "title": "MulticastDelegate",
       "allOf": [
         {
           "$ref": "#/definitions/Delegate"
@@ -115,6 +167,7 @@
       ]
     },
     "Delegate": {
+      "title": "Delegate",
       "type": "object",
       "properties": {
         "method": {
@@ -131,6 +184,7 @@
       }
     },
     "MethodInfo": {
+      "title": "MethodInfo",
       "allOf": [
         {
           "$ref": "#/definitions/MethodBase"
@@ -152,33 +206,60 @@
       ]
     },
     "MemberTypes": {
+      "title": "MemberTypes",
       "type": "string",
       "description": "",
       "x-enumFlags": true,
-      "x-enumNames": [
-        "Constructor",
-        "Event",
-        "Field",
-        "Method",
-        "Property",
-        "TypeInfo",
-        "Custom",
-        "NestedType",
-        "All"
-      ],
-      "enum": [
-        "constructor",
-        "event",
-        "field",
-        "method",
-        "property",
-        "typeInfo",
-        "custom",
-        "nestedType",
-        "all"
+      "anyOf": [
+        {
+          "title": "Constructor",
+          "default": "Constructor",
+          "pattern": "[Cc][Oo][Nn][Ss][Tt][Rr][Uu][Cc][Tt][Oo][Rr]"
+        },
+        {
+          "title": "Event",
+          "default": "Event",
+          "pattern": "[Ee][Vv][Ee][Nn][Tt]"
+        },
+        {
+          "title": "Field",
+          "default": "Field",
+          "pattern": "[Ff][Ii][Ee][Ll][Dd]"
+        },
+        {
+          "title": "Method",
+          "default": "Method",
+          "pattern": "[Mm][Ee][Tt][Hh][Oo][Dd]"
+        },
+        {
+          "title": "Property",
+          "default": "Property",
+          "pattern": "[Pp][Rr][Oo][Pp][Ee][Rr][Tt][Yy]"
+        },
+        {
+          "title": "TypeInfo",
+          "default": "TypeInfo",
+          "pattern": "[Tt][Yy][Pp][Ee][Ii][Nn][Ff][Oo]"
+        },
+        {
+          "title": "Custom",
+          "default": "Custom",
+          "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm]"
+        },
+        {
+          "title": "NestedType",
+          "default": "NestedType",
+          "pattern": "[Nn][Ee][Ss][Tt][Ee][Dd][Tt][Yy][Pp][Ee]"
+        },
+        {
+          "title": "All",
+          "default": "All",
+          "pattern": "[Aa][Ll][Ll]"
+        }
       ]
     },
     "ParameterInfo": {
+      "title": "ParameterInfo",
       "type": "object",
       "properties": {
         "attributes": {
@@ -247,37 +328,70 @@
       }
     },
     "ParameterAttributes": {
+      "title": "ParameterAttributes",
       "type": "string",
       "description": "",
       "x-enumFlags": true,
-      "x-enumNames": [
-        "None",
-        "In",
-        "Out",
-        "Lcid",
-        "Retval",
-        "Optional",
-        "HasDefault",
-        "HasFieldMarshal",
-        "Reserved3",
-        "Reserved4",
-        "ReservedMask"
-      ],
-      "enum": [
-        "none",
-        "in",
-        "out",
-        "lcid",
-        "retval",
-        "optional",
-        "hasDefault",
-        "hasFieldMarshal",
-        "reserved3",
-        "reserved4",
-        "reservedMask"
+      "anyOf": [
+        {
+          "title": "None",
+          "default": "None",
+          "pattern": "[Nn][Oo][Nn][Ee]"
+        },
+        {
+          "title": "In",
+          "default": "In",
+          "pattern": "[Ii][Nn]"
+        },
+        {
+          "title": "Out",
+          "default": "Out",
+          "pattern": "[Oo][Uu][Tt]"
+        },
+        {
+          "title": "Lcid",
+          "default": "Lcid",
+          "pattern": "[Ll][Cc][Ii][Dd]"
+        },
+        {
+          "title": "Retval",
+          "default": "Retval",
+          "pattern": "[Rr][Ee][Tt][Vv][Aa][Ll]"
+        },
+        {
+          "title": "Optional",
+          "default": "Optional",
+          "pattern": "[Oo][Pp][Tt][Ii][Oo][Nn][Aa][Ll]"
+        },
+        {
+          "title": "HasDefault",
+          "default": "HasDefault",
+          "pattern": "[Hh][Aa][Ss][Dd][Ee][Ff][Aa][Uu][Ll][Tt]"
+        },
+        {
+          "title": "HasFieldMarshal",
+          "default": "HasFieldMarshal",
+          "pattern": "[Hh][Aa][Ss][Ff][Ii][Ee][Ll][Dd][Mm][Aa][Rr][Ss][Hh][Aa][Ll]"
+        },
+        {
+          "title": "Reserved3",
+          "default": "Reserved3",
+          "pattern": "[Rr][Ee][Ss][Ee][Rr][Vv][Ee][Dd][3]"
+        },
+        {
+          "title": "Reserved4",
+          "default": "Reserved4",
+          "pattern": "[Rr][Ee][Ss][Ee][Rr][Vv][Ee][Dd][4]"
+        },
+        {
+          "title": "ReservedMask",
+          "default": "ReservedMask",
+          "pattern": "[Rr][Ee][Ss][Ee][Rr][Vv][Ee][Dd][Mm][Aa][Ss][Kk]"
+        }
       ]
     },
     "CustomAttributeData": {
+      "title": "CustomAttributeData",
       "type": "object",
       "properties": {
         "attributeType": {
@@ -301,6 +415,7 @@
       }
     },
     "ConstructorInfo": {
+      "title": "ConstructorInfo",
       "allOf": [
         {
           "$ref": "#/definitions/MethodBase"
@@ -316,6 +431,7 @@
       ]
     },
     "MethodBase": {
+      "title": "MethodBase",
       "allOf": [
         {
           "$ref": "#/definitions/MemberInfo"
@@ -394,67 +510,132 @@
       ]
     },
     "CallingConventions": {
+      "title": "CallingConventions",
       "type": "string",
       "description": "",
       "x-enumFlags": true,
-      "x-enumNames": [
-        "Standard",
-        "VarArgs",
-        "Any",
-        "HasThis",
-        "ExplicitThis"
-      ],
-      "enum": [
-        "standard",
-        "varArgs",
-        "any",
-        "hasThis",
-        "explicitThis"
+      "anyOf": [
+        {
+          "title": "Standard",
+          "default": "Standard",
+          "pattern": "[Ss][Tt][Aa][Nn][Dd][Aa][Rr][Dd]"
+        },
+        {
+          "title": "VarArgs",
+          "default": "VarArgs",
+          "pattern": "[Vv][Aa][Rr][Aa][Rr][Gg][Ss]"
+        },
+        {
+          "title": "Any",
+          "default": "Any",
+          "pattern": "[Aa][Nn][Yy]"
+        },
+        {
+          "title": "HasThis",
+          "default": "HasThis",
+          "pattern": "[Hh][Aa][Ss][Tt][Hh][Ii][Ss]"
+        },
+        {
+          "title": "ExplicitThis",
+          "default": "ExplicitThis",
+          "pattern": "[Ee][Xx][Pp][Ll][Ii][Cc][Ii][Tt][Tt][Hh][Ii][Ss]"
+        }
       ]
     },
     "MethodImplAttributes": {
+      "title": "MethodImplAttributes",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "IL",
-        "Managed",
-        "Native",
-        "OPTIL",
-        "Runtime",
-        "CodeTypeMask",
-        "Unmanaged",
-        "ManagedMask",
-        "NoInlining",
-        "ForwardRef",
-        "Synchronized",
-        "NoOptimization",
-        "PreserveSig",
-        "AggressiveInlining",
-        "AggressiveOptimization",
-        "InternalCall",
-        "MaxMethodImplVal"
-      ],
-      "enum": [
-        "managed",
-        "managed",
-        "native",
-        "optil",
-        "codeTypeMask",
-        "codeTypeMask",
-        "unmanaged",
-        "unmanaged",
-        "noInlining",
-        "forwardRef",
-        "synchronized",
-        "noOptimization",
-        "preserveSig",
-        "aggressiveInlining",
-        "aggressiveOptimization",
-        "internalCall",
-        "maxMethodImplVal"
+      "anyOf": [
+        {
+          "title": "Managed",
+          "default": "Managed",
+          "pattern": "[Mm][Aa][Nn][Aa][Gg][Ee][Dd]"
+        },
+        {
+          "title": "Managed",
+          "default": "Managed",
+          "pattern": "[Mm][Aa][Nn][Aa][Gg][Ee][Dd]"
+        },
+        {
+          "title": "Native",
+          "default": "Native",
+          "pattern": "[Nn][Aa][Tt][Ii][Vv][Ee]"
+        },
+        {
+          "title": "OPTIL",
+          "default": "OPTIL",
+          "pattern": "[Oo][Pp][Tt][Ii][Ll]"
+        },
+        {
+          "title": "Runtime",
+          "default": "Runtime",
+          "pattern": "[Rr][Uu][Nn][Tt][Ii][Mm][Ee]"
+        },
+        {
+          "title": "Runtime",
+          "default": "Runtime",
+          "pattern": "[Rr][Uu][Nn][Tt][Ii][Mm][Ee]"
+        },
+        {
+          "title": "ManagedMask",
+          "default": "ManagedMask",
+          "pattern": "[Mm][Aa][Nn][Aa][Gg][Ee][Dd][Mm][Aa][Ss][Kk]"
+        },
+        {
+          "title": "ManagedMask",
+          "default": "ManagedMask",
+          "pattern": "[Mm][Aa][Nn][Aa][Gg][Ee][Dd][Mm][Aa][Ss][Kk]"
+        },
+        {
+          "title": "NoInlining",
+          "default": "NoInlining",
+          "pattern": "[Nn][Oo][Ii][Nn][Ll][Ii][Nn][Ii][Nn][Gg]"
+        },
+        {
+          "title": "ForwardRef",
+          "default": "ForwardRef",
+          "pattern": "[Ff][Oo][Rr][Ww][Aa][Rr][Dd][Rr][Ee][Ff]"
+        },
+        {
+          "title": "Synchronized",
+          "default": "Synchronized",
+          "pattern": "[Ss][Yy][Nn][Cc][Hh][Rr][Oo][Nn][Ii][Zz][Ee][Dd]"
+        },
+        {
+          "title": "NoOptimization",
+          "default": "NoOptimization",
+          "pattern": "[Nn][Oo][Oo][Pp][Tt][Ii][Mm][Ii][Zz][Aa][Tt][Ii][Oo][Nn]"
+        },
+        {
+          "title": "PreserveSig",
+          "default": "PreserveSig",
+          "pattern": "[Pp][Rr][Ee][Ss][Ee][Rr][Vv][Ee][Ss][Ii][Gg]"
+        },
+        {
+          "title": "AggressiveInlining",
+          "default": "AggressiveInlining",
+          "pattern": "[Aa][Gg][Gg][Rr][Ee][Ss][Ss][Ii][Vv][Ee][Ii][Nn][Ll][Ii][Nn][Ii][Nn][Gg]"
+        },
+        {
+          "title": "AggressiveOptimization",
+          "default": "AggressiveOptimization",
+          "pattern": "[Aa][Gg][Gg][Rr][Ee][Ss][Ss][Ii][Vv][Ee][Oo][Pp][Tt][Ii][Mm][Ii][Zz][Aa][Tt][Ii][Oo][Nn]"
+        },
+        {
+          "title": "InternalCall",
+          "default": "InternalCall",
+          "pattern": "[Ii][Nn][Tt][Ee][Rr][Nn][Aa][Ll][Cc][Aa][Ll][Ll]"
+        },
+        {
+          "title": "MaxMethodImplVal",
+          "default": "MaxMethodImplVal",
+          "pattern": "[Mm][Aa][Xx][Mm][Ee][Tt][Hh][Oo][Dd][Ii][Mm][Pp][Ll][Vv][Aa][Ll]"
+        }
       ]
     },
     "MemberInfo": {
+      "title": "MemberInfo",
       "type": "object",
       "properties": {
         "customAttributes": {
@@ -476,6 +657,7 @@
       }
     },
     "Module": {
+      "title": "Module",
       "type": "object",
       "properties": {
         "assembly": {
@@ -514,6 +696,7 @@
       }
     },
     "Assembly": {
+      "title": "Assembly",
       "type": "object",
       "properties": {
         "customAttributes": {
@@ -587,20 +770,29 @@
       }
     },
     "SecurityRuleSet": {
+      "title": "SecurityRuleSet",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "None",
-        "Level1",
-        "Level2"
-      ],
-      "enum": [
-        "none",
-        "level1",
-        "level2"
+      "anyOf": [
+        {
+          "title": "None",
+          "default": "None",
+          "pattern": "[Nn][Oo][Nn][Ee]"
+        },
+        {
+          "title": "Level1",
+          "default": "Level1",
+          "pattern": "[Ll][Ee][Vv][Ee][Ll][1]"
+        },
+        {
+          "title": "Level2",
+          "default": "Level2",
+          "pattern": "[Ll][Ee][Vv][Ee][Ll][2]"
+        }
       ]
     },
     "ModuleHandle": {
+      "title": "ModuleHandle",
       "type": "object",
       "properties": {
         "mdStreamVersion": {
@@ -610,6 +802,7 @@
       }
     },
     "CustomAttributeTypedArgument": {
+      "title": "CustomAttributeTypedArgument",
       "type": "object",
       "properties": {
         "argumentType": {
@@ -626,6 +819,7 @@
       }
     },
     "CustomAttributeNamedArgument": {
+      "title": "CustomAttributeNamedArgument",
       "type": "object",
       "properties": {
         "isField": {
@@ -643,6 +837,7 @@
       }
     },
     "OnValueSetDelegate": {
+      "title": "OnValueSetDelegate",
       "allOf": [
         {
           "$ref": "#/definitions/MulticastDelegate"
@@ -653,6 +848,7 @@
       ]
     },
     "DialogRow": {
+      "title": "DialogRow",
       "type": "object",
       "properties": {
         "bottomPadding": {
@@ -672,6 +868,7 @@
       }
     },
     "DialogElement": {
+      "title": "DialogElement",
       "type": "object",
       "properties": {
         "code": {
@@ -754,39 +951,67 @@
       }
     },
     "EnumDialogElementMode": {
+      "title": "EnumDialogElementMode",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "DropDown",
-        "Buttons"
-      ],
-      "enum": [
-        "dropDown",
-        "buttons"
+      "anyOf": [
+        {
+          "title": "DropDown",
+          "default": "DropDown",
+          "pattern": "[Dd][Rr][Oo][Pp][Dd][Oo][Ww][Nn]"
+        },
+        {
+          "title": "Buttons",
+          "default": "Buttons",
+          "pattern": "[Bb][Uu][Tt][Tt][Oo][Nn][Ss]"
+        }
       ]
     },
     "EnumDialogElementType": {
+      "title": "EnumDialogElementType",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "Select",
-        "Input",
-        "Slider",
-        "Switch",
-        "NumberInput",
-        "Button",
-        "Text",
-        "DynamicSelect"
-      ],
-      "enum": [
-        "select",
-        "input",
-        "slider",
-        "switch",
-        "numberInput",
-        "button",
-        "text",
-        "dynamicSelect"
+      "anyOf": [
+        {
+          "title": "Select",
+          "default": "Select",
+          "pattern": "[Ss][Ee][Ll][Ee][Cc][Tt]"
+        },
+        {
+          "title": "Input",
+          "default": "Input",
+          "pattern": "[Ii][Nn][Pp][Uu][Tt]"
+        },
+        {
+          "title": "Slider",
+          "default": "Slider",
+          "pattern": "[Ss][Ll][Ii][Dd][Ee][Rr]"
+        },
+        {
+          "title": "Switch",
+          "default": "Switch",
+          "pattern": "[Ss][Ww][Ii][Tt][Cc][Hh]"
+        },
+        {
+          "title": "NumberInput",
+          "default": "NumberInput",
+          "pattern": "[Nn][Uu][Mm][Bb][Ee][Rr][Ii][Nn][Pp][Uu][Tt]"
+        },
+        {
+          "title": "Button",
+          "default": "Button",
+          "pattern": "[Bb][Uu][Tt][Tt][Oo][Nn]"
+        },
+        {
+          "title": "Text",
+          "default": "Text",
+          "pattern": "[Tt][Ee][Xx][Tt]"
+        },
+        {
+          "title": "DynamicSelect",
+          "default": "DynamicSelect",
+          "pattern": "[Dd][Yy][Nn][Aa][Mm][Ii][Cc][Ss][Ee][Ll][Ee][Cc][Tt]"
+        }
       ]
     }
   }

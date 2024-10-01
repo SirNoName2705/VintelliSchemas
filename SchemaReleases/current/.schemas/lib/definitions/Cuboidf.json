@@ -1,4 +1,5 @@
 {
+  "title": "Cuboidf",
   "type": "object",
   "description": "Represents a three dimensional axis-aligned cuboid using two 3d coordinates. Used for collision and selection boxes.",
   "properties": {

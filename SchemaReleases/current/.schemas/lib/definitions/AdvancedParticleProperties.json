@@ -1,4 +1,5 @@
 {
+  "title": "AdvancedParticleProperties",
   "type": "object",
   "properties": {
     "blueEvolve": {

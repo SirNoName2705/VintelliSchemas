@@ -1,15 +1,23 @@
 {
+  "title": "DataConversion",
   "type": "string",
   "description": "",
-  "x-enumNames": [
-    "Float",
-    "NormalizedFloat",
-    "Integer"
-  ],
-  "enum": [
-    "float",
-    "normalizedFloat",
-    "integer"
+  "anyOf": [
+    {
+      "title": "Float",
+      "default": "Float",
+      "pattern": "[Ff][Ll][Oo][Aa][Tt]"
+    },
+    {
+      "title": "NormalizedFloat",
+      "default": "NormalizedFloat",
+      "pattern": "[Nn][Oo][Rr][Mm][Aa][Ll][Ii][Zz][Ee][Dd][Ff][Ll][Oo][Aa][Tt]"
+    },
+    {
+      "title": "Integer",
+      "default": "Integer",
+      "pattern": "[Ii][Nn][Tt][Ee][Gg][Ee][Rr]"
+    }
   ],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

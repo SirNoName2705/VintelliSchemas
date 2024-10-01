@@ -158,13 +158,13 @@
     },
     {
       "fileMatch": [
-        "**/assets/**/worldgen/deposits/**"
+        "**/assets/**/worldgen/deposits.json"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/deposits.json"
     },
     {
       "fileMatch": [
-        "**/assets/**/worldgen/deposits.json"
+        "**/assets/**/worldgen/deposits/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/deposits.json"
     },
@@ -233,13 +233,6 @@
         "**/assets/**/worldgen/worldproperties/**"
       ],
       "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/game/worldgen/worldproperties.json"
-    },
-    {
-      "fileMatch": [
-        "**/modinfo.json",
-        "**/assets/**/modinfo.json"
-      ],
-      "url": "https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/modinfo.json"
     }
   ]
 }

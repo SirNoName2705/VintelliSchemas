@@ -1,4 +1,5 @@
 {
+  "title": "CustomMeshDataPartInt",
   "allOf": [
     {
       "$ref": "./CustomMeshDataPartOfInteger.json#"

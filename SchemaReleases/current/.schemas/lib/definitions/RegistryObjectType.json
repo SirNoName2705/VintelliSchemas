@@ -1,4 +1,5 @@
 {
+  "title": "RegistryObjectType",
   "type": "object",
   "properties": {
     "allowedVariants": {

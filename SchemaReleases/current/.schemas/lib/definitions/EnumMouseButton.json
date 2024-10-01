@@ -1,29 +1,58 @@
 {
+  "title": "EnumMouseButton",
   "type": "string",
   "description": "",
-  "x-enumNames": [
-    "Left",
-    "Middle",
-    "Right",
-    "Button4",
-    "Button5",
-    "Button6",
-    "Button7",
-    "Button8",
-    "Wheel",
-    "None"
-  ],
-  "enum": [
-    "left",
-    "middle",
-    "right",
-    "button4",
-    "button5",
-    "button6",
-    "button7",
-    "button8",
-    "wheel",
-    "none"
+  "anyOf": [
+    {
+      "title": "Left",
+      "default": "Left",
+      "pattern": "[Ll][Ee][Ff][Tt]"
+    },
+    {
+      "title": "Middle",
+      "default": "Middle",
+      "pattern": "[Mm][Ii][Dd][Dd][Ll][Ee]"
+    },
+    {
+      "title": "Right",
+      "default": "Right",
+      "pattern": "[Rr][Ii][Gg][Hh][Tt]"
+    },
+    {
+      "title": "Button4",
+      "default": "Button4",
+      "pattern": "[Bb][Uu][Tt][Tt][Oo][Nn][4]"
+    },
+    {
+      "title": "Button5",
+      "default": "Button5",
+      "pattern": "[Bb][Uu][Tt][Tt][Oo][Nn][5]"
+    },
+    {
+      "title": "Button6",
+      "default": "Button6",
+      "pattern": "[Bb][Uu][Tt][Tt][Oo][Nn][6]"
+    },
+    {
+      "title": "Button7",
+      "default": "Button7",
+      "pattern": "[Bb][Uu][Tt][Tt][Oo][Nn][7]"
+    },
+    {
+      "title": "Button8",
+      "default": "Button8",
+      "pattern": "[Bb][Uu][Tt][Tt][Oo][Nn][8]"
+    },
+    {
+      "title": "Wheel",
+      "default": "Wheel",
+      "pattern": "[Ww][Hh][Ee][Ee][Ll]"
+    },
+    {
+      "title": "None",
+      "default": "None",
+      "pattern": "[Nn][Oo][Nn][Ee]"
+    }
   ],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

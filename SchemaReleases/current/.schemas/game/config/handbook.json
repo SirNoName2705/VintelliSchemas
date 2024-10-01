@@ -7,6 +7,7 @@
   },
   "definitions": {
     "GuiHandbookPage": {
+      "title": "GuiHandbookPage",
       "type": "object",
       "properties": {
         "pageNumber": {

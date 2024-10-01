@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "itemtypes-attributes.json",
   "type": "object",
   "properties": {
     "attributes": {
@@ -62,7 +63,7 @@
           "type": "boolean"
         },
         "health": {
-          "type": "integer"
+          "type": "number"
         },
         "displaycaseableByType": {
           "$ref": "#/definitions/DisplaycaseableByType"
@@ -155,7 +156,7 @@
           "type": "boolean"
         },
         "maxPageCount": {
-          "type": "integer"
+          "type": "number"
         },
         "groundStorageTransformByType": {
           "$ref": "#/definitions/GroundStorageTransformByType"
@@ -332,13 +333,13 @@
           "type": "boolean"
         },
         "workableTemperature": {
-          "type": "integer"
+          "type": "number"
         },
         "mergeUnitsInBloomery": {
           "type": "boolean"
         },
         "requiresAnvilTier": {
-          "type": "integer"
+          "type": "number"
         },
         "placeSound": {
           "type": "string"
@@ -365,13 +366,13 @@
           "type": "boolean"
         },
         "nightVisionFuelHours": {
-          "type": "integer"
+          "type": "number"
         },
         "pigment": {
           "$ref": "#/definitions/*Bituminouscoal"
         },
         "reinforcementStrength": {
-          "type": "integer"
+          "type": "number"
         },
         "crushedOutput": {
           "$ref": "#/definitions/CrushedOutput"
@@ -398,7 +399,7 @@
           "type": "number"
         },
         "airDragFactor": {
-          "type": "integer"
+          "type": "number"
         },
         "warmthByType": {
           "$ref": "#/definitions/WarmthByType"
@@ -603,10 +604,10 @@
       "type": "object",
       "properties": {
         "*-clean": {
-          "type": "integer"
+          "type": "number"
         },
         "*-alcoholed": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -640,46 +641,46 @@
           "type": "number"
         },
         "*-copper": {
-          "type": "integer"
+          "type": "number"
         },
         "*-tinbronze": {
-          "type": "integer"
+          "type": "number"
         },
         "*-gold": {
-          "type": "integer"
+          "type": "number"
         },
         "*-silver": {
-          "type": "integer"
+          "type": "number"
         },
         "*-bismuthbronze": {
-          "type": "integer"
+          "type": "number"
         },
         "*-blackbronze": {
-          "type": "integer"
+          "type": "number"
         },
         "*-iron": {
-          "type": "integer"
+          "type": "number"
         },
         "*-meteoriciron": {
-          "type": "integer"
+          "type": "number"
         },
         "*-steel": {
-          "type": "integer"
+          "type": "number"
         },
         "*-chert": {
-          "type": "integer"
+          "type": "number"
         },
         "*-granite": {
-          "type": "integer"
+          "type": "number"
         },
         "*-andesite": {
-          "type": "integer"
+          "type": "number"
         },
         "*-peridotite": {
-          "type": "integer"
+          "type": "number"
         },
         "*-basalt": {
-          "type": "integer"
+          "type": "number"
         },
         "*-obsidian": {
           "type": "number"
@@ -688,7 +689,7 @@
           "type": "number"
         },
         "*-ruined": {
-          "type": "integer"
+          "type": "number"
         },
         "*-hacking": {
           "type": "boolean"
@@ -703,7 +704,7 @@
           "type": "number"
         },
         "bow-simple": {
-          "type": "integer"
+          "type": "number"
         },
         "bow-long": {
           "type": "number"
@@ -796,7 +797,7 @@
         "waypointcolor": {
           "type": "array",
           "items": {
-            "type": "integer"
+            "type": "number"
           }
         }
       }
@@ -823,10 +824,10 @@
           "$ref": "#/definitions/Origin"
         },
         "randomX": {
-          "type": "integer"
+          "type": "number"
         },
         "randomZ": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -842,10 +843,10 @@
       "type": "object",
       "properties": {
         "quantitySlots": {
-          "type": "integer"
+          "type": "number"
         },
         "storageFlags": {
-          "type": "integer"
+          "type": "number"
         },
         "slotBgColor": {
           "type": "string"
@@ -859,13 +860,13 @@
           "type": "boolean"
         },
         "itemsPerLitre": {
-          "type": "integer"
+          "type": "number"
         },
         "texture": {
           "$ref": "#/definitions/Texture"
         },
         "tintIndex": {
-          "type": "integer"
+          "type": "number"
         },
         "whenSpilled": {
           "$ref": "#/definitions/WhenSpilled"
@@ -886,7 +887,7 @@
           "$ref": "#/definitions/Texturebytype"
         },
         "maxStackSize": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -900,7 +901,7 @@
           "$ref": "#/definitions/AlphaByType"
         },
         "alpha": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -991,13 +992,13 @@
       "type": "object",
       "properties": {
         "saturation": {
-          "type": "integer"
+          "type": "number"
         },
         "foodcategory": {
           "type": "string"
         },
         "satiety": {
-          "type": "integer"
+          "type": "number"
         },
         "intoxication": {
           "type": "number"
@@ -1066,13 +1067,13 @@
       "type": "object",
       "properties": {
         "satiety": {
-          "type": "integer"
+          "type": "number"
         },
         "foodcategory": {
           "type": "string"
         },
         "saturation": {
-          "type": "integer"
+          "type": "number"
         },
         "satietyByType": {
           "$ref": "#/definitions/SatietyByType"
@@ -1083,28 +1084,28 @@
       "type": "object",
       "properties": {
         "*-saguaro": {
-          "type": "integer"
+          "type": "number"
         },
         "*-cranberry": {
-          "type": "integer"
+          "type": "number"
         },
         "*-cherry": {
-          "type": "integer"
+          "type": "number"
         },
         "*-lychee": {
-          "type": "integer"
+          "type": "number"
         },
         "*-breadfruit": {
-          "type": "integer"
+          "type": "number"
         },
         "*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-soybean": {
-          "type": "integer"
+          "type": "number"
         },
         "*-peanut": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1171,10 +1172,10 @@
       "type": "object",
       "properties": {
         "avg": {
-          "type": "integer"
+          "type": "number"
         },
         "var": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1207,7 +1208,7 @@
           "type": "string"
         },
         "chance": {
-          "type": "integer"
+          "type": "number"
         },
         "attributes": {
           "$ref": "#/definitions/Anonymous38"
@@ -1441,7 +1442,7 @@
       "type": "object",
       "properties": {
         "temp": {
-          "type": "integer"
+          "type": "number"
         },
         "levelFrom": {
           "type": "number"
@@ -1499,7 +1500,7 @@
           "type": "string"
         },
         "stacksize": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1636,10 +1637,10 @@
       "type": "object",
       "properties": {
         "passive": {
-          "type": "integer"
+          "type": "number"
         },
         "active": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1702,16 +1703,16 @@
       "type": "object",
       "properties": {
         "aged": {
-          "type": "integer"
+          "type": "number"
         },
         "ebony": {
-          "type": "integer"
+          "type": "number"
         },
         "purpleheart": {
-          "type": "integer"
+          "type": "number"
         },
         "oak": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1719,25 +1720,25 @@
       "type": "object",
       "properties": {
         "bismuthbronze": {
-          "type": "integer"
+          "type": "number"
         },
         "gold": {
-          "type": "integer"
+          "type": "number"
         },
         "silver": {
-          "type": "integer"
+          "type": "number"
         },
         "blackbronze": {
-          "type": "integer"
+          "type": "number"
         },
         "iron": {
-          "type": "integer"
+          "type": "number"
         },
         "meteoriciron": {
-          "type": "integer"
+          "type": "number"
         },
         "steel": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1765,13 +1766,13 @@
       "type": "object",
       "properties": {
         "ingot-lead": {
-          "type": "integer"
+          "type": "number"
         },
         "ingot-tin": {
-          "type": "integer"
+          "type": "number"
         },
         "ingot-leadsolder": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1779,10 +1780,10 @@
       "type": "object",
       "properties": {
         "ingot-meteoriciron": {
-          "type": "integer"
+          "type": "number"
         },
         "ingot-blistersteel": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1812,7 +1813,7 @@
           "type": "string"
         },
         "quantity": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1881,13 +1882,13 @@
       "type": "object",
       "properties": {
         "red": {
-          "type": "integer"
+          "type": "number"
         },
         "green": {
-          "type": "integer"
+          "type": "number"
         },
         "blue": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1906,7 +1907,7 @@
       "type": "object",
       "properties": {
         "value": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1920,7 +1921,7 @@
           "type": "string"
         },
         "stacksize": {
-          "type": "integer"
+          "type": "number"
         },
         "attributes": {
           "$ref": "#/definitions/Anonymous85"
@@ -1939,124 +1940,124 @@
       "type": "object",
       "properties": {
         "*-poor-cassiterite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-medium-cassiterite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-rich-cassiterite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-bountiful-cassiterite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-poor-hematite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-medium-hematite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-rich-hematite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-bountiful-hematite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-poor-quartz_nativesilver-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-medium-quartz_nativesilver-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-rich-quartz_nativesilver-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-bountiful-quartz_nativesilver-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-poor-quartz_nativegold-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-medium-quartz_nativegold-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-rich-quartz_nativegold-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-bountiful-quartz_nativegold-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-poor-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-medium-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-rich-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-bountiful-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-poor-cassiterite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-medium-cassiterite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-rich-cassiterite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-bountiful-cassiterite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-poor-hematite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-medium-hematite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-rich-hematite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-bountiful-hematite-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-poor-quartz_nativesilver-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-medium-quartz_nativesilver-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-rich-quartz_nativesilver-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-bountiful-quartz_nativesilver-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-poor-quartz_nativegold-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-medium-quartz_nativegold-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-rich-quartz_nativegold-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-bountiful-quartz_nativegold-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-poor-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-medium-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-rich-*": {
-          "type": "integer"
+          "type": "number"
         },
         "ore-bountiful-*": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -2198,13 +2199,13 @@
       "type": "object",
       "properties": {
         "n": {
-          "type": "integer"
+          "type": "number"
         },
         "p": {
-          "type": "integer"
+          "type": "number"
         },
         "k": {
-          "type": "integer"
+          "type": "number"
         },
         "permaboost": {
           "$ref": "#/definitions/Permaboost"
@@ -2215,13 +2216,13 @@
       "type": "object",
       "properties": {
         "n": {
-          "type": "integer"
+          "type": "number"
         },
         "p": {
-          "type": "integer"
+          "type": "number"
         },
         "k": {
-          "type": "integer"
+          "type": "number"
         },
         "code": {
           "type": "string"
@@ -2250,10 +2251,10 @@
           "type": "number"
         },
         "*-commoner-boots": {
-          "type": "integer"
+          "type": "number"
         },
         "*-fur-lined-reindeer-herder-shoes": {
-          "type": "integer"
+          "type": "number"
         },
         "*-hunter-boots": {
           "type": "number"
@@ -2268,13 +2269,13 @@
           "type": "number"
         },
         "*-knee-high-fur-boots": {
-          "type": "integer"
+          "type": "number"
         },
         "*-malefactor-boots": {
-          "type": "integer"
+          "type": "number"
         },
         "*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-fortune-teller-hip-scarf": {
           "type": "number"
@@ -2331,43 +2332,43 @@
           "type": "number"
         },
         "*-noble-fur-collar": {
-          "type": "integer"
+          "type": "number"
         },
         "*-hooded-cape": {
-          "type": "integer"
+          "type": "number"
         },
         "*-scarf": {
-          "type": "integer"
+          "type": "number"
         },
         "*-kaftan": {
-          "type": "integer"
+          "type": "number"
         },
         "*-poncho": {
-          "type": "integer"
+          "type": "number"
         },
         "*-mantle": {
-          "type": "integer"
+          "type": "number"
         },
         "*-coat": {
-          "type": "integer"
+          "type": "number"
         },
         "*-fur": {
-          "type": "integer"
+          "type": "number"
         },
         "*-robe": {
-          "type": "integer"
+          "type": "number"
         },
         "*-moonrobe": {
-          "type": "integer"
+          "type": "number"
         },
         "*-tunic": {
-          "type": "integer"
+          "type": "number"
         },
         "*-sash": {
           "type": "number"
         },
         "*-rotwalker": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -2814,7 +2815,7 @@
           "type": "number"
         },
         "protectionTier": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -2828,7 +2829,7 @@
           "type": "number"
         },
         "protectionTier": {
-          "type": "integer"
+          "type": "number"
         },
         "perTierRelativeProtectionLoss": {
           "type": "array",
@@ -2875,7 +2876,7 @@
           "type": "boolean"
         },
         "protectionTier": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },

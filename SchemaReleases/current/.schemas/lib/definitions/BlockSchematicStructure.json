@@ -1,4 +1,5 @@
 {
+  "title": "BlockSchematicStructure",
   "allOf": [
     {
       "$ref": "./BlockSchematic.json#"

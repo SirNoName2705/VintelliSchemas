@@ -1,4 +1,5 @@
 {
+  "title": "FoodNutritionProperties",
   "type": "object",
   "properties": {
     "eatenStack": {

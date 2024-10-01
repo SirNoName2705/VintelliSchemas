@@ -1,13 +1,18 @@
 {
+  "title": "EnumItemClass",
   "type": "string",
   "description": "",
-  "x-enumNames": [
-    "Block",
-    "Item"
-  ],
-  "enum": [
-    "block",
-    "item"
+  "anyOf": [
+    {
+      "title": "Block",
+      "default": "Block",
+      "pattern": "[Bb][Ll][Oo][Cc][Kk]"
+    },
+    {
+      "title": "Item",
+      "default": "Item",
+      "pattern": "[Ii][Tt][Ee][Mm]"
+    }
   ],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

@@ -1,15 +1,23 @@
 {
+  "title": "EnumDrawMode",
   "type": "string",
   "description": "",
-  "x-enumNames": [
-    "Triangles",
-    "Lines",
-    "LineStrip"
-  ],
-  "enum": [
-    "triangles",
-    "lines",
-    "lineStrip"
+  "anyOf": [
+    {
+      "title": "Triangles",
+      "default": "Triangles",
+      "pattern": "[Tt][Rr][Ii][Aa][Nn][Gg][Ll][Ee][Ss]"
+    },
+    {
+      "title": "Lines",
+      "default": "Lines",
+      "pattern": "[Ll][Ii][Nn][Ee][Ss]"
+    },
+    {
+      "title": "LineStrip",
+      "default": "LineStrip",
+      "pattern": "[Ll][Ii][Nn][Ee][Ss][Tt][Rr][Ii][Pp]"
+    }
   ],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

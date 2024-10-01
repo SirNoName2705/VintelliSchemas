@@ -1,4 +1,5 @@
 {
+  "title": "Block",
   "allOf": [
     {
       "$ref": "./CollectibleObject.json#"

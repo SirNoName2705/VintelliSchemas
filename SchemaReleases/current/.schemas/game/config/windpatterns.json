@@ -7,6 +7,7 @@
   },
   "definitions": {
     "WindPatternConfig": {
+      "title": "WindPatternConfig",
       "type": "object",
       "properties": {
         "code": {

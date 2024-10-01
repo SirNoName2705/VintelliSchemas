@@ -1,4 +1,5 @@
 {
+  "title": "BlockDropItemStack",
   "type": "object",
   "description": "Represents an itemstack that is dropped by chance when breaking a block",
   "properties": {

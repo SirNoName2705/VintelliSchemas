@@ -1,4 +1,5 @@
 {
+  "title": "CropBehavior",
   "type": "object",
   "properties": {
     "block": {

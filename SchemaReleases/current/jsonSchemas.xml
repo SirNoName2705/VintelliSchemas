@@ -480,7 +480,7 @@
                 <list>
                   <Item>
                     <option name="pattern" value="true" />
-                    <option name="path" value="**/assets/**/worldgen/deposits/**" />
+                    <option name="path" value="**/assets/**/worldgen/deposits.json" />
                     <option name="mappingKind" value="Pattern" />
                   </Item>
                 </list>
@@ -498,7 +498,7 @@
                 <list>
                   <Item>
                     <option name="pattern" value="true" />
-                    <option name="path" value="**/assets/**/worldgen/deposits.json" />
+                    <option name="path" value="**/assets/**/worldgen/deposits/**" />
                     <option name="mappingKind" value="Pattern" />
                   </Item>
                 </list>
@@ -697,29 +697,6 @@
                   <Item>
                     <option name="pattern" value="true" />
                     <option name="path" value="**/assets/**/worldgen/worldproperties/**" />
-                    <option name="mappingKind" value="Pattern" />
-                  </Item>
-                </list>
-              </option>
-            </SchemaInfo>
-          </value>
-        </entry>
-        <entry key="modinfo">
-          <value>
-            <SchemaInfo>
-              <option name="generatedName" value="New Schema" />
-              <option name="name" value="modinfo" />
-              <option name="relativePathToSchema" value="https://raw.githubusercontent.com/SirNoName2705/VintelliSchemas/master/SchemaReleases/current/.schemas/modinfo.json" />
-              <option name="patterns">
-                <list>
-                  <Item>
-                    <option name="pattern" value="true" />
-                    <option name="path" value="**/modinfo.json" />
-                    <option name="mappingKind" value="Pattern" />
-                  </Item>
-                  <Item>
-                    <option name="pattern" value="true" />
-                    <option name="path" value="**/assets/**/modinfo.json" />
                     <option name="mappingKind" value="Pattern" />
                   </Item>
                 </list>

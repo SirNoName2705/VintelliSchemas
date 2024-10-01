@@ -1,0 +1,4344 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "string",
+  "anyOf": [
+    {
+      "const": "gorilla-gum"
+    },
+    {
+      "const": "bd"
+    },
+    {
+      "const": "velthorianbags"
+    },
+    {
+      "const": "gggenchem"
+    },
+    {
+      "const": "tonwexp-neue"
+    },
+    {
+      "const": "fotofoblocusts"
+    },
+    {
+      "const": "fotofobdrifters"
+    },
+    {
+      "const": "dicerolladdon"
+    },
+    {
+      "const": "norotbeast"
+    },
+    {
+      "const": "fotofobshivers"
+    },
+    {
+      "const": "ndlchiselpick"
+    },
+    {
+      "const": "mr"
+    },
+    {
+      "const": "driftershaveloot"
+    },
+    {
+      "const": "plaindyeing"
+    },
+    {
+      "const": "bearhidepatches"
+    },
+    {
+      "const": "chargedjump"
+    },
+    {
+      "const": "immersiveorecrush"
+    },
+    {
+      "const": "claimsofcandor"
+    },
+    {
+      "const": "extracode"
+    },
+    {
+      "const": "moreroadschiselbegone"
+    },
+    {
+      "const": "barreldough"
+    },
+    {
+      "const": "fancyclouds2d"
+    },
+    {
+      "const": "gifty"
+    },
+    {
+      "const": "kcmrdpatch"
+    },
+    {
+      "const": "clicktopick"
+    },
+    {
+      "const": "blockpatchpatcher"
+    },
+    {
+      "const": "dumpjson"
+    },
+    {
+      "const": "noarmorhunger"
+    },
+    {
+      "const": "kcmathpatch"
+    },
+    {
+      "const": "shearlib"
+    },
+    {
+      "const": "kcmftospatch"
+    },
+    {
+      "const": "vsatlas_resized"
+    },
+    {
+      "const": "shovelimpervioustosnow"
+    },
+    {
+      "const": "berrybushfixes"
+    },
+    {
+      "const": "plumbandcube"
+    },
+    {
+      "const": "extracontent"
+    },
+    {
+      "const": "clickuptorches"
+    },
+    {
+      "const": "stepupcontinued"
+    },
+    {
+      "const": "fruitpressmashfix"
+    },
+    {
+      "const": "classrebalance"
+    },
+    {
+      "const": "ndlcreatures"
+    },
+    {
+      "const": "wazuraweaponry"
+    },
+    {
+      "const": "caverndarkness"
+    },
+    {
+      "const": "noclassnegatives"
+    },
+    {
+      "const": "bf"
+    },
+    {
+      "const": "simplepaperlanternrecipe"
+    },
+    {
+      "const": "cokemakesense"
+    },
+    {
+      "const": "randomseedxskill"
+    },
+    {
+      "const": "edenvalrpessentials"
+    },
+    {
+      "const": "jayuscookbook"
+    },
+    {
+      "const": "sandwich"
+    },
+    {
+      "const": "ppserver"
+    },
+    {
+      "const": "OoN-Utils"
+    },
+    {
+      "const": "noticeboard"
+    },
+    {
+      "const": "slowwalkmod"
+    },
+    {
+      "const": "laverace"
+    },
+    {
+      "const": "sharpencompatfork"
+    },
+    {
+      "const": "Dacian_Weaponry"
+    },
+    {
+      "const": "vintagercon"
+    },
+    {
+      "const": "minimalcompass"
+    },
+    {
+      "const": "edenvalrppatchesdiscord"
+    },
+    {
+      "const": "edenvalrppatchesproximityrp"
+    },
+    {
+      "const": "apelanterns"
+    },
+    {
+      "const": "Broccoli"
+    },
+    {
+      "const": "danacancook"
+    },
+    {
+      "const": "betterfpcamera"
+    },
+    {
+      "const": "SimpleAnthroFoxPlayer"
+    },
+    {
+      "const": "nametagtweak"
+    },
+    {
+      "const": "ufm"
+    },
+    {
+      "const": "ifozclothes"
+    },
+    {
+      "const": "localrespawns"
+    },
+    {
+      "const": "DungeonAssets"
+    },
+    {
+      "const": "DiamondTools"
+    },
+    {
+      "const": "russianmod"
+    },
+    {
+      "const": "gourmand"
+    },
+    {
+      "const": "stonequarry0breakdowntools0adaptation"
+    },
+    {
+      "const": "mastodontrunk"
+    },
+    {
+      "const": "kramari"
+    },
+    {
+      "const": "decorbazarnerf"
+    },
+    {
+      "const": "greesblastingpowder"
+    },
+    {
+      "const": "playerreporter"
+    },
+    {
+      "const": "butcheringbloodsausages"
+    },
+    {
+      "const": "simpletailoring"
+    },
+    {
+      "const": "aged"
+    },
+    {
+      "const": "flamysmod"
+    },
+    {
+      "const": "liberatedbeds"
+    },
+    {
+      "const": "wildanimalstrader"
+    },
+    {
+      "const": "sleep_rework"
+    },
+    {
+      "const": "ESP"
+    },
+    {
+      "const": "kemonorosaceedit"
+    },
+    {
+      "const": "mapwaypointcolors"
+    },
+    {
+      "const": "charcoalpitdoor"
+    },
+    {
+      "const": "stackattack"
+    },
+    {
+      "const": "wool"
+    },
+    {
+      "const": "seraphfaceoverhaul"
+    },
+    {
+      "const": "betteralias"
+    },
+    {
+      "const": "jewelry2silver"
+    },
+    {
+      "const": "roleplay_name"
+    },
+    {
+      "const": "wattleworldrevised"
+    },
+    {
+      "const": "thriftysmithing"
+    },
+    {
+      "const": "customplaystyles"
+    },
+    {
+      "const": "zer0villag3rs"
+    },
+    {
+      "const": "climabletrapdoors"
+    },
+    {
+      "const": "lads"
+    },
+    {
+      "const": "pickbars"
+    },
+    {
+      "const": "drifter"
+    },
+    {
+      "const": "kdynamicjump"
+    },
+    {
+      "const": "divisionoflabornocook"
+    },
+    {
+      "const": "betterhewnfencegates"
+    },
+    {
+      "const": "lightingrework"
+    },
+    {
+      "const": "lensgemology"
+    },
+    {
+      "const": "realmsofcandor_configmod"
+    },
+    {
+      "const": "justchairs"
+    },
+    {
+      "const": "ripened_wild_crops"
+    },
+    {
+      "const": "rsrebalance"
+    },
+    {
+      "const": "mushroomtrader"
+    },
+    {
+      "const": "terrapretatradesky"
+    },
+    {
+      "const": "domesticanimaltrader"
+    },
+    {
+      "const": "moreroadstexturepatch"
+    },
+    {
+      "const": "clssicseraphfaces"
+    },
+    {
+      "const": "traitacquirer"
+    },
+    {
+      "const": "cumanhelmet"
+    },
+    {
+      "const": "weaponpackalphaunoffchakri"
+    },
+    {
+      "const": "rnroutlawsvillagerscompat"
+    },
+    {
+      "const": "sethomes"
+    },
+    {
+      "const": "wallpaperblocks"
+    },
+    {
+      "const": "bonysoilrecipe"
+    },
+    {
+      "const": "toolsextended"
+    },
+    {
+      "const": "irregularguyboltheadsrecovery"
+    },
+    {
+      "const": "RareDenseOres"
+    },
+    {
+      "const": "vintage-symphony"
+    },
+    {
+      "const": "thunderlord"
+    },
+    {
+      "const": "feidrysfixedmoreclasses"
+    },
+    {
+      "const": "alchemytrader"
+    },
+    {
+      "const": "pickuplootvessel"
+    },
+    {
+      "const": "bookbinders"
+    },
+    {
+      "const": "booktrader"
+    },
+    {
+      "const": "simplelogging"
+    },
+    {
+      "const": "cookie12000stickbeam"
+    },
+    {
+      "const": "traderssellborax"
+    },
+    {
+      "const": "moregrassandtuledrops"
+    },
+    {
+      "const": "powdermanufacturing"
+    },
+    {
+      "const": "divisionoflaboredited"
+    },
+    {
+      "const": "applyonhit"
+    },
+    {
+      "const": "foodshelves"
+    },
+    {
+      "const": "kegrevivedagain"
+    },
+    {
+      "const": "fieldsofgoldpatched"
+    },
+    {
+      "const": "OutlawCompForRustRot"
+    },
+    {
+      "const": "AbsoluteProspecting"
+    },
+    {
+      "const": "longtermfood"
+    },
+    {
+      "const": "morefuel"
+    },
+    {
+      "const": "clientfactions"
+    },
+    {
+      "const": "serverutils"
+    },
+    {
+      "const": "pomnotes"
+    },
+    {
+      "const": "simplecombos"
+    },
+    {
+      "const": "aurorasclasses"
+    },
+    {
+      "const": "announcer"
+    },
+    {
+      "const": "btb-o43"
+    },
+    {
+      "const": "explosive"
+    },
+    {
+      "const": "traderballoonsmod"
+    },
+    {
+      "const": "RotCreatures-Revorked"
+    },
+    {
+      "const": "currency"
+    },
+    {
+      "const": "Uncrustables"
+    },
+    {
+      "const": "molds"
+    },
+    {
+      "const": "libatex"
+    },
+    {
+      "const": "kscartographytable"
+    },
+    {
+      "const": "lithocraft"
+    },
+    {
+      "const": "nauvrageclasses"
+    },
+    {
+      "const": "decayingtrophies"
+    },
+    {
+      "const": "saplinggrowthtweak"
+    },
+    {
+      "const": "rustandrot"
+    },
+    {
+      "const": "vtr"
+    },
+    {
+      "const": "casualcraft"
+    },
+    {
+      "const": "Fendragon"
+    },
+    {
+      "const": "shearsspeedscales"
+    },
+    {
+      "const": "largecrystalores"
+    },
+    {
+      "const": "SoundOfConfession"
+    },
+    {
+      "const": "minimalmapping"
+    },
+    {
+      "const": "aworldbeyondserverpack"
+    },
+    {
+      "const": "driftertweak"
+    },
+    {
+      "const": "expandedfoodscheese"
+    },
+    {
+      "const": "dyedhardenedclay"
+    },
+    {
+      "const": "drawonmap"
+    },
+    {
+      "const": "OBS"
+    },
+    {
+      "const": "saltandsands"
+    },
+    {
+      "const": "untamedwildsursidae"
+    },
+    {
+      "const": "vsvillagedesert"
+    },
+    {
+      "const": "vsvillageviking"
+    },
+    {
+      "const": "wgmt"
+    },
+    {
+      "const": "mif"
+    },
+    {
+      "const": "vsvillageindustrial"
+    },
+    {
+      "const": "vsvillagetowers"
+    },
+    {
+      "const": "vsvillageaged"
+    },
+    {
+      "const": "bodyheatbarfix"
+    },
+    {
+      "const": "mapautocenterfix"
+    },
+    {
+      "const": "clearerquartzfix"
+    },
+    {
+      "const": "freedomunitsfix"
+    },
+    {
+      "const": "naturalnightfix"
+    },
+    {
+      "const": "fancyskyfix"
+    },
+    {
+      "const": "lastingarmor"
+    },
+    {
+      "const": "tbojrecipe"
+    },
+    {
+      "const": "artofgrowing"
+    },
+    {
+      "const": "scatastrophe"
+    },
+    {
+      "const": "apewindows"
+    },
+    {
+      "const": "chickenfeedwildcraftfruitcompat"
+    },
+    {
+      "const": "seashellore"
+    },
+    {
+      "const": "pomdrafts"
+    },
+    {
+      "const": "greenhousebuff"
+    },
+    {
+      "const": "ashes"
+    },
+    {
+      "const": "simplevillages"
+    },
+    {
+      "const": "typing_indicator"
+    },
+    {
+      "const": "muchbetterdrifters"
+    },
+    {
+      "const": "extrachestsfantasyedition"
+    },
+    {
+      "const": "hydrateordiedrate"
+    },
+    {
+      "const": "ensatinas"
+    },
+    {
+      "const": "FendragonBCS"
+    },
+    {
+      "const": "balancedthirst"
+    },
+    {
+      "const": "crosscomme"
+    },
+    {
+      "const": "irregularguybetterjam"
+    },
+    {
+      "const": "slsp"
+    },
+    {
+      "const": "deconstructchutes"
+    },
+    {
+      "const": "wildcrafteggshelltroughfix"
+    },
+    {
+      "const": "crackedrockweak"
+    },
+    {
+      "const": "DrystoneParity"
+    },
+    {
+      "const": "simplecommands"
+    },
+    {
+      "const": "CutTheFat"
+    },
+    {
+      "const": "bettercaveart"
+    },
+    {
+      "const": "gaggleserverstuff"
+    },
+    {
+      "const": "redbricktweak"
+    },
+    {
+      "const": "fruitpresstweaked"
+    },
+    {
+      "const": "macro_delay"
+    },
+    {
+      "const": "battletowers"
+    },
+    {
+      "const": "nakedafraid"
+    },
+    {
+      "const": "thirdperson_crosshair"
+    },
+    {
+      "const": "versionchecker"
+    },
+    {
+      "const": "upholstery"
+    },
+    {
+      "const": "evenjugincrements"
+    },
+    {
+      "const": "spawnersapi"
+    },
+    {
+      "const": "metalrecycling"
+    },
+    {
+      "const": "superfuelresumed"
+    },
+    {
+      "const": "transmapeporter"
+    },
+    {
+      "const": "hideandfabric-net7u"
+    },
+    {
+      "const": "simplefootstepsredux"
+    },
+    {
+      "const": "doubleslabs"
+    },
+    {
+      "const": "easyprospect"
+    },
+    {
+      "const": "bedspawnv2"
+    },
+    {
+      "const": "Harpers_Immersive_Tools"
+    },
+    {
+      "const": "metalunittooltip"
+    },
+    {
+      "const": "tulepropagation"
+    },
+    {
+      "const": "lxgwwenkaifont"
+    },
+    {
+      "const": "tieredarrows"
+    },
+    {
+      "const": "volumetricyamldotnetcompatibility"
+    },
+    {
+      "const": "beartrap"
+    },
+    {
+      "const": "vsrecipes"
+    },
+    {
+      "const": "windowsime_fix"
+    },
+    {
+      "const": "SZRebalanceClass"
+    },
+    {
+      "const": "handbookpinyinsupport"
+    },
+    {
+      "const": "particlesplus"
+    },
+    {
+      "const": "lcedits"
+    },
+    {
+      "const": "decayingcreatures"
+    },
+    {
+      "const": "sawdebarkedlogs"
+    },
+    {
+      "const": "biggercellars"
+    },
+    {
+      "const": "barstotemporal"
+    },
+    {
+      "const": "barstogears"
+    },
+    {
+      "const": "cattailsfromgrass"
+    },
+    {
+      "const": "sticksfromplanks"
+    },
+    {
+      "const": "krpgwands"
+    },
+    {
+      "const": "krpgenchantment"
+    },
+    {
+      "const": "drifterlightlevel1"
+    },
+    {
+      "const": "autochisel"
+    },
+    {
+      "const": "lichenredux"
+    },
+    {
+      "const": "vintariaclasses"
+    },
+    {
+      "const": "doublechains"
+    },
+    {
+      "const": "oddsandends"
+    },
+    {
+      "const": "passthruchutes"
+    },
+    {
+      "const": "vskingdom"
+    },
+    {
+      "const": "madgnomeservermod2"
+    },
+    {
+      "const": "flags"
+    },
+    {
+      "const": "Other_Craftz"
+    },
+    {
+      "const": "alchemistry"
+    },
+    {
+      "const": "thekinginred"
+    },
+    {
+      "const": "blumpocraft"
+    },
+    {
+      "const": "dinornithidae"
+    },
+    {
+      "const": "iconic_voices_569"
+    },
+    {
+      "const": "craftablejparts"
+    },
+    {
+      "const": "entitiesconfiguration"
+    },
+    {
+      "const": "additionalspawnconstraints"
+    },
+    {
+      "const": "dressmakers"
+    },
+    {
+      "const": "combatoverhaul"
+    },
+    {
+      "const": "japanesemod"
+    },
+    {
+      "const": "Realms"
+    },
+    {
+      "const": "porridgewithmilk"
+    },
+    {
+      "const": "leaderboards"
+    },
+    {
+      "const": "deathmessagefix"
+    },
+    {
+      "const": "meltingpp"
+    },
+    {
+      "const": "floralzonesneozeylandicregion"
+    },
+    {
+      "const": "Rotcreatures"
+    },
+    {
+      "const": "lenstweaks"
+    },
+    {
+      "const": "nodensitysearch"
+    },
+    {
+      "const": "morebanners"
+    },
+    {
+      "const": "abcsrnolipbalancepatch"
+    },
+    {
+      "const": "fixture"
+    },
+    {
+      "const": "slvmegapatch"
+    },
+    {
+      "const": "inan"
+    },
+    {
+      "const": "warmarmor"
+    },
+    {
+      "const": "moremineralsrevive"
+    },
+    {
+      "const": "gimmeoneseedplz"
+    },
+    {
+      "const": "lib2d"
+    },
+    {
+      "const": "CredClasses"
+    },
+    {
+      "const": "compostgrass"
+    },
+    {
+      "const": "rcl"
+    },
+    {
+      "const": "middleclicktostow"
+    },
+    {
+      "const": "vichnybackpack"
+    },
+    {
+      "const": "toolworksadditions"
+    },
+    {
+      "const": "proximityprospectingpick"
+    },
+    {
+      "const": "adjustedstepheight"
+    },
+    {
+      "const": "plankable-nmnd"
+    },
+    {
+      "const": "ediblerot"
+    },
+    {
+      "const": "restoreoldanims"
+    },
+    {
+      "const": "manidae"
+    },
+    {
+      "const": "thatchexpanded"
+    },
+    {
+      "const": "stonetobricks"
+    },
+    {
+      "const": "TVSM"
+    },
+    {
+      "const": "chatping"
+    },
+    {
+      "const": "increasedstepheight"
+    },
+    {
+      "const": "pvpcc"
+    },
+    {
+      "const": "teamgear"
+    },
+    {
+      "const": "kevinsfurniture"
+    },
+    {
+      "const": "stickydirt"
+    },
+    {
+      "const": "rpgdifficulty"
+    },
+    {
+      "const": "banners"
+    },
+    {
+      "const": "enutraductions"
+    },
+    {
+      "const": "easierfruittrees"
+    },
+    {
+      "const": "rhinocerotidae"
+    },
+    {
+      "const": "wildberrydye"
+    },
+    {
+      "const": "electricityaddon"
+    },
+    {
+      "const": "offhandpenalty"
+    },
+    {
+      "const": "leaderstats"
+    },
+    {
+      "const": "recipepatcher"
+    },
+    {
+      "const": "tempseed"
+    },
+    {
+      "const": "chiblocksel"
+    },
+    {
+      "const": "meatup"
+    },
+    {
+      "const": "eristweaks"
+    },
+    {
+      "const": "mycodiversity"
+    },
+    {
+      "const": "vsserverpanel"
+    },
+    {
+      "const": "thatsenoughinventory"
+    },
+    {
+      "const": "audit_log_keeper"
+    },
+    {
+      "const": "naturalclay"
+    },
+    {
+      "const": "ropebridgescompatibility"
+    },
+    {
+      "const": "blockmold"
+    },
+    {
+      "const": "pelaguswinds"
+    },
+    {
+      "const": "locustrepairing"
+    },
+    {
+      "const": "mushroomroulette"
+    },
+    {
+      "const": "simplewinddirectionpelagus"
+    },
+    {
+      "const": "xdiseases"
+    },
+    {
+      "const": "recyclecrudearrow"
+    },
+    {
+      "const": "crudedoorvariants"
+    },
+    {
+      "const": "immersivetpscamera"
+    },
+    {
+      "const": "heatretention"
+    },
+    {
+      "const": "eumod"
+    },
+    {
+      "const": "civpins"
+    },
+    {
+      "const": "consistentclayforming"
+    },
+    {
+      "const": "augplantlib"
+    },
+    {
+      "const": "newworldcrops"
+    },
+    {
+      "const": "insulatingdoors"
+    },
+    {
+      "const": "levelup"
+    },
+    {
+      "const": "labeledtrunk"
+    },
+    {
+      "const": "rockstratavariety"
+    },
+    {
+      "const": "emotemenureload"
+    },
+    {
+      "const": "asphalt"
+    },
+    {
+      "const": "floralzoneseastasiaticregion"
+    },
+    {
+      "const": "caneconomy"
+    },
+    {
+      "const": "FLbackpack"
+    },
+    {
+      "const": "fLSP"
+    },
+    {
+      "const": "mushroomz"
+    },
+    {
+      "const": "OutlawMeat"
+    },
+    {
+      "const": "yummyfoods"
+    },
+    {
+      "const": "twitch_integration"
+    },
+    {
+      "const": "sheepdontfly"
+    },
+    {
+      "const": "dryable_ground_storage"
+    },
+    {
+      "const": "lanternpost"
+    },
+    {
+      "const": "astrielmod"
+    },
+    {
+      "const": "casuariidae"
+    },
+    {
+      "const": "secretfoxfiretweaks"
+    },
+    {
+      "const": "magellan1k"
+    },
+    {
+      "const": "weatherthestorm"
+    },
+    {
+      "const": "patchespanpatch"
+    },
+    {
+      "const": "warriordrink"
+    },
+    {
+      "const": "BreakOreWithRocks"
+    },
+    {
+      "const": "talderzeit"
+    },
+    {
+      "const": "griefloggerwithharmony"
+    },
+    {
+      "const": "sanctuaryfwpatch"
+    },
+    {
+      "const": "someextramolds"
+    },
+    {
+      "const": "gluestack"
+    },
+    {
+      "const": "julverniacommunitymod"
+    },
+    {
+      "const": "steamandpower"
+    },
+    {
+      "const": "clipfix"
+    },
+    {
+      "const": "alchemycompat"
+    },
+    {
+      "const": "dont-place-sticks"
+    },
+    {
+      "const": "coloredeggs"
+    },
+    {
+      "const": "xmastimecont"
+    },
+    {
+      "const": "whatcouldgowrong"
+    },
+    {
+      "const": "canclaims"
+    },
+    {
+      "const": "clay-transforming"
+    },
+    {
+      "const": "apeseedbagpatch"
+    },
+    {
+      "const": "kspatches"
+    },
+    {
+      "const": "projectiletracker"
+    },
+    {
+      "const": "oregolems2"
+    },
+    {
+      "const": "whatmodwasthat"
+    },
+    {
+      "const": "pigfeed"
+    },
+    {
+      "const": "resurgencepack"
+    },
+    {
+      "const": "RedDyeFromBerries"
+    },
+    {
+      "const": "attributerreborn"
+    },
+    {
+      "const": "rpgitemrarityreborn"
+    },
+    {
+      "const": "plantpropagationgardenseedsmultiplayer"
+    },
+    {
+      "const": "nameplatesconfiguration"
+    },
+    {
+      "const": "alchemyresurgence"
+    },
+    {
+      "const": "sirenia"
+    },
+    {
+      "const": "th3dungeontopentrance"
+    },
+    {
+      "const": "heimfold"
+    },
+    {
+      "const": "jonascyclezero"
+    },
+    {
+      "const": "vehicleslib"
+    },
+    {
+      "const": "livemap"
+    },
+    {
+      "const": "chickenfeed"
+    },
+    {
+      "const": "sanctuarywcpatch"
+    },
+    {
+      "const": "translocatormarker"
+    },
+    {
+      "const": "rtmod"
+    },
+    {
+      "const": "easytorchlight"
+    },
+    {
+      "const": "betteritemflags"
+    },
+    {
+      "const": "displaycasewall"
+    },
+    {
+      "const": "Spear-Expantion-by-Kanahaku"
+    },
+    {
+      "const": "ancientarmory"
+    },
+    {
+      "const": "volumetricshadingreupdated"
+    },
+    {
+      "const": "hangingbaskets"
+    },
+    {
+      "const": "craftingjonas"
+    },
+    {
+      "const": "lambda"
+    },
+    {
+      "const": "lessannoyingdrifters"
+    },
+    {
+      "const": "instanddrifterdrops"
+    },
+    {
+      "const": "entitiesinteract"
+    },
+    {
+      "const": "gardenerz"
+    },
+    {
+      "const": "ramuncrafting"
+    },
+    {
+      "const": "electricityextensions"
+    },
+    {
+      "const": "floralzonescentralaustralianregion"
+    },
+    {
+      "const": "mio"
+    },
+    {
+      "const": "wildcraftSanctuaryPatch"
+    },
+    {
+      "const": "118hair"
+    },
+    {
+      "const": "charcoalpitrebalance"
+    },
+    {
+      "const": "herbarium-fork"
+    },
+    {
+      "const": "chiselief"
+    },
+    {
+      "const": "romanroads"
+    },
+    {
+      "const": "knifemold"
+    },
+    {
+      "const": "vintageengineering"
+    },
+    {
+      "const": "yourownmusic"
+    },
+    {
+      "const": "QPHard"
+    },
+    {
+      "const": "Vanilla_PlusWorldGen"
+    },
+    {
+      "const": "madgnomeserver"
+    },
+    {
+      "const": "steelanvil"
+    },
+    {
+      "const": "rawhideclothrot"
+    },
+    {
+      "const": "itemrecycle"
+    },
+    {
+      "const": "visibleglass"
+    },
+    {
+      "const": "driedfirefuels"
+    },
+    {
+      "const": "dragonbornqol"
+    },
+    {
+      "const": "norottinghides"
+    },
+    {
+      "const": "simpleclasses"
+    },
+    {
+      "const": "hidenotrot"
+    },
+    {
+      "const": "rylarmor"
+    },
+    {
+      "const": "runictranslator"
+    },
+    {
+      "const": "survivalnutrition"
+    },
+    {
+      "const": "saplingtreeparams2"
+    },
+    {
+      "const": "steelblade"
+    },
+    {
+      "const": "tupaschatmod"
+    },
+    {
+      "const": "flowerfarming"
+    },
+    {
+      "const": "sealcrockswithclay"
+    },
+    {
+      "const": "drodmodtesttttt"
+    },
+    {
+      "const": "clockmakergoggles"
+    },
+    {
+      "const": "terrapretatrade"
+    },
+    {
+      "const": "reducedwater"
+    },
+    {
+      "const": "wildcraftherb"
+    },
+    {
+      "const": "debarkedlogintofirewood"
+    },
+    {
+      "const": "ctom"
+    },
+    {
+      "const": "worldgenfixremix"
+    },
+    {
+      "const": "brutalstory"
+    },
+    {
+      "const": "Gravel2Chalk"
+    },
+    {
+      "const": "southernhemisphereseasons"
+    },
+    {
+      "const": "simplerails"
+    },
+    {
+      "const": "waymarker"
+    },
+    {
+      "const": "cattailstodrygrass"
+    },
+    {
+      "const": "bloomeryfulldrops"
+    },
+    {
+      "const": "NavarlioCustomModded"
+    },
+    {
+      "const": "nodriftersonloosestones"
+    },
+    {
+      "const": "sleepvote"
+    },
+    {
+      "const": "healthiertrees"
+    },
+    {
+      "const": "gildedsteel"
+    },
+    {
+      "const": "oldmap"
+    },
+    {
+      "const": "configureeverything"
+    },
+    {
+      "const": "ot_SticksFromFirewood"
+    },
+    {
+      "const": "vhfp"
+    },
+    {
+      "const": "CraftableRocks"
+    },
+    {
+      "const": "twlsp"
+    },
+    {
+      "const": "morefloors"
+    },
+    {
+      "const": "koboldplayermodelport"
+    },
+    {
+      "const": "somethinginthewater"
+    },
+    {
+      "const": "starvation"
+    },
+    {
+      "const": "toolworks"
+    },
+    {
+      "const": "oils"
+    },
+    {
+      "const": "barenad-classes"
+    },
+    {
+      "const": "cropseedstage"
+    },
+    {
+      "const": "gespilesgran"
+    },
+    {
+      "const": "apanserbjornstory"
+    },
+    {
+      "const": "machairodontinae"
+    },
+    {
+      "const": "gespileslib"
+    },
+    {
+      "const": "Digimod"
+    },
+    {
+      "const": "recyclebackpacks"
+    },
+    {
+      "const": "fixedpaths"
+    },
+    {
+      "const": "tentbag"
+    },
+    {
+      "const": "stainedbeams"
+    },
+    {
+      "const": "vpeatp"
+    },
+    {
+      "const": "thetailmod"
+    },
+    {
+      "const": "frozenmultiplayertweaks"
+    },
+    {
+      "const": "delaylamavoice"
+    },
+    {
+      "const": "trailmod"
+    },
+    {
+      "const": "trapdoorsareladders"
+    },
+    {
+      "const": "cob2"
+    },
+    {
+      "const": "vmetp"
+    },
+    {
+      "const": "satup"
+    },
+    {
+      "const": "wallpaper"
+    },
+    {
+      "const": "hudgametimeclock"
+    },
+    {
+      "const": "vresp"
+    },
+    {
+      "const": "wrenchtip_disable"
+    },
+    {
+      "const": "advmpprog"
+    },
+    {
+      "const": "poopblock"
+    },
+    {
+      "const": "linentunicrecipe"
+    },
+    {
+      "const": "largercrock"
+    },
+    {
+      "const": "directstrongtannin"
+    },
+    {
+      "const": "qpquests"
+    },
+    {
+      "const": "dirtyoldsack"
+    },
+    {
+      "const": "flourbags"
+    },
+    {
+      "const": "nbcartographer"
+    },
+    {
+      "const": "ancientarmor"
+    },
+    {
+      "const": "craft"
+    },
+    {
+      "const": "butterflycases"
+    },
+    {
+      "const": "chairmenmeow"
+    },
+    {
+      "const": "fluffytowelsmoreoredrops"
+    },
+    {
+      "const": "c1"
+    },
+    {
+      "const": "plankstick"
+    },
+    {
+      "const": "spiderwebtwine"
+    },
+    {
+      "const": "immersivewoodsawing"
+    },
+    {
+      "const": "wildcrafttree"
+    },
+    {
+      "const": "gravelpaths"
+    },
+    {
+      "const": "kitchwaypointlabeler"
+    },
+    {
+      "const": "CitadelFix"
+    },
+    {
+      "const": "fluffytowelsmorenuggets"
+    },
+    {
+      "const": "eftraders"
+    },
+    {
+      "const": "tallowcandles"
+    },
+    {
+      "const": "offhandpsquare"
+    },
+    {
+      "const": "oneroof"
+    },
+    {
+      "const": "statushudcont"
+    },
+    {
+      "const": "NoSaturationLossDelay"
+    },
+    {
+      "const": "sharpencompat"
+    },
+    {
+      "const": "tpcbackport"
+    },
+    {
+      "const": "bastion"
+    },
+    {
+      "const": "slowfuel"
+    },
+    {
+      "const": "crudearrowupgrade"
+    },
+    {
+      "const": "minerz"
+    },
+    {
+      "const": "tpc"
+    },
+    {
+      "const": "helcratestandard"
+    },
+    {
+      "const": "toomanyshingleblocks"
+    },
+    {
+      "const": "lessdeadlymushrooms"
+    },
+    {
+      "const": "mcadv"
+    },
+    {
+      "const": "mouse4and5"
+    },
+    {
+      "const": "PeltBackpacks"
+    },
+    {
+      "const": "thermalfracturing"
+    },
+    {
+      "const": "MoreShingles"
+    },
+    {
+      "const": "scraps"
+    },
+    {
+      "const": "drifters-belong-underground"
+    },
+    {
+      "const": "outerspacetunesvolume2"
+    },
+    {
+      "const": "outerspacetunesvolume1"
+    },
+    {
+      "const": "outerspacetunesmaster"
+    },
+    {
+      "const": "Clumps"
+    },
+    {
+      "const": "restoredhaircolors"
+    },
+    {
+      "const": "helfavorite"
+    },
+    {
+      "const": "rotcraft"
+    },
+    {
+      "const": "nationofsteel"
+    },
+    {
+      "const": "ttqol"
+    },
+    {
+      "const": "spearsplus"
+    },
+    {
+      "const": "youvegotmail"
+    },
+    {
+      "const": "natsachievements"
+    },
+    {
+      "const": "tripleanimaldrop"
+    },
+    {
+      "const": "cumanmod"
+    },
+    {
+      "const": "toolsplus"
+    },
+    {
+      "const": "hofe"
+    },
+    {
+      "const": "temporalog"
+    },
+    {
+      "const": "zorddrifters"
+    },
+    {
+      "const": "metalfreechests"
+    },
+    {
+      "const": "configlib"
+    },
+    {
+      "const": "smithabletorchholders"
+    },
+    {
+      "const": "Clothez"
+    },
+    {
+      "const": "helquickstack"
+    },
+    {
+      "const": "clearerquartz"
+    },
+    {
+      "const": "lowershield"
+    },
+    {
+      "const": "removenegativearmoreffects"
+    },
+    {
+      "const": "qolmaster"
+    },
+    {
+      "const": "compatmaster"
+    },
+    {
+      "const": "ssab"
+    },
+    {
+      "const": "dirtpaths"
+    },
+    {
+      "const": "tweaks"
+    },
+    {
+      "const": "metalbitfix"
+    },
+    {
+      "const": "tieredtradebags"
+    },
+    {
+      "const": "salmonfix"
+    },
+    {
+      "const": "simplifiedtanning"
+    },
+    {
+      "const": "bettercompost"
+    },
+    {
+      "const": "harptechfix"
+    },
+    {
+      "const": "ageofconfession"
+    },
+    {
+      "const": "swapmouseslot"
+    },
+    {
+      "const": "helnormalizer"
+    },
+    {
+      "const": "rivers"
+    },
+    {
+      "const": "betterbackpacksforawearablelight"
+    },
+    {
+      "const": "stickRecipe"
+    },
+    {
+      "const": "civcore"
+    },
+    {
+      "const": "vsimgui"
+    },
+    {
+      "const": "painteverywhere"
+    },
+    {
+      "const": "cancropsprimitivesurvivalcompat"
+    },
+    {
+      "const": "single_use_firestarter"
+    },
+    {
+      "const": "natspvpselector"
+    },
+    {
+      "const": "woodstain"
+    },
+    {
+      "const": "animationmanagerlib"
+    },
+    {
+      "const": "inquisitor"
+    },
+    {
+      "const": "woodensmp"
+    },
+    {
+      "const": "leatherminingbag"
+    },
+    {
+      "const": "craftablecompanion"
+    },
+    {
+      "const": "morecropsfix2"
+    },
+    {
+      "const": "justanarrowheadmold"
+    },
+    {
+      "const": "upgradeablelocust"
+    },
+    {
+      "const": "betterpoultice2"
+    },
+    {
+      "const": "morecropsyanni"
+    },
+    {
+      "const": "xskillsplayercorpsecompat"
+    },
+    {
+      "const": "cancropsxskillscompat"
+    },
+    {
+      "const": "blacksmithenhancements"
+    },
+    {
+      "const": "dischiselblock"
+    },
+    {
+      "const": "betterstonepath"
+    },
+    {
+      "const": "bone2lime"
+    },
+    {
+      "const": "vinterra"
+    },
+    {
+      "const": "warmerclothing"
+    },
+    {
+      "const": "Swordz"
+    },
+    {
+      "const": "claycasting"
+    },
+    {
+      "const": "storagecontroller"
+    },
+    {
+      "const": "lensstory"
+    },
+    {
+      "const": "sanctuarypatch"
+    },
+    {
+      "const": "glojack"
+    },
+    {
+      "const": "hammercrushed"
+    },
+    {
+      "const": "vsonlinepicturemod"
+    },
+    {
+      "const": "customizableriftward"
+    },
+    {
+      "const": "simplecloth"
+    },
+    {
+      "const": "meteoricironalloy"
+    },
+    {
+      "const": "snowballs"
+    },
+    {
+      "const": "OresAPlentyKYS"
+    },
+    {
+      "const": "snitchmod"
+    },
+    {
+      "const": "barbershop"
+    },
+    {
+      "const": "ingotheating"
+    },
+    {
+      "const": "dwblocks"
+    },
+    {
+      "const": "vsradiomod"
+    },
+    {
+      "const": "expressyourself"
+    },
+    {
+      "const": "repairablelocust"
+    },
+    {
+      "const": "newfiesdrifters"
+    },
+    {
+      "const": "wowdrifters"
+    },
+    {
+      "const": "saltwaterbugfix"
+    },
+    {
+      "const": "harvestableinventorysize"
+    },
+    {
+      "const": "kegrevival"
+    },
+    {
+      "const": "coolinbarrel"
+    },
+    {
+      "const": "propagatingreeds"
+    },
+    {
+      "const": "shieldsrebalance"
+    },
+    {
+      "const": "asianmonitorlizards"
+    },
+    {
+      "const": "beltcraft"
+    },
+    {
+      "const": "chrissis-es"
+    },
+    {
+      "const": "icecold"
+    },
+    {
+      "const": "BedRespawning"
+    },
+    {
+      "const": "helblockpick"
+    },
+    {
+      "const": "ColoredTorchesRedux"
+    },
+    {
+      "const": "bulwark"
+    },
+    {
+      "const": "nyrland"
+    },
+    {
+      "const": "floralzonescaribbeanregion"
+    },
+    {
+      "const": "Bookz"
+    },
+    {
+      "const": "crazyskincustomization"
+    },
+    {
+      "const": "creaturekilledby"
+    },
+    {
+      "const": "bettersticks"
+    },
+    {
+      "const": "dhyp"
+    },
+    {
+      "const": "nocokelost"
+    },
+    {
+      "const": "propickfix"
+    },
+    {
+      "const": "daynightcycles"
+    },
+    {
+      "const": "xorberax-shader-patch"
+    },
+    {
+      "const": "biomes"
+    },
+    {
+      "const": "butcheringmxp"
+    },
+    {
+      "const": "moreplaster"
+    },
+    {
+      "const": "dressful"
+    },
+    {
+      "const": "moreicons_cs"
+    },
+    {
+      "const": "firewoodfrombamboo"
+    },
+    {
+      "const": "animalreproduction"
+    },
+    {
+      "const": "qpclienttools"
+    },
+    {
+      "const": "phoenicipatches"
+    },
+    {
+      "const": "breakdowntools50percent"
+    },
+    {
+      "const": "slanted_display_cases"
+    },
+    {
+      "const": "chattranslator"
+    },
+    {
+      "const": "maltiezbows"
+    },
+    {
+      "const": "simpleemotemenu"
+    },
+    {
+      "const": "mumblelinkfork"
+    },
+    {
+      "const": "decor"
+    },
+    {
+      "const": "halloweeneveryday"
+    },
+    {
+      "const": "chickenSit"
+    },
+    {
+      "const": "alpinestory"
+    },
+    {
+      "const": "blockcount"
+    },
+    {
+      "const": "maltiezcrossbows"
+    },
+    {
+      "const": "ponyraces"
+    },
+    {
+      "const": "forlornhope"
+    },
+    {
+      "const": "tailorsdelight"
+    },
+    {
+      "const": "morecaveart"
+    },
+    {
+      "const": "itemframe"
+    },
+    {
+      "const": "Pitchandflax"
+    },
+    {
+      "const": "gespiles"
+    },
+    {
+      "const": "gessalt"
+    },
+    {
+      "const": "chunkstaboverride"
+    },
+    {
+      "const": "fishjenga"
+    },
+    {
+      "const": "locustmod2"
+    },
+    {
+      "const": "immersivewoodchopping"
+    },
+    {
+      "const": "craftableLitChimney"
+    },
+    {
+      "const": "pomshadercache"
+    },
+    {
+      "const": "tinkertrader"
+    },
+    {
+      "const": "OfflineFoodNoSpoil"
+    },
+    {
+      "const": "wildcraftfruit"
+    },
+    {
+      "const": "multiplecoins"
+    },
+    {
+      "const": "easytorchlighting"
+    },
+    {
+      "const": "fsmlib"
+    },
+    {
+      "const": "herbarium"
+    },
+    {
+      "const": "aftweaks"
+    },
+    {
+      "const": "geodesandgemstones"
+    },
+    {
+      "const": "quickleatherproduction"
+    },
+    {
+      "const": "cheaparmor"
+    },
+    {
+      "const": "silentsave"
+    },
+    {
+      "const": "NavarlioClasses"
+    },
+    {
+      "const": "betterhoe"
+    },
+    {
+      "const": "ar-class"
+    },
+    {
+      "const": "hideplayerpins"
+    },
+    {
+      "const": "peatincoldbiomes"
+    },
+    {
+      "const": "burntreeseeds"
+    },
+    {
+      "const": "cheesemealbuff"
+    },
+    {
+      "const": "mineralinguisticswithatadmoreinfo"
+    },
+    {
+      "const": "cropnerf"
+    },
+    {
+      "const": "modcheck"
+    },
+    {
+      "const": "metin2bgm"
+    },
+    {
+      "const": "temporalstormmusic"
+    },
+    {
+      "const": "guiregistrationevent"
+    },
+    {
+      "const": "vinconomy"
+    },
+    {
+      "const": "voicevolume"
+    },
+    {
+      "const": "moreundergarments"
+    },
+    {
+      "const": "hardcoreutilities"
+    },
+    {
+      "const": "pl3xtweaks"
+    },
+    {
+      "const": "shutupkitty"
+    },
+    {
+      "const": "PipeLeaf"
+    },
+    {
+      "const": "stablesurface"
+    },
+    {
+      "const": "africanmonitorlizards"
+    },
+    {
+      "const": "vsdiscordbot"
+    },
+    {
+      "const": "floralzonescaperegion"
+    },
+    {
+      "const": "shellpan"
+    },
+    {
+      "const": "morerope"
+    },
+    {
+      "const": "BallsServerTweaks"
+    },
+    {
+      "const": "betterjonasdevices"
+    },
+    {
+      "const": "vsvillagecob"
+    },
+    {
+      "const": "Coinz"
+    },
+    {
+      "const": "ATadMoreTorchLife"
+    },
+    {
+      "const": "creakOff"
+    },
+    {
+      "const": "vsrpservermods"
+    },
+    {
+      "const": "simpleconcrete"
+    },
+    {
+      "const": "mapbroken010203"
+    },
+    {
+      "const": "unpfix"
+    },
+    {
+      "const": "lubricant"
+    },
+    {
+      "const": "betteroutline"
+    },
+    {
+      "const": "pileful"
+    },
+    {
+      "const": "jackofalltraits"
+    },
+    {
+      "const": "moondropserverpatches"
+    },
+    {
+      "const": "ATadMoreLight"
+    },
+    {
+      "const": "tadmorecharcoal"
+    },
+    {
+      "const": "whatbagwasthatagain"
+    },
+    {
+      "const": "nobearjetpacks"
+    },
+    {
+      "const": "undergroundmines"
+    },
+    {
+      "const": "extendedhudinfo"
+    },
+    {
+      "const": "massive"
+    },
+    {
+      "const": "femininity"
+    },
+    {
+      "const": "sleekdoorglass"
+    },
+    {
+      "const": "catchablebees"
+    },
+    {
+      "const": "freedomunits"
+    },
+    {
+      "const": "tieredsuperiority"
+    },
+    {
+      "const": "orcmod"
+    },
+    {
+      "const": "plantstograss"
+    },
+    {
+      "const": "rooffix"
+    },
+    {
+      "const": "earlychiseling"
+    },
+    {
+      "const": "betterpitkilntimer"
+    },
+    {
+      "const": "NavarlioCustoms"
+    },
+    {
+      "const": "quicktcpatch"
+    },
+    {
+      "const": "storageoptions"
+    },
+    {
+      "const": "geoaddons"
+    },
+    {
+      "const": "LeatherBlock"
+    },
+    {
+      "const": "sharablewaypoints"
+    },
+    {
+      "const": "nooffhand"
+    },
+    {
+      "const": "connectedglassvanilla"
+    },
+    {
+      "const": "carcassconfig"
+    },
+    {
+      "const": "glowingarrows"
+    },
+    {
+      "const": "butchering"
+    },
+    {
+      "const": "morecropsfix"
+    },
+    {
+      "const": "removetraders"
+    },
+    {
+      "const": "idf"
+    },
+    {
+      "const": "moreamu"
+    },
+    {
+      "const": "buzzybees"
+    },
+    {
+      "const": "plumpkins"
+    },
+    {
+      "const": "nacatfish"
+    },
+    {
+      "const": "mbpc"
+    },
+    {
+      "const": "slabsandstairs"
+    },
+    {
+      "const": "utvocals"
+    },
+    {
+      "const": "shovelablerubble"
+    },
+    {
+      "const": "vanillafixes"
+    },
+    {
+      "const": "airtightsleekdoors"
+    },
+    {
+      "const": "fruittreebranchfix"
+    },
+    {
+      "const": "GuibibiQOLS"
+    },
+    {
+      "const": "screamingdrifters"
+    },
+    {
+      "const": "sprucedup"
+    },
+    {
+      "const": "spawnhighlight"
+    },
+    {
+      "const": "autoatlas"
+    },
+    {
+      "const": "UPDirt"
+    },
+    {
+      "const": "LAD"
+    },
+    {
+      "const": "switchedagedbrick"
+    },
+    {
+      "const": "greenbegone"
+    },
+    {
+      "const": "easydecor"
+    },
+    {
+      "const": "rustyshell"
+    },
+    {
+      "const": "survivalexpanded"
+    },
+    {
+      "const": "nocharcoallost"
+    },
+    {
+      "const": "undamageablet3"
+    },
+    {
+      "const": "dsd"
+    },
+    {
+      "const": "vanity"
+    },
+    {
+      "const": "xmeleecan"
+    },
+    {
+      "const": "easysod"
+    },
+    {
+      "const": "optimizedwindmills"
+    },
+    {
+      "const": "justthetip"
+    },
+    {
+      "const": "xskillscatchablepatch"
+    },
+    {
+      "const": "natshumanskin"
+    },
+    {
+      "const": "vanillacratecompatibility"
+    },
+    {
+      "const": "chatlinkitem"
+    },
+    {
+      "const": "conquestnaturepack"
+    },
+    {
+      "const": "weedbegone"
+    },
+    {
+      "const": "quickstepfork"
+    },
+    {
+      "const": "playeralias"
+    },
+    {
+      "const": "pickupartist"
+    },
+    {
+      "const": "durablewrenches"
+    },
+    {
+      "const": "eldritchcuteclothing"
+    },
+    {
+      "const": "beardeddragons"
+    },
+    {
+      "const": "caninae"
+    },
+    {
+      "const": "arrowheadsrecovery_fork"
+    },
+    {
+      "const": "giantgouramis"
+    },
+    {
+      "const": "resingluetools"
+    },
+    {
+      "const": "nohands"
+    },
+    {
+      "const": "stickemup"
+    },
+    {
+      "const": "maltiezfirearms"
+    },
+    {
+      "const": "mapzoomkey"
+    },
+    {
+      "const": "betterstepping"
+    },
+    {
+      "const": "playerlist"
+    },
+    {
+      "const": "newworldgianttortoises"
+    },
+    {
+      "const": "bds"
+    },
+    {
+      "const": "pickupfast"
+    },
+    {
+      "const": "bettermoisture"
+    },
+    {
+      "const": "resinglue"
+    },
+    {
+      "const": "uavsmods"
+    },
+    {
+      "const": "nasalamanders"
+    },
+    {
+      "const": "kefir"
+    },
+    {
+      "const": "woodmallet"
+    },
+    {
+      "const": "samshumcreat"
+    },
+    {
+      "const": "temporal_gears_stack"
+    },
+    {
+      "const": "newzealandfrogs"
+    },
+    {
+      "const": "free_stone_drops_when_broken"
+    },
+    {
+      "const": "dwaynetheblockjohnson"
+    },
+    {
+      "const": "hackedlocusts"
+    },
+    {
+      "const": "morecrystals"
+    },
+    {
+      "const": "cobbleskulls"
+    },
+    {
+      "const": "landformoverhaul"
+    },
+    {
+      "const": "easyjam"
+    },
+    {
+      "const": "peacockbasses"
+    },
+    {
+      "const": "divisionoflabor"
+    },
+    {
+      "const": "kemono"
+    },
+    {
+      "const": "betterruinslootchanges"
+    },
+    {
+      "const": "betterbamboo"
+    },
+    {
+      "const": "amogus"
+    },
+    {
+      "const": "classflanderization"
+    },
+    {
+      "const": "seraphfaces"
+    },
+    {
+      "const": "dropclutteranyway"
+    },
+    {
+      "const": "extrainfo"
+    },
+    {
+      "const": "metalsupports"
+    },
+    {
+      "const": "bigstackfix2"
+    },
+    {
+      "const": "knerdydrifters"
+    },
+    {
+      "const": "shepherdmod"
+    },
+    {
+      "const": "butcheringfix"
+    },
+    {
+      "const": "spedupseeling"
+    },
+    {
+      "const": "bgn_moreclasses"
+    },
+    {
+      "const": "2trunkornot2trunk"
+    },
+    {
+      "const": "rpvoicechat"
+    },
+    {
+      "const": "scythemold"
+    },
+    {
+      "const": "rpcommand"
+    },
+    {
+      "const": "buildrefillmod"
+    },
+    {
+      "const": "fantasycreatures"
+    },
+    {
+      "const": "bratspatches"
+    },
+    {
+      "const": "truesunfishes"
+    },
+    {
+      "const": "bugnetcompatibility"
+    },
+    {
+      "const": "sophikon"
+    },
+    {
+      "const": "volumetricshadingupdated"
+    },
+    {
+      "const": "slvbearnerf"
+    },
+    {
+      "const": "kos-goldamalgam"
+    },
+    {
+      "const": "sca"
+    },
+    {
+      "const": "loreweapons"
+    },
+    {
+      "const": "toolsrequirerope"
+    },
+    {
+      "const": "palisademodpatch"
+    },
+    {
+      "const": "morecreativeworldlayers"
+    },
+    {
+      "const": "seraphclass"
+    },
+    {
+      "const": "usefulcuni"
+    },
+    {
+      "const": "haybales"
+    },
+    {
+      "const": "translocatorconfig"
+    },
+    {
+      "const": "woodenfortifications"
+    },
+    {
+      "const": "millwright"
+    },
+    {
+      "const": "all_crates_matter"
+    },
+    {
+      "const": "litbrig"
+    },
+    {
+      "const": "brota90"
+    },
+    {
+      "const": "neverwinter"
+    },
+    {
+      "const": "fourplankslog"
+    },
+    {
+      "const": "everysoilunstable"
+    },
+    {
+      "const": "Bluesky"
+    },
+    {
+      "const": "unterra"
+    },
+    {
+      "const": "clrd"
+    },
+    {
+      "const": "lessfoliage"
+    },
+    {
+      "const": "waypointtogether"
+    },
+    {
+      "const": "buildingpluspatch"
+    },
+    {
+      "const": "autopanning"
+    },
+    {
+      "const": "autoloot"
+    },
+    {
+      "const": "morecobble"
+    },
+    {
+      "const": "diagonalfences"
+    },
+    {
+      "const": "decoclock"
+    },
+    {
+      "const": "prospecttogether"
+    },
+    {
+      "const": "nightlight"
+    },
+    {
+      "const": "chaoticagraphica"
+    },
+    {
+      "const": "statushud"
+    },
+    {
+      "const": "mostlyharmlesspspatch"
+    },
+    {
+      "const": "dzsalvageplus"
+    },
+    {
+      "const": "carcasses_are_frail"
+    },
+    {
+      "const": "hmtweaks"
+    },
+    {
+      "const": "deathpanic"
+    },
+    {
+      "const": "dznomorestoneknapping"
+    },
+    {
+      "const": "prospectingplusplus"
+    },
+    {
+      "const": "koboldplayermodel"
+    },
+    {
+      "const": "mobsradar"
+    },
+    {
+      "const": "optimizedpreservation"
+    },
+    {
+      "const": "dye_recipes_fix"
+    },
+    {
+      "const": "temporalstone"
+    },
+    {
+      "const": "coloreditemnames"
+    },
+    {
+      "const": "movelikekaji"
+    },
+    {
+      "const": "optimizedleathertwo"
+    },
+    {
+      "const": "falldamageoptions"
+    },
+    {
+      "const": "expansionaddition"
+    },
+    {
+      "const": "samsdungeonsremastered"
+    },
+    {
+      "const": "nearsighted"
+    },
+    {
+      "const": "buckets_stack_to_5"
+    },
+    {
+      "const": "altgliderimplementation"
+    },
+    {
+      "const": "mostlyharmless"
+    },
+    {
+      "const": "pacificnewts"
+    },
+    {
+      "const": "carpet"
+    },
+    {
+      "const": "zumdorfkrug"
+    },
+    {
+      "const": "packeddirtpaths"
+    },
+    {
+      "const": "fernslikegrass"
+    },
+    {
+      "const": "rustboundmagic"
+    },
+    {
+      "const": "notenoughsand"
+    },
+    {
+      "const": "palisademod"
+    },
+    {
+      "const": "fishing"
+    },
+    {
+      "const": "jopainting"
+    },
+    {
+      "const": "crateful"
+    },
+    {
+      "const": "immersivecorpsedrop"
+    },
+    {
+      "const": "medievalmap"
+    },
+    {
+      "const": "temporalstormtimer"
+    },
+    {
+      "const": "shinglerecipe"
+    },
+    {
+      "const": "sfaws"
+    },
+    {
+      "const": "tarmor"
+    },
+    {
+      "const": "saerinmod"
+    },
+    {
+      "const": "materialaging"
+    },
+    {
+      "const": "mapautocenter"
+    },
+    {
+      "const": "moreclassesshieldfix"
+    },
+    {
+      "const": "mirrors"
+    },
+    {
+      "const": "she1fish"
+    },
+    {
+      "const": "itemizer"
+    },
+    {
+      "const": "altmapiconrenderer"
+    },
+    {
+      "const": "waypointcolours"
+    },
+    {
+      "const": "ClaimsRadar"
+    },
+    {
+      "const": "resregrow2"
+    },
+    {
+      "const": "mcd1"
+    },
+    {
+      "const": "capreolinae"
+    },
+    {
+      "const": "wlts"
+    },
+    {
+      "const": "cooperativecombat"
+    },
+    {
+      "const": "grassiergrass"
+    },
+    {
+      "const": "blacksmithgloves"
+    },
+    {
+      "const": "screaming-goats"
+    },
+    {
+      "const": "naturalspawns"
+    },
+    {
+      "const": "jcserverhandbook"
+    },
+    {
+      "const": "rotc_civmods"
+    },
+    {
+      "const": "bthvn"
+    },
+    {
+      "const": "autowalk"
+    },
+    {
+      "const": "barrelagedwood"
+    },
+    {
+      "const": "biggerwindmill"
+    },
+    {
+      "const": "FarmSurvival"
+    },
+    {
+      "const": "roomindicator"
+    },
+    {
+      "const": "saplingtreeparams"
+    },
+    {
+      "const": "weaponpackalphaunoff"
+    },
+    {
+      "const": "metaltongs"
+    },
+    {
+      "const": "morenails"
+    },
+    {
+      "const": "bodyheatbar"
+    },
+    {
+      "const": "arachnidreplacer"
+    },
+    {
+      "const": "unyinglet"
+    },
+    {
+      "const": "samsungbell"
+    },
+    {
+      "const": "northstory"
+    },
+    {
+      "const": "solidshields"
+    },
+    {
+      "const": "pixelwaypoints"
+    },
+    {
+      "const": "moreparchment"
+    },
+    {
+      "const": "rabbithides"
+    },
+    {
+      "const": "worldborder"
+    },
+    {
+      "const": "pondfrogsiii"
+    },
+    {
+      "const": "honeypressmittim"
+    },
+    {
+      "const": "naturalnight"
+    },
+    {
+      "const": "namelesslands"
+    },
+    {
+      "const": "eacn"
+    },
+    {
+      "const": "fairplayguardian"
+    },
+    {
+      "const": "lessbears"
+    },
+    {
+      "const": "wolftamingciv"
+    },
+    {
+      "const": "mjolnir"
+    },
+    {
+      "const": "talldisplaycases"
+    },
+    {
+      "const": "ABCSReborn"
+    },
+    {
+      "const": "less-squeaky-chests"
+    },
+    {
+      "const": "noisybears"
+    },
+    {
+      "const": "fncommands"
+    },
+    {
+      "const": "dpa"
+    },
+    {
+      "const": "natseasystonebricks"
+    },
+    {
+      "const": "compatmod"
+    },
+    {
+      "const": "integvcfix"
+    },
+    {
+      "const": "moreclassestweak"
+    },
+    {
+      "const": "mailsystem"
+    },
+    {
+      "const": "standardcrates"
+    },
+    {
+      "const": "pondfrogsi"
+    },
+    {
+      "const": "worldgenfix"
+    },
+    {
+      "const": "alphaweaponpackfix"
+    },
+    {
+      "const": "nocropsforhares"
+    },
+    {
+      "const": "blocksoverlay"
+    },
+    {
+      "const": "betterbloomeriesreborn"
+    },
+    {
+      "const": "stirlingage"
+    },
+    {
+      "const": "bettertraders"
+    },
+    {
+      "const": "nowaterlog"
+    },
+    {
+      "const": "arrowsstayaround"
+    },
+    {
+      "const": "knobtailedgeckos"
+    },
+    {
+      "const": "toolsneedcattails3"
+    },
+    {
+      "const": "wildcraftxskillspatch"
+    },
+    {
+      "const": "fibersfromtwine"
+    },
+    {
+      "const": "wildfarmingrevival"
+    },
+    {
+      "const": "bannerdorianpc"
+    },
+    {
+      "const": "interfacesandrainbows"
+    },
+    {
+      "const": "bedrespawner"
+    },
+    {
+      "const": "NAdarters"
+    },
+    {
+      "const": "cavemanclass"
+    },
+    {
+      "const": "sticksfromfirelogs"
+    },
+    {
+      "const": "dowsedinsalt"
+    },
+    {
+      "const": "stonebakeoven"
+    },
+    {
+      "const": "signs"
+    },
+    {
+      "const": "strspawnchances"
+    },
+    {
+      "const": "KreaturesAndKritters"
+    },
+    {
+      "const": "canclasses"
+    },
+    {
+      "const": "tstools"
+    },
+    {
+      "const": "fancysigns"
+    },
+    {
+      "const": "simplestep"
+    },
+    {
+      "const": "bandedgeckos"
+    },
+    {
+      "const": "Xcore"
+    },
+    {
+      "const": "leopardgeckos"
+    },
+    {
+      "const": "betterclay"
+    },
+    {
+      "const": "TA_fieldsandplateaus"
+    },
+    {
+      "const": "rainfrogs"
+    },
+    {
+      "const": "stratashrinker"
+    },
+    {
+      "const": "unochre"
+    },
+    {
+      "const": "tweaksbyme"
+    },
+    {
+      "const": "stillnecessaries"
+    },
+    {
+      "const": "cairns"
+    },
+    {
+      "const": "crackedvesselconfig"
+    },
+    {
+      "const": "nutritionconfig"
+    },
+    {
+      "const": "cropsconfig"
+    },
+    {
+      "const": "durabilityconfig"
+    },
+    {
+      "const": "stacksizes"
+    },
+    {
+      "const": "spawnconditions"
+    },
+    {
+      "const": "trophies"
+    },
+    {
+      "const": "metalrecoverydon"
+    },
+    {
+      "const": "fasterladderclimbing"
+    },
+    {
+      "const": "golb"
+    },
+    {
+      "const": "scythemore"
+    },
+    {
+      "const": "removestructures"
+    },
+    {
+      "const": "detonateredux"
+    },
+    {
+      "const": "rifteye"
+    },
+    {
+      "const": "coloredbagslots"
+    },
+    {
+      "const": "pantherinae"
+    },
+    {
+      "const": "removeplayerpins"
+    },
+    {
+      "const": "patchwars"
+    },
+    {
+      "const": "civmodstwo"
+    },
+    {
+      "const": "shacklegeartwo"
+    },
+    {
+      "const": "Alarm"
+    },
+    {
+      "const": "extendedcrafts"
+    },
+    {
+      "const": "branchcutter"
+    },
+    {
+      "const": "dropvinesanyway"
+    },
+    {
+      "const": "healingwhilesleepingfix"
+    },
+    {
+      "const": "colorblocks"
+    },
+    {
+      "const": "bannerdoriacoins"
+    },
+    {
+      "const": "bannerdoria"
+    },
+    {
+      "const": "noheatresistantinventory"
+    },
+    {
+      "const": "nowaterproofinventories"
+    },
+    {
+      "const": "hungrywakeup"
+    },
+    {
+      "const": "tablet"
+    },
+    {
+      "const": "roas"
+    },
+    {
+      "const": "datasetgen"
+    },
+    {
+      "const": "STS"
+    },
+    {
+      "const": "nailsmold"
+    },
+    {
+      "const": "fieldsofsalt"
+    },
+    {
+      "const": "moreparchmentrecipes"
+    },
+    {
+      "const": "reallynowolves"
+    },
+    {
+      "const": "1log4beams"
+    },
+    {
+      "const": "reallynomonsters"
+    },
+    {
+      "const": "betterfirepit"
+    },
+    {
+      "const": "mumblelink117"
+    },
+    {
+      "const": "simplewinddirection"
+    },
+    {
+      "const": "butterfly"
+    },
+    {
+      "const": "parchment-recipe"
+    },
+    {
+      "const": "degrees1499"
+    },
+    {
+      "const": "cancrops"
+    },
+    {
+      "const": "mlptheme"
+    },
+    {
+      "const": "OrnamentalFish"
+    },
+    {
+      "const": "sailboat"
+    },
+    {
+      "const": "pretzels"
+    },
+    {
+      "const": "statusserver"
+    },
+    {
+      "const": "canjewelry"
+    },
+    {
+      "const": "reallynobears"
+    },
+    {
+      "const": "mannequinstand"
+    },
+    {
+      "const": "weightmodmounts"
+    },
+    {
+      "const": "kosphotography"
+    },
+    {
+      "const": "neutanm"
+    },
+    {
+      "const": "notenoughfirewood"
+    },
+    {
+      "const": "commonlib"
+    },
+    {
+      "const": "cancelbooksignature"
+    },
+    {
+      "const": "creativehotbar"
+    },
+    {
+      "const": "beekeeper"
+    },
+    {
+      "const": "nemi"
+    },
+    {
+      "const": "soulshards"
+    },
+    {
+      "const": "moretraders"
+    },
+    {
+      "const": "demonHeart"
+    },
+    {
+      "const": "kosfire"
+    },
+    {
+      "const": "quicklimepk"
+    },
+    {
+      "const": "demontweaks"
+    },
+    {
+      "const": "ovenfuel"
+    },
+    {
+      "const": "webcartographer"
+    },
+    {
+      "const": "ponymusic"
+    },
+    {
+      "const": "scarecrow"
+    },
+    {
+      "const": "glidervar"
+    },
+    {
+      "const": "chemistrylib"
+    },
+    {
+      "const": "craftableblocks"
+    },
+    {
+      "const": "dropresinanyway"
+    },
+    {
+      "const": "lavoisier"
+    },
+    {
+      "const": "treetapping"
+    },
+    {
+      "const": "webcartographercolorexporter"
+    },
+    {
+      "const": "recyclestorage"
+    },
+    {
+      "const": "reducedincubationtime"
+    },
+    {
+      "const": "carps"
+    },
+    {
+      "const": "coreblast"
+    },
+    {
+      "const": "awearablelight"
+    },
+    {
+      "const": "Recall"
+    },
+    {
+      "const": "betterstonerailings"
+    },
+    {
+      "const": "th3dungeon"
+    },
+    {
+      "const": "betterbackpacksnoiron"
+    },
+    {
+      "const": "beehivekilnwithclay"
+    },
+    {
+      "const": "creativetapestries"
+    },
+    {
+      "const": "wanderedisles"
+    },
+    {
+      "const": "betterbackpacksfixed"
+    },
+    {
+      "const": "VsTrashcan"
+    },
+    {
+      "const": "VsWaypointSharing"
+    },
+    {
+      "const": "piingshats"
+    },
+    {
+      "const": "resinfarm"
+    },
+    {
+      "const": "snailmod"
+    },
+    {
+      "const": "eldritchmonsters"
+    },
+    {
+      "const": "lessclasspenalties"
+    },
+    {
+      "const": "obviousresin"
+    },
+    {
+      "const": "depositstretcher"
+    },
+    {
+      "const": "cbetterfertilizer"
+    },
+    {
+      "const": "compass2"
+    },
+    {
+      "const": "canbeignited"
+    },
+    {
+      "const": "steadycam"
+    },
+    {
+      "const": "spiritjug"
+    },
+    {
+      "const": "linearpower"
+    },
+    {
+      "const": "DeepStorage"
+    },
+    {
+      "const": "beehivekiln"
+    },
+    {
+      "const": "brigandinerebalance"
+    },
+    {
+      "const": "craftablesticks"
+    },
+    {
+      "const": "NoMoreDrifterThrowing"
+    },
+    {
+      "const": "ragnamans-seeds-from-crops-recipes"
+    },
+    {
+      "const": "ragnamans-lit-torch-recipe"
+    },
+    {
+      "const": "naturalpatches"
+    },
+    {
+      "const": "recyclebags"
+    },
+    {
+      "const": "recycleclothes"
+    },
+    {
+      "const": "metaldetector"
+    },
+    {
+      "const": "postsandbeams"
+    },
+    {
+      "const": "usefuldrifterloot"
+    },
+    {
+      "const": "darkerdrifterspawns"
+    },
+    {
+      "const": "salty"
+    },
+    {
+      "const": "thogstunez"
+    },
+    {
+      "const": "hardcorewater"
+    },
+    {
+      "const": "claywheel"
+    },
+    {
+      "const": "leaflanternlining"
+    },
+    {
+      "const": "extrachutes"
+    },
+    {
+      "const": "furniturelibrary"
+    },
+    {
+      "const": "aurafurypets"
+    },
+    {
+      "const": "frozenreeds"
+    },
+    {
+      "const": "forgeselfignite"
+    },
+    {
+      "const": "00001"
+    },
+    {
+      "const": "feverstonewilds"
+    },
+    {
+      "const": "mydirt"
+    },
+    {
+      "const": "cuniculture"
+    },
+    {
+      "const": "paxel"
+    },
+    {
+      "const": "stonerailings"
+    },
+    {
+      "const": "coppercoldforging1"
+    },
+    {
+      "const": "morecrops"
+    },
+    {
+      "const": "canmarket"
+    },
+    {
+      "const": "kilnspreading"
+    },
+    {
+      "const": "kilntimeviewer"
+    },
+    {
+      "const": "shark"
+    },
+    {
+      "const": "blocklog"
+    },
+    {
+      "const": "betterbricks"
+    },
+    {
+      "const": "moreicons"
+    },
+    {
+      "const": "witchsticks"
+    },
+    {
+      "const": "carryonmore"
+    },
+    {
+      "const": "djinlandessentials"
+    },
+    {
+      "const": "atwatersedge"
+    },
+    {
+      "const": "lumbersling"
+    },
+    {
+      "const": "TA_plainsandvalleys"
+    },
+    {
+      "const": "1"
+    },
+    {
+      "const": "publicgroups"
+    },
+    {
+      "const": "djsVanillaTools"
+    },
+    {
+      "const": "carryon"
+    },
+    {
+      "const": "indappledgroves"
+    },
+    {
+      "const": "advancedchests"
+    },
+    {
+      "const": "lantern"
+    },
+    {
+      "const": "vesselbuff"
+    },
+    {
+      "const": "creaturescan"
+    },
+    {
+      "const": "usefulstuff17"
+    },
+    {
+      "const": "rpgitemrarity"
+    },
+    {
+      "const": "attributer"
+    },
+    {
+      "const": "temperaturescales"
+    },
+    {
+      "const": "aculinaryartillery"
+    },
+    {
+      "const": "driedpeat"
+    },
+    {
+      "const": "wildcrafttrees"
+    },
+    {
+      "const": "drdecor"
+    },
+    {
+      "const": "blackiron"
+    },
+    {
+      "const": "knapster"
+    },
+    {
+      "const": "autoclose"
+    },
+    {
+      "const": "signals"
+    },
+    {
+      "const": "flintandsteeladdon"
+    },
+    {
+      "const": "mortaldamage"
+    },
+    {
+      "const": "betterruins"
+    },
+    {
+      "const": "Ceramos"
+    },
+    {
+      "const": "roadworks"
+    },
+    {
+      "const": "riflemod"
+    },
+    {
+      "const": "moreclay"
+    },
+    {
+      "const": "bunnyserverutilities"
+    },
+    {
+      "const": "justmoreruins"
+    },
+    {
+      "const": "cosmosis"
+    },
+    {
+      "const": "immersivephototrophyskins"
+    },
+    {
+      "const": "bunnybell"
+    },
+    {
+      "const": "morecandles"
+    },
+    {
+      "const": "fsr1"
+    },
+    {
+      "const": "rlmoonsun"
+    },
+    {
+      "const": "AMFinder"
+    },
+    {
+      "const": "simplealchemy"
+    },
+    {
+      "const": "th3serverstats"
+    },
+    {
+      "const": "vsquest"
+    },
+    {
+      "const": "bpip"
+    },
+    {
+      "const": "effectshud"
+    },
+    {
+      "const": "ruststones"
+    },
+    {
+      "const": "diamondcrate"
+    },
+    {
+      "const": "tradercamps"
+    },
+    {
+      "const": "jlj"
+    },
+    {
+      "const": "canmods"
+    },
+    {
+      "const": "cavebeacons"
+    },
+    {
+      "const": "loginprotection"
+    },
+    {
+      "const": "oildeposits"
+    },
+    {
+      "const": "buzzwords"
+    },
+    {
+      "const": "craftingtable"
+    },
+    {
+      "const": "candidemotions"
+    },
+    {
+      "const": "liquidcontainers"
+    },
+    {
+      "const": "buildinggadgets"
+    },
+    {
+      "const": "translocatorengineeringredux"
+    },
+    {
+      "const": "vendor"
+    },
+    {
+      "const": "foxtaming"
+    },
+    {
+      "const": "aaamakeitcompatible"
+    },
+    {
+      "const": "dssilicatebricks"
+    },
+    {
+      "const": "gearofmadness"
+    },
+    {
+      "const": "vtpp"
+    },
+    {
+      "const": "lessdrift"
+    },
+    {
+      "const": "FlexibleTools"
+    },
+    {
+      "const": "cloudy3dx"
+    },
+    {
+      "const": "vertplanks"
+    },
+    {
+      "const": "auxiliarymod"
+    },
+    {
+      "const": "respawntools"
+    },
+    {
+      "const": "primitivetools"
+    },
+    {
+      "const": "jtom"
+    },
+    {
+      "const": "coinage"
+    },
+    {
+      "const": "thebasics"
+    },
+    {
+      "const": "mcrate"
+    },
+    {
+      "const": "sortablestorage"
+    },
+    {
+      "const": "frames"
+    },
+    {
+      "const": "hideplayers"
+    },
+    {
+      "const": "sticksfromfirewood"
+    },
+    {
+      "const": "expandedaitasksloader"
+    },
+    {
+      "const": "onebedsleeping"
+    },
+    {
+      "const": "claimsext"
+    },
+    {
+      "const": "chiseltools"
+    },
+    {
+      "const": "brigandmod"
+    },
+    {
+      "const": "claims"
+    },
+    {
+      "const": "vsvillage"
+    },
+    {
+      "const": "moreflaxloot"
+    },
+    {
+      "const": "moreanimalloot"
+    },
+    {
+      "const": "morefirewood"
+    },
+    {
+      "const": "longerburntime"
+    },
+    {
+      "const": "longertorchtime"
+    },
+    {
+      "const": "moreenemyloot"
+    },
+    {
+      "const": "morestickcrafting"
+    },
+    {
+      "const": "morespace"
+    },
+    {
+      "const": "civbastion"
+    },
+    {
+      "const": "electricity"
+    },
+    {
+      "const": "cralutweaks"
+    },
+    {
+      "const": "thecritterpack"
+    },
+    {
+      "const": "altmetacubes"
+    },
+    {
+      "const": "moreanimals"
+    },
+    {
+      "const": "easylightlevels"
+    },
+    {
+      "const": "feverstonehorses"
+    },
+    {
+      "const": "glassmaking"
+    },
+    {
+      "const": "hideandfabric"
+    },
+    {
+      "const": "composter"
+    },
+    {
+      "const": "dummyplayer"
+    },
+    {
+      "const": "aurafurytweaks"
+    },
+    {
+      "const": "viescraftmachines"
+    },
+    {
+      "const": "useplanksinpitkiln"
+    },
+    {
+      "const": "fancyplanters"
+    },
+    {
+      "const": "HoneyPress"
+    },
+    {
+      "const": "FahlOres"
+    },
+    {
+      "const": "em"
+    },
+    {
+      "const": "woodbarrels"
+    },
+    {
+      "const": "rhadditions"
+    },
+    {
+      "const": "weightmod"
+    },
+    {
+      "const": "limestonespeles"
+    },
+    {
+      "const": "conquest"
+    },
+    {
+      "const": "woodchests"
+    },
+    {
+      "const": "tinytweaks"
+    },
+    {
+      "const": "blacksmithname"
+    },
+    {
+      "const": "xmelee"
+    },
+    {
+      "const": "zoombuttonreborn"
+    },
+    {
+      "const": "axleinblocks"
+    },
+    {
+      "const": "leadroof"
+    },
+    {
+      "const": "stonepiles"
+    },
+    {
+      "const": "bonfires"
+    },
+    {
+      "const": "cats"
+    },
+    {
+      "const": "petai"
+    },
+    {
+      "const": "nightwatcher"
+    },
+    {
+      "const": "stonequarry"
+    },
+    {
+      "const": "BuggisRandomChanges"
+    },
+    {
+      "const": "angelbelt"
+    },
+    {
+      "const": "wolftaming"
+    },
+    {
+      "const": "extraoverlays"
+    },
+    {
+      "const": "ssppvv"
+    },
+    {
+      "const": "glowingprojectiles"
+    },
+    {
+      "const": "fieldsofgold"
+    },
+    {
+      "const": "vanvar"
+    },
+    {
+      "const": "NoFallAnimation"
+    },
+    {
+      "const": "cellardoor"
+    },
+    {
+      "const": "cob"
+    },
+    {
+      "const": "plantmat"
+    },
+    {
+      "const": "fromgoldencombs"
+    },
+    {
+      "const": "iwpei"
+    },
+    {
+      "const": "floating-islands"
+    },
+    {
+      "const": "OresAPlenty"
+    },
+    {
+      "const": "ArmorRework"
+    },
+    {
+      "const": "immersivephototrophy"
+    },
+    {
+      "const": "temporalprospector"
+    },
+    {
+      "const": "Th3Essentials"
+    },
+    {
+      "const": "tprunes"
+    },
+    {
+      "const": "archery"
+    },
+    {
+      "const": "primitivesurvival"
+    },
+    {
+      "const": "prospectorinfo"
+    },
+    {
+      "const": "th3restock"
+    },
+    {
+      "const": "animalcages"
+    },
+    {
+      "const": "discordintegration"
+    },
+    {
+      "const": "spyglass"
+    },
+    {
+      "const": "movemod"
+    },
+    {
+      "const": "morepiles"
+    },
+    {
+      "const": "bth"
+    },
+    {
+      "const": "guicompositesettingsex"
+    },
+    {
+      "const": "vscci"
+    },
+    {
+      "const": "egocaribautomapmarkers"
+    },
+    {
+      "const": "ancienttools"
+    },
+    {
+      "const": "doffanddonagain"
+    },
+    {
+      "const": "yeet"
+    },
+    {
+      "const": "accessibilitytweaks"
+    },
+    {
+      "const": "rangedweapons"
+    },
+    {
+      "const": "viesblocks"
+    },
+    {
+      "const": "blacksmiths"
+    },
+    {
+      "const": "selectivekeepondeath"
+    },
+    {
+      "const": "sexyswords"
+    },
+    {
+      "const": "alchemy"
+    },
+    {
+      "const": "worldconfiggui"
+    },
+    {
+      "const": "instruments"
+    },
+    {
+      "const": "instantfirepits"
+    },
+    {
+      "const": "BreakDownTools01v1-15-5"
+    },
+    {
+      "const": "moremolds"
+    },
+    {
+      "const": "hqzlights"
+    },
+    {
+      "const": "xinvtweaks"
+    },
+    {
+      "const": "bricklayers"
+    },
+    {
+      "const": "richerthandirt"
+    },
+    {
+      "const": "qptech"
+    },
+    {
+      "const": "wildcraft"
+    },
+    {
+      "const": "workbenchexpansion"
+    },
+    {
+      "const": "hudclock"
+    },
+    {
+      "const": "medievalexpansion"
+    },
+    {
+      "const": "acorns"
+    },
+    {
+      "const": "xskills"
+    },
+    {
+      "const": "xlib"
+    },
+    {
+      "const": "captureanimals"
+    },
+    {
+      "const": "Creepless"
+    },
+    {
+      "const": "bettercrates"
+    },
+    {
+      "const": "extrachests"
+    },
+    {
+      "const": "playercorpse"
+    },
+    {
+      "const": "helvehammerext"
+    },
+    {
+      "const": "fancysky"
+    },
+    {
+      "const": "lichen"
+    },
+    {
+      "const": "meteoricexpansion"
+    },
+    {
+      "const": "PolServerUtilities"
+    },
+    {
+      "const": "th3expansion"
+    },
+    {
+      "const": "expandedfoods"
+    },
+    {
+      "const": "moreroads"
+    },
+    {
+      "const": "vshud"
+    },
+    {
+      "const": "metalrecovery"
+    },
+    {
+      "const": "tpnet"
+    }
+  ]
+}

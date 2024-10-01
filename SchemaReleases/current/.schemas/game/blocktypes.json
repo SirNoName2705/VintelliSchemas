@@ -3,6 +3,7 @@
   "title": "BlockType",
   "definitions": {
     "BlockCropPropertiesType": {
+      "title": "BlockCropPropertiesType",
       "type": "object",
       "properties": {
         "behaviors": {
@@ -56,6 +57,7 @@
       }
     },
     "CropBehaviorType": {
+      "title": "CropBehaviorType",
       "type": "object",
       "properties": {
         "name": {

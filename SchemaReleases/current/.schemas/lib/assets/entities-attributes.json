@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "entities-attributes.json",
   "type": "object",
   "properties": {
     "attributes": {
@@ -14,7 +15,7 @@
           "type": "boolean"
         },
         "droppedItemsOnDeathTimer": {
-          "type": "integer"
+          "type": "number"
         },
         "emotes": {
           "type": "array",
@@ -92,7 +93,7 @@
           "type": "boolean"
         },
         "extraSplashParticlesMul": {
-          "type": "integer"
+          "type": "number"
         },
         "spawnCloserDuringLowStability": {
           "type": "boolean"
@@ -141,10 +142,10 @@
       "type": "object",
       "properties": {
         "x": {
-          "type": "integer"
+          "type": "number"
         },
         "y": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -390,7 +391,7 @@
       "type": "object",
       "properties": {
         "groundDragFactor": {
-          "type": "integer"
+          "type": "number"
         },
         "airDragFactor": {
           "type": "number"
@@ -466,13 +467,13 @@
       "type": "object",
       "properties": {
         "x": {
-          "type": "integer"
+          "type": "number"
         },
         "y": {
           "type": "number"
         },
         "z": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -542,7 +543,7 @@
       "type": "object",
       "properties": {
         "avg": {
-          "type": "integer"
+          "type": "number"
         },
         "var": {
           "type": "number"
@@ -553,7 +554,7 @@
       "type": "object",
       "properties": {
         "maxItems": {
-          "type": "integer"
+          "type": "number"
         },
         "list": {
           "type": "array",
@@ -642,7 +643,7 @@
           "type": "string"
         },
         "stacksize": {
-          "type": "integer"
+          "type": "number"
         },
         "stock": {
           "$ref": "#/definitions/Money"
@@ -679,7 +680,7 @@
           "type": "string"
         },
         "stacksize": {
-          "type": "integer"
+          "type": "number"
         },
         "stock": {
           "$ref": "#/definitions/Money"

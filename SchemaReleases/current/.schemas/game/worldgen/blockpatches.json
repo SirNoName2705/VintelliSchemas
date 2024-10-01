@@ -15,6 +15,7 @@
   },
   "definitions": {
     "BlockPatch": {
+      "title": "BlockPatch",
       "type": "object",
       "properties": {
         "blockCodeIndex": {
@@ -119,33 +120,65 @@
       }
     },
     "EnumBlockPatchPlacement": {
+      "title": "EnumBlockPatchPlacement",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "ReplaceSurface",
-        "OnSurface",
-        "NearWater",
-        "Anywhere",
-        "Underground",
-        "UnderWater",
-        "NearSeaWater",
-        "UnderSeaWater",
-        "UnderTrees",
-        "OnTrees",
-        "OnSurfacePlusUnderTrees"
-      ],
-      "enum": [
-        "replaceSurface",
-        "onSurface",
-        "nearWater",
-        "anywhere",
-        "underground",
-        "underWater",
-        "nearSeaWater",
-        "underSeaWater",
-        "underTrees",
-        "onTrees",
-        "onSurfacePlusUnderTrees"
+      "anyOf": [
+        {
+          "title": "ReplaceSurface",
+          "default": "ReplaceSurface",
+          "pattern": "[Rr][Ee][Pp][Ll][Aa][Cc][Ee][Ss][Uu][Rr][Ff][Aa][Cc][Ee]"
+        },
+        {
+          "title": "OnSurface",
+          "default": "OnSurface",
+          "pattern": "[Oo][Nn][Ss][Uu][Rr][Ff][Aa][Cc][Ee]"
+        },
+        {
+          "title": "NearWater",
+          "default": "NearWater",
+          "pattern": "[Nn][Ee][Aa][Rr][Ww][Aa][Tt][Ee][Rr]"
+        },
+        {
+          "title": "Anywhere",
+          "default": "Anywhere",
+          "pattern": "[Aa][Nn][Yy][Ww][Hh][Ee][Rr][Ee]"
+        },
+        {
+          "title": "Underground",
+          "default": "Underground",
+          "pattern": "[Uu][Nn][Dd][Ee][Rr][Gg][Rr][Oo][Uu][Nn][Dd]"
+        },
+        {
+          "title": "UnderWater",
+          "default": "UnderWater",
+          "pattern": "[Uu][Nn][Dd][Ee][Rr][Ww][Aa][Tt][Ee][Rr]"
+        },
+        {
+          "title": "NearSeaWater",
+          "default": "NearSeaWater",
+          "pattern": "[Nn][Ee][Aa][Rr][Ss][Ee][Aa][Ww][Aa][Tt][Ee][Rr]"
+        },
+        {
+          "title": "UnderSeaWater",
+          "default": "UnderSeaWater",
+          "pattern": "[Uu][Nn][Dd][Ee][Rr][Ss][Ee][Aa][Ww][Aa][Tt][Ee][Rr]"
+        },
+        {
+          "title": "UnderTrees",
+          "default": "UnderTrees",
+          "pattern": "[Uu][Nn][Dd][Ee][Rr][Tt][Rr][Ee][Ee][Ss]"
+        },
+        {
+          "title": "OnTrees",
+          "default": "OnTrees",
+          "pattern": "[Oo][Nn][Tt][Rr][Ee][Ee][Ss]"
+        },
+        {
+          "title": "OnSurfacePlusUnderTrees",
+          "default": "OnSurfacePlusUnderTrees",
+          "pattern": "[Oo][Nn][Ss][Uu][Rr][Ff][Aa][Cc][Ee][Pp][Ll][Uu][Ss][Uu][Nn][Dd][Ee][Rr][Tt][Rr][Ee][Ee][Ss]"
+        }
       ]
     }
   }

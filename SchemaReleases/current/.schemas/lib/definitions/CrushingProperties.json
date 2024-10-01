@@ -1,4 +1,5 @@
 {
+  "title": "CrushingProperties",
   "type": "object",
   "properties": {
     "crushedStack": {

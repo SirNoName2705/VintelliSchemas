@@ -7,6 +7,7 @@
   },
   "definitions": {
     "JsonPatch": {
+      "title": "JsonPatch",
       "type": "object",
       "properties": {
         "condition": {
@@ -22,10 +23,18 @@
           "type": "boolean"
         },
         "file": {
-          "type": "string"
+          "anyOf": [
+            {
+              "$ref": "../lib/assets/patch-paths.json#"
+            },
+            {
+              "type": "string"
+            }
+          ]
         },
         "fromPath": {
-          "type": "string"
+          "type": "string",
+          "description": "needs to be used with op: Move"
         },
         "op": {
           "$ref": "#/definitions/EnumJsonPatchOp"
@@ -46,9 +55,29 @@
         "value": {
           "$ref": "../lib/definitions/JsonObject.json#"
         }
+      },
+      "if": {
+        "properties": {
+          "op": {
+            "pattern": "[Mm][Oo][Vv][Ee]"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "fromPath"
+        ]
+      },
+      "else": {
+        "properties": {
+          "fromPath": {
+            "not": {}
+          }
+        }
       }
     },
     "PatchCondition": {
+      "title": "PatchCondition",
       "type": "object",
       "properties": {
         "isValue": {
@@ -63,51 +92,87 @@
       }
     },
     "PatchModDependence": {
+      "title": "PatchModDependence",
       "type": "object",
       "properties": {
         "invert": {
           "type": "boolean"
         },
         "modid": {
-          "type": "string"
+          "anyOf": [
+            {
+              "$ref": "../lib/assets/modids.json#"
+            },
+            {
+              "type": "string"
+            }
+          ]
         }
       }
     },
     "EnumJsonPatchOp": {
+      "title": "EnumJsonPatchOp",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "Add",
-        "AddEach",
-        "Remove",
-        "Replace",
-        "Copy",
-        "Move",
-        "AddMerge"
-      ],
-      "enum": [
-        "add",
-        "addEach",
-        "remove",
-        "replace",
-        "copy",
-        "move",
-        "addMerge"
+      "anyOf": [
+        {
+          "title": "Add",
+          "default": "Add",
+          "pattern": "[Aa][Dd][Dd]"
+        },
+        {
+          "title": "AddEach",
+          "default": "AddEach",
+          "pattern": "[Aa][Dd][Dd][Ee][Aa][Cc][Hh]"
+        },
+        {
+          "title": "Remove",
+          "default": "Remove",
+          "pattern": "[Rr][Ee][Mm][Oo][Vv][Ee]"
+        },
+        {
+          "title": "Replace",
+          "default": "Replace",
+          "pattern": "[Rr][Ee][Pp][Ll][Aa][Cc][Ee]"
+        },
+        {
+          "title": "Copy",
+          "default": "Copy",
+          "pattern": "[Cc][Oo][Pp][Yy]"
+        },
+        {
+          "title": "Move",
+          "default": "Move",
+          "pattern": "[Mm][Oo][Vv][Ee]"
+        },
+        {
+          "title": "AddMerge",
+          "default": "AddMerge",
+          "pattern": "[Aa][Dd][Dd][Mm][Ee][Rr][Gg][Ee]"
+        }
       ]
     },
     "EnumAppSide": {
+      "title": "EnumAppSide",
       "type": "string",
       "description": "",
       "x-enumFlags": true,
-      "x-enumNames": [
-        "Server",
-        "Client",
-        "Universal"
-      ],
-      "enum": [
-        "server",
-        "client",
-        "universal"
+      "anyOf": [
+        {
+          "title": "Server",
+          "default": "Server",
+          "pattern": "[Ss][Ee][Rr][Vv][Ee][Rr]"
+        },
+        {
+          "title": "Client",
+          "default": "Client",
+          "pattern": "[Cc][Ll][Ii][Ee][Nn][Tt]"
+        },
+        {
+          "title": "Universal",
+          "default": "Universal",
+          "pattern": "[Uu][Nn][Ii][Vv][Ee][Rr][Ss][Aa][Ll]"
+        }
       ]
     }
   }

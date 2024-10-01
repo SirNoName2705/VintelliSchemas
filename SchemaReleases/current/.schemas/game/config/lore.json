@@ -7,6 +7,7 @@
   },
   "definitions": {
     "JournalEntry": {
+      "title": "JournalEntry",
       "type": "object",
       "properties": {
         "chapters": {
@@ -31,6 +32,7 @@
       }
     },
     "JournalChapter": {
+      "title": "JournalChapter",
       "type": "object",
       "properties": {
         "chapterId": {

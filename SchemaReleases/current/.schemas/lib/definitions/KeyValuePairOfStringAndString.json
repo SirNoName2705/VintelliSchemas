@@ -1,4 +1,5 @@
 {
+  "title": "KeyValuePairOfStringAndString",
   "type": "object",
   "properties": {
     "key": {

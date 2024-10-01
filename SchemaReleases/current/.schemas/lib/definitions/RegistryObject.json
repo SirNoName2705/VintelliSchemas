@@ -1,4 +1,5 @@
 {
+  "title": "RegistryObject",
   "type": "object",
   "description": "A registerable object with variants, i.e. an item, a block or an entity",
   "properties": {

@@ -18,6 +18,7 @@
   },
   "definitions": {
     "SlotAlloc": {
+      "title": "SlotAlloc",
       "type": "object",
       "properties": {
         "code": {
@@ -36,6 +37,7 @@
       }
     },
     "TexturedWeightedCompositeShape": {
+      "title": "TexturedWeightedCompositeShape",
       "allOf": [
         {
           "$ref": "../../lib/definitions/CompositeShape.json#"

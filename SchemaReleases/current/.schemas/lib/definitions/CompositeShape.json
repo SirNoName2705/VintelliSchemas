@@ -1,4 +1,5 @@
 {
+  "title": "CompositeShape",
   "type": "object",
   "properties": {
     "alternates": {

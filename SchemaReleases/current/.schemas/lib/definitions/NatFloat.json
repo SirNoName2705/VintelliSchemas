@@ -1,4 +1,5 @@
 {
+  "title": "NatFloat",
   "type": "object",
   "description": "A more natural random number generator (nature usually doesn't grow by the exact same numbers nor does it completely randomly)",
   "properties": {

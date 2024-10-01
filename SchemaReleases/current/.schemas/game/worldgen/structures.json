@@ -3,6 +3,7 @@
   "title": "WorldGenStructuresConfig",
   "definitions": {
     "WorldGenStructure": {
+      "title": "WorldGenStructure",
       "allOf": [
         {
           "$ref": "#/definitions/WorldGenStructureBase"
@@ -95,6 +96,7 @@
       ]
     },
     "Cuboidi": {
+      "title": "Cuboidi",
       "type": "object",
       "properties": {
         "center": {
@@ -200,6 +202,7 @@
       }
     },
     "WorldGenStructureBase": {
+      "title": "WorldGenStructureBase",
       "type": "object",
       "properties": {
         "buildProtected": {
@@ -260,38 +263,61 @@
       }
     },
     "EnumOrigin": {
+      "title": "EnumOrigin",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "StartPos",
-        "BottomCenter",
-        "TopCenter",
-        "MiddleCenter"
-      ],
-      "enum": [
-        "startPos",
-        "bottomCenter",
-        "topCenter",
-        "middleCenter"
+      "anyOf": [
+        {
+          "title": "StartPos",
+          "default": "StartPos",
+          "pattern": "[Ss][Tt][Aa][Rr][Tt][Pp][Oo][Ss]"
+        },
+        {
+          "title": "BottomCenter",
+          "default": "BottomCenter",
+          "pattern": "[Bb][Oo][Tt][Tt][Oo][Mm][Cc][Ee][Nn][Tt][Ee][Rr]"
+        },
+        {
+          "title": "TopCenter",
+          "default": "TopCenter",
+          "pattern": "[Tt][Oo][Pp][Cc][Ee][Nn][Tt][Ee][Rr]"
+        },
+        {
+          "title": "MiddleCenter",
+          "default": "MiddleCenter",
+          "pattern": "[Mm][Ii][Dd][Dd][Ll][Ee][Cc][Ee][Nn][Tt][Ee][Rr]"
+        }
       ]
     },
     "EnumStructurePlacement": {
+      "title": "EnumStructurePlacement",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "SurfaceRuin",
-        "Surface",
-        "Underwater",
-        "Underground"
-      ],
-      "enum": [
-        "surfaceRuin",
-        "surface",
-        "underwater",
-        "underground"
+      "anyOf": [
+        {
+          "title": "SurfaceRuin",
+          "default": "SurfaceRuin",
+          "pattern": "[Ss][Uu][Rr][Ff][Aa][Cc][Ee][Rr][Uu][Ii][Nn]"
+        },
+        {
+          "title": "Surface",
+          "default": "Surface",
+          "pattern": "[Ss][Uu][Rr][Ff][Aa][Cc][Ee]"
+        },
+        {
+          "title": "Underwater",
+          "default": "Underwater",
+          "pattern": "[Uu][Nn][Dd][Ee][Rr][Ww][Aa][Tt][Ee][Rr]"
+        },
+        {
+          "title": "Underground",
+          "default": "Underground",
+          "pattern": "[Uu][Nn][Dd][Ee][Rr][Gg][Rr][Oo][Uu][Nn][Dd]"
+        }
       ]
     },
     "WorldGenStructuresConfigBase": {
+      "title": "WorldGenStructuresConfigBase",
       "type": "object",
       "properties": {
         "resolvedRocktypeRemapGroups": {

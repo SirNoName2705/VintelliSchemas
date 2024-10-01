@@ -1,25 +1,48 @@
 {
+  "title": "EnumColorBlendMode",
   "type": "string",
   "description": "",
-  "x-enumNames": [
-    "Normal",
-    "Darken",
-    "Lighten",
-    "Multiply",
-    "Screen",
-    "ColorDodge",
-    "ColorBurn",
-    "Overlay"
-  ],
-  "enum": [
-    "normal",
-    "darken",
-    "lighten",
-    "multiply",
-    "screen",
-    "colorDodge",
-    "colorBurn",
-    "overlay"
+  "anyOf": [
+    {
+      "title": "Normal",
+      "default": "Normal",
+      "pattern": "[Nn][Oo][Rr][Mm][Aa][Ll]"
+    },
+    {
+      "title": "Darken",
+      "default": "Darken",
+      "pattern": "[Dd][Aa][Rr][Kk][Ee][Nn]"
+    },
+    {
+      "title": "Lighten",
+      "default": "Lighten",
+      "pattern": "[Ll][Ii][Gg][Hh][Tt][Ee][Nn]"
+    },
+    {
+      "title": "Multiply",
+      "default": "Multiply",
+      "pattern": "[Mm][Uu][Ll][Tt][Ii][Pp][Ll][Yy]"
+    },
+    {
+      "title": "Screen",
+      "default": "Screen",
+      "pattern": "[Ss][Cc][Rr][Ee][Ee][Nn]"
+    },
+    {
+      "title": "ColorDodge",
+      "default": "ColorDodge",
+      "pattern": "[Cc][Oo][Ll][Oo][Rr][Dd][Oo][Dd][Gg][Ee]"
+    },
+    {
+      "title": "ColorBurn",
+      "default": "ColorBurn",
+      "pattern": "[Cc][Oo][Ll][Oo][Rr][Bb][Uu][Rr][Nn]"
+    },
+    {
+      "title": "Overlay",
+      "default": "Overlay",
+      "pattern": "[Oo][Vv][Ee][Rr][Ll][Aa][Yy]"
+    }
   ],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

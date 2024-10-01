@@ -3,6 +3,7 @@
   "title": "EntityType",
   "definitions": {
     "ClientEntityConfig": {
+      "title": "ClientEntityConfig",
       "type": "object",
       "properties": {
         "animations": {
@@ -59,6 +60,7 @@
       }
     },
     "AnimationMetaData": {
+      "title": "AnimationMetaData",
       "type": "object",
       "properties": {
         "animation": {
@@ -141,20 +143,29 @@
       }
     },
     "EnumAnimationBlendMode": {
+      "title": "EnumAnimationBlendMode",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "Add",
-        "Average",
-        "AddAverage"
-      ],
-      "enum": [
-        "add",
-        "average",
-        "addAverage"
+      "anyOf": [
+        {
+          "title": "Add",
+          "default": "Add",
+          "pattern": "[Aa][Dd][Dd]"
+        },
+        {
+          "title": "Average",
+          "default": "Average",
+          "pattern": "[Aa][Vv][Ee][Rr][Aa][Gg][Ee]"
+        },
+        {
+          "title": "AddAverage",
+          "default": "AddAverage",
+          "pattern": "[Aa][Dd][Dd][Aa][Vv][Ee][Rr][Aa][Gg][Ee]"
+        }
       ]
     },
     "AnimationTrigger": {
+      "title": "AnimationTrigger",
       "type": "object",
       "properties": {
         "defaultAnim": {
@@ -172,47 +183,95 @@
       }
     },
     "EnumEntityActivity": {
+      "title": "EnumEntityActivity",
       "type": "string",
       "description": "",
       "x-enumFlags": true,
-      "x-enumNames": [
-        "None",
-        "Idle",
-        "Move",
-        "SprintMode",
-        "SneakMode",
-        "Fly",
-        "Swim",
-        "Jump",
-        "Fall",
-        "Climb",
-        "FloorSitting",
-        "Dead",
-        "Break",
-        "Place",
-        "Glide",
-        "Mounted"
-      ],
-      "enum": [
-        "none",
-        "idle",
-        "move",
-        "sprintMode",
-        "sneakMode",
-        "fly",
-        "swim",
-        "jump",
-        "fall",
-        "climb",
-        "floorSitting",
-        "dead",
-        "break",
-        "place",
-        "glide",
-        "mounted"
+      "anyOf": [
+        {
+          "title": "None",
+          "default": "None",
+          "pattern": "[Nn][Oo][Nn][Ee]"
+        },
+        {
+          "title": "Idle",
+          "default": "Idle",
+          "pattern": "[Ii][Dd][Ll][Ee]"
+        },
+        {
+          "title": "Move",
+          "default": "Move",
+          "pattern": "[Mm][Oo][Vv][Ee]"
+        },
+        {
+          "title": "SprintMode",
+          "default": "SprintMode",
+          "pattern": "[Ss][Pp][Rr][Ii][Nn][Tt][Mm][Oo][Dd][Ee]"
+        },
+        {
+          "title": "SneakMode",
+          "default": "SneakMode",
+          "pattern": "[Ss][Nn][Ee][Aa][Kk][Mm][Oo][Dd][Ee]"
+        },
+        {
+          "title": "Fly",
+          "default": "Fly",
+          "pattern": "[Ff][Ll][Yy]"
+        },
+        {
+          "title": "Swim",
+          "default": "Swim",
+          "pattern": "[Ss][Ww][Ii][Mm]"
+        },
+        {
+          "title": "Jump",
+          "default": "Jump",
+          "pattern": "[Jj][Uu][Mm][Pp]"
+        },
+        {
+          "title": "Fall",
+          "default": "Fall",
+          "pattern": "[Ff][Aa][Ll][Ll]"
+        },
+        {
+          "title": "Climb",
+          "default": "Climb",
+          "pattern": "[Cc][Ll][Ii][Mm][Bb]"
+        },
+        {
+          "title": "FloorSitting",
+          "default": "FloorSitting",
+          "pattern": "[Ff][Ll][Oo][Oo][Rr][Ss][Ii][Tt][Tt][Ii][Nn][Gg]"
+        },
+        {
+          "title": "Dead",
+          "default": "Dead",
+          "pattern": "[Dd][Ee][Aa][Dd]"
+        },
+        {
+          "title": "Break",
+          "default": "Break",
+          "pattern": "[Bb][Rr][Ee][Aa][Kk]"
+        },
+        {
+          "title": "Place",
+          "default": "Place",
+          "pattern": "[Pp][Ll][Aa][Cc][Ee]"
+        },
+        {
+          "title": "Glide",
+          "default": "Glide",
+          "pattern": "[Gg][Ll][Ii][Dd][Ee]"
+        },
+        {
+          "title": "Mounted",
+          "default": "Mounted",
+          "pattern": "[Mm][Oo][Uu][Nn][Tt][Ee][Dd]"
+        }
       ]
     },
     "Vec2f": {
+      "title": "Vec2f",
       "type": "object",
       "description": "Represents a vector of 2 floats. Go bug Tyron of you need more utility methods in this class.",
       "properties": {
@@ -227,22 +286,34 @@
       }
     },
     "EnumHabitat": {
+      "title": "EnumHabitat",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "Sea",
-        "Land",
-        "Air",
-        "Underwater"
-      ],
-      "enum": [
-        "sea",
-        "land",
-        "air",
-        "underwater"
+      "anyOf": [
+        {
+          "title": "Sea",
+          "default": "Sea",
+          "pattern": "[Ss][Ee][Aa]"
+        },
+        {
+          "title": "Land",
+          "default": "Land",
+          "pattern": "[Ll][Aa][Nn][Dd]"
+        },
+        {
+          "title": "Air",
+          "default": "Air",
+          "pattern": "[Aa][Ii][Rr]"
+        },
+        {
+          "title": "Underwater",
+          "default": "Underwater",
+          "pattern": "[Uu][Nn][Dd][Ee][Rr][Ww][Aa][Tt][Ee][Rr]"
+        }
       ]
     },
     "ServerEntityConfig": {
+      "title": "ServerEntityConfig",
       "type": "object",
       "properties": {
         "attributes": {
@@ -260,6 +331,7 @@
       }
     },
     "SpawnConditions": {
+      "title": "SpawnConditions",
       "type": "object",
       "description": "The spawn conditions assigned to various things.",
       "properties": {
@@ -290,6 +362,7 @@
       }
     },
     "ClimateSpawnCondition": {
+      "title": "ClimateSpawnCondition",
       "type": "object",
       "properties": {
         "maxForest": {
@@ -350,6 +423,7 @@
       }
     },
     "RuntimeSpawnConditions": {
+      "title": "RuntimeSpawnConditions",
       "allOf": [
         {
           "$ref": "#/definitions/BaseSpawnConditions"
@@ -384,6 +458,7 @@
       ]
     },
     "QuantityByGroup": {
+      "title": "QuantityByGroup",
       "type": "object",
       "properties": {
         "code": {
@@ -396,6 +471,7 @@
       }
     },
     "BaseSpawnConditions": {
+      "title": "BaseSpawnConditions",
       "allOf": [
         {
           "$ref": "#/definitions/ClimateSpawnCondition"
@@ -468,42 +544,71 @@
       ]
     },
     "EnumGetClimateMode": {
+      "title": "EnumGetClimateMode",
       "type": "string",
       "description": "The type of climate values you wish to receive",
-      "x-enumNames": [
-        "WorldGenValues",
-        "NowValues",
-        "ForSuppliedDateValues",
-        "ForSuppliedDate_TemperatureOnly",
-        "ForSuppliedDate_TemperatureRainfallOnly"
-      ],
-      "enum": [
-        "worldGenValues",
-        "nowValues",
-        "forSuppliedDateValues",
-        "forSuppliedDate_TemperatureOnly",
-        "forSuppliedDate_TemperatureRainfallOnly"
+      "anyOf": [
+        {
+          "title": "WorldGenValues",
+          "default": "WorldGenValues",
+          "pattern": "[Ww][Oo][Rr][Ll][Dd][Gg][Ee][Nn][Vv][Aa][Ll][Uu][Ee][Ss]"
+        },
+        {
+          "title": "NowValues",
+          "default": "NowValues",
+          "pattern": "[Nn][Oo][Ww][Vv][Aa][Ll][Uu][Ee][Ss]"
+        },
+        {
+          "title": "ForSuppliedDateValues",
+          "default": "ForSuppliedDateValues",
+          "pattern": "[Ff][Oo][Rr][Ss][Uu][Pp][Pp][Ll][Ii][Ee][Dd][Dd][Aa][Tt][Ee][Vv][Aa][Ll][Uu][Ee][Ss]"
+        },
+        {
+          "title": "ForSuppliedDate_TemperatureOnly",
+          "default": "ForSuppliedDate_TemperatureOnly",
+          "pattern": "[Ff][Oo][Rr][Ss][Uu][Pp][Pp][Ll][Ii][Ee][Dd][Dd][Aa][Tt][Ee][_][Tt][Ee][Mm][Pp][Ee][Rr][Aa][Tt][Uu][Rr][Ee][Oo][Nn][Ll][Yy]"
+        },
+        {
+          "title": "ForSuppliedDate_TemperatureRainfallOnly",
+          "default": "ForSuppliedDate_TemperatureRainfallOnly",
+          "pattern": "[Ff][Oo][Rr][Ss][Uu][Pp][Pp][Ll][Ii][Ee][Dd][Dd][Aa][Tt][Ee][_][Tt][Ee][Mm][Pp][Ee][Rr][Aa][Tt][Uu][Rr][Ee][Rr][Aa][Ii][Nn][Ff][Aa][Ll][Ll][Oo][Nn][Ll][Yy]"
+        }
       ]
     },
     "EnumLightLevelType": {
+      "title": "EnumLightLevelType",
       "type": "string",
       "description": "Used in blockAccessor.GetLightLevel() to determine what kind of light level you want",
-      "x-enumNames": [
-        "OnlyBlockLight",
-        "OnlySunLight",
-        "MaxLight",
-        "MaxTimeOfDayLight",
-        "TimeOfDaySunLight"
-      ],
-      "enum": [
-        "onlyBlockLight",
-        "onlySunLight",
-        "maxLight",
-        "maxTimeOfDayLight",
-        "timeOfDaySunLight"
+      "anyOf": [
+        {
+          "title": "OnlyBlockLight",
+          "default": "OnlyBlockLight",
+          "pattern": "[Oo][Nn][Ll][Yy][Bb][Ll][Oo][Cc][Kk][Ll][Ii][Gg][Hh][Tt]"
+        },
+        {
+          "title": "OnlySunLight",
+          "default": "OnlySunLight",
+          "pattern": "[Oo][Nn][Ll][Yy][Ss][Uu][Nn][Ll][Ii][Gg][Hh][Tt]"
+        },
+        {
+          "title": "MaxLight",
+          "default": "MaxLight",
+          "pattern": "[Mm][Aa][Xx][Ll][Ii][Gg][Hh][Tt]"
+        },
+        {
+          "title": "MaxTimeOfDayLight",
+          "default": "MaxTimeOfDayLight",
+          "pattern": "[Mm][Aa][Xx][Tt][Ii][Mm][Ee][Oo][Ff][Dd][Aa][Yy][Ll][Ii][Gg][Hh][Tt]"
+        },
+        {
+          "title": "TimeOfDaySunLight",
+          "default": "TimeOfDaySunLight",
+          "pattern": "[Tt][Ii][Mm][Ee][Oo][Ff][Dd][Aa][Yy][Ss][Uu][Nn][Ll][Ii][Gg][Hh][Tt]"
+        }
       ]
     },
     "WorldGenSpawnConditions": {
+      "title": "WorldGenSpawnConditions",
       "allOf": [
         {
           "$ref": "#/definitions/BaseSpawnConditions"

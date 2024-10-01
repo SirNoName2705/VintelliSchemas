@@ -7,6 +7,7 @@
   },
   "definitions": {
     "CharacterClass": {
+      "title": "CharacterClass",
       "type": "object",
       "properties": {
         "code": {

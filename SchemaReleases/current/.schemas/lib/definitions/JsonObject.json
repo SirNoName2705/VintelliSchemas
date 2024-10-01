@@ -1,5 +1,13 @@
 {
-  "type": "object",
+  "title": "JsonObject",
+  "type": [
+    "array",
+    "object",
+    "null",
+    "string",
+    "number",
+    "boolean"
+  ],
   "description": "Elegant, yet somewhat inefficently designed (because wasteful with heap objects) wrapper class to abstract away the type-casting nightmare of JToken O.O",
   "properties": {
     "exists": {

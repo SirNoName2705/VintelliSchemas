@@ -3,6 +3,7 @@
   "title": "LandformsWorldProperty",
   "definitions": {
     "WorldPropertyOfLandformVariant": {
+      "title": "WorldPropertyOfLandformVariant",
       "type": "object",
       "properties": {
         "code": {
@@ -17,6 +18,7 @@
       }
     },
     "LandformVariant": {
+      "title": "LandformVariant",
       "allOf": [
         {
           "$ref": "../../lib/definitions/WorldPropertyVariant.json#"

@@ -1,15 +1,23 @@
 {
+  "title": "EnumSoilNutrient",
   "type": "string",
   "description": "",
-  "x-enumNames": [
-    "N",
-    "P",
-    "K"
-  ],
-  "enum": [
-    "n",
-    "p",
-    "k"
+  "anyOf": [
+    {
+      "title": "N",
+      "default": "N",
+      "pattern": "[Nn]"
+    },
+    {
+      "title": "P",
+      "default": "P",
+      "pattern": "[Pp]"
+    },
+    {
+      "title": "K",
+      "default": "K",
+      "pattern": "[Kk]"
+    }
   ],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

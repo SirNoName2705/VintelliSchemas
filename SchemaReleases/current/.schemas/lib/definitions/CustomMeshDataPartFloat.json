@@ -1,4 +1,5 @@
 {
+  "title": "CustomMeshDataPartFloat",
   "allOf": [
     {
       "$ref": "./CustomMeshDataPartOfSingle.json#"

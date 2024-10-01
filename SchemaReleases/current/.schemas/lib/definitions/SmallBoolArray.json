@@ -1,4 +1,5 @@
 {
+  "title": "SmallBoolArray",
   "type": "object",
   "description": "Suitable for up to 32 bool values, though normally used only for 6.  Offers most of the methods available for a bool[], so can be dropped in to existing code",
   "properties": {

@@ -1,4 +1,5 @@
 {
+  "title": "CollectibleType",
   "allOf": [
     {
       "$ref": "./RegistryObjectType.json#"

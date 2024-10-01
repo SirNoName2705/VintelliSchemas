@@ -1,4 +1,5 @@
 {
+  "title": "CollectibleBehavior",
   "type": "object",
   "properties": {
     "clientSideOptional": {

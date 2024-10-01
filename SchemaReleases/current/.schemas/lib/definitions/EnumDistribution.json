@@ -1,31 +1,63 @@
 {
+  "title": "EnumDistribution",
   "type": "string",
   "description": "The distribution of the random numbers ",
-  "x-enumNames": [
-    "UNIFORM",
-    "TRIANGLE",
-    "GAUSSIAN",
-    "NARROWGAUSSIAN",
-    "INVERSEGAUSSIAN",
-    "NARROWINVERSEGAUSSIAN",
-    "INVEXP",
-    "STRONGINVEXP",
-    "STRONGERINVEXP",
-    "DIRAC",
-    "VERYNARROWGAUSSIAN"
-  ],
-  "enum": [
-    "uniform",
-    "triangle",
-    "gaussian",
-    "narrowgaussian",
-    "inversegaussian",
-    "narrowinversegaussian",
-    "invexp",
-    "stronginvexp",
-    "strongerinvexp",
-    "dirac",
-    "verynarrowgaussian"
+  "anyOf": [
+    {
+      "title": "UNIFORM",
+      "default": "UNIFORM",
+      "pattern": "[Uu][Nn][Ii][Ff][Oo][Rr][Mm]"
+    },
+    {
+      "title": "TRIANGLE",
+      "default": "TRIANGLE",
+      "pattern": "[Tt][Rr][Ii][Aa][Nn][Gg][Ll][Ee]"
+    },
+    {
+      "title": "GAUSSIAN",
+      "default": "GAUSSIAN",
+      "pattern": "[Gg][Aa][Uu][Ss][Ss][Ii][Aa][Nn]"
+    },
+    {
+      "title": "NARROWGAUSSIAN",
+      "default": "NARROWGAUSSIAN",
+      "pattern": "[Nn][Aa][Rr][Rr][Oo][Ww][Gg][Aa][Uu][Ss][Ss][Ii][Aa][Nn]"
+    },
+    {
+      "title": "INVERSEGAUSSIAN",
+      "default": "INVERSEGAUSSIAN",
+      "pattern": "[Ii][Nn][Vv][Ee][Rr][Ss][Ee][Gg][Aa][Uu][Ss][Ss][Ii][Aa][Nn]"
+    },
+    {
+      "title": "NARROWINVERSEGAUSSIAN",
+      "default": "NARROWINVERSEGAUSSIAN",
+      "pattern": "[Nn][Aa][Rr][Rr][Oo][Ww][Ii][Nn][Vv][Ee][Rr][Ss][Ee][Gg][Aa][Uu][Ss][Ss][Ii][Aa][Nn]"
+    },
+    {
+      "title": "INVEXP",
+      "default": "INVEXP",
+      "pattern": "[Ii][Nn][Vv][Ee][Xx][Pp]"
+    },
+    {
+      "title": "STRONGINVEXP",
+      "default": "STRONGINVEXP",
+      "pattern": "[Ss][Tt][Rr][Oo][Nn][Gg][Ii][Nn][Vv][Ee][Xx][Pp]"
+    },
+    {
+      "title": "STRONGERINVEXP",
+      "default": "STRONGERINVEXP",
+      "pattern": "[Ss][Tt][Rr][Oo][Nn][Gg][Ee][Rr][Ii][Nn][Vv][Ee][Xx][Pp]"
+    },
+    {
+      "title": "DIRAC",
+      "default": "DIRAC",
+      "pattern": "[Dd][Ii][Rr][Aa][Cc]"
+    },
+    {
+      "title": "VERYNARROWGAUSSIAN",
+      "default": "VERYNARROWGAUSSIAN",
+      "pattern": "[Vv][Ee][Rr][Yy][Nn][Aa][Rr][Rr][Oo][Ww][Gg][Aa][Uu][Ss][Ss][Ii][Aa][Nn]"
+    }
   ],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

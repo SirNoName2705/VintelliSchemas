@@ -1,4 +1,5 @@
 {
+  "title": "BlockCropProperties",
   "type": "object",
   "properties": {
     "behaviors": {

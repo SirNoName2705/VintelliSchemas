@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "blocktypes-attributes.json",
   "type": "object",
   "properties": {
     "attributes": {
@@ -23,7 +24,7 @@
           "$ref": "#/definitions/OverrideTextureGroups"
         },
         "reparability": {
-          "type": "integer"
+          "type": "number"
         },
         "types": {
           "type": "array",
@@ -56,7 +57,7 @@
           "type": "string"
         },
         "growthLightLevel": {
-          "type": "integer"
+          "type": "number"
         },
         "tallGrassGrowthChance": {
           "type": "number"
@@ -86,7 +87,7 @@
           }
         },
         "delayGrowthBelowSunLight": {
-          "type": "integer"
+          "type": "number"
         },
         "debuffUnaffectedDrops": {
           "type": "array",
@@ -119,7 +120,7 @@
           "type": "boolean"
         },
         "insideDamage": {
-          "type": "integer"
+          "type": "number"
         },
         "damageType": {
           "type": "string"
@@ -137,10 +138,10 @@
           "$ref": "#/definitions/WaterTightContainerProps"
         },
         "temperature": {
-          "type": "integer"
+          "type": "number"
         },
         "tempLossPerMeter": {
-          "type": "integer"
+          "type": "number"
         },
         "__comment": {
           "type": "string"
@@ -173,7 +174,7 @@
           "type": "string"
         },
         "treeFellingGroupSpreadIndex": {
-          "type": "integer"
+          "type": "number"
         },
         "height": {
           "type": "number"
@@ -206,13 +207,13 @@
           "$ref": "#/definitions/Anonymous566"
         },
         "quantitySlots": {
-          "type": "integer"
+          "type": "number"
         },
         "dialogTitleLangCode": {
           "$ref": "#/definitions/Anonymous566"
         },
         "storageType": {
-          "type": "integer"
+          "type": "number"
         },
         "retrieveOnly": {
           "type": "boolean"
@@ -269,28 +270,28 @@
           "$ref": "#/definitions/BuildMats"
         },
         "maxWidth": {
-          "type": "integer"
+          "type": "number"
         },
         "maxHeight": {
-          "type": "integer"
+          "type": "number"
         },
         "fontSize": {
-          "type": "integer"
+          "type": "number"
         },
         "textVoxelOffsetX": {
-          "type": "integer"
+          "type": "number"
         },
         "textVoxelOffsetY": {
-          "type": "integer"
+          "type": "number"
         },
         "textVoxelOffsetZ": {
           "type": "number"
         },
         "textVoxelWidth": {
-          "type": "integer"
+          "type": "number"
         },
         "textVoxelHeight": {
-          "type": "integer"
+          "type": "number"
         },
         "sleepEfficiencyByType": {
           "$ref": "#/definitions/SleepEfficiencyByType"
@@ -302,7 +303,7 @@
           "type": "boolean"
         },
         "capacityLitres": {
-          "type": "integer"
+          "type": "number"
         },
         "quantityColumns": {
           "$ref": "#/definitions/RotatatableInterval"
@@ -335,22 +336,22 @@
           "$ref": "#/definitions/Mossy"
         },
         "fillHeight": {
-          "type": "integer"
+          "type": "number"
         },
         "attachmentArea": {
           "$ref": "#/definitions/ColSelBoxe"
         },
         "cookingContainerSlots": {
-          "type": "integer"
+          "type": "number"
         },
         "maxContainerSlotStackSize": {
-          "type": "integer"
+          "type": "number"
         },
         "servingCapacity": {
-          "type": "integer"
+          "type": "number"
         },
         "maxTemperature": {
-          "type": "integer"
+          "type": "number"
         },
         "mealBlockCode": {
           "type": "string"
@@ -410,7 +411,7 @@
           "$ref": "#/definitions/MaxContentDimensions"
         },
         "maxHeatableTemp": {
-          "type": "integer"
+          "type": "number"
         },
         "bowlContents": {},
         "handleLiquidContainerInteract": {
@@ -453,13 +454,13 @@
           "type": "number"
         },
         "blastRadius": {
-          "type": "integer"
+          "type": "number"
         },
         "injureRadius": {
-          "type": "integer"
+          "type": "number"
         },
         "blastType": {
-          "type": "integer"
+          "type": "number"
         },
         "propickable": {
           "type": "boolean"
@@ -486,10 +487,10 @@
           "$ref": "#/definitions/@(bonysoil|bonysoil.*)"
         },
         "sprintIntoDamage": {
-          "type": "integer"
+          "type": "number"
         },
         "fallIntoDamageMul": {
-          "type": "integer"
+          "type": "number"
         },
         "immuneCreatures": {
           "type": "array",
@@ -531,22 +532,22 @@
           "type": "boolean"
         },
         "resetBelowTemperature": {
-          "type": "integer"
+          "type": "number"
         },
         "stopBelowTemperature": {
-          "type": "integer"
+          "type": "number"
         },
         "revertBlockBelowTemperature": {
-          "type": "integer"
+          "type": "number"
         },
         "resetAboveTemperature": {
-          "type": "integer"
+          "type": "number"
         },
         "stopAboveTemperature": {
-          "type": "integer"
+          "type": "number"
         },
         "revertBlockAboveTemperature": {
-          "type": "integer"
+          "type": "number"
         },
         "stackable": {
           "type": "boolean"
@@ -567,7 +568,7 @@
           "$ref": "#/definitions/DrawnHeightByType"
         },
         "overrideRandomDrawOffset": {
-          "type": "integer"
+          "type": "number"
         },
         "climateColorMapForMap": {
           "type": "string"
@@ -621,7 +622,7 @@
           "$ref": "#/definitions/PushFacesByType"
         },
         "item-flowrate": {
-          "type": "integer"
+          "type": "number"
         },
         "handopenable": {
           "type": "boolean"
@@ -673,7 +674,7 @@
           "type": "boolean"
         },
         "item-checkrateMs": {
-          "type": "integer"
+          "type": "number"
         },
         "dropSelf": {
           "type": "boolean"
@@ -703,7 +704,7 @@
           "$ref": "#/definitions/PartialAttachableByType"
         },
         "unstableRockStabilization": {
-          "type": "integer"
+          "type": "number"
         },
         "slotsHitBoxes": {
           "type": "array",
@@ -724,7 +725,7 @@
           }
         },
         "requiredUnits": {
-          "type": "integer"
+          "type": "number"
         },
         "fillQuadsByLevel": {
           "type": "array",
@@ -1083,22 +1084,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1126,7 +1127,7 @@
           "type": "number"
         },
         "z": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1151,7 +1152,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1174,7 +1175,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1197,7 +1198,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1220,7 +1221,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1260,7 +1261,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1283,7 +1284,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1306,7 +1307,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1329,7 +1330,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1352,7 +1353,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1375,7 +1376,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1398,7 +1399,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1426,22 +1427,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1449,16 +1450,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -1472,16 +1473,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -1495,16 +1496,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -1518,16 +1519,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -1541,16 +1542,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -1564,16 +1565,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -1610,22 +1611,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1633,22 +1634,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1656,22 +1657,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1679,22 +1680,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1702,22 +1703,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1725,22 +1726,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1748,22 +1749,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1771,13 +1772,13 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -1794,13 +1795,13 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -1809,7 +1810,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1817,13 +1818,13 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -1832,7 +1833,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1840,13 +1841,13 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -1855,7 +1856,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1863,13 +1864,13 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -1878,7 +1879,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1889,7 +1890,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1912,7 +1913,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1935,7 +1936,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -1955,13 +1956,13 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -1970,7 +1971,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -1981,7 +1982,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2004,7 +2005,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2027,7 +2028,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2050,7 +2051,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2073,7 +2074,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2096,7 +2097,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2119,7 +2120,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2142,7 +2143,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2165,7 +2166,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2188,7 +2189,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2211,7 +2212,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2234,7 +2235,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2257,7 +2258,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2280,7 +2281,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2303,7 +2304,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2326,7 +2327,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2349,7 +2350,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2372,7 +2373,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2395,7 +2396,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2418,7 +2419,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2441,7 +2442,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2464,7 +2465,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2487,7 +2488,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2507,19 +2508,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -2530,19 +2531,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -2553,19 +2554,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -2576,19 +2577,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -2599,19 +2600,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -2622,19 +2623,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -2645,19 +2646,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -2668,19 +2669,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -2691,19 +2692,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -2717,7 +2718,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2740,7 +2741,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2763,7 +2764,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2786,7 +2787,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2809,7 +2810,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2832,7 +2833,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2855,7 +2856,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2878,7 +2879,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2901,7 +2902,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2924,7 +2925,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2947,7 +2948,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2970,7 +2971,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -2993,7 +2994,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3016,7 +3017,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3039,7 +3040,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3062,7 +3063,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3085,7 +3086,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3108,7 +3109,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3128,22 +3129,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -3154,7 +3155,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3177,7 +3178,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3200,7 +3201,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3223,7 +3224,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3246,7 +3247,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3269,7 +3270,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3292,7 +3293,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3315,7 +3316,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3338,7 +3339,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3361,7 +3362,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3384,7 +3385,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3407,7 +3408,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3430,7 +3431,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3439,7 +3440,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3453,7 +3454,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3462,7 +3463,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3476,7 +3477,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3485,7 +3486,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3499,7 +3500,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3508,7 +3509,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3531,7 +3532,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3545,7 +3546,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3554,7 +3555,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3568,7 +3569,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3577,7 +3578,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3591,7 +3592,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3600,7 +3601,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3623,7 +3624,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3646,7 +3647,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3660,7 +3661,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3669,7 +3670,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3683,7 +3684,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3706,7 +3707,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3715,7 +3716,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3729,7 +3730,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3738,7 +3739,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3749,22 +3750,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -3772,19 +3773,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -3798,7 +3799,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3821,7 +3822,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3844,7 +3845,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3867,7 +3868,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3887,10 +3888,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3910,22 +3911,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -3936,7 +3937,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3959,7 +3960,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -3982,7 +3983,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4005,7 +4006,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4028,7 +4029,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4051,7 +4052,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4074,7 +4075,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4097,7 +4098,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4120,7 +4121,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4143,10 +4144,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -4155,7 +4156,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -4166,7 +4167,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4189,7 +4190,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4212,7 +4213,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4235,7 +4236,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4258,7 +4259,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4281,7 +4282,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4304,7 +4305,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4327,7 +4328,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4350,7 +4351,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4373,7 +4374,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4396,7 +4397,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4419,7 +4420,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4442,7 +4443,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4462,16 +4463,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -4488,7 +4489,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4511,13 +4512,13 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -4534,7 +4535,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4557,13 +4558,13 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -4580,7 +4581,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4603,7 +4604,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4626,7 +4627,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4649,7 +4650,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4672,7 +4673,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4695,7 +4696,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4718,7 +4719,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4741,7 +4742,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4764,7 +4765,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4787,7 +4788,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4810,7 +4811,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4833,7 +4834,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4856,7 +4857,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4879,7 +4880,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4899,22 +4900,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -4925,7 +4926,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4948,7 +4949,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4971,7 +4972,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -4994,7 +4995,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5017,7 +5018,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5037,22 +5038,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5063,7 +5064,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5083,22 +5084,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5109,7 +5110,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5132,7 +5133,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5155,10 +5156,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -5167,7 +5168,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5178,10 +5179,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -5190,7 +5191,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5201,7 +5202,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5224,7 +5225,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5236,7 +5237,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5247,7 +5248,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5270,7 +5271,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5293,10 +5294,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -5305,7 +5306,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5316,7 +5317,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5339,7 +5340,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5362,7 +5363,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5385,13 +5386,13 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -5408,7 +5409,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5420,7 +5421,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5431,7 +5432,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5454,10 +5455,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -5477,13 +5478,13 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -5500,13 +5501,13 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -5523,7 +5524,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5557,10 +5558,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5583,7 +5584,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5606,7 +5607,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5626,10 +5627,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5652,7 +5653,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5672,16 +5673,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -5698,13 +5699,13 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -5721,7 +5722,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5733,7 +5734,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5741,10 +5742,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5756,7 +5757,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5767,7 +5768,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5787,22 +5788,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5810,22 +5811,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5836,13 +5837,13 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -5856,22 +5857,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5882,19 +5883,19 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5902,13 +5903,13 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -5917,7 +5918,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -5928,10 +5929,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -5948,13 +5949,13 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -5971,10 +5972,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -5997,10 +5998,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -6020,7 +6021,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -6043,19 +6044,19 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6066,10 +6067,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -6089,10 +6090,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -6101,7 +6102,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6112,7 +6113,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -6121,7 +6122,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -6132,22 +6133,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6155,22 +6156,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6178,22 +6179,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6201,22 +6202,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6224,22 +6225,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6247,22 +6248,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6270,22 +6271,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6293,22 +6294,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6316,16 +6317,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -6339,16 +6340,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -6362,16 +6363,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -6385,16 +6386,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -6408,16 +6409,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -6431,16 +6432,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -6454,16 +6455,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -6477,16 +6478,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -6500,16 +6501,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -6523,16 +6524,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -6546,22 +6547,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6569,22 +6570,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6592,22 +6593,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6629,22 +6630,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6652,22 +6653,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6675,22 +6676,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6698,22 +6699,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6721,22 +6722,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6744,22 +6745,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6767,22 +6768,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6790,22 +6791,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6813,22 +6814,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6836,22 +6837,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -6862,7 +6863,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -6885,7 +6886,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -6908,7 +6909,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -6931,7 +6932,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -6954,7 +6955,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -6977,7 +6978,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7000,7 +7001,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7023,7 +7024,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7046,7 +7047,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7069,7 +7070,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7092,7 +7093,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7101,10 +7102,10 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -7112,16 +7113,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7138,7 +7139,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7161,7 +7162,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7181,16 +7182,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7207,7 +7208,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7230,7 +7231,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7253,7 +7254,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7273,13 +7274,13 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -7296,16 +7297,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7319,22 +7320,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -7342,19 +7343,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7365,19 +7366,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7388,19 +7389,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7411,19 +7412,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7434,19 +7435,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7457,16 +7458,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7480,16 +7481,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7503,16 +7504,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7526,16 +7527,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7549,16 +7550,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7572,16 +7573,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7595,16 +7596,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7618,16 +7619,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7641,19 +7642,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7664,19 +7665,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7687,19 +7688,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7710,19 +7711,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7733,19 +7734,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7756,7 +7757,7 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
@@ -7765,7 +7766,7 @@
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7779,7 +7780,7 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
@@ -7788,7 +7789,7 @@
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7802,7 +7803,7 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
@@ -7811,7 +7812,7 @@
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7825,7 +7826,7 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
@@ -7834,7 +7835,7 @@
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7848,7 +7849,7 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
@@ -7857,7 +7858,7 @@
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -7874,7 +7875,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7883,7 +7884,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7897,7 +7898,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7906,7 +7907,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7920,7 +7921,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7929,7 +7930,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7943,7 +7944,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7952,7 +7953,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7966,7 +7967,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -7975,7 +7976,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -7986,22 +7987,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -8009,16 +8010,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -8032,7 +8033,7 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
@@ -8047,7 +8048,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -8055,7 +8056,7 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
@@ -8070,7 +8071,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -8078,7 +8079,7 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
@@ -8093,7 +8094,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -8101,19 +8102,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8124,22 +8125,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -8147,10 +8148,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8159,10 +8160,10 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -8170,10 +8171,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8182,7 +8183,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8193,16 +8194,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -8216,22 +8217,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -8239,13 +8240,13 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -8254,7 +8255,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -8262,10 +8263,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8277,7 +8278,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -8285,10 +8286,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8308,10 +8309,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8331,10 +8332,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8357,7 +8358,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8380,7 +8381,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8403,7 +8404,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8426,7 +8427,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8449,7 +8450,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8472,7 +8473,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -8500,16 +8501,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -8523,19 +8524,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8546,19 +8547,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8569,16 +8570,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -8592,19 +8593,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8615,19 +8616,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8638,16 +8639,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -8661,19 +8662,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8684,19 +8685,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8707,16 +8708,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -8730,19 +8731,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8753,19 +8754,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8776,16 +8777,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -8799,19 +8800,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8822,19 +8823,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8845,16 +8846,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -8868,19 +8869,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8891,19 +8892,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8914,16 +8915,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -8937,19 +8938,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8960,19 +8961,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -8983,16 +8984,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -9006,19 +9007,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -9029,19 +9030,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -9052,16 +9053,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -9075,19 +9076,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -9098,19 +9099,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -9121,16 +9122,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -9144,19 +9145,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -9167,19 +9168,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -9190,16 +9191,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -9213,19 +9214,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -9236,19 +9237,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -9259,16 +9260,16 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -9282,19 +9283,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -9305,19 +9306,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -9331,7 +9332,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -9354,7 +9355,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -9377,7 +9378,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -9400,7 +9401,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -9423,7 +9424,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -9446,7 +9447,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -9469,7 +9470,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -9492,7 +9493,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -9515,7 +9516,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -9538,7 +9539,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -9558,22 +9559,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9581,22 +9582,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9604,22 +9605,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9627,22 +9628,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9650,22 +9651,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9673,22 +9674,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9696,22 +9697,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9719,22 +9720,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9745,10 +9746,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -9757,7 +9758,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9765,22 +9766,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9788,22 +9789,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9811,22 +9812,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9834,22 +9835,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9857,22 +9858,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9880,22 +9881,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9903,22 +9904,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9926,22 +9927,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -9952,10 +9953,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -9978,7 +9979,7 @@
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -9998,10 +9999,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -10021,10 +10022,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -10041,22 +10042,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10064,22 +10065,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10087,22 +10088,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10113,7 +10114,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10136,7 +10137,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10156,22 +10157,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10179,22 +10180,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10205,7 +10206,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10225,22 +10226,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10248,22 +10249,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10271,22 +10272,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10294,22 +10295,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10317,22 +10318,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10340,22 +10341,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10363,22 +10364,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10389,10 +10390,10 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -10412,7 +10413,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10421,7 +10422,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -10432,19 +10433,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -10455,22 +10456,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10478,22 +10479,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10501,10 +10502,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10513,10 +10514,10 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10524,10 +10525,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10536,7 +10537,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -10550,7 +10551,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10559,7 +10560,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -10570,19 +10571,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -10593,22 +10594,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10616,22 +10617,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10639,10 +10640,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10651,10 +10652,10 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10662,10 +10663,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10674,7 +10675,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -10688,7 +10689,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10697,7 +10698,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -10708,19 +10709,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -10731,22 +10732,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10754,22 +10755,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10777,10 +10778,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10789,10 +10790,10 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10800,10 +10801,10 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -10812,7 +10813,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -10823,22 +10824,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10846,22 +10847,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10869,22 +10870,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10892,22 +10893,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10915,10 +10916,10 @@
       "type": "object",
       "properties": {
         "avg": {
-          "type": "integer"
+          "type": "number"
         },
         "var": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -10951,22 +10952,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -11029,22 +11030,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -11089,22 +11090,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -11149,22 +11150,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -11198,7 +11199,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11221,7 +11222,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11244,7 +11245,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11267,7 +11268,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11290,7 +11291,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11299,7 +11300,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -11313,7 +11314,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11333,7 +11334,7 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
@@ -11342,7 +11343,7 @@
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -11359,7 +11360,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11368,7 +11369,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -11382,7 +11383,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11405,7 +11406,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11428,7 +11429,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11451,7 +11452,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11474,7 +11475,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11497,7 +11498,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11514,7 +11515,7 @@
       }
     },
     "LightHsv": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous491": {
       "type": "object",
@@ -11523,7 +11524,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11540,7 +11541,7 @@
       }
     },
     "Anonymous492": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous493": {
       "type": "object",
@@ -11549,7 +11550,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11566,7 +11567,7 @@
       }
     },
     "Anonymous494": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous495": {
       "type": "object",
@@ -11575,7 +11576,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11592,7 +11593,7 @@
       }
     },
     "Anonymous496": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous497": {
       "type": "object",
@@ -11601,7 +11602,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11618,7 +11619,7 @@
       }
     },
     "Anonymous498": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous499": {
       "type": "object",
@@ -11627,7 +11628,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11636,7 +11637,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -11644,7 +11645,7 @@
       }
     },
     "Anonymous500": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous501": {
       "type": "object",
@@ -11653,7 +11654,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11670,13 +11671,13 @@
       }
     },
     "Anonymous502": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous503": {
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
           "type": "number"
@@ -11685,7 +11686,7 @@
           "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
           "type": "number"
@@ -11696,7 +11697,7 @@
       }
     },
     "Anonymous504": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous505": {
       "type": "object",
@@ -11705,7 +11706,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11714,7 +11715,7 @@
           "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -11722,7 +11723,7 @@
       }
     },
     "Anonymous506": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous507": {
       "type": "object",
@@ -11731,7 +11732,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11748,7 +11749,7 @@
       }
     },
     "Anonymous508": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous509": {
       "type": "object",
@@ -11757,7 +11758,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11774,7 +11775,7 @@
       }
     },
     "Anonymous510": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous511": {
       "type": "object",
@@ -11783,7 +11784,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11800,7 +11801,7 @@
       }
     },
     "Anonymous512": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous513": {
       "type": "object",
@@ -11809,7 +11810,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11826,7 +11827,7 @@
       }
     },
     "Anonymous514": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous515": {
       "type": "object",
@@ -11835,7 +11836,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -11852,7 +11853,7 @@
       }
     },
     "Anonymous516": {
-      "type": "integer"
+      "type": "number"
     },
     "Anonymous517": {
       "type": "object",
@@ -11861,7 +11862,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -12037,7 +12038,7 @@
           "type": "string"
         },
         "chance": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -12167,19 +12168,19 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
           "type": "number"
@@ -12198,22 +12199,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -12249,22 +12250,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -12280,22 +12281,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -12311,22 +12312,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -12342,22 +12343,22 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -12405,7 +12406,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -12428,7 +12429,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -12451,7 +12452,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -12474,7 +12475,7 @@
           "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
           "type": "number"
@@ -12494,7 +12495,7 @@
       "type": "object",
       "properties": {
         "normal-generic": {
-          "type": "integer"
+          "type": "number"
         },
         "golden": {
           "type": "string"
@@ -12512,13 +12513,13 @@
           "type": "string"
         },
         "collapsed1": {
-          "type": "integer"
+          "type": "number"
         },
         "collapsed2": {
-          "type": "integer"
+          "type": "number"
         },
         "collapsed3": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -12734,10 +12735,10 @@
           "$ref": "#/definitions/Drop"
         },
         "quantityPerFillLevel": {
-          "type": "integer"
+          "type": "number"
         },
         "maxFillLevels": {
-          "type": "integer"
+          "type": "number"
         },
         "shapesPerFillLevel": {
           "type": "array",
@@ -12811,25 +12812,25 @@
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "y1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "y2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         },
         "rotateY": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -12912,7 +12913,7 @@
         "minHitboxY2": {
           "type": "array",
           "items": {
-            "type": "integer"
+            "type": "number"
           }
         },
         "buildStages": {
@@ -12980,7 +12981,7 @@
           "type": "string"
         },
         "quantity": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -12994,7 +12995,7 @@
           "type": "string"
         },
         "quantity": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -13019,13 +13020,13 @@
           "type": "string"
         },
         "quantity": {
-          "type": "integer"
+          "type": "number"
         },
         "eleCode": {
           "type": "string"
         },
         "burnTimeHours": {
-          "type": "integer"
+          "type": "number"
         },
         "textureCodeReplace": {
           "$ref": "#/definitions/TextureCodeReplace"
@@ -13211,7 +13212,7 @@
       "type": "object",
       "properties": {
         "capacityLitres": {
-          "type": "integer"
+          "type": "number"
         },
         "transferSizeLitres": {
           "type": "number"
@@ -14282,13 +14283,13 @@
           "type": "string"
         },
         "chance": {
-          "type": "integer"
+          "type": "number"
         },
         "minQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "maxQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "codes": {
           "type": "array",
@@ -14311,13 +14312,13 @@
           "type": "string"
         },
         "chance": {
-          "type": "integer"
+          "type": "number"
         },
         "minQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "maxQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "codes": {
           "type": "array",
@@ -14326,7 +14327,7 @@
           }
         },
         "minQuanity": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -14370,13 +14371,13 @@
           "type": "string"
         },
         "chance": {
-          "type": "integer"
+          "type": "number"
         },
         "minQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "maxQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "codes": {
           "type": "array",
@@ -14405,13 +14406,13 @@
           "type": "string"
         },
         "chance": {
-          "type": "integer"
+          "type": "number"
         },
         "minQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "maxQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "codes": {
           "type": "array",
@@ -14458,13 +14459,13 @@
           "type": "string"
         },
         "chance": {
-          "type": "integer"
+          "type": "number"
         },
         "minQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "maxQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "codes": {
           "type": "array",
@@ -14508,10 +14509,10 @@
           "type": "number"
         },
         "minQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "maxQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "codes": {
           "type": "array",
@@ -14564,10 +14565,10 @@
           "type": "number"
         },
         "minQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "maxQuantity": {
-          "type": "integer"
+          "type": "number"
         },
         "codes": {
           "type": "array",
@@ -14650,7 +14651,7 @@
           "type": "number"
         },
         "*-perfect": {
-          "type": "integer"
+          "type": "number"
         },
         "*-charred": {
           "type": "number"
@@ -14664,7 +14665,7 @@
           "type": "boolean"
         },
         "temp": {
-          "type": "integer"
+          "type": "number"
         },
         "levelFrom": {
           "type": "number"
@@ -14690,13 +14691,13 @@
           "type": "boolean"
         },
         "temp": {
-          "type": "integer"
+          "type": "number"
         },
         "levelFrom": {
           "type": "number"
         },
         "levelTo": {
-          "type": "integer"
+          "type": "number"
         },
         "startScaleY": {
           "type": "number"
@@ -14716,7 +14717,7 @@
       "type": "object",
       "properties": {
         "satiety": {
-          "type": "integer"
+          "type": "number"
         },
         "foodCategory": {
           "type": "string"
@@ -14736,37 +14737,37 @@
           "type": "number"
         },
         "*-earthball-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-deathcap-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-elfinsaddle-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-jackolantern-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-devilbolete-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-bitterbolete-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-devilstooth-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-golddropmilkcap-*": {
           "type": "number"
         },
         "*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-funeralbell-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-pinkbonnet-*": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -14973,7 +14974,7 @@
           "type": "string"
         },
         "rotateY": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -14987,16 +14988,16 @@
           "type": "string"
         },
         "mintemp": {
-          "type": "integer"
+          "type": "number"
         },
         "maxtemp": {
-          "type": "integer"
+          "type": "number"
         },
         "minrain": {
           "type": "number"
         },
         "maxrain": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -15105,79 +15106,79 @@
       "type": "object",
       "properties": {
         "*-stem": {
-          "type": "integer"
+          "type": "number"
         },
         "*-branch": {
-          "type": "integer"
+          "type": "number"
         },
         "*-cutting": {
-          "type": "integer"
+          "type": "number"
         },
         "*-trunk": {
-          "type": "integer"
+          "type": "number"
         },
         "*-trunk-top-young": {
-          "type": "integer"
+          "type": "number"
         },
         "*-trunk-top-medium": {
-          "type": "integer"
+          "type": "number"
         },
         "*-trunk-top-old": {
-          "type": "integer"
+          "type": "number"
         },
         "*-foliage": {
-          "type": "integer"
+          "type": "number"
         },
         "*-segment1": {
-          "type": "integer"
+          "type": "number"
         },
         "*-segment2": {
-          "type": "integer"
+          "type": "number"
         },
         "*-segment3": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-birch-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-oak-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-maple-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-pine-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-acacia-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-kapok-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-baldcypress-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-larch-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-redwood-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-ebony-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-walnut-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-purpleheart-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-aged-*": {
-          "type": "integer"
+          "type": "number"
         },
         "log-grown-*": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -15273,10 +15274,10 @@
           "type": "string"
         },
         "avg": {
-          "type": "integer"
+          "type": "number"
         },
         "var": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -15602,16 +15603,16 @@
           "$ref": "#/definitions/TallgrassEatenFree"
         },
         "tallplant-coopersreed-*": {
-          "type": "integer"
+          "type": "number"
         },
         "tallplant-papyrus-*": {
-          "type": "integer"
+          "type": "number"
         },
         "tallplant-tule-*": {
-          "type": "integer"
+          "type": "number"
         },
         "tallplant-brownsedge-*": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -15628,10 +15629,10 @@
           "type": "string"
         },
         "resetBelowTemperature": {
-          "type": "integer"
+          "type": "number"
         },
         "stopBelowTemperature": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -15639,46 +15640,46 @@
       "type": "object",
       "properties": {
         "*-eaten-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-veryshort-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-short-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-mediumshort-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-medium-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-tall-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-verytall-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-goldenpoppy-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-edelweiss-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-forgetmenot-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-horsetail-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-heather-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*-redtopgrass-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -15759,7 +15760,7 @@
       "type": "object",
       "properties": {
         "dieWhenTempBelow": {
-          "type": "integer"
+          "type": "number"
         },
         "dieAfterFruiting": {
           "type": "boolean"
@@ -16466,16 +16467,16 @@
       "type": "object",
       "properties": {
         "door-2x2gate-*": {
-          "type": "integer"
+          "type": "number"
         },
         "door-2x4heavy-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*": {
-          "type": "integer"
+          "type": "number"
         },
         "door-2x4gate-*": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -16483,19 +16484,19 @@
       "type": "object",
       "properties": {
         "door-1x3heavy-*": {
-          "type": "integer"
+          "type": "number"
         },
         "door-2x4heavy-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*": {
-          "type": "integer"
+          "type": "number"
         },
         "door-1x3gate-*": {
-          "type": "integer"
+          "type": "number"
         },
         "door-2x4gate-*": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -16526,28 +16527,28 @@
       "type": "object",
       "properties": {
         "door-1x3heavy-*": {
-          "type": "integer"
+          "type": "number"
         },
         "door-2x4heavy-*": {
-          "type": "integer"
+          "type": "number"
         },
         "*": {
-          "type": "integer"
+          "type": "number"
         },
         "door-1x3gate-*": {
-          "type": "integer"
+          "type": "number"
         },
         "door-2x2gate-*": {
-          "type": "integer"
+          "type": "number"
         },
         "door-2x4gate-*": {
-          "type": "integer"
+          "type": "number"
         },
         "door-ruined-rough2": {
-          "type": "integer"
+          "type": "number"
         },
         "door-ruined-rough3": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -16621,16 +16622,16 @@
       }
     },
     "_1row1col": {
-      "type": "integer"
+      "type": "number"
     },
     "_1row2col": {
-      "type": "integer"
+      "type": "number"
     },
     "_2row1col": {
-      "type": "integer"
+      "type": "number"
     },
     "_2row2col": {
-      "type": "integer"
+      "type": "number"
     },
     "Labels": {
       "type": "object",
@@ -16733,7 +16734,7 @@
           "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
           "type": "number"
@@ -16742,7 +16743,7 @@
           "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -16750,22 +16751,22 @@
       "type": "string"
     },
     "OppositeSlotIndex": {
-      "type": "integer"
+      "type": "number"
     },
     "FillQuadsByLevel": {
       "type": "object",
       "properties": {
         "x1": {
-          "type": "integer"
+          "type": "number"
         },
         "z1": {
-          "type": "integer"
+          "type": "number"
         },
         "x2": {
-          "type": "integer"
+          "type": "number"
         },
         "z2": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -16787,22 +16788,22 @@
       "type": "object",
       "properties": {
         "refractorybricks-good-tier*": {
-          "type": "integer"
+          "type": "number"
         },
         "irondoor-*": {
-          "type": "integer"
+          "type": "number"
         },
         "stonecoffinsection-*": {
-          "type": "integer"
+          "type": "number"
         },
         "refractorybrickgrating-tier*": {
-          "type": "integer"
+          "type": "number"
         },
         "air": {
-          "type": "integer"
+          "type": "number"
         },
         "@(air|refractorybrickgrating-tier.)": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },
@@ -16810,16 +16811,16 @@
       "type": "object",
       "properties": {
         "x": {
-          "type": "integer"
+          "type": "number"
         },
         "y": {
-          "type": "integer"
+          "type": "number"
         },
         "z": {
-          "type": "integer"
+          "type": "number"
         },
         "w": {
-          "type": "integer"
+          "type": "number"
         }
       }
     },

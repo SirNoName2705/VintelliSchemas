@@ -1,4 +1,5 @@
 {
+  "title": "CompositeTexture",
   "type": "object",
   "description": "A single block texture",
   "properties": {

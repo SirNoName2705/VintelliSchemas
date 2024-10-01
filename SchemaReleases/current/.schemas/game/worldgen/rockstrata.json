@@ -3,6 +3,7 @@
   "title": "RockStrataConfig",
   "definitions": {
     "WorldPropertyOfRockStratum": {
+      "title": "WorldPropertyOfRockStratum",
       "type": "object",
       "properties": {
         "code": {
@@ -17,6 +18,7 @@
       }
     },
     "RockStratum": {
+      "title": "RockStratum",
       "type": "object",
       "properties": {
         "amplitudes": {
@@ -62,31 +64,47 @@
       }
     },
     "EnumStratumGenDir": {
+      "title": "EnumStratumGenDir",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "BottomUp",
-        "TopDown"
-      ],
-      "enum": [
-        "bottomUp",
-        "topDown"
+      "anyOf": [
+        {
+          "title": "BottomUp",
+          "default": "BottomUp",
+          "pattern": "[Bb][Oo][Tt][Tt][Oo][Mm][Uu][Pp]"
+        },
+        {
+          "title": "TopDown",
+          "default": "TopDown",
+          "pattern": "[Tt][Oo][Pp][Dd][Oo][Ww][Nn]"
+        }
       ]
     },
     "EnumRockGroup": {
+      "title": "EnumRockGroup",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "Sedimentary",
-        "Metamorphic",
-        "Igneous",
-        "Volcanic"
-      ],
-      "enum": [
-        "sedimentary",
-        "metamorphic",
-        "igneous",
-        "volcanic"
+      "anyOf": [
+        {
+          "title": "Sedimentary",
+          "default": "Sedimentary",
+          "pattern": "[Ss][Ee][Dd][Ii][Mm][Ee][Nn][Tt][Aa][Rr][Yy]"
+        },
+        {
+          "title": "Metamorphic",
+          "default": "Metamorphic",
+          "pattern": "[Mm][Ee][Tt][Aa][Mm][Oo][Rr][Pp][Hh][Ii][Cc]"
+        },
+        {
+          "title": "Igneous",
+          "default": "Igneous",
+          "pattern": "[Ii][Gg][Nn][Ee][Oo][Uu][Ss]"
+        },
+        {
+          "title": "Volcanic",
+          "default": "Volcanic",
+          "pattern": "[Vv][Oo][Ll][Cc][Aa][Nn][Ii][Cc]"
+        }
       ]
     }
   },

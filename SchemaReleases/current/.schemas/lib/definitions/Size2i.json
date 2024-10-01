@@ -1,4 +1,5 @@
 {
+  "title": "Size2i",
   "type": "object",
   "description": "Represents a vector of 2 doubles. Go bug Tyron of you need more utility methods in this class.",
   "properties": {

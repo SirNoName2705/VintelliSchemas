@@ -1,13 +1,18 @@
 {
+  "title": "EnumRandomizeAxes",
   "type": "string",
   "description": "",
-  "x-enumNames": [
-    "XYZ",
-    "XZ"
-  ],
-  "enum": [
-    "xyz",
-    "xz"
+  "anyOf": [
+    {
+      "title": "XYZ",
+      "default": "XYZ",
+      "pattern": "[Xx][Yy][Zz]"
+    },
+    {
+      "title": "XZ",
+      "default": "XZ",
+      "pattern": "[Xx][Zz]"
+    }
   ],
   "$schema": "http://json-schema.org/draft-07/schema#"
 }

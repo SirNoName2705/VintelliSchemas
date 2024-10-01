@@ -18,6 +18,7 @@
   },
   "definitions": {
     "MetalAlloyIngredient": {
+      "title": "MetalAlloyIngredient",
       "allOf": [
         {
           "$ref": "../../lib/definitions/JsonItemStack.json#"

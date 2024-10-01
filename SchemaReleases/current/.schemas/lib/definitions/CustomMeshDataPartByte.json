@@ -1,4 +1,5 @@
 {
+  "title": "CustomMeshDataPartByte",
   "allOf": [
     {
       "$ref": "./CustomMeshDataPartOfByte.json#"

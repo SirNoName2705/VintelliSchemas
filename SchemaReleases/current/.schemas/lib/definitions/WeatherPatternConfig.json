@@ -1,4 +1,5 @@
 {
+  "title": "WeatherPatternConfig",
   "allOf": [
     {
       "$ref": "./ConditionalPatternConfig.json#"

@@ -1,4 +1,5 @@
 {
+  "title": "MeshData",
   "type": "object",
   "description": "A data structure that can be used to upload mesh information onto the graphics card\nPlease note, all arrays are used as a buffer. They do not tightly fit the data but are always sized as a multiple of 2 from the initial size.",
   "properties": {

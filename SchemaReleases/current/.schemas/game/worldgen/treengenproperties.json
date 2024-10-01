@@ -36,6 +36,7 @@
   },
   "definitions": {
     "TreeVariant": {
+      "title": "TreeVariant",
       "type": "object",
       "properties": {
         "generator": {
@@ -115,17 +116,25 @@
       }
     },
     "EnumTreeHabitat": {
+      "title": "EnumTreeHabitat",
       "type": "string",
       "description": "",
-      "x-enumNames": [
-        "Land",
-        "LandWater",
-        "Water"
-      ],
-      "enum": [
-        "land",
-        "landWater",
-        "water"
+      "anyOf": [
+        {
+          "title": "Land",
+          "default": "Land",
+          "pattern": "[Ll][Aa][Nn][Dd]"
+        },
+        {
+          "title": "LandWater",
+          "default": "LandWater",
+          "pattern": "[Ll][Aa][Nn][Dd][Ww][Aa][Tt][Ee][Rr]"
+        },
+        {
+          "title": "Water",
+          "default": "Water",
+          "pattern": "[Ww][Aa][Tt][Ee][Rr]"
+        }
       ]
     }
   }

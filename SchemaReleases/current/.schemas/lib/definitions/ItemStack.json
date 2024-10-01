@@ -1,4 +1,5 @@
 {
+  "title": "ItemStack",
   "type": "object",
   "properties": {
     "attributes": {

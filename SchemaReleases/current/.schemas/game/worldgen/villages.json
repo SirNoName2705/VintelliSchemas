@@ -16,6 +16,7 @@
   },
   "definitions": {
     "WorldGenVillage": {
+      "title": "WorldGenVillage",
       "type": "object",
       "properties": {
         "buildProtected": {
@@ -113,6 +114,7 @@
       }
     },
     "VillageSchematic": {
+      "title": "VillageSchematic",
       "type": "object",
       "properties": {
         "maxQuantity": {

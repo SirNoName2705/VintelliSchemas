@@ -1,4 +1,5 @@
 {
+  "title": "CraftingRecipeIngredient",
   "type": "object",
   "description": "A crafting recipe ingredient",
   "properties": {
