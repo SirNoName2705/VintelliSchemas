@@ -2,13 +2,15 @@
 
 ## [v1.1] - 2024.10.01
 ### Added
-- Enum Values are now Case Insensitive
 - JsonPatches have autocomplete for mod id and filepath for vanilla game files
 - Json Patches has a check to ensure right usage of Move operation
 - All Major Schemas now have a Title. (A Major schema is a schemas that has its own file)
 - Recipes schemas with array notation
-- Replaced many int types with number types
 
+### Changed
+- Enum Values are now Case Insensitive
+- Replaced many int types with number types
+- Fix value property in JsonPatches to allow for any type (This should also fix some other issues where the JsonObject class was used)
 
 ## [v1.0] - 2024.09.10
 ### Added

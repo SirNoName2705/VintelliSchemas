@@ -2,9 +2,13 @@
 # Features
 ![Show Case via gif](media/vscode.gif)
 ![Show Case via gif](media/vscode-attributes.gif)
+![Show Case via gif](media/vscode-modid.gif)
+![Show Case via gif](media/vscode-jsonpatch-filepaths.gif)
+
 For detailed version history, see the [Changelog](CHANGELOG.md)
 - 38 JSON Schemas covering key asset types: `entities`, `blocks`, `items`.
 - Full support for complex elements like attributes, behaviors, classes, codes, and entity behaviors.
+- JsonPatches have autocomplete for different operations and paths
 
 ## How to use
 
