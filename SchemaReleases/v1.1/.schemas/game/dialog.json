@@ -1,0 +1,1018 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "JsonDialogSettings",
+  "type": "object",
+  "properties": {
+    "alignment": {
+      "$ref": "#/definitions/EnumDialogArea"
+    },
+    "code": {
+      "type": "string"
+    },
+    "disableWorldInteract": {
+      "type": "boolean"
+    },
+    "onGet": {
+      "description": "Called when the dialog is opened the first time or when dialog.ReloadValues() is called. Should return the values the input fields should be set to",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/OnValueGetDelegate"
+        }
+      ]
+    },
+    "onSet": {
+      "description": "Called whenever the value of a input field has changed",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/OnValueSetDelegate"
+        }
+      ]
+    },
+    "padding": {
+      "type": "number",
+      "format": "double"
+    },
+    "posX": {
+      "type": "number",
+      "format": "float"
+    },
+    "posY": {
+      "type": "number",
+      "format": "float"
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/DialogRow"
+      }
+    },
+    "sizeMultiplier": {
+      "type": "number",
+      "format": "double"
+    }
+  },
+  "definitions": {
+    "EnumDialogArea": {
+      "title": "EnumDialogArea",
+      "type": "string",
+      "description": "First word = X Alignment (left, center, right or fixed)\nSecond word = Y Alignment (top, middle, bottom or fixed)",
+      "anyOf": [
+        {
+          "title": "None",
+          "default": "None",
+          "pattern": "[Nn][Oo][Nn][Ee]"
+        },
+        {
+          "title": "LeftTop",
+          "default": "LeftTop",
+          "pattern": "[Ll][Ee][Ff][Tt][Tt][Oo][Pp]"
+        },
+        {
+          "title": "LeftMiddle",
+          "default": "LeftMiddle",
+          "pattern": "[Ll][Ee][Ff][Tt][Mm][Ii][Dd][Dd][Ll][Ee]"
+        },
+        {
+          "title": "LeftBottom",
+          "default": "LeftBottom",
+          "pattern": "[Ll][Ee][Ff][Tt][Bb][Oo][Tt][Tt][Oo][Mm]"
+        },
+        {
+          "title": "LeftFixed",
+          "default": "LeftFixed",
+          "pattern": "[Ll][Ee][Ff][Tt][Ff][Ii][Xx][Ee][Dd]"
+        },
+        {
+          "title": "CenterTop",
+          "default": "CenterTop",
+          "pattern": "[Cc][Ee][Nn][Tt][Ee][Rr][Tt][Oo][Pp]"
+        },
+        {
+          "title": "CenterMiddle",
+          "default": "CenterMiddle",
+          "pattern": "[Cc][Ee][Nn][Tt][Ee][Rr][Mm][Ii][Dd][Dd][Ll][Ee]"
+        },
+        {
+          "title": "CenterBottom",
+          "default": "CenterBottom",
+          "pattern": "[Cc][Ee][Nn][Tt][Ee][Rr][Bb][Oo][Tt][Tt][Oo][Mm]"
+        },
+        {
+          "title": "CenterFixed",
+          "default": "CenterFixed",
+          "pattern": "[Cc][Ee][Nn][Tt][Ee][Rr][Ff][Ii][Xx][Ee][Dd]"
+        },
+        {
+          "title": "RightTop",
+          "default": "RightTop",
+          "pattern": "[Rr][Ii][Gg][Hh][Tt][Tt][Oo][Pp]"
+        },
+        {
+          "title": "RightMiddle",
+          "default": "RightMiddle",
+          "pattern": "[Rr][Ii][Gg][Hh][Tt][Mm][Ii][Dd][Dd][Ll][Ee]"
+        },
+        {
+          "title": "RightBottom",
+          "default": "RightBottom",
+          "pattern": "[Rr][Ii][Gg][Hh][Tt][Bb][Oo][Tt][Tt][Oo][Mm]"
+        },
+        {
+          "title": "RightFixed",
+          "default": "RightFixed",
+          "pattern": "[Rr][Ii][Gg][Hh][Tt][Ff][Ii][Xx][Ee][Dd]"
+        },
+        {
+          "title": "FixedTop",
+          "default": "FixedTop",
+          "pattern": "[Ff][Ii][Xx][Ee][Dd][Tt][Oo][Pp]"
+        },
+        {
+          "title": "FixedMiddle",
+          "default": "FixedMiddle",
+          "pattern": "[Ff][Ii][Xx][Ee][Dd][Mm][Ii][Dd][Dd][Ll][Ee]"
+        },
+        {
+          "title": "FixedBottom",
+          "default": "FixedBottom",
+          "pattern": "[Ff][Ii][Xx][Ee][Dd][Bb][Oo][Tt][Tt][Oo][Mm]"
+        },
+        {
+          "title": "TextBaselineOffset",
+          "default": "TextBaselineOffset",
+          "pattern": "[Tt][Ee][Xx][Tt][Bb][Aa][Ss][Ee][Ll][Ii][Nn][Ee][Oo][Ff][Ff][Ss][Ee][Tt]"
+        }
+      ]
+    },
+    "OnValueGetDelegate": {
+      "title": "OnValueGetDelegate",
+      "allOf": [
+        {
+          "$ref": "#/definitions/MulticastDelegate"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "MulticastDelegate": {
+      "title": "MulticastDelegate",
+      "allOf": [
+        {
+          "$ref": "#/definitions/Delegate"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "Delegate": {
+      "title": "Delegate",
+      "type": "object",
+      "properties": {
+        "method": {
+          "$ref": "#/definitions/MethodInfo"
+        },
+        "target": {
+          "oneOf": [
+            {},
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "MethodInfo": {
+      "title": "MethodInfo",
+      "allOf": [
+        {
+          "$ref": "#/definitions/MethodBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "memberType": {
+              "$ref": "#/definitions/MemberTypes"
+            },
+            "returnParameter": {
+              "$ref": "#/definitions/ParameterInfo"
+            },
+            "returnType": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "MemberTypes": {
+      "title": "MemberTypes",
+      "type": "string",
+      "description": "",
+      "x-enumFlags": true,
+      "anyOf": [
+        {
+          "title": "Constructor",
+          "default": "Constructor",
+          "pattern": "[Cc][Oo][Nn][Ss][Tt][Rr][Uu][Cc][Tt][Oo][Rr]"
+        },
+        {
+          "title": "Event",
+          "default": "Event",
+          "pattern": "[Ee][Vv][Ee][Nn][Tt]"
+        },
+        {
+          "title": "Field",
+          "default": "Field",
+          "pattern": "[Ff][Ii][Ee][Ll][Dd]"
+        },
+        {
+          "title": "Method",
+          "default": "Method",
+          "pattern": "[Mm][Ee][Tt][Hh][Oo][Dd]"
+        },
+        {
+          "title": "Property",
+          "default": "Property",
+          "pattern": "[Pp][Rr][Oo][Pp][Ee][Rr][Tt][Yy]"
+        },
+        {
+          "title": "TypeInfo",
+          "default": "TypeInfo",
+          "pattern": "[Tt][Yy][Pp][Ee][Ii][Nn][Ff][Oo]"
+        },
+        {
+          "title": "Custom",
+          "default": "Custom",
+          "pattern": "[Cc][Uu][Ss][Tt][Oo][Mm]"
+        },
+        {
+          "title": "NestedType",
+          "default": "NestedType",
+          "pattern": "[Nn][Ee][Ss][Tt][Ee][Dd][Tt][Yy][Pp][Ee]"
+        },
+        {
+          "title": "All",
+          "default": "All",
+          "pattern": "[Aa][Ll][Ll]"
+        }
+      ]
+    },
+    "ParameterInfo": {
+      "title": "ParameterInfo",
+      "type": "object",
+      "properties": {
+        "attributes": {
+          "$ref": "#/definitions/ParameterAttributes"
+        },
+        "customAttributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CustomAttributeData"
+          }
+        },
+        "defaultValue": {
+          "oneOf": [
+            {},
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "hasDefaultValue": {
+          "type": "boolean"
+        },
+        "isIn": {
+          "type": "boolean"
+        },
+        "isLcid": {
+          "type": "boolean"
+        },
+        "isOptional": {
+          "type": "boolean"
+        },
+        "isOut": {
+          "type": "boolean"
+        },
+        "isRetval": {
+          "type": "boolean"
+        },
+        "member": {
+          "$ref": "#/definitions/MemberInfo"
+        },
+        "metadataToken": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "name": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "parameterType": {
+          "type": "string"
+        },
+        "position": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "rawDefaultValue": {
+          "oneOf": [
+            {},
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "ParameterAttributes": {
+      "title": "ParameterAttributes",
+      "type": "string",
+      "description": "",
+      "x-enumFlags": true,
+      "anyOf": [
+        {
+          "title": "None",
+          "default": "None",
+          "pattern": "[Nn][Oo][Nn][Ee]"
+        },
+        {
+          "title": "In",
+          "default": "In",
+          "pattern": "[Ii][Nn]"
+        },
+        {
+          "title": "Out",
+          "default": "Out",
+          "pattern": "[Oo][Uu][Tt]"
+        },
+        {
+          "title": "Lcid",
+          "default": "Lcid",
+          "pattern": "[Ll][Cc][Ii][Dd]"
+        },
+        {
+          "title": "Retval",
+          "default": "Retval",
+          "pattern": "[Rr][Ee][Tt][Vv][Aa][Ll]"
+        },
+        {
+          "title": "Optional",
+          "default": "Optional",
+          "pattern": "[Oo][Pp][Tt][Ii][Oo][Nn][Aa][Ll]"
+        },
+        {
+          "title": "HasDefault",
+          "default": "HasDefault",
+          "pattern": "[Hh][Aa][Ss][Dd][Ee][Ff][Aa][Uu][Ll][Tt]"
+        },
+        {
+          "title": "HasFieldMarshal",
+          "default": "HasFieldMarshal",
+          "pattern": "[Hh][Aa][Ss][Ff][Ii][Ee][Ll][Dd][Mm][Aa][Rr][Ss][Hh][Aa][Ll]"
+        },
+        {
+          "title": "Reserved3",
+          "default": "Reserved3",
+          "pattern": "[Rr][Ee][Ss][Ee][Rr][Vv][Ee][Dd][3]"
+        },
+        {
+          "title": "Reserved4",
+          "default": "Reserved4",
+          "pattern": "[Rr][Ee][Ss][Ee][Rr][Vv][Ee][Dd][4]"
+        },
+        {
+          "title": "ReservedMask",
+          "default": "ReservedMask",
+          "pattern": "[Rr][Ee][Ss][Ee][Rr][Vv][Ee][Dd][Mm][Aa][Ss][Kk]"
+        }
+      ]
+    },
+    "CustomAttributeData": {
+      "title": "CustomAttributeData",
+      "type": "object",
+      "properties": {
+        "attributeType": {
+          "type": "string"
+        },
+        "constructor": {
+          "$ref": "#/definitions/ConstructorInfo"
+        },
+        "constructorArguments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CustomAttributeTypedArgument"
+          }
+        },
+        "namedArguments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CustomAttributeNamedArgument"
+          }
+        }
+      }
+    },
+    "ConstructorInfo": {
+      "title": "ConstructorInfo",
+      "allOf": [
+        {
+          "$ref": "#/definitions/MethodBase"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "memberType": {
+              "$ref": "#/definitions/MemberTypes"
+            }
+          }
+        }
+      ]
+    },
+    "MethodBase": {
+      "title": "MethodBase",
+      "allOf": [
+        {
+          "$ref": "#/definitions/MemberInfo"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "callingConvention": {
+              "$ref": "#/definitions/CallingConventions"
+            },
+            "containsGenericParameters": {
+              "type": "boolean"
+            },
+            "isAbstract": {
+              "type": "boolean"
+            },
+            "isAssembly": {
+              "type": "boolean"
+            },
+            "isConstructedGenericMethod": {
+              "type": "boolean"
+            },
+            "isConstructor": {
+              "type": "boolean"
+            },
+            "isFamily": {
+              "type": "boolean"
+            },
+            "isFamilyAndAssembly": {
+              "type": "boolean"
+            },
+            "isFamilyOrAssembly": {
+              "type": "boolean"
+            },
+            "isFinal": {
+              "type": "boolean"
+            },
+            "isGenericMethod": {
+              "type": "boolean"
+            },
+            "isGenericMethodDefinition": {
+              "type": "boolean"
+            },
+            "isHideBySig": {
+              "type": "boolean"
+            },
+            "isPrivate": {
+              "type": "boolean"
+            },
+            "isPublic": {
+              "type": "boolean"
+            },
+            "isSecurityCritical": {
+              "type": "boolean"
+            },
+            "isSecuritySafeCritical": {
+              "type": "boolean"
+            },
+            "isSecurityTransparent": {
+              "type": "boolean"
+            },
+            "isSpecialName": {
+              "type": "boolean"
+            },
+            "isStatic": {
+              "type": "boolean"
+            },
+            "isVirtual": {
+              "type": "boolean"
+            },
+            "methodImplementationFlags": {
+              "$ref": "#/definitions/MethodImplAttributes"
+            }
+          }
+        }
+      ]
+    },
+    "CallingConventions": {
+      "title": "CallingConventions",
+      "type": "string",
+      "description": "",
+      "x-enumFlags": true,
+      "anyOf": [
+        {
+          "title": "Standard",
+          "default": "Standard",
+          "pattern": "[Ss][Tt][Aa][Nn][Dd][Aa][Rr][Dd]"
+        },
+        {
+          "title": "VarArgs",
+          "default": "VarArgs",
+          "pattern": "[Vv][Aa][Rr][Aa][Rr][Gg][Ss]"
+        },
+        {
+          "title": "Any",
+          "default": "Any",
+          "pattern": "[Aa][Nn][Yy]"
+        },
+        {
+          "title": "HasThis",
+          "default": "HasThis",
+          "pattern": "[Hh][Aa][Ss][Tt][Hh][Ii][Ss]"
+        },
+        {
+          "title": "ExplicitThis",
+          "default": "ExplicitThis",
+          "pattern": "[Ee][Xx][Pp][Ll][Ii][Cc][Ii][Tt][Tt][Hh][Ii][Ss]"
+        }
+      ]
+    },
+    "MethodImplAttributes": {
+      "title": "MethodImplAttributes",
+      "type": "string",
+      "description": "",
+      "anyOf": [
+        {
+          "title": "Managed",
+          "default": "Managed",
+          "pattern": "[Mm][Aa][Nn][Aa][Gg][Ee][Dd]"
+        },
+        {
+          "title": "Managed",
+          "default": "Managed",
+          "pattern": "[Mm][Aa][Nn][Aa][Gg][Ee][Dd]"
+        },
+        {
+          "title": "Native",
+          "default": "Native",
+          "pattern": "[Nn][Aa][Tt][Ii][Vv][Ee]"
+        },
+        {
+          "title": "OPTIL",
+          "default": "OPTIL",
+          "pattern": "[Oo][Pp][Tt][Ii][Ll]"
+        },
+        {
+          "title": "Runtime",
+          "default": "Runtime",
+          "pattern": "[Rr][Uu][Nn][Tt][Ii][Mm][Ee]"
+        },
+        {
+          "title": "Runtime",
+          "default": "Runtime",
+          "pattern": "[Rr][Uu][Nn][Tt][Ii][Mm][Ee]"
+        },
+        {
+          "title": "ManagedMask",
+          "default": "ManagedMask",
+          "pattern": "[Mm][Aa][Nn][Aa][Gg][Ee][Dd][Mm][Aa][Ss][Kk]"
+        },
+        {
+          "title": "ManagedMask",
+          "default": "ManagedMask",
+          "pattern": "[Mm][Aa][Nn][Aa][Gg][Ee][Dd][Mm][Aa][Ss][Kk]"
+        },
+        {
+          "title": "NoInlining",
+          "default": "NoInlining",
+          "pattern": "[Nn][Oo][Ii][Nn][Ll][Ii][Nn][Ii][Nn][Gg]"
+        },
+        {
+          "title": "ForwardRef",
+          "default": "ForwardRef",
+          "pattern": "[Ff][Oo][Rr][Ww][Aa][Rr][Dd][Rr][Ee][Ff]"
+        },
+        {
+          "title": "Synchronized",
+          "default": "Synchronized",
+          "pattern": "[Ss][Yy][Nn][Cc][Hh][Rr][Oo][Nn][Ii][Zz][Ee][Dd]"
+        },
+        {
+          "title": "NoOptimization",
+          "default": "NoOptimization",
+          "pattern": "[Nn][Oo][Oo][Pp][Tt][Ii][Mm][Ii][Zz][Aa][Tt][Ii][Oo][Nn]"
+        },
+        {
+          "title": "PreserveSig",
+          "default": "PreserveSig",
+          "pattern": "[Pp][Rr][Ee][Ss][Ee][Rr][Vv][Ee][Ss][Ii][Gg]"
+        },
+        {
+          "title": "AggressiveInlining",
+          "default": "AggressiveInlining",
+          "pattern": "[Aa][Gg][Gg][Rr][Ee][Ss][Ss][Ii][Vv][Ee][Ii][Nn][Ll][Ii][Nn][Ii][Nn][Gg]"
+        },
+        {
+          "title": "AggressiveOptimization",
+          "default": "AggressiveOptimization",
+          "pattern": "[Aa][Gg][Gg][Rr][Ee][Ss][Ss][Ii][Vv][Ee][Oo][Pp][Tt][Ii][Mm][Ii][Zz][Aa][Tt][Ii][Oo][Nn]"
+        },
+        {
+          "title": "InternalCall",
+          "default": "InternalCall",
+          "pattern": "[Ii][Nn][Tt][Ee][Rr][Nn][Aa][Ll][Cc][Aa][Ll][Ll]"
+        },
+        {
+          "title": "MaxMethodImplVal",
+          "default": "MaxMethodImplVal",
+          "pattern": "[Mm][Aa][Xx][Mm][Ee][Tt][Hh][Oo][Dd][Ii][Mm][Pp][Ll][Vv][Aa][Ll]"
+        }
+      ]
+    },
+    "MemberInfo": {
+      "title": "MemberInfo",
+      "type": "object",
+      "properties": {
+        "customAttributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CustomAttributeData"
+          }
+        },
+        "isCollectible": {
+          "type": "boolean"
+        },
+        "metadataToken": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "module": {
+          "$ref": "#/definitions/Module"
+        }
+      }
+    },
+    "Module": {
+      "title": "Module",
+      "type": "object",
+      "properties": {
+        "assembly": {
+          "$ref": "#/definitions/Assembly"
+        },
+        "customAttributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CustomAttributeData"
+          }
+        },
+        "fullyQualifiedName": {
+          "type": "string"
+        },
+        "mdStreamVersion": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "metadataToken": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "moduleHandle": {
+          "$ref": "#/definitions/ModuleHandle"
+        },
+        "moduleVersionId": {
+          "type": "string",
+          "format": "guid"
+        },
+        "name": {
+          "type": "string"
+        },
+        "scopeName": {
+          "type": "string"
+        }
+      }
+    },
+    "Assembly": {
+      "title": "Assembly",
+      "type": "object",
+      "properties": {
+        "customAttributes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CustomAttributeData"
+          }
+        },
+        "definedTypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "entryPoint": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/definitions/MethodInfo"
+            }
+          ]
+        },
+        "exportedTypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fullName": {
+          "type": [
+            "null",
+            "string"
+          ]
+        },
+        "hostContext": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "imageRuntimeVersion": {
+          "type": "string"
+        },
+        "isCollectible": {
+          "type": "boolean"
+        },
+        "isDynamic": {
+          "type": "boolean"
+        },
+        "isFullyTrusted": {
+          "type": "boolean"
+        },
+        "location": {
+          "type": "string"
+        },
+        "manifestModule": {
+          "$ref": "#/definitions/Module"
+        },
+        "modules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Module"
+          }
+        },
+        "reflectionOnly": {
+          "type": "boolean"
+        },
+        "securityRuleSet": {
+          "$ref": "#/definitions/SecurityRuleSet"
+        }
+      }
+    },
+    "SecurityRuleSet": {
+      "title": "SecurityRuleSet",
+      "type": "string",
+      "description": "",
+      "anyOf": [
+        {
+          "title": "None",
+          "default": "None",
+          "pattern": "[Nn][Oo][Nn][Ee]"
+        },
+        {
+          "title": "Level1",
+          "default": "Level1",
+          "pattern": "[Ll][Ee][Vv][Ee][Ll][1]"
+        },
+        {
+          "title": "Level2",
+          "default": "Level2",
+          "pattern": "[Ll][Ee][Vv][Ee][Ll][2]"
+        }
+      ]
+    },
+    "ModuleHandle": {
+      "title": "ModuleHandle",
+      "type": "object",
+      "properties": {
+        "mdStreamVersion": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "CustomAttributeTypedArgument": {
+      "title": "CustomAttributeTypedArgument",
+      "type": "object",
+      "properties": {
+        "argumentType": {
+          "type": "string"
+        },
+        "value": {
+          "oneOf": [
+            {},
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "CustomAttributeNamedArgument": {
+      "title": "CustomAttributeNamedArgument",
+      "type": "object",
+      "properties": {
+        "isField": {
+          "type": "boolean"
+        },
+        "memberInfo": {
+          "$ref": "#/definitions/MemberInfo"
+        },
+        "memberName": {
+          "type": "string"
+        },
+        "typedValue": {
+          "$ref": "#/definitions/CustomAttributeTypedArgument"
+        }
+      }
+    },
+    "OnValueSetDelegate": {
+      "title": "OnValueSetDelegate",
+      "allOf": [
+        {
+          "$ref": "#/definitions/MulticastDelegate"
+        },
+        {
+          "type": "object"
+        }
+      ]
+    },
+    "DialogRow": {
+      "title": "DialogRow",
+      "type": "object",
+      "properties": {
+        "bottomPadding": {
+          "type": "number",
+          "format": "float"
+        },
+        "elements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DialogElement"
+          }
+        },
+        "topPadding": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "DialogElement": {
+      "title": "DialogElement",
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "fontSize": {
+          "type": "number",
+          "format": "float"
+        },
+        "height": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "icons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "label": {
+          "type": "string"
+        },
+        "maxValue": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minValue": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "mode": {
+          "$ref": "#/definitions/EnumDialogElementMode"
+        },
+        "names": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "paddingLeft": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "param": {
+          "type": "string",
+          "description": "To hold generic data"
+        },
+        "step": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "text": {
+          "type": "string"
+        },
+        "tooltip": {
+          "type": "string"
+        },
+        "tooltips": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "type": {
+          "$ref": "#/definitions/EnumDialogElementType"
+        },
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "width": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "EnumDialogElementMode": {
+      "title": "EnumDialogElementMode",
+      "type": "string",
+      "description": "",
+      "anyOf": [
+        {
+          "title": "DropDown",
+          "default": "DropDown",
+          "pattern": "[Dd][Rr][Oo][Pp][Dd][Oo][Ww][Nn]"
+        },
+        {
+          "title": "Buttons",
+          "default": "Buttons",
+          "pattern": "[Bb][Uu][Tt][Tt][Oo][Nn][Ss]"
+        }
+      ]
+    },
+    "EnumDialogElementType": {
+      "title": "EnumDialogElementType",
+      "type": "string",
+      "description": "",
+      "anyOf": [
+        {
+          "title": "Select",
+          "default": "Select",
+          "pattern": "[Ss][Ee][Ll][Ee][Cc][Tt]"
+        },
+        {
+          "title": "Input",
+          "default": "Input",
+          "pattern": "[Ii][Nn][Pp][Uu][Tt]"
+        },
+        {
+          "title": "Slider",
+          "default": "Slider",
+          "pattern": "[Ss][Ll][Ii][Dd][Ee][Rr]"
+        },
+        {
+          "title": "Switch",
+          "default": "Switch",
+          "pattern": "[Ss][Ww][Ii][Tt][Cc][Hh]"
+        },
+        {
+          "title": "NumberInput",
+          "default": "NumberInput",
+          "pattern": "[Nn][Uu][Mm][Bb][Ee][Rr][Ii][Nn][Pp][Uu][Tt]"
+        },
+        {
+          "title": "Button",
+          "default": "Button",
+          "pattern": "[Bb][Uu][Tt][Tt][Oo][Nn]"
+        },
+        {
+          "title": "Text",
+          "default": "Text",
+          "pattern": "[Tt][Ee][Xx][Tt]"
+        },
+        {
+          "title": "DynamicSelect",
+          "default": "DynamicSelect",
+          "pattern": "[Dd][Yy][Nn][Aa][Mm][Ii][Cc][Ss][Ee][Ll][Ee][Cc][Tt]"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "JsonPatch[]",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/JsonPatch"
+  },
+  "definitions": {
+    "JsonPatch": {
+      "title": "JsonPatch",
+      "type": "object",
+      "properties": {
+        "condition": {
+          "$ref": "#/definitions/PatchCondition"
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PatchModDependence"
+          }
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "file": {
+          "anyOf": [
+            {
+              "$ref": "../lib/assets/patch-paths.json#"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "fromPath": {
+          "type": "string",
+          "description": "needs to be used with op: Move"
+        },
+        "op": {
+          "$ref": "#/definitions/EnumJsonPatchOp"
+        },
+        "path": {
+          "type": "string"
+        },
+        "side": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/definitions/EnumAppSide"
+            }
+          ]
+        },
+        "value": {
+          "$ref": "../lib/definitions/JsonObject.json#"
+        }
+      },
+      "if": {
+        "properties": {
+          "op": {
+            "pattern": "[Mm][Oo][Vv][Ee]"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "fromPath"
+        ]
+      },
+      "else": {
+        "properties": {
+          "fromPath": {
+            "not": {}
+          }
+        }
+      }
+    },
+    "PatchCondition": {
+      "title": "PatchCondition",
+      "type": "object",
+      "properties": {
+        "isValue": {
+          "type": "string"
+        },
+        "useValue": {
+          "type": "boolean"
+        },
+        "when": {
+          "type": "string"
+        }
+      }
+    },
+    "PatchModDependence": {
+      "title": "PatchModDependence",
+      "type": "object",
+      "properties": {
+        "invert": {
+          "type": "boolean"
+        },
+        "modid": {
+          "anyOf": [
+            {
+              "$ref": "../lib/assets/modids.json#"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    "EnumJsonPatchOp": {
+      "title": "EnumJsonPatchOp",
+      "type": "string",
+      "description": "",
+      "anyOf": [
+        {
+          "title": "Add",
+          "default": "Add",
+          "pattern": "[Aa][Dd][Dd]"
+        },
+        {
+          "title": "AddEach",
+          "default": "AddEach",
+          "pattern": "[Aa][Dd][Dd][Ee][Aa][Cc][Hh]"
+        },
+        {
+          "title": "Remove",
+          "default": "Remove",
+          "pattern": "[Rr][Ee][Mm][Oo][Vv][Ee]"
+        },
+        {
+          "title": "Replace",
+          "default": "Replace",
+          "pattern": "[Rr][Ee][Pp][Ll][Aa][Cc][Ee]"
+        },
+        {
+          "title": "Copy",
+          "default": "Copy",
+          "pattern": "[Cc][Oo][Pp][Yy]"
+        },
+        {
+          "title": "Move",
+          "default": "Move",
+          "pattern": "[Mm][Oo][Vv][Ee]"
+        },
+        {
+          "title": "AddMerge",
+          "default": "AddMerge",
+          "pattern": "[Aa][Dd][Dd][Mm][Ee][Rr][Gg][Ee]"
+        }
+      ]
+    },
+    "EnumAppSide": {
+      "title": "EnumAppSide",
+      "type": "string",
+      "description": "",
+      "x-enumFlags": true,
+      "anyOf": [
+        {
+          "title": "Server",
+          "default": "Server",
+          "pattern": "[Ss][Ee][Rr][Vv][Ee][Rr]"
+        },
+        {
+          "title": "Client",
+          "default": "Client",
+          "pattern": "[Cc][Ll][Ii][Ee][Nn][Tt]"
+        },
+        {
+          "title": "Universal",
+          "default": "Universal",
+          "pattern": "[Uu][Nn][Ii][Vv][Ee][Rr][Ss][Aa][Ll]"
+        }
+      ]
+    }
+  }
+}

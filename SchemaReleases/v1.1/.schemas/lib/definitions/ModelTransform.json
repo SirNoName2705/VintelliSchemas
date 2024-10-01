@@ -1,0 +1,13 @@
+{
+  "title": "ModelTransform",
+  "allOf": [
+    {
+      "$ref": "./ModelTransformNoDefaults.json#"
+    },
+    {
+      "type": "object",
+      "description": "Used for transformations applied to a block or item model"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

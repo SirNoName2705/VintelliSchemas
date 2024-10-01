@@ -1,0 +1,420 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Asset Schema for: entityBehaviors",
+  "type": "object",
+  "anyOf": [
+    {
+      "title": "custom",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "properties": {
+          "type": "object"
+        }
+      }
+    },
+    {
+      "title": "ShapeFromAttributes",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "ShapeFromAttributes"
+        }
+      }
+    },
+    {
+      "title": "Burning",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Burning"
+        }
+      }
+    },
+    {
+      "title": "Animatable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Animatable"
+        }
+      }
+    },
+    {
+      "title": "ClutterBookshelfWithLore",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "ClutterBookshelfWithLore"
+        }
+      }
+    },
+    {
+      "title": "ClutterBookshelf",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "ClutterBookshelf"
+        }
+      }
+    },
+    {
+      "title": "FirepitAmbient",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "FirepitAmbient"
+        }
+      }
+    },
+    {
+      "title": "MPBrake",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPBrake"
+        }
+      }
+    },
+    {
+      "title": "MPToggle",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPToggle"
+        }
+      }
+    },
+    {
+      "title": "MPAngledGears",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPAngledGears"
+        }
+      }
+    },
+    {
+      "title": "MPWindmillRotor",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPWindmillRotor"
+        }
+      }
+    },
+    {
+      "title": "MPPulverizer",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPPulverizer"
+        }
+      }
+    },
+    {
+      "title": "MPCreativeRotor",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPCreativeRotor"
+        }
+      }
+    },
+    {
+      "title": "MPTransmission",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPTransmission"
+        }
+      }
+    },
+    {
+      "title": "MPAxle",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPAxle"
+        }
+      }
+    },
+    {
+      "title": "MPLargeGear3m",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPLargeGear3m"
+        }
+      }
+    },
+    {
+      "title": "MPConsumer",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPConsumer"
+        }
+      }
+    },
+    {
+      "title": "RockRubbleFromAttributes",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "RockRubbleFromAttributes"
+        }
+      }
+    },
+    {
+      "title": "Door",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Door"
+        }
+      }
+    },
+    {
+      "title": "AttractsLightning",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "AttractsLightning"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "artificialElevation": {
+              "type": "integer"
+            },
+            "elevationAttractivenessMultiplier": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "SupportBeam",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "SupportBeam"
+        }
+      }
+    },
+    {
+      "title": "MPArchimedesScrew",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MPArchimedesScrew"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "staticShapePartByType": {
+              "type": "object",
+              "properties": {
+                "*-ported-north": {
+                  "type": "object",
+                  "properties": {
+                    "base": {
+                      "type": "string"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "*-ported-east": {
+                  "type": "object",
+                  "properties": {
+                    "base": {
+                      "type": "string"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "*-ported-south": {
+                  "type": "object",
+                  "properties": {
+                    "base": {
+                      "type": "string"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "*-ported-west": {
+                  "type": "object",
+                  "properties": {
+                    "base": {
+                      "type": "string"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "*": {
+                  "type": "object",
+                  "properties": {
+                    "base": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "MicroblockSnowCover",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MicroblockSnowCover"
+        }
+      }
+    },
+    {
+      "title": "ControlPointLampNode",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "ControlPointLampNode"
+        }
+      }
+    },
+    {
+      "title": "ControlPointAnimatable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "ControlPointAnimatable"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "controlpointcode": {
+              "type": "string"
+            },
+            "activeSound": {
+              "type": "string"
+            },
+            "animSpeedMulByType": {
+              "type": "object",
+              "properties": {
+                "*-west": {
+                  "type": "integer"
+                }
+              }
+            },
+            "animSpeedMul": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "JonasGasifier",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "JonasGasifier"
+        }
+      }
+    },
+    {
+      "title": "JonasHydraulicPump",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "JonasHydraulicPump"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "controlpointcode": {
+              "type": "string"
+            },
+            "activeSound": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "JonasBoilerDoor",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "JonasBoilerDoor"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "controlpointcode": {
+              "type": "string"
+            },
+            "animData": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "string"
+                },
+                "animation": {
+                  "type": "string"
+                },
+                "easeOutSpeed": {
+                  "type": "integer"
+                },
+                "easeInSpeed": {
+                  "type": "number"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

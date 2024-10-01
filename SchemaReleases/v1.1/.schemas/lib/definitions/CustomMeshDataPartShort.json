@@ -1,0 +1,18 @@
+{
+  "title": "CustomMeshDataPartShort",
+  "allOf": [
+    {
+      "$ref": "./CustomMeshDataPartOfShort.json#"
+    },
+    {
+      "type": "object",
+      "description": "Holds arbitrary short data for meshes to be used in the shader",
+      "properties": {
+        "conversion": {
+          "$ref": "./DataConversion.json#"
+        }
+      }
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

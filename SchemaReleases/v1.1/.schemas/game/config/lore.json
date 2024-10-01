@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "JournalEntry[]",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/JournalEntry"
+  },
+  "definitions": {
+    "JournalEntry": {
+      "title": "JournalEntry",
+      "type": "object",
+      "properties": {
+        "chapters": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/JournalChapter"
+          }
+        },
+        "editable": {
+          "type": "boolean"
+        },
+        "entryId": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "loreCode": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      }
+    },
+    "JournalChapter": {
+      "title": "JournalChapter",
+      "type": "object",
+      "properties": {
+        "chapterId": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "entryId": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

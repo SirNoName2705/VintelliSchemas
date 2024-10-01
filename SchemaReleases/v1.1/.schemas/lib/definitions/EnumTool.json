@@ -1,0 +1,103 @@
+{
+  "title": "EnumTool",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "Knife",
+      "default": "Knife",
+      "pattern": "[Kk][Nn][Ii][Ff][Ee]"
+    },
+    {
+      "title": "Pickaxe",
+      "default": "Pickaxe",
+      "pattern": "[Pp][Ii][Cc][Kk][Aa][Xx][Ee]"
+    },
+    {
+      "title": "Axe",
+      "default": "Axe",
+      "pattern": "[Aa][Xx][Ee]"
+    },
+    {
+      "title": "Sword",
+      "default": "Sword",
+      "pattern": "[Ss][Ww][Oo][Rr][Dd]"
+    },
+    {
+      "title": "Shovel",
+      "default": "Shovel",
+      "pattern": "[Ss][Hh][Oo][Vv][Ee][Ll]"
+    },
+    {
+      "title": "Hammer",
+      "default": "Hammer",
+      "pattern": "[Hh][Aa][Mm][Mm][Ee][Rr]"
+    },
+    {
+      "title": "Spear",
+      "default": "Spear",
+      "pattern": "[Ss][Pp][Ee][Aa][Rr]"
+    },
+    {
+      "title": "Bow",
+      "default": "Bow",
+      "pattern": "[Bb][Oo][Ww]"
+    },
+    {
+      "title": "Shears",
+      "default": "Shears",
+      "pattern": "[Ss][Hh][Ee][Aa][Rr][Ss]"
+    },
+    {
+      "title": "Sickle",
+      "default": "Sickle",
+      "pattern": "[Ss][Ii][Cc][Kk][Ll][Ee]"
+    },
+    {
+      "title": "Hoe",
+      "default": "Hoe",
+      "pattern": "[Hh][Oo][Ee]"
+    },
+    {
+      "title": "Saw",
+      "default": "Saw",
+      "pattern": "[Ss][Aa][Ww]"
+    },
+    {
+      "title": "Chisel",
+      "default": "Chisel",
+      "pattern": "[Cc][Hh][Ii][Ss][Ee][Ll]"
+    },
+    {
+      "title": "Scythe",
+      "default": "Scythe",
+      "pattern": "[Ss][Cc][Yy][Tt][Hh][Ee]"
+    },
+    {
+      "title": "Sling",
+      "default": "Sling",
+      "pattern": "[Ss][Ll][Ii][Nn][Gg]"
+    },
+    {
+      "title": "Wrench",
+      "default": "Wrench",
+      "pattern": "[Ww][Rr][Ee][Nn][Cc][Hh]"
+    },
+    {
+      "title": "Probe",
+      "default": "Probe",
+      "pattern": "[Pp][Rr][Oo][Bb][Ee]"
+    },
+    {
+      "title": "Meter",
+      "default": "Meter",
+      "pattern": "[Mm][Ee][Tt][Ee][Rr]"
+    },
+    {
+      "title": "Drill",
+      "default": "Drill",
+      "pattern": "[Dd][Rr][Ii][Ll][Ll]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

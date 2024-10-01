@@ -1,0 +1,43 @@
+{
+  "title": "EnumChunkRenderPass",
+  "type": "string",
+  "description": "The various render passes available for rendering blocks",
+  "anyOf": [
+    {
+      "title": "Opaque",
+      "default": "Opaque",
+      "pattern": "[Oo][Pp][Aa][Qq][Uu][Ee]"
+    },
+    {
+      "title": "OpaqueNoCull",
+      "default": "OpaqueNoCull",
+      "pattern": "[Oo][Pp][Aa][Qq][Uu][Ee][Nn][Oo][Cc][Uu][Ll][Ll]"
+    },
+    {
+      "title": "BlendNoCull",
+      "default": "BlendNoCull",
+      "pattern": "[Bb][Ll][Ee][Nn][Dd][Nn][Oo][Cc][Uu][Ll][Ll]"
+    },
+    {
+      "title": "Transparent",
+      "default": "Transparent",
+      "pattern": "[Tt][Rr][Aa][Nn][Ss][Pp][Aa][Rr][Ee][Nn][Tt]"
+    },
+    {
+      "title": "Liquid",
+      "default": "Liquid",
+      "pattern": "[Ll][Ii][Qq][Uu][Ii][Dd]"
+    },
+    {
+      "title": "TopSoil",
+      "default": "TopSoil",
+      "pattern": "[Tt][Oo][Pp][Ss][Oo][Ii][Ll]"
+    },
+    {
+      "title": "Meta",
+      "default": "Meta",
+      "pattern": "[Mm][Ee][Tt][Aa]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

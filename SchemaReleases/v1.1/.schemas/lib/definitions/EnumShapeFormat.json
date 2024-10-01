@@ -1,0 +1,23 @@
+{
+  "title": "EnumShapeFormat",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "VintageStory",
+      "default": "VintageStory",
+      "pattern": "[Vv][Ii][Nn][Tt][Aa][Gg][Ee][Ss][Tt][Oo][Rr][Yy]"
+    },
+    {
+      "title": "Obj",
+      "default": "Obj",
+      "pattern": "[Oo][Bb][Jj]"
+    },
+    {
+      "title": "GltfEmbedded",
+      "default": "GltfEmbedded",
+      "pattern": "[Gg][Ll][Tt][Ff][Ee][Mm][Bb][Ee][Dd][Dd][Ee][Dd]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

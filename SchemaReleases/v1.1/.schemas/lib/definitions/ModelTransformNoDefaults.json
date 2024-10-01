@@ -1,0 +1,48 @@
+{
+  "title": "ModelTransformNoDefaults",
+  "type": "object",
+  "properties": {
+    "origin": {
+      "description": "Rotation/Scaling Origin",
+      "oneOf": [
+        {
+          "$ref": "./Vec3f.json#"
+        }
+      ]
+    },
+    "rotate": {
+      "type": "boolean",
+      "description": "For Gui Transform: Whether to slowly spin in gui item preview \nFor Ground Transform: Whether to apply a random rotation to the dropped item\nNo effect on other transforms"
+    },
+    "rotation": {
+      "description": "Rotation in degrees",
+      "oneOf": [
+        {
+          "$ref": "./Vec3f.json#"
+        }
+      ]
+    },
+    "scale": {
+      "type": "number",
+      "description": "To set uniform Scaling on all Axes",
+      "format": "float"
+    },
+    "scaleXYZ": {
+      "description": "Scaling per axis",
+      "oneOf": [
+        {
+          "$ref": "./Vec3f.json#"
+        }
+      ]
+    },
+    "translation": {
+      "description": "Offsetting",
+      "oneOf": [
+        {
+          "$ref": "./Vec3f.json#"
+        }
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

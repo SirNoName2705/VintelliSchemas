@@ -1,0 +1,33 @@
+{
+  "title": "EnumMatterState",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "Gas",
+      "default": "Gas",
+      "pattern": "[Gg][Aa][Ss]"
+    },
+    {
+      "title": "Liquid",
+      "default": "Liquid",
+      "pattern": "[Ll][Ii][Qq][Uu][Ii][Dd]"
+    },
+    {
+      "title": "Solid",
+      "default": "Solid",
+      "pattern": "[Ss][Oo][Ll][Ii][Dd]"
+    },
+    {
+      "title": "Plasma",
+      "default": "Plasma",
+      "pattern": "[Pp][Ll][Aa][Ss][Mm][Aa]"
+    },
+    {
+      "title": "BoseEinsteinCondensate",
+      "default": "BoseEinsteinCondensate",
+      "pattern": "[Bb][Oo][Ss][Ee][Ee][Ii][Nn][Ss][Tt][Ee][Ii][Nn][Cc][Oo][Nn][Dd][Ee][Nn][Ss][Aa][Tt][Ee]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

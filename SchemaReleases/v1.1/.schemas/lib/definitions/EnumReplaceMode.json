@@ -1,0 +1,28 @@
+{
+  "title": "EnumReplaceMode",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "Replaceable",
+      "default": "Replaceable",
+      "pattern": "[Rr][Ee][Pp][Ll][Aa][Cc][Ee][Aa][Bb][Ll][Ee]"
+    },
+    {
+      "title": "ReplaceAll",
+      "default": "ReplaceAll",
+      "pattern": "[Rr][Ee][Pp][Ll][Aa][Cc][Ee][Aa][Ll][Ll]"
+    },
+    {
+      "title": "ReplaceAllNoAir",
+      "default": "ReplaceAllNoAir",
+      "pattern": "[Rr][Ee][Pp][Ll][Aa][Cc][Ee][Aa][Ll][Ll][Nn][Oo][Aa][Ii][Rr]"
+    },
+    {
+      "title": "ReplaceOnlyAir",
+      "default": "ReplaceOnlyAir",
+      "pattern": "[Rr][Ee][Pp][Ll][Aa][Cc][Ee][Oo][Nn][Ll][Yy][Aa][Ii][Rr]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

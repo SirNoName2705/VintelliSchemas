@@ -1,0 +1,33 @@
+{
+  "title": "EnumSmeltType",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "Smelt",
+      "default": "Smelt",
+      "pattern": "[Ss][Mm][Ee][Ll][Tt]"
+    },
+    {
+      "title": "Cook",
+      "default": "Cook",
+      "pattern": "[Cc][Oo][Oo][Kk]"
+    },
+    {
+      "title": "Bake",
+      "default": "Bake",
+      "pattern": "[Bb][Aa][Kk][Ee]"
+    },
+    {
+      "title": "Convert",
+      "default": "Convert",
+      "pattern": "[Cc][Oo][Nn][Vv][Ee][Rr][Tt]"
+    },
+    {
+      "title": "Fire",
+      "default": "Fire",
+      "pattern": "[Ff][Ii][Rr][Ee]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

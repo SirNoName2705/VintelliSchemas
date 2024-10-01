@@ -1,0 +1,48 @@
+{
+  "title": "EnumTransitionType",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "Perish",
+      "default": "Perish",
+      "pattern": "[Pp][Ee][Rr][Ii][Ss][Hh]"
+    },
+    {
+      "title": "Dry",
+      "default": "Dry",
+      "pattern": "[Dd][Rr][Yy]"
+    },
+    {
+      "title": "Burn",
+      "default": "Burn",
+      "pattern": "[Bb][Uu][Rr][Nn]"
+    },
+    {
+      "title": "Cure",
+      "default": "Cure",
+      "pattern": "[Cc][Uu][Rr][Ee]"
+    },
+    {
+      "title": "Convert",
+      "default": "Convert",
+      "pattern": "[Cc][Oo][Nn][Vv][Ee][Rr][Tt]"
+    },
+    {
+      "title": "Ripen",
+      "default": "Ripen",
+      "pattern": "[Rr][Ii][Pp][Ee][Nn]"
+    },
+    {
+      "title": "Melt",
+      "default": "Melt",
+      "pattern": "[Mm][Ee][Ll][Tt]"
+    },
+    {
+      "title": "Harden",
+      "default": "Harden",
+      "pattern": "[Hh][Aa][Rr][Dd][Ee][Nn]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

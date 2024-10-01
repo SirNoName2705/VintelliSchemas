@@ -1,0 +1,23 @@
+{
+  "title": "CrushingProperties",
+  "type": "object",
+  "properties": {
+    "crushedStack": {
+      "description": "If set, the block/item is crusable in a pulverizer and this is the resulting itemstack once the crushing time is over.",
+      "oneOf": [
+        {
+          "$ref": "./JsonItemStack.json#"
+        }
+      ]
+    },
+    "hardnessTier": {
+      "type": "integer",
+      "description": "0 = stone, 1 = copper, 2 = bronze, 3 = iron, 4 = steel",
+      "format": "int32"
+    },
+    "quantity": {
+      "$ref": "./NatFloat.json#"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

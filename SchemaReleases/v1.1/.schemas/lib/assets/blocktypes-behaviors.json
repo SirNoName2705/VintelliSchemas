@@ -1,0 +1,896 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Asset Schema for: behaviors",
+  "type": "object",
+  "anyOf": [
+    {
+      "title": "custom",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "properties": {
+          "type": "object"
+        }
+      }
+    },
+    {
+      "title": "HorizontalOrientable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "HorizontalOrientable"
+        }
+      }
+    },
+    {
+      "title": "WrenchOrientable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "WrenchOrientable"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "hideInteractionHelpInSurvival": {
+              "type": "boolean"
+            },
+            "baseCode": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Reparable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Reparable"
+        }
+      }
+    },
+    {
+      "title": "HeatSource",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "HeatSource"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "heatStrength": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "UnstableFalling",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "UnstableFalling"
+        }
+      }
+    },
+    {
+      "title": "Ignitable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Ignitable"
+        }
+      }
+    },
+    {
+      "title": "Decor",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Decor"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "sides": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "notFullFace": {
+              "type": "boolean"
+            },
+            "thickness": {
+              "type": "number"
+            },
+            "sidedVariants": {
+              "type": "boolean"
+            },
+            "removable": {
+              "type": "boolean"
+            },
+            "alternateZOffset": {
+              "type": "boolean"
+            },
+            "drawIfCulled": {
+              "type": "boolean"
+            },
+            "nwOrientable": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "RightClickPickup",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "RightClickPickup"
+        }
+      }
+    },
+    {
+      "title": "Multiblock",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Multiblock"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "sizex": {
+              "type": "integer"
+            },
+            "sizey": {
+              "type": "integer"
+            },
+            "sizez": {
+              "type": "integer"
+            },
+            "cposition": {
+              "type": "object",
+              "properties": {
+                "x": {
+                  "type": "integer"
+                },
+                "y": {
+                  "type": "integer"
+                },
+                "z": {
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "BreakIfFloating",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "BreakIfFloating"
+        }
+      }
+    },
+    {
+      "title": "MyceliumHost",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MyceliumHost"
+        }
+      }
+    },
+    {
+      "title": "OmniRotatable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "OmniRotatable"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "rotateSides": {
+              "type": "boolean"
+            },
+            "facing": {
+              "type": "string"
+            },
+            "dropChance": {
+              "type": "number"
+            },
+            "rotateH": {
+              "type": "boolean"
+            },
+            "rotateV": {
+              "type": "boolean"
+            },
+            "rotateV4": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "NWOrientable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "NWOrientable"
+        }
+      }
+    },
+    {
+      "title": "FiniteSpreadingLiquid",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "FiniteSpreadingLiquid"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "spreadDelay": {
+              "type": "integer"
+            },
+            "liquidCollisionSound": {
+              "type": "string"
+            },
+            "sourceReplacementCode": {
+              "type": "string"
+            },
+            "flowingReplacementCode": {
+              "type": "string"
+            },
+            "collidesWith": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Steaming",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Steaming"
+        }
+      }
+    },
+    {
+      "title": "Lockable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Lockable"
+        }
+      }
+    },
+    {
+      "title": "Container",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Container"
+        }
+      }
+    },
+    {
+      "title": "Unstable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Unstable"
+        }
+      }
+    },
+    {
+      "title": "HorizontalAttachable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "HorizontalAttachable"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "dropBlockFace": {
+              "type": "string"
+            },
+            "handleDrops": {
+              "type": "boolean"
+            },
+            "attachmentAreas": {
+              "type": "object",
+              "properties": {
+                "north": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "integer"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "east": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "integer"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "south": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "integer"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "west": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "integer"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "ExchangeOnInteract",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "ExchangeOnInteract"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "exchangeStates": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "sound": {
+              "type": "string"
+            },
+            "actionLangCode": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "GroundStorable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "GroundStorable"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "layout": {
+              "type": "string"
+            },
+            "collisionBox": {
+              "type": "object",
+              "properties": {
+                "x1": {
+                  "type": "integer"
+                },
+                "y1": {
+                  "type": "integer"
+                },
+                "z1": {
+                  "type": "integer"
+                },
+                "x2": {
+                  "type": "integer"
+                },
+                "y2": {
+                  "type": "number"
+                },
+                "z2": {
+                  "type": "integer"
+                }
+              }
+            },
+            "placeRemoveSound": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Unplaceable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Unplaceable"
+        }
+      }
+    },
+    {
+      "title": "CollectFrom",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "CollectFrom"
+        }
+      }
+    },
+    {
+      "title": "Pillar",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Pillar"
+        }
+      }
+    },
+    {
+      "title": "RainDrip",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "RainDrip"
+        }
+      }
+    },
+    {
+      "title": "Ladder",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Ladder"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "isFlexibleByType": {
+              "type": "object",
+              "properties": {
+                "ladder-rope-*": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "SneakPlacing",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "SneakPlacing"
+        }
+      }
+    },
+    {
+      "title": "MilkingContainer",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "MilkingContainer"
+        }
+      }
+    },
+    {
+      "title": "NoParticles",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "NoParticles"
+        }
+      }
+    },
+    {
+      "title": "UnstableRock",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "UnstableRock"
+        }
+      }
+    },
+    {
+      "title": "CanAttach",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "CanAttach"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "sides": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "OmniAttachable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "OmniAttachable"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "facingCode": {
+              "type": "string"
+            },
+            "attachmentAreas": {
+              "type": "object",
+              "properties": {
+                "down": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "integer"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "up": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "integer"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "north": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "integer"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "east": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "integer"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "south": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "integer"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "west": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "integer"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    },
+                    "rotateY": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "CreatureContainer",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "CreatureContainer"
+        }
+      }
+    },
+    {
+      "title": "DropNotSnowCovered",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "DropNotSnowCovered"
+        }
+      }
+    },
+    {
+      "title": "Door",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "Door"
+        }
+      }
+    },
+    {
+      "title": "BlockEntityInteract",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "BlockEntityInteract"
+        }
+      }
+    },
+    {
+      "title": "JonasGasifier",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "JonasGasifier"
+        }
+      }
+    },
+    {
+      "title": "JonasHydraulicPump",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "JonasHydraulicPump"
+        }
+      }
+    },
+    {
+      "title": "RopeTieable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "RopeTieable"
+        }
+      }
+    },
+    {
+      "title": "JonasBoilerDoor",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "JonasBoilerDoor"
+        }
+      }
+    }
+  ]
+}

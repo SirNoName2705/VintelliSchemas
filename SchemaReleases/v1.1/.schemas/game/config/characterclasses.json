@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "CharacterClass[]",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/CharacterClass"
+  },
+  "definitions": {
+    "CharacterClass": {
+      "title": "CharacterClass",
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "gear": {
+          "type": "array",
+          "items": {
+            "$ref": "../../lib/definitions/JsonItemStack.json#"
+          }
+        },
+        "traits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

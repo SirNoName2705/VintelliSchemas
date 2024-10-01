@@ -1,0 +1,68 @@
+{
+  "title": "EnumWindBitMode",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "NoWind",
+      "default": "NoWind",
+      "pattern": "[Nn][Oo][Ww][Ii][Nn][Dd]"
+    },
+    {
+      "title": "WeakWind",
+      "default": "WeakWind",
+      "pattern": "[Ww][Ee][Aa][Kk][Ww][Ii][Nn][Dd]"
+    },
+    {
+      "title": "NormalWind",
+      "default": "NormalWind",
+      "pattern": "[Nn][Oo][Rr][Mm][Aa][Ll][Ww][Ii][Nn][Dd]"
+    },
+    {
+      "title": "Leaves",
+      "default": "Leaves",
+      "pattern": "[Ll][Ee][Aa][Vv][Ee][Ss]"
+    },
+    {
+      "title": "Bend",
+      "default": "Bend",
+      "pattern": "[Bb][Ee][Nn][Dd]"
+    },
+    {
+      "title": "TallBend",
+      "default": "TallBend",
+      "pattern": "[Tt][Aa][Ll][Ll][Bb][Ee][Nn][Dd]"
+    },
+    {
+      "title": "Water",
+      "default": "Water",
+      "pattern": "[Ww][Aa][Tt][Ee][Rr]"
+    },
+    {
+      "title": "ExtraWeakWind",
+      "default": "ExtraWeakWind",
+      "pattern": "[Ee][Xx][Tt][Rr][Aa][Ww][Ee][Aa][Kk][Ww][Ii][Nn][Dd]"
+    },
+    {
+      "title": "Fruit",
+      "default": "Fruit",
+      "pattern": "[Ff][Rr][Uu][Ii][Tt]"
+    },
+    {
+      "title": "WeakWindNoBend",
+      "default": "WeakWindNoBend",
+      "pattern": "[Ww][Ee][Aa][Kk][Ww][Ii][Nn][Dd][Nn][Oo][Bb][Ee][Nn][Dd]"
+    },
+    {
+      "title": "WeakWindInverseBend",
+      "default": "WeakWindInverseBend",
+      "pattern": "[Ww][Ee][Aa][Kk][Ww][Ii][Nn][Dd][Ii][Nn][Vv][Ee][Rr][Ss][Ee][Bb][Ee][Nn][Dd]"
+    },
+    {
+      "title": "WaterPlant",
+      "default": "WaterPlant",
+      "pattern": "[Ww][Aa][Tt][Ee][Rr][Pp][Ll][Aa][Nn][Tt]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

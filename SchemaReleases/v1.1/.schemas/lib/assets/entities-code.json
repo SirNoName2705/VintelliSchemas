@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "enum": [
+            "chunky",
+            "item",
+            "player",
+            "testship",
+            "thrownbeenade",
+            "arrow",
+            "blockfalling",
+            "spear",
+            "thrownboulder",
+            "thrownstone",
+            "thrownsnowball",
+            "thrownsnownade",
+            "salmon",
+            "bass",
+            "chicken",
+            "armorstand",
+            "hyena-female",
+            "sheep-bighorn-lamb",
+            "strawdummy",
+            "hyena-pup",
+            "hare-baby",
+            "hare-male",
+            "hare-female",
+            "fox",
+            "sheep-bighorn-female",
+            "hyena-male",
+            "bell",
+            "pig-wild-female",
+            "gazelle",
+            "sheep-bighorn-male",
+            "wolf-pup",
+            "pig-wild-piglet",
+            "raccoon-pup",
+            "pig-wild-male",
+            "wolf-female",
+            "mechhelper",
+            "animalbot",
+            "raccoon-female",
+            "raccoon-male",
+            "wolf-male",
+            "bear",
+            "locust",
+            "drifter",
+            "chicken-baby",
+            "eidolon-immobilized",
+            "grub",
+            "humanoid-trader-clothing",
+            "humanoid-trader-furniture",
+            "humanoid-trader-treasurehunter",
+            "playerbot",
+            "humanoid-trader-foods",
+            "humanoid-trader-artisan",
+            "humanoid-trader-commodities",
+            "humanoid-trader-luxuries",
+            "humanoid-trader-survivalgoods",
+            "humanoid-trader-buildmaterials",
+            "echochamber",
+            "libraryresonator",
+            "butterfly",
+            "beemob",
+            "boat",
+            "deer",
+            "goat"
+          ]
+        }
+      ]
+    }
+  },
+  "title": "Asset generated simple: entities-code.json"
+}

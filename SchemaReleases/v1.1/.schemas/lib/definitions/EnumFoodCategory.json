@@ -1,0 +1,43 @@
+{
+  "title": "EnumFoodCategory",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "Fruit",
+      "default": "Fruit",
+      "pattern": "[Ff][Rr][Uu][Ii][Tt]"
+    },
+    {
+      "title": "Vegetable",
+      "default": "Vegetable",
+      "pattern": "[Vv][Ee][Gg][Ee][Tt][Aa][Bb][Ll][Ee]"
+    },
+    {
+      "title": "Protein",
+      "default": "Protein",
+      "pattern": "[Pp][Rr][Oo][Tt][Ee][Ii][Nn]"
+    },
+    {
+      "title": "Grain",
+      "default": "Grain",
+      "pattern": "[Gg][Rr][Aa][Ii][Nn]"
+    },
+    {
+      "title": "Dairy",
+      "default": "Dairy",
+      "pattern": "[Dd][Aa][Ii][Rr][Yy]"
+    },
+    {
+      "title": "Unknown",
+      "default": "Unknown",
+      "pattern": "[Uu][Nn][Kk][Nn][Oo][Ww][Nn]"
+    },
+    {
+      "title": "NoNutrition",
+      "default": "NoNutrition",
+      "pattern": "[Nn][Oo][Nn][Uu][Tt][Rr][Ii][Tt][Ii][Oo][Nn]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

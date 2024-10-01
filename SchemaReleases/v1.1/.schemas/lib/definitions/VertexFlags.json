@@ -1,0 +1,36 @@
+{
+  "title": "VertexFlags",
+  "type": "object",
+  "description": "Special class to handle the vertex flagging in a very nicely compressed space.\nBit 0-7: Glow level\nBit 8-10: Z-Offset\nBit 11: Reflective bit\nBit 12: Lod 0 Bit\nBit 13-24: X/Y/Z Normals\nBit 25, 26, 27, 28: Wind mode\nBit 29, 30, 31: Wind data  (also sometimes used for other data, e.g. reflection mode if Reflective bit is set, or additional water surface data if this is a water block)",
+  "properties": {
+    "all": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "glowLevel": {
+      "type": "integer",
+      "format": "byte"
+    },
+    "lod0": {
+      "type": "boolean"
+    },
+    "normal": {
+      "type": "integer"
+    },
+    "reflective": {
+      "type": "boolean"
+    },
+    "windData": {
+      "type": "integer",
+      "format": "byte"
+    },
+    "windMode": {
+      "$ref": "./EnumWindBitMode.json#"
+    },
+    "zOffset": {
+      "type": "integer",
+      "format": "byte"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

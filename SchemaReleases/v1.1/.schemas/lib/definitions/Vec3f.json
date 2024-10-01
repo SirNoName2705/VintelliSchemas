@@ -1,0 +1,23 @@
+{
+  "title": "Vec3f",
+  "type": "object",
+  "description": "Represents a vector of 3 floats. Go bug Tyron of you need more utility methods in this class.",
+  "properties": {
+    "x": {
+      "type": "number",
+      "description": "The X-Component of the vector",
+      "format": "float"
+    },
+    "y": {
+      "type": "number",
+      "description": "The Y-Component of the vector",
+      "format": "float"
+    },
+    "z": {
+      "type": "number",
+      "description": "The Z-Component of the vector",
+      "format": "float"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

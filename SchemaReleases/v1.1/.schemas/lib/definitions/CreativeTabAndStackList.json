@@ -1,0 +1,19 @@
+{
+  "title": "CreativeTabAndStackList",
+  "type": "object",
+  "properties": {
+    "stacks": {
+      "type": "array",
+      "items": {
+        "$ref": "./JsonItemStack.json#"
+      }
+    },
+    "tabs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

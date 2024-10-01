@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TraderWearableProperties",
+  "type": "object",
+  "properties": {
+    "bySlot": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/SlotAlloc"
+      }
+    },
+    "shapes": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/TexturedWeightedCompositeShape"
+      }
+    }
+  },
+  "definitions": {
+    "SlotAlloc": {
+      "title": "SlotAlloc",
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "shapes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "weightSum": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "TexturedWeightedCompositeShape": {
+      "title": "TexturedWeightedCompositeShape",
+      "allOf": [
+        {
+          "$ref": "../../lib/definitions/CompositeShape.json#"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "textures": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            },
+            "weight": {
+              "type": "number",
+              "format": "float"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

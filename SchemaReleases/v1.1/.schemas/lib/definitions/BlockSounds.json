@@ -1,0 +1,39 @@
+{
+  "title": "BlockSounds",
+  "type": "object",
+  "properties": {
+    "ambient": {
+      "type": "string"
+    },
+    "ambientBlockCount": {
+      "type": "number",
+      "format": "float"
+    },
+    "break": {
+      "type": "string"
+    },
+    "byTool": {
+      "type": "object",
+      "description": "Gets the sound that occurs when a specific tool hits a block.",
+      "x-dictionaryKey": {
+        "$ref": "./EnumTool.json#"
+      },
+      "additionalProperties": {
+        "$ref": "./BlockSounds.json#"
+      }
+    },
+    "hit": {
+      "type": "string"
+    },
+    "inside": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "walk": {
+      "type": "string"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

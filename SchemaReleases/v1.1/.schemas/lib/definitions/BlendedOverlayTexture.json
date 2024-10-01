@@ -1,0 +1,13 @@
+{
+  "title": "BlendedOverlayTexture",
+  "type": "object",
+  "properties": {
+    "base": {
+      "type": "string"
+    },
+    "blendMode": {
+      "$ref": "./EnumColorBlendMode.json#"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

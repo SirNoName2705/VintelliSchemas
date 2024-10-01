@@ -1,0 +1,13 @@
+{
+  "title": "CustomMeshDataPartFloat",
+  "allOf": [
+    {
+      "$ref": "./CustomMeshDataPartOfSingle.json#"
+    },
+    {
+      "type": "object",
+      "description": "Holds arbitrary float data for meshes to be used in the shader"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "EnumItemDamageSource",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "BlockBreaking",
+      "default": "BlockBreaking",
+      "pattern": "[Bb][Ll][Oo][Cc][Kk][Bb][Rr][Ee][Aa][Kk][Ii][Nn][Gg]"
+    },
+    {
+      "title": "Attacking",
+      "default": "Attacking",
+      "pattern": "[Aa][Tt][Tt][Aa][Cc][Kk][Ii][Nn][Gg]"
+    },
+    {
+      "title": "Fire",
+      "default": "Fire",
+      "pattern": "[Ff][Ii][Rr][Ee]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,300 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Asset Schema for: behaviors",
+  "type": "object",
+  "anyOf": [
+    {
+      "title": "custom",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "properties": {
+          "type": "object"
+        }
+      }
+    },
+    {
+      "title": "GroundStorable",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "GroundStorable"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "layout": {
+              "type": "string"
+            },
+            "placeRemoveSound": {
+              "type": "string"
+            },
+            "collisionBox": {
+              "type": "object",
+              "properties": {
+                "x1": {
+                  "type": "integer"
+                },
+                "y1": {
+                  "type": "integer"
+                },
+                "z1": {
+                  "type": "integer"
+                },
+                "x2": {
+                  "type": "integer"
+                },
+                "y2": {
+                  "type": "number"
+                },
+                "z2": {
+                  "type": "integer"
+                }
+              }
+            },
+            "layoutByType": {
+              "type": "object",
+              "properties": {
+                "*-gearbox02": {
+                  "type": "string"
+                },
+                "*": {
+                  "type": "string"
+                }
+              }
+            },
+            "collisionBoxByType": {
+              "type": "object",
+              "properties": {
+                "*-gearbox02": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "number"
+                    },
+                    "y1": {
+                      "type": "number"
+                    },
+                    "z1": {
+                      "type": "number"
+                    },
+                    "x2": {
+                      "type": "number"
+                    },
+                    "y2": {
+                      "type": "number"
+                    },
+                    "z2": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "*": {
+                  "type": "object",
+                  "properties": {
+                    "x1": {
+                      "type": "integer"
+                    },
+                    "y1": {
+                      "type": "integer"
+                    },
+                    "z1": {
+                      "type": "integer"
+                    },
+                    "x2": {
+                      "type": "integer"
+                    },
+                    "y2": {
+                      "type": "number"
+                    },
+                    "z2": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            },
+            "wallOffY": {
+              "type": "integer"
+            },
+            "sprintKey": {
+              "type": "boolean"
+            },
+            "selectionBox": {
+              "type": "object",
+              "properties": {
+                "x1": {
+                  "type": "integer"
+                },
+                "y1": {
+                  "type": "integer"
+                },
+                "z1": {
+                  "type": "integer"
+                },
+                "x2": {
+                  "type": "integer"
+                },
+                "y2": {
+                  "type": "number"
+                },
+                "z2": {
+                  "type": "integer"
+                }
+              }
+            },
+            "ctrlKey": {
+              "type": "boolean"
+            },
+            "wallOffYByType": {
+              "type": "object",
+              "properties": {
+                "axe-bardiche-ruined": {
+                  "type": "integer"
+                },
+                "axe-double-ruined": {
+                  "type": "integer"
+                },
+                "*": {
+                  "type": "integer"
+                },
+                "club-spiked-ruined": {
+                  "type": "integer"
+                },
+                "club-warhammer-ruined": {
+                  "type": "integer"
+                },
+                "blade-forlorn-iron": {
+                  "type": "integer"
+                },
+                "blade-claymore-ruined": {
+                  "type": "integer"
+                },
+                "blade-arming-ruined": {
+                  "type": "integer"
+                },
+                "bow-crude": {
+                  "type": "integer"
+                },
+                "bow-simple": {
+                  "type": "integer"
+                }
+              }
+            },
+            "scale": {
+              "type": "number"
+            },
+            "stackingModelByType": {
+              "type": "object",
+              "properties": {
+                "*-gold": {
+                  "type": "string"
+                },
+                "*": {
+                  "type": "string"
+                }
+              }
+            },
+            "stackingTextures": {
+              "type": "object",
+              "properties": {
+                "metal": {
+                  "type": "string"
+                },
+                "wood": {
+                  "type": "string"
+                }
+              }
+            },
+            "modelItemsToStackSizeRatio": {
+              "type": "integer"
+            },
+            "stackingCapacity": {
+              "type": "integer"
+            },
+            "transferQuantity": {
+              "type": "integer"
+            },
+            "bulkTransferQuantity": {
+              "type": "integer"
+            },
+            "cbScaleYByLayer": {
+              "type": "number"
+            },
+            "stackingModel": {
+              "type": "string"
+            },
+            "maxFireable": {
+              "type": "integer"
+            },
+            "upSolid": {
+              "type": "boolean"
+            },
+            "placeRemoveSoundByType": {
+              "type": "object",
+              "properties": {
+                "*-raw-*": {
+                  "type": "string"
+                },
+                "*-fired-*": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "AnimationAuthoritative",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "AnimationAuthoritative"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "strikeSound": {
+              "type": "string"
+            },
+            "onlyOnEntity": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "ArtPigment",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "ArtPigment"
+        },
+        "properties": {
+          "type": "object",
+          "properties": {
+            "decorBlockCodes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "paintableOnBlockMaterials": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

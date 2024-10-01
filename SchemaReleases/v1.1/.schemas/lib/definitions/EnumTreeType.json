@@ -1,0 +1,33 @@
+{
+  "title": "EnumTreeType",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "Any",
+      "default": "Any",
+      "pattern": "[Aa][Nn][Yy]"
+    },
+    {
+      "title": "Decidious",
+      "default": "Decidious",
+      "pattern": "[Dd][Ee][Cc][Ii][Dd][Ii][Oo][Uu][Ss]"
+    },
+    {
+      "title": "Conifer",
+      "default": "Conifer",
+      "pattern": "[Cc][Oo][Nn][Ii][Ff][Ee][Rr]"
+    },
+    {
+      "title": "Tropical",
+      "default": "Tropical",
+      "pattern": "[Tt][Rr][Oo][Pp][Ii][Cc][Aa][Ll]"
+    },
+    {
+      "title": "Acacia",
+      "default": "Acacia",
+      "pattern": "[Aa][Cc][Aa][Cc][Ii][Aa]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

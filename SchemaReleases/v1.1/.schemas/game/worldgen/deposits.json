@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DepositVariant[]",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/DepositVariant"
+  },
+  "definitions": {
+    "DepositVariant": {
+      "title": "DepositVariant",
+      "allOf": [
+        {
+          "$ref": "../../lib/definitions/WorldPropertyVariant.json#"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "attributes": {
+              "$ref": "../../lib/definitions/JsonObject.json#"
+            },
+            "childDeposits": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/DepositVariant"
+              }
+            },
+            "climate": {
+              "$ref": "#/definitions/ClimateConditions"
+            },
+            "code": {
+              "type": "string"
+            },
+            "generator": {
+              "type": "string"
+            },
+            "handbookPageCode": {
+              "type": "string"
+            },
+            "oreMapContrast": {
+              "type": "number",
+              "format": "float"
+            },
+            "oreMapScale": {
+              "type": "number",
+              "format": "float"
+            },
+            "oreMapSub": {
+              "type": "number",
+              "format": "float"
+            },
+            "scaleWithWorldheight": {
+              "type": "boolean"
+            },
+            "triesPerChunk": {
+              "type": "number",
+              "format": "float"
+            },
+            "withBlockCallback": {
+              "type": "boolean"
+            },
+            "withOreMap": {
+              "type": "boolean"
+            }
+          }
+        }
+      ]
+    },
+    "ClimateConditions": {
+      "title": "ClimateConditions",
+      "type": "object",
+      "properties": {
+        "maxRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxTemp": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxY": {
+          "type": "number",
+          "format": "float"
+        },
+        "minRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "minTemp": {
+          "type": "number",
+          "format": "float"
+        },
+        "minY": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    }
+  }
+}

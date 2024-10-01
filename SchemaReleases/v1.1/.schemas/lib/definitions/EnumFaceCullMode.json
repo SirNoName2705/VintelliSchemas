@@ -1,0 +1,63 @@
+{
+  "title": "EnumFaceCullMode",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "Default",
+      "default": "Default",
+      "pattern": "[Dd][Ee][Ff][Aa][Uu][Ll][Tt]"
+    },
+    {
+      "title": "NeverCull",
+      "default": "NeverCull",
+      "pattern": "[Nn][Ee][Vv][Ee][Rr][Cc][Uu][Ll][Ll]"
+    },
+    {
+      "title": "Merge",
+      "default": "Merge",
+      "pattern": "[Mm][Ee][Rr][Gg][Ee]"
+    },
+    {
+      "title": "Collapse",
+      "default": "Collapse",
+      "pattern": "[Cc][Oo][Ll][Ll][Aa][Pp][Ss][Ee]"
+    },
+    {
+      "title": "MergeMaterial",
+      "default": "MergeMaterial",
+      "pattern": "[Mm][Ee][Rr][Gg][Ee][Mm][Aa][Tt][Ee][Rr][Ii][Aa][Ll]"
+    },
+    {
+      "title": "CollapseMaterial",
+      "default": "CollapseMaterial",
+      "pattern": "[Cc][Oo][Ll][Ll][Aa][Pp][Ss][Ee][Mm][Aa][Tt][Ee][Rr][Ii][Aa][Ll]"
+    },
+    {
+      "title": "Liquid",
+      "default": "Liquid",
+      "pattern": "[Ll][Ii][Qq][Uu][Ii][Dd]"
+    },
+    {
+      "title": "Callback",
+      "default": "Callback",
+      "pattern": "[Cc][Aa][Ll][Ll][Bb][Aa][Cc][Kk]"
+    },
+    {
+      "title": "MergeSnowLayer",
+      "default": "MergeSnowLayer",
+      "pattern": "[Mm][Ee][Rr][Gg][Ee][Ss][Nn][Oo][Ww][Ll][Aa][Yy][Ee][Rr]"
+    },
+    {
+      "title": "FlushExceptTop",
+      "default": "FlushExceptTop",
+      "pattern": "[Ff][Ll][Uu][Ss][Hh][Ee][Xx][Cc][Ee][Pp][Tt][Tt][Oo][Pp]"
+    },
+    {
+      "title": "Stairs",
+      "default": "Stairs",
+      "pattern": "[Ss][Tt][Aa][Ii][Rr][Ss]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

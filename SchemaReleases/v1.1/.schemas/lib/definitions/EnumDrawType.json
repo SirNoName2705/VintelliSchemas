@@ -1,0 +1,113 @@
+{
+  "title": "EnumDrawType",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "BlockLayer_1",
+      "default": "BlockLayer_1",
+      "pattern": "[Bb][Ll][Oo][Cc][Kk][Ll][Aa][Yy][Ee][Rr][_][1]"
+    },
+    {
+      "title": "BlockLayer_2",
+      "default": "BlockLayer_2",
+      "pattern": "[Bb][Ll][Oo][Cc][Kk][Ll][Aa][Yy][Ee][Rr][_][2]"
+    },
+    {
+      "title": "BlockLayer_3",
+      "default": "BlockLayer_3",
+      "pattern": "[Bb][Ll][Oo][Cc][Kk][Ll][Aa][Yy][Ee][Rr][_][3]"
+    },
+    {
+      "title": "BlockLayer_4",
+      "default": "BlockLayer_4",
+      "pattern": "[Bb][Ll][Oo][Cc][Kk][Ll][Aa][Yy][Ee][Rr][_][4]"
+    },
+    {
+      "title": "BlockLayer_5",
+      "default": "BlockLayer_5",
+      "pattern": "[Bb][Ll][Oo][Cc][Kk][Ll][Aa][Yy][Ee][Rr][_][5]"
+    },
+    {
+      "title": "BlockLayer_6",
+      "default": "BlockLayer_6",
+      "pattern": "[Bb][Ll][Oo][Cc][Kk][Ll][Aa][Yy][Ee][Rr][_][6]"
+    },
+    {
+      "title": "BlockLayer_7",
+      "default": "BlockLayer_7",
+      "pattern": "[Bb][Ll][Oo][Cc][Kk][Ll][Aa][Yy][Ee][Rr][_][7]"
+    },
+    {
+      "title": "JSON",
+      "default": "JSON",
+      "pattern": "[Jj][Ss][Oo][Nn]"
+    },
+    {
+      "title": "Empty",
+      "default": "Empty",
+      "pattern": "[Ee][Mm][Pp][Tt][Yy]"
+    },
+    {
+      "title": "Cube",
+      "default": "Cube",
+      "pattern": "[Cc][Uu][Bb][Ee]"
+    },
+    {
+      "title": "Cross",
+      "default": "Cross",
+      "pattern": "[Cc][Rr][Oo][Ss][Ss]"
+    },
+    {
+      "title": "Transparent",
+      "default": "Transparent",
+      "pattern": "[Tt][Rr][Aa][Nn][Ss][Pp][Aa][Rr][Ee][Nn][Tt]"
+    },
+    {
+      "title": "Liquid",
+      "default": "Liquid",
+      "pattern": "[Ll][Ii][Qq][Uu][Ii][Dd]"
+    },
+    {
+      "title": "TopSoil",
+      "default": "TopSoil",
+      "pattern": "[Tt][Oo][Pp][Ss][Oo][Ii][Ll]"
+    },
+    {
+      "title": "CrossAndSnowlayer",
+      "default": "CrossAndSnowlayer",
+      "pattern": "[Cc][Rr][Oo][Ss][Ss][Aa][Nn][Dd][Ss][Nn][Oo][Ww][Ll][Aa][Yy][Ee][Rr]"
+    },
+    {
+      "title": "JSONAndWater",
+      "default": "JSONAndWater",
+      "pattern": "[Jj][Ss][Oo][Nn][Aa][Nn][Dd][Ww][Aa][Tt][Ee][Rr]"
+    },
+    {
+      "title": "JSONAndSnowLayer",
+      "default": "JSONAndSnowLayer",
+      "pattern": "[Jj][Ss][Oo][Nn][Aa][Nn][Dd][Ss][Nn][Oo][Ww][Ll][Aa][Yy][Ee][Rr]"
+    },
+    {
+      "title": "CrossAndSnowlayer_2",
+      "default": "CrossAndSnowlayer_2",
+      "pattern": "[Cc][Rr][Oo][Ss][Ss][Aa][Nn][Dd][Ss][Nn][Oo][Ww][Ll][Aa][Yy][Ee][Rr][_][2]"
+    },
+    {
+      "title": "CrossAndSnowlayer_3",
+      "default": "CrossAndSnowlayer_3",
+      "pattern": "[Cc][Rr][Oo][Ss][Ss][Aa][Nn][Dd][Ss][Nn][Oo][Ww][Ll][Aa][Yy][Ee][Rr][_][3]"
+    },
+    {
+      "title": "CrossAndSnowlayer_4",
+      "default": "CrossAndSnowlayer_4",
+      "pattern": "[Cc][Rr][Oo][Ss][Ss][Aa][Nn][Dd][Ss][Nn][Oo][Ww][Ll][Aa][Yy][Ee][Rr][_][4]"
+    },
+    {
+      "title": "SurfaceLayer",
+      "default": "SurfaceLayer",
+      "pattern": "[Ss][Uu][Rr][Ff][Aa][Cc][Ee][Ll][Aa][Yy][Ee][Rr]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

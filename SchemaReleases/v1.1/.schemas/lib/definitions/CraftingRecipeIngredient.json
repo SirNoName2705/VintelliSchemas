@@ -1,0 +1,88 @@
+{
+  "title": "CraftingRecipeIngredient",
+  "type": "object",
+  "description": "A crafting recipe ingredient",
+  "properties": {
+    "allowedVariants": {
+      "type": "array",
+      "description": "When using a wildcard in the item/block code, setting this field will limit the allowed variants",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attributes": {
+      "description": "What attributes this itemstack must have",
+      "oneOf": [
+        {
+          "$ref": "./JsonObject.json#"
+        }
+      ]
+    },
+    "code": {
+      "type": "string",
+      "description": "Code of the item or block"
+    },
+    "isTool": {
+      "type": "boolean",
+      "description": "Whether this crafting recipe ingredient should be regarded as a tool required to build this item.\nIf true, the recipe will not consume the item but reduce its durability."
+    },
+    "isWildCard": {
+      "type": "boolean",
+      "description": "Whether this recipe contains a wildcard, populated by the engine"
+    },
+    "name": {
+      "type": "string",
+      "description": "Name of the class, used for filling placeholders in the output stack"
+    },
+    "quantity": {
+      "type": "integer",
+      "description": "How much input items are required",
+      "format": "int32"
+    },
+    "recipeAttributes": {
+      "description": "Optional attribute data that you can attach any data to",
+      "oneOf": [
+        {
+          "$ref": "./JsonObject.json#"
+        }
+      ]
+    },
+    "resolvedItemstack": {
+      "description": "The itemstack made from Code, Quantity and Attributes, populated by the engine",
+      "oneOf": [
+        {
+          "$ref": "./ItemStack.json#"
+        }
+      ]
+    },
+    "returnedStack": {
+      "description": "If set, the crafting recipe will give back the consumed stack to be player upon crafting",
+      "oneOf": [
+        {
+          "$ref": "./JsonItemStack.json#"
+        }
+      ]
+    },
+    "skipVariants": {
+      "type": "array",
+      "description": "When using a wildcard in the item/block code, setting this field will skip these variants",
+      "items": {
+        "type": "string"
+      }
+    },
+    "toolDurabilityCost": {
+      "type": "integer",
+      "description": "If IsTool is set, this is the durability cost",
+      "format": "int32"
+    },
+    "type": {
+      "description": "Item or Block",
+      "oneOf": [
+        {
+          "$ref": "./EnumItemClass.json#"
+        }
+      ]
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

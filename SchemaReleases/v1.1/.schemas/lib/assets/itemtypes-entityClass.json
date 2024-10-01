@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "entityClass": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "enum": []
+        }
+      ]
+    }
+  },
+  "title": "Asset generated simple: itemtypes-entityClass.json"
+}

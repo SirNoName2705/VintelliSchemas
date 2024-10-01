@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "RockStrataConfig",
+  "definitions": {
+    "WorldPropertyOfRockStratum": {
+      "title": "WorldPropertyOfRockStratum",
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "variants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RockStratum"
+          }
+        }
+      }
+    },
+    "RockStratum": {
+      "title": "RockStratum",
+      "type": "object",
+      "properties": {
+        "amplitudes": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "blockCode": {
+          "type": "string"
+        },
+        "blockId": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "frequencies": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "genDir": {
+          "$ref": "#/definitions/EnumStratumGenDir"
+        },
+        "generator": {
+          "type": "string"
+        },
+        "isDeposit": {
+          "type": "boolean"
+        },
+        "rockGroup": {
+          "$ref": "#/definitions/EnumRockGroup"
+        },
+        "thresholds": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      }
+    },
+    "EnumStratumGenDir": {
+      "title": "EnumStratumGenDir",
+      "type": "string",
+      "description": "",
+      "anyOf": [
+        {
+          "title": "BottomUp",
+          "default": "BottomUp",
+          "pattern": "[Bb][Oo][Tt][Tt][Oo][Mm][Uu][Pp]"
+        },
+        {
+          "title": "TopDown",
+          "default": "TopDown",
+          "pattern": "[Tt][Oo][Pp][Dd][Oo][Ww][Nn]"
+        }
+      ]
+    },
+    "EnumRockGroup": {
+      "title": "EnumRockGroup",
+      "type": "string",
+      "description": "",
+      "anyOf": [
+        {
+          "title": "Sedimentary",
+          "default": "Sedimentary",
+          "pattern": "[Ss][Ee][Dd][Ii][Mm][Ee][Nn][Tt][Aa][Rr][Yy]"
+        },
+        {
+          "title": "Metamorphic",
+          "default": "Metamorphic",
+          "pattern": "[Mm][Ee][Tt][Aa][Mm][Oo][Rr][Pp][Hh][Ii][Cc]"
+        },
+        {
+          "title": "Igneous",
+          "default": "Igneous",
+          "pattern": "[Ii][Gg][Nn][Ee][Oo][Uu][Ss]"
+        },
+        {
+          "title": "Volcanic",
+          "default": "Volcanic",
+          "pattern": "[Vv][Oo][Ll][Cc][Aa][Nn][Ii][Cc]"
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/WorldPropertyOfRockStratum"
+    },
+    {
+      "type": "object"
+    }
+  ]
+}

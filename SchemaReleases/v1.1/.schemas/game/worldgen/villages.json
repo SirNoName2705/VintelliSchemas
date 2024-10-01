@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "WorldGenVillageConfig",
+  "type": "object",
+  "properties": {
+    "chanceMultiplier": {
+      "type": "number",
+      "format": "float"
+    },
+    "villageTypes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/WorldGenVillage"
+      }
+    }
+  },
+  "definitions": {
+    "WorldGenVillage": {
+      "title": "WorldGenVillage",
+      "type": "object",
+      "properties": {
+        "buildProtected": {
+          "type": "boolean"
+        },
+        "buildProtectionDesc": {
+          "type": "string"
+        },
+        "buildProtectionName": {
+          "type": "string"
+        },
+        "chance": {
+          "type": "number",
+          "format": "float"
+        },
+        "code": {
+          "type": "string"
+        },
+        "group": {
+          "type": "string"
+        },
+        "maxForest": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxY": {
+          "type": "number",
+          "format": "float"
+        },
+        "minForest": {
+          "type": "number",
+          "format": "float"
+        },
+        "minGroupDistance": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minRain": {
+          "type": "number",
+          "format": "float"
+        },
+        "minTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minY": {
+          "type": "number",
+          "format": "float"
+        },
+        "name": {
+          "type": "string"
+        },
+        "offsetYByCode": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "postPass": {
+          "type": "boolean"
+        },
+        "quantityStructures": {
+          "$ref": "../../lib/definitions/NatFloat.json#"
+        },
+        "replaceWithBlocklayers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rockTypeRemapGroup": {
+          "type": "string"
+        },
+        "rockTypeRemaps": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "schematics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/VillageSchematic"
+          }
+        }
+      }
+    },
+    "VillageSchematic": {
+      "title": "VillageSchematic",
+      "type": "object",
+      "properties": {
+        "maxQuantity": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minQuantity": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "nowQuantity": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "offsetY": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "path": {
+          "type": "string"
+        },
+        "shouldGenerate": {
+          "type": "boolean"
+        },
+        "structures": {
+          "type": "array",
+          "items": {
+            "$ref": "../../lib/definitions/BlockSchematicStructure.json#"
+          }
+        },
+        "weight": {
+          "type": "number",
+          "format": "double"
+        }
+      }
+    }
+  }
+}

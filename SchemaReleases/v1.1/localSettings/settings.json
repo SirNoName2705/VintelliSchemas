@@ -1,0 +1,238 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "**/assets/**/blocktypes/**"
+      ],
+      "url": ".schemas/game/blocktypes.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/characterclasses.json"
+      ],
+      "url": ".schemas/game/config/characterclasses.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/colormaps.json"
+      ],
+      "url": ".schemas/game/config/colormaps.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/general.json"
+      ],
+      "url": ".schemas/game/config/general.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/handbook/**"
+      ],
+      "url": ".schemas/game/config/handbook.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/lore/**"
+      ],
+      "url": ".schemas/game/config/lore.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/remaps.json"
+      ],
+      "url": ".schemas/game/config/remaps.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/traderaccessories.json"
+      ],
+      "url": ".schemas/game/config/traderaccessories.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/traits.json"
+      ],
+      "url": ".schemas/game/config/traits.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/weather.json"
+      ],
+      "url": ".schemas/game/config/weather.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/weatherevents/**"
+      ],
+      "url": ".schemas/game/config/weatherevents.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/weatherpatterns/**"
+      ],
+      "url": ".schemas/game/config/weatherpatterns.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/config/windpatterns/**"
+      ],
+      "url": ".schemas/game/config/windpatterns.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/dialog/**"
+      ],
+      "url": ".schemas/game/dialog.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/entities/**"
+      ],
+      "url": ".schemas/game/entities.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/itemtypes/**"
+      ],
+      "url": ".schemas/game/itemtypes.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/lang/**"
+      ],
+      "url": ".schemas/game/lang.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/patches/**"
+      ],
+      "url": ".schemas/game/patches.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/recipes/alloy/**"
+      ],
+      "url": ".schemas/game/recipes/alloy.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/recipes/barrel/**"
+      ],
+      "url": ".schemas/game/recipes/barrel.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/recipes/clayforming/**"
+      ],
+      "url": ".schemas/game/recipes/clayforming.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/recipes/grid/**"
+      ],
+      "url": ".schemas/game/recipes/grid.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/recipes/knapping/**"
+      ],
+      "url": ".schemas/game/recipes/knapping.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/recipes/smithing/**"
+      ],
+      "url": ".schemas/game/recipes/smithing.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/blocklayers.json"
+      ],
+      "url": ".schemas/game/worldgen/blocklayers.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/blockpatches.json"
+      ],
+      "url": ".schemas/game/worldgen/blockpatches.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/deposits/**"
+      ],
+      "url": ".schemas/game/worldgen/deposits.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/deposits.json"
+      ],
+      "url": ".schemas/game/worldgen/deposits.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/geologicprovinces.json"
+      ],
+      "url": ".schemas/game/worldgen/geologicprovinces.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/global.json"
+      ],
+      "url": ".schemas/game/worldgen/global.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/landforms.json"
+      ],
+      "url": ".schemas/game/worldgen/landforms.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/layers.json"
+      ],
+      "url": ".schemas/game/worldgen/layers.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/rockstrata.json"
+      ],
+      "url": ".schemas/game/worldgen/rockstrata.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/schematics/**"
+      ],
+      "url": ".schemas/game/worldgen/schematics.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/structures.json"
+      ],
+      "url": ".schemas/game/worldgen/structures.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/treegen/**"
+      ],
+      "url": ".schemas/game/worldgen/treegen.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/treengenproperties.json"
+      ],
+      "url": ".schemas/game/worldgen/treengenproperties.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/villages.json"
+      ],
+      "url": ".schemas/game/worldgen/villages.json"
+    },
+    {
+      "fileMatch": [
+        "**/assets/**/worldgen/worldproperties/**"
+      ],
+      "url": ".schemas/game/worldgen/worldproperties.json"
+    }
+  ]
+}

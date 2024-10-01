@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "TreeGenProperties",
+  "type": "object",
+  "properties": {
+    "descVineMinTempRel": {
+      "type": "number",
+      "format": "float"
+    },
+    "shrubGens": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/TreeVariant"
+      }
+    },
+    "shrubsPerChunk": {
+      "$ref": "../../lib/definitions/NatFloat.json#"
+    },
+    "treeGens": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/TreeVariant"
+      }
+    },
+    "treesPerChunk": {
+      "$ref": "../../lib/definitions/NatFloat.json#"
+    },
+    "vinesMinRain": {
+      "type": "number",
+      "format": "float"
+    },
+    "vinesMinTemp": {
+      "type": "integer",
+      "format": "int32"
+    }
+  },
+  "definitions": {
+    "TreeVariant": {
+      "title": "TreeVariant",
+      "type": "object",
+      "properties": {
+        "generator": {
+          "type": "string"
+        },
+        "growthSpeed": {
+          "type": "number",
+          "format": "float"
+        },
+        "habitat": {
+          "$ref": "#/definitions/EnumTreeHabitat"
+        },
+        "jankaHardness": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxFert": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxForest": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxHeight": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxRain": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "maxSize": {
+          "type": "number",
+          "format": "float"
+        },
+        "maxTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minFert": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minForest": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minHeight": {
+          "type": "number",
+          "format": "float"
+        },
+        "minRain": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "minSize": {
+          "type": "number",
+          "format": "float"
+        },
+        "minTemp": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "saplingDropRate": {
+          "type": "number",
+          "format": "float"
+        },
+        "suitabilitySizeBonus": {
+          "type": "number",
+          "format": "float"
+        },
+        "weight": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    },
+    "EnumTreeHabitat": {
+      "title": "EnumTreeHabitat",
+      "type": "string",
+      "description": "",
+      "anyOf": [
+        {
+          "title": "Land",
+          "default": "Land",
+          "pattern": "[Ll][Aa][Nn][Dd]"
+        },
+        {
+          "title": "LandWater",
+          "default": "LandWater",
+          "pattern": "[Ll][Aa][Nn][Dd][Ww][Aa][Tt][Ee][Rr]"
+        },
+        {
+          "title": "Water",
+          "default": "Water",
+          "pattern": "[Ww][Aa][Tt][Ee][Rr]"
+        }
+      ]
+    }
+  }
+}

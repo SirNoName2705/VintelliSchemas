@@ -1,0 +1,118 @@
+{
+  "title": "EnumBlockMaterial",
+  "type": "string",
+  "description": "Material of which a block my be made of\nCurrently only used for mining speed for tools",
+  "anyOf": [
+    {
+      "title": "Air",
+      "default": "Air",
+      "pattern": "[Aa][Ii][Rr]"
+    },
+    {
+      "title": "Soil",
+      "default": "Soil",
+      "pattern": "[Ss][Oo][Ii][Ll]"
+    },
+    {
+      "title": "Gravel",
+      "default": "Gravel",
+      "pattern": "[Gg][Rr][Aa][Vv][Ee][Ll]"
+    },
+    {
+      "title": "Sand",
+      "default": "Sand",
+      "pattern": "[Ss][Aa][Nn][Dd]"
+    },
+    {
+      "title": "Wood",
+      "default": "Wood",
+      "pattern": "[Ww][Oo][Oo][Dd]"
+    },
+    {
+      "title": "Leaves",
+      "default": "Leaves",
+      "pattern": "[Ll][Ee][Aa][Vv][Ee][Ss]"
+    },
+    {
+      "title": "Stone",
+      "default": "Stone",
+      "pattern": "[Ss][Tt][Oo][Nn][Ee]"
+    },
+    {
+      "title": "Ore",
+      "default": "Ore",
+      "pattern": "[Oo][Rr][Ee]"
+    },
+    {
+      "title": "Liquid",
+      "default": "Liquid",
+      "pattern": "[Ll][Ii][Qq][Uu][Ii][Dd]"
+    },
+    {
+      "title": "Snow",
+      "default": "Snow",
+      "pattern": "[Ss][Nn][Oo][Ww]"
+    },
+    {
+      "title": "Ice",
+      "default": "Ice",
+      "pattern": "[Ii][Cc][Ee]"
+    },
+    {
+      "title": "Metal",
+      "default": "Metal",
+      "pattern": "[Mm][Ee][Tt][Aa][Ll]"
+    },
+    {
+      "title": "Mantle",
+      "default": "Mantle",
+      "pattern": "[Mm][Aa][Nn][Tt][Ll][Ee]"
+    },
+    {
+      "title": "Plant",
+      "default": "Plant",
+      "pattern": "[Pp][Ll][Aa][Nn][Tt]"
+    },
+    {
+      "title": "Glass",
+      "default": "Glass",
+      "pattern": "[Gg][Ll][Aa][Ss][Ss]"
+    },
+    {
+      "title": "Ceramic",
+      "default": "Ceramic",
+      "pattern": "[Cc][Ee][Rr][Aa][Mm][Ii][Cc]"
+    },
+    {
+      "title": "Cloth",
+      "default": "Cloth",
+      "pattern": "[Cc][Ll][Oo][Tt][Hh]"
+    },
+    {
+      "title": "Lava",
+      "default": "Lava",
+      "pattern": "[Ll][Aa][Vv][Aa]"
+    },
+    {
+      "title": "Brick",
+      "default": "Brick",
+      "pattern": "[Bb][Rr][Ii][Cc][Kk]"
+    },
+    {
+      "title": "Fire",
+      "default": "Fire",
+      "pattern": "[Ff][Ii][Rr][Ee]"
+    },
+    {
+      "title": "Meta",
+      "default": "Meta",
+      "pattern": "[Mm][Ee][Tt][Aa]"
+    },
+    {
+      "title": "Other",
+      "default": "Other",
+      "pattern": "[Oo][Tt][Hh][Ee][Rr]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

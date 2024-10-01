@@ -1,0 +1,42 @@
+{
+  "title": "FoodNutritionProperties",
+  "type": "object",
+  "properties": {
+    "eatenStack": {
+      "description": "The item that was eaten.",
+      "oneOf": [
+        {
+          "$ref": "./JsonItemStack.json#"
+        }
+      ]
+    },
+    "foodCategory": {
+      "description": "The category of the food.",
+      "oneOf": [
+        {
+          "$ref": "./EnumFoodCategory.json#"
+        }
+      ]
+    },
+    "health": {
+      "type": "number",
+      "description": "The health restored by the food.",
+      "format": "float"
+    },
+    "intoxication": {
+      "type": "number",
+      "format": "float"
+    },
+    "satiety": {
+      "type": "number",
+      "description": "The saturation restored by the food.",
+      "format": "float"
+    },
+    "saturationLossDelay": {
+      "type": "number",
+      "description": "The delay before that extra saturation starts to go away.",
+      "format": "float"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

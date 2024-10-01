@@ -1,0 +1,300 @@
+{
+  "title": "MeshData",
+  "type": "object",
+  "description": "A data structure that can be used to upload mesh information onto the graphics card\nPlease note, all arrays are used as a buffer. They do not tightly fit the data but are always sized as a multiple of 2 from the initial size.",
+  "properties": {
+    "climateColorMapIds": {
+      "type": "string",
+      "description": "BlockShapeTesselator climate colormap ids. Required by TerrainChunkTesselator to determine whether to color a vertex by a color map or not. Should hold VerticesCount / 4 values. Set to 0 for no color mapping, set 1..n for color map 0..n-1",
+      "format": "byte"
+    },
+    "colorMapIdsCount": {
+      "type": "integer",
+      "description": "Amount of assigned tint values",
+      "format": "int32"
+    },
+    "customBytes": {
+      "description": "Custom bytes buffer. Can be used to upload arbitrary amounts of byte values onto the graphics card",
+      "oneOf": [
+        {
+          "$ref": "./CustomMeshDataPartByte.json#"
+        }
+      ]
+    },
+    "customFloats": {
+      "description": "Custom floats buffer. Can be used to upload arbitrary amounts of float values onto the graphics card",
+      "oneOf": [
+        {
+          "$ref": "./CustomMeshDataPartFloat.json#"
+        }
+      ]
+    },
+    "customInts": {
+      "description": "Custom ints buffer. Can be used to upload arbitrary amounts of int values onto the graphics card",
+      "oneOf": [
+        {
+          "$ref": "./CustomMeshDataPartInt.json#"
+        }
+      ]
+    },
+    "customShorts": {
+      "description": "Custom shorts buffer. Can be used to upload arbitrary amounts of short values onto the graphics card",
+      "oneOf": [
+        {
+          "$ref": "./CustomMeshDataPartShort.json#"
+        }
+      ]
+    },
+    "flags": {
+      "type": "array",
+      "description": "The render flags buffer. This should hold VerticesCount*1 values.",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "flagsCount": {
+      "type": "integer",
+      "description": "returns VerticesCount",
+      "format": "int32"
+    },
+    "flagsInstanced": {
+      "type": "boolean",
+      "description": "When using instanced rendering, set this flag to have the flags instanced."
+    },
+    "flagsOffset": {
+      "type": "integer",
+      "description": "For offseting the data in the VBO. This field is used when updating a mesh.",
+      "format": "int32"
+    },
+    "flagsStatic": {
+      "type": "boolean",
+      "description": "flags vbo usage hints for the graphics card. Recommended to be set to false when this section of data changes often."
+    },
+    "hasAnyWindModeSet": {
+      "type": "boolean",
+      "description": "True if the flags array contains any wind mode"
+    },
+    "indices": {
+      "type": "array",
+      "description": "The indices buffer. This should hold IndicesCount values.",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "indicesCount": {
+      "type": "integer",
+      "description": "Amount of currently assigned indices",
+      "format": "int32"
+    },
+    "indicesInstanced": {
+      "type": "boolean",
+      "description": "When using instanced rendering, set this flag to have the indices instanced."
+    },
+    "indicesMax": {
+      "type": "integer",
+      "description": "Index buffer size",
+      "format": "int32"
+    },
+    "indicesOffset": {
+      "type": "integer",
+      "description": "For offseting the data in the VBO. This field is used when updating a mesh.",
+      "format": "int32"
+    },
+    "indicesPerFace": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "indicesStatic": {
+      "type": "boolean",
+      "description": "indices vbo usage hints for the graphics card. Recommended to be set to false when this section of data changes often."
+    },
+    "mode": {
+      "description": "The meshes draw mode",
+      "oneOf": [
+        {
+          "$ref": "./EnumDrawMode.json#"
+        }
+      ]
+    },
+    "normals": {
+      "type": "array",
+      "description": "The normals buffer. This should hold VerticesCount*1 values. Currently unused by the engine.\nGL_INT_2_10_10_10_REV Format\nx: bits 0-9    (10 bit signed int)\ny: bits 10-19  (10 bit signed int)\nz: bits 20-29  (10 bit signed int) \nw: bits 30-31",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "normalsCount": {
+      "type": "integer",
+      "description": "Amount of currently assigned normals",
+      "format": "int32"
+    },
+    "normalsOffset": {
+      "type": "integer",
+      "description": "For offseting the data in the VBO. This field is used when updating a mesh.",
+      "format": "int32"
+    },
+    "recyclable": {
+      "type": "boolean",
+      "description": "If true, this MeshData was constructed from MeshDataRecycler"
+    },
+    "recyclingTime": {
+      "type": "integer",
+      "description": "The time this MeshData most recently entered the recycling system; the oldest may be garbage collected",
+      "format": "int64"
+    },
+    "renderPassCount": {
+      "type": "integer",
+      "description": "Amount of assigned render pass values",
+      "format": "int32"
+    },
+    "renderPassesAndExtraBits": {
+      "type": "array",
+      "description": "BlockShapeTesselator renderpass. Required by TerrainChunkTesselator to determine in which mesh data pool each quad should land in. Should hold VerticesCount / 4 values.\nLower 10 bits = render pass\nUpper 6 bits = extra bits for tesselators\n   Bit 10: DisableRandomDrawOffset",
+      "items": {
+        "type": "integer"
+      }
+    },
+    "rgba": {
+      "type": "string",
+      "description": "The vertex color buffer. This should hold VerticesCount*4 values.",
+      "format": "byte"
+    },
+    "rgba2Count": {
+      "type": "integer",
+      "description": "returns VerticesCount * 4",
+      "format": "int32"
+    },
+    "rgba2Instanced": {
+      "type": "boolean",
+      "description": "When using instanced rendering, set this flag to have the rgba2 values instanced."
+    },
+    "rgba2Offset": {
+      "type": "integer",
+      "description": "For offseting the data in the VBO. This field is used when updating a mesh.",
+      "format": "int32"
+    },
+    "rgba2Static": {
+      "type": "boolean",
+      "description": "rgba2 vbo usage hints for the graphics card. Recommended to be set to false when this section of data changes often."
+    },
+    "rgbaCount": {
+      "type": "integer",
+      "description": "returns VerticesCount * 4",
+      "format": "int32"
+    },
+    "rgbaInstanced": {
+      "type": "boolean",
+      "description": "When using instanced rendering, set this flag to have the rgba values instanced."
+    },
+    "rgbaOffset": {
+      "type": "integer",
+      "description": "For offseting the data in the VBO. This field is used when updating a mesh.",
+      "format": "int32"
+    },
+    "rgbaStatic": {
+      "type": "boolean",
+      "description": "rgab vbo usage hints for the graphics card. Recommended to be set to false when this section of data changes often."
+    },
+    "seasonColorMapIds": {
+      "type": "string",
+      "description": "BlockShapeTesselator season colormap ids. Required by TerrainChunkTesselator to determine whether to color a vertex by a color map or not. Should hold VerticesCount / 4 values. Set to 0 for no color mapping, set 1..n for color map 0..n-1",
+      "format": "byte"
+    },
+    "textureIds": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "textureIndices": {
+      "type": "string",
+      "description": "Texture index per face, references to and index in the TextureIds array",
+      "format": "byte"
+    },
+    "textureIndicesCount": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "uv": {
+      "type": "array",
+      "description": "The uv buffer for texture coordinates. This should hold VerticesCount*2 values.",
+      "items": {
+        "type": "number",
+        "format": "float"
+      }
+    },
+    "uvCount": {
+      "type": "integer",
+      "description": "returns VerticesCount * 2",
+      "format": "int32"
+    },
+    "uvInstanced": {
+      "type": "boolean",
+      "description": "When using instanced rendering, set this flag to have the uv values instanced."
+    },
+    "uvOffset": {
+      "type": "integer",
+      "description": "For offseting the data in the VBO. This field is used when updating a mesh.",
+      "format": "int32"
+    },
+    "uvStatic": {
+      "type": "boolean",
+      "description": "uv vbo usage hints for the graphics card. Recommended to be set to false when this section of data changes often."
+    },
+    "verticesCount": {
+      "type": "integer",
+      "description": "Amount of currently assigned vertices",
+      "format": "int32"
+    },
+    "verticesMax": {
+      "type": "integer",
+      "description": "Vertex buffer size",
+      "format": "int32"
+    },
+    "verticesPerFace": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "xyz": {
+      "type": "array",
+      "description": "The x/y/z coordinates buffer. This should hold VerticesCount*3 values.",
+      "items": {
+        "type": "number",
+        "format": "float"
+      }
+    },
+    "xyzCount": {
+      "type": "integer",
+      "description": "returns VerticesCount * 3",
+      "format": "int32"
+    },
+    "xyzFaces": {
+      "type": "string",
+      "description": "BlockShapeTesselator xyz faces. Required by TerrainChunkTesselator to determine vertex lightness. Should hold VerticesCount / 4 values. Set to 0 for no face, set to 1..8 for faces 0..7",
+      "format": "byte"
+    },
+    "xyzFacesCount": {
+      "type": "integer",
+      "description": "Amount of assigned xyz face values",
+      "format": "int32"
+    },
+    "xyzInstanced": {
+      "type": "boolean",
+      "description": "When using instanced rendering, set this flag to have the xyz values instanced."
+    },
+    "xyzOffset": {
+      "type": "integer",
+      "description": "For offseting the data in the VBO. This field is used when updating a mesh.",
+      "format": "int32"
+    },
+    "xyzStatic": {
+      "type": "boolean",
+      "description": "xyz vbo usage hints for the graphics card. Recommended to be set to false when this section of data changes often."
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

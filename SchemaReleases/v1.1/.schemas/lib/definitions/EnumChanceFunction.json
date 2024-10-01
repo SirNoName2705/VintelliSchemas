@@ -1,0 +1,23 @@
+{
+  "title": "EnumChanceFunction",
+  "type": "string",
+  "description": "",
+  "anyOf": [
+    {
+      "title": "None",
+      "default": "None",
+      "pattern": "[Nn][Oo][Nn][Ee]"
+    },
+    {
+      "title": "TestRainTemp",
+      "default": "TestRainTemp",
+      "pattern": "[Tt][Ee][Ss][Tt][Rr][Aa][Ii][Nn][Tt][Ee][Mm][Pp]"
+    },
+    {
+      "title": "AvoidHotAndDry",
+      "default": "AvoidHotAndDry",
+      "pattern": "[Aa][Vv][Oo][Ii][Dd][Hh][Oo][Tt][Aa][Nn][Dd][Dd][Rr][Yy]"
+    }
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

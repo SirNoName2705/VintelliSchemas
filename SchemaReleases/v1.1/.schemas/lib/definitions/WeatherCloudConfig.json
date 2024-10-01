@@ -1,0 +1,31 @@
+{
+  "title": "WeatherCloudConfig",
+  "type": "object",
+  "properties": {
+    "baseThickness": {
+      "$ref": "./NatFloat.json#"
+    },
+    "brightness": {
+      "$ref": "./NatFloat.json#"
+    },
+    "heightMul": {
+      "$ref": "./NatFloat.json#"
+    },
+    "locationalThickness": {
+      "$ref": "./NoiseConfig.json#"
+    },
+    "opaqueness": {
+      "$ref": "./NatFloat.json#"
+    },
+    "thicknessMul": {
+      "$ref": "./NatFloat.json#"
+    },
+    "thinCloudMode": {
+      "$ref": "./NatFloat.json#"
+    },
+    "undulatingCloudMode": {
+      "$ref": "./NatFloat.json#"
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

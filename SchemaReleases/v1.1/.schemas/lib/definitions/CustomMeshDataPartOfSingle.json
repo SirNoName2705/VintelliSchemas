@@ -1,0 +1,65 @@
+{
+  "title": "CustomMeshDataPartOfSingle",
+  "type": "object",
+  "description": "Holds arbitrary mesh data for meshes to be used in a shader",
+  "properties": {
+    "allocationSize": {
+      "type": "integer",
+      "description": "Size of the array that should be allocated on the graphics card.",
+      "format": "int32"
+    },
+    "baseOffset": {
+      "type": "integer",
+      "description": "Used as offset when doing a partial update on an existing buffer",
+      "format": "int32"
+    },
+    "bufferSize": {
+      "type": "integer",
+      "description": "Size of the Values array",
+      "format": "int32"
+    },
+    "count": {
+      "type": "integer",
+      "description": "Amout of values currently added",
+      "format": "int32"
+    },
+    "instanced": {
+      "type": "boolean",
+      "description": "For instanced rendering"
+    },
+    "interleaveOffsets": {
+      "type": "array",
+      "description": "Offset in bytes for each variable ",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "interleaveSizes": {
+      "type": "array",
+      "description": "Amount of variable components for variable (i.e. 2, 3 for a vec2 and a vec3), valid values are 1, 2, 3 and 4 (limited by glVertexAttribPointer)",
+      "items": {
+        "type": "integer",
+        "format": "int32"
+      }
+    },
+    "interleaveStride": {
+      "type": "integer",
+      "description": "Stride - Size in bytes of all values for one vertex",
+      "format": "int32"
+    },
+    "staticDraw": {
+      "type": "boolean",
+      "description": "Set to false if you intend to update the buffer very often (i.e. every frame)"
+    },
+    "values": {
+      "type": "array",
+      "description": "The arbitrary data to be uploaded to the graphics card",
+      "items": {
+        "type": "number",
+        "format": "float"
+      }
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

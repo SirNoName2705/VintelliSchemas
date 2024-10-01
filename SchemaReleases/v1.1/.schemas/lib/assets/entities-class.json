@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "class": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "enum": [
+            "EntityChunky",
+            "EntityItem",
+            "EntityPlayer",
+            "EntityTestShip",
+            "EntityThrownBeenade",
+            "EntityProjectile",
+            "EntityBlockfalling",
+            "EntityThrownStone",
+            "EntityThrownSnowball",
+            "EntityFish",
+            "EntityAgent",
+            "EntityArmorStand",
+            "EntityStrawDummy",
+            "EntityBell",
+            "EntityAnimalBot",
+            "EntityLocust",
+            "EntityDrifter",
+            "EntityEidolon",
+            "EntityTrader",
+            "EntityPlayerBot",
+            "EntityEchoChamber",
+            "EntityLibraryResonator",
+            "EntityButterfly",
+            "EntityBeeMob",
+            "EntityBoat"
+          ]
+        }
+      ]
+    }
+  },
+  "title": "Asset generated simple: entities-class.json"
+}

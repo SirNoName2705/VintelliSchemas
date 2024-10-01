@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AlloyRecipe",
+  "type": "object",
+  "properties": {
+    "enabled": {
+      "type": "boolean"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/MetalAlloyIngredient"
+      }
+    },
+    "output": {
+      "$ref": "../../lib/definitions/JsonItemStack.json#"
+    }
+  },
+  "definitions": {
+    "MetalAlloyIngredient": {
+      "title": "MetalAlloyIngredient",
+      "allOf": [
+        {
+          "$ref": "../../lib/definitions/JsonItemStack.json#"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "maxRatio": {
+              "type": "number",
+              "format": "float"
+            },
+            "minRatio": {
+              "type": "number",
+              "format": "float"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
